@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>The Sitecore Commerce Habitat Sample Plugin.</Description>
+    <Copyright>© 2017 Sitecore Corporation A/S. All rights reserved. Sitecore® is a registered trademark of Sitecore Corporation A/S.</Copyright>
+    <VersionPrefix>1.0.2301</VersionPrefix>
+    <Authors>Sitecore</Authors>
+    <TargetFramework>net452</TargetFramework>
+    <AssemblyName>Plugin.Sample.Habitat</AssemblyName>
+    <PackageId>Plugin.Sample.Habitat</PackageId>
+    <PackageTags>Sitecore;Commerce;Plugin;Sample;Example</PackageTags>
+    <PackageReleaseNotes>release notes</PackageReleaseNotes>
+    <PackageIconUrl>http://www.sitecore.net/favicon.ico</PackageIconUrl>
+    <PackageProjectUrl>http://www.sitecore.net/</PackageProjectUrl>
+    <PackageLicenseUrl>http://www.sitecore.net/platform/pricing.aspx</PackageLicenseUrl>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Baseclass.Contrib.Nuget.Output" Version="2.3.0-vs20172" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="1.0.2301" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="1.0.2301" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog.Cs" Version="1.0.2301" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="1.0.2301" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="1.0.2301" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="1.0.2301" />
+  </ItemGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Compile Include="..\..\shared\VersionInfo.cs" Exclude="bin\**;obj\**;**\*.xproj;packages\**" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>

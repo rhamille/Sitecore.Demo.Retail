@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <TargetFramework>net452</TargetFramework>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <AssemblyName>code</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>code</PackageId>
+  </PropertyGroup>
+
+  <!--<ItemGroup>
+    <None Update="wwwroot\**\*">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>-->
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\legacyCommerce\Plugin.Sample.Habitat\Plugin.Sample.Habitat.csproj" />
+    <ProjectReference Include="..\..\legacyCommerce\Plugin.Sample.Payments.Braintree\Plugin.Sample.Payments.Braintree.csproj" />
+    <ProjectReference Include="..\..\legacyCommerce\Sitecore.Commerce.Plugin.AdventureWorks\Sitecore.Commerce.Plugin.AdventureWorks.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="1.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="1.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.OData" Version="6.0.0-alpha1-rtm-121216" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.1.0" />
+    <PackageReference Include="Serilog" Version="2.4.0" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="1.0.2301" />
+    <PackageReference Include="Serilog.Sinks.Literate" Version="2.1.0" />
+    <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Filter" Version="1.1.1" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="1.4.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="1.0.2" />
+    <PackageReference Include="Sitecore.Commerce.Provider.FileSystem" Version="1.0.2301" />
+    <PackageReference Include="Sitecore.Framework.Rules" Version="1.1.12" />
+    <PackageReference Include="Sitecore.Framework.Rules.Serialization" Version="1.1.12" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Sitecore.Framework.Diagnostics" Version="1.1.4" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>

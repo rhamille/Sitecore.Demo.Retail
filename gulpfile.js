@@ -22,7 +22,7 @@ gulp.task("default", function (callback) {
   config.runCleanBuilds = true;
   return runSequence(
     "01-Copy-Sitecore-Lib",
-    "02-Nuget-Restore",
+    //"02-Nuget-Restore", //TODO: Uncomment when fixed
     "03-Publish-All-Projects",
     "04-Apply-Xml-Transform",
     "05-Sync-Unicorn",
@@ -152,6 +152,7 @@ var publishProjects = function (location, dest) {
 };
 
 gulp.task("Build-Solution", function () {
+	console.log("Building Solution");
   var targets = ["Build"];
   if (config.runCleanBuilds) {
     targets = ["Clean", "Build"];
@@ -166,11 +167,12 @@ gulp.task("Build-Solution", function () {
           stdout: true,
           errorOnFail: true,
           maxcpucount: 0,
-          toolsVersion: 14.0
+          toolsVersion: 15.0
         }));
 });
 
 gulp.task("Publish-Storefront-Projects", function () {
+	console.log("Publishing Storefront Projects");
   return publishProjects("./src/Foundation/Commerce/storefront/{CommonSettings,CF/CSF}");
 });
 

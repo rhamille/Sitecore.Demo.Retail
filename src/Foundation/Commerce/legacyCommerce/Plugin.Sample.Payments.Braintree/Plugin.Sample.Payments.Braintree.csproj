@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>A Sample Payments Plugin using Braintree.</Description>
+    <Copyright>Â© 2017 Sitecore Corporation A/S. All rights reserved. SitecoreÂ® is a registered trademark of Sitecore Corporation A/S.</Copyright>
+    <VersionPrefix>1.0.2301</VersionPrefix>
+    <Authors>Sitecore</Authors>
+    <TargetFramework>net452</TargetFramework>
+    <AssemblyName>Plugin.Sample.Payments.Braintree</AssemblyName>
+    <PackageId>Plugin.Sample.Payments.Braintree</PackageId>
+    <PackageTags>Sitecore;Commerce;Plugin;Sample;Example</PackageTags>
+    <PackageReleaseNotes>release notes</PackageReleaseNotes>
+    <PackageIconUrl>http://www.sitecore.net/favicon.ico</PackageIconUrl>
+    <PackageProjectUrl>http://www.sitecore.net/</PackageProjectUrl>
+    <PackageLicenseUrl>http://www.sitecore.net/platform/pricing.aspx</PackageLicenseUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Braintree" Version="3.3.0" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Payments" Version="1.0.2301" />
+  </ItemGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Compile Include="..\..\build\VersionInfo.cs" Exclude="bin\**;obj\**;**\*.xproj;packages\**" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>
