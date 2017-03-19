@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net452</TargetFramework>
+    <AssemblyName>Sitecore.Foundation.Commerce.Engine.Plugin.Entitlements</AssemblyName>
+    <PackageId>Engine</PackageId>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Sitecore.Commerce.Core" Version="1.0.2301" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Entitlements" Version="1.0.2301" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net452</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Sitecore.Commerce.Core" Version="1.0.2301" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="1.0.2301" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="1.0.2301" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Promotions" Version="1.0.2301" />
+    <PackageReference Include="Sitecore.Framework.Pipelines.Abstractions" Version="2.0.65" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>

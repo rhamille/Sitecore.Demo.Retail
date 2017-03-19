@@ -77,7 +77,7 @@ gulp.task("04-Apply-Xml-Transform", function () {
           stdout: true,
           errorOnFail: true,
           maxcpucount: 0,
-          toolsVersion: 14.0,
+          toolsVersion: 15.0,
           properties: {
             WebConfigToTransform: config.websiteRoot,
             TransformFile: file.path,
@@ -138,7 +138,7 @@ var publishProjects = function (location, dest) {
           stdout: true,
           errorOnFail: true,
           maxcpucount: 0,
-          toolsVersion: 14.0,
+          toolsVersion: 15.0,
           properties: {
             DeployOnBuild: "true",
             DeployDefaultTarget: "WebPublish",
@@ -166,7 +166,7 @@ gulp.task("Build-Solution", function () {
           stdout: true,
           errorOnFail: true,
           maxcpucount: 0,
-          toolsVersion: 14.0
+          toolsVersion: 15.0
         }));
 });
 
@@ -363,7 +363,7 @@ gulp.task("CE-01-Nuget-Restore", function (callback) {
 });
 
 gulp.task("CE-02-Publish-CommerceEngine-Projects", function (callback) {
-    var cmd = "dotnet publish ./src/Foundation/Commerce/Engine/code -o " + config.commerceEngineRoot
+    var cmd = "dotnet publish ./src/Foundation/Commerce/Engine -o " + config.commerceEngineRoot
     var options = { maxBuffer: 1024 * 1024 };
     console.log("cmd: " + cmd);
     return exec(cmd, options, function (err, stdout, stderr) {
@@ -417,6 +417,39 @@ gulp.task("CE-Import-CSInventory", function (callback) {
     var options = { maxBuffer: 1024 * 1024 };
     return exec("powershell -executionpolicy unrestricted -command \"" + command + "\"", options, function (err, stdout, stderr) {
         if (err) {
+            console.error("exec error: " + err);
+            throw err;
+        }
+        console.log("stdout: " + stdout);
+        console.log("stderr: " + stderr);
+        callback();
+    });
+});
+
+/*****************************
+  Kill Tasks
+*****************************/
+gulp.task("Kill-w3wp-Tasks", function (callback) {
+    var cmd = "@tskill w3wp /a /v"
+    var options = { maxBuffer: 1024 * 1024 };
+    console.log("cmd: " + cmd);
+    return exec(cmd, options, function (err, stdout, stderr) {
+        if ((err) && (!stderr.includes("Could not find process"))) {
+            console.error("exec error: " + err);
+            throw err;
+        }
+        console.log("stdout: " + stdout);
+        console.log("stderr: " + stderr);
+        callback();
+    });
+});
+
+gulp.task("Kill-iisexpress-Tasks", function (callback) {
+    var cmd = "@tskill iisexpress /a /v"
+    var options = { maxBuffer: 1024 * 1024 };
+    console.log("cmd: " + cmd);
+    return exec(cmd, options, function (err, stdout, stderr) {
+        if ((err) && (!stderr.includes("Could not find process"))) {
             console.error("exec error: " + err);
             throw err;
         }

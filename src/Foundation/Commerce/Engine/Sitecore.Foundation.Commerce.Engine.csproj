@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net452</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+  <ItemGroup>
+	  <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Filter" Version="1.1.1" />
+    <PackageReference Include="Serilog" Version="2.4.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="1.4.0" />
+    <PackageReference Include="Serilog.Sinks.Literate" Version="2.1.0" />
+    <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.0" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Payments" Version="1.0.2301" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Tax" Version="1.0.2301" />
+    <PackageReference Include="Sitecore.Commerce.Provider.FileSystem" Version="1.0.2301" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Project\Retail\Engine\Sitecore.Project.Commerce.Engine.Plugin.HabitatData.csproj" />
+    <ProjectReference Include="..\..\Commerce.Entitlements\Engine\Sitecore.Foundation.Commerce.Engine.Plugin.Entitlements.csproj" />
+    <ProjectReference Include="..\..\Commerce.Payments\Engine\Sitecore.Foundation.Commerce.Engine.Plugin.Payments.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="App_ConfigureSitecore\**" />
+    <Content Remove="App_ConfigureSitecore\**" />
+    <EmbeddedResource Remove="App_ConfigureSitecore\**" />
+    <None Remove="App_ConfigureSitecore\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <NupkgFiles Remove="App_ConfigureSitecore\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="App_ConfigureSitecore\CartPipelineExtentions.cs" />
+    <Compile Include="App_ConfigureSitecore\InitializeEnvironmentPipelineExtentions.cs" />
+    <Compile Include="App_ConfigureSitecore\OrdersPipelinesExtentions.cs" />
+    <Compile Include="App_ConfigureSitecore\RunningPluginsPipelineExtentions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Sitecore.Commerce.Plugin.Catalog.Cs">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Commerce.Plugin.Catalog.Cs.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.Plugin.Inventory.Cs">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Commerce.Plugin.Inventory.Cs.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
