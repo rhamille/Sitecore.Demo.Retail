@@ -152,6 +152,7 @@ var publishProjects = function (location, dest) {
 };
 
 gulp.task("Build-Solution", function () {
+	console.log("Building Solution");
   var targets = ["Build"];
   if (config.runCleanBuilds) {
     targets = ["Clean", "Build"];
@@ -171,6 +172,7 @@ gulp.task("Build-Solution", function () {
 });
 
 gulp.task("Publish-Storefront-Projects", function () {
+	console.log("Publishing Storefront Projects");
   return publishProjects("./src/Foundation/Commerce/storefront/{CommonSettings,CF/CSF}");
 });
 
