@@ -35,7 +35,7 @@ namespace Sitecore.Foundation.Commerce.Engine.Plugin.Payments.Pipelines.Blocks
             if (!order.Status.Equals(context.GetPolicy<KnownOrderStatusPolicy>().Completed, StringComparison.OrdinalIgnoreCase))
             {
                 var invalidOrderStateMessage = $"{this.Name}: Expected order in '{context.GetPolicy<KnownOrderStatusPolicy>().Completed}' status but order was in '{order.Status}' status";
-                context.Abort(context.CommerceContext.AddMessage(
+                context.Abort(await context.CommerceContext.AddMessage(
                     context.GetPolicy<KnownResultCodes>().ValidationError,
                     "InvalidOrderState",
                     new object[] { context.GetPolicy<KnownOrderStatusPolicy>().OnHold, order.Status },
@@ -52,7 +52,7 @@ namespace Sitecore.Foundation.Commerce.Engine.Plugin.Payments.Pipelines.Blocks
             if (string.IsNullOrEmpty(braintreeClientPolicy?.Environment) || string.IsNullOrEmpty(braintreeClientPolicy?.MerchantId)
                 || string.IsNullOrEmpty(braintreeClientPolicy?.PublicKey) || string.IsNullOrEmpty(braintreeClientPolicy?.PrivateKey))
             {
-                context.CommerceContext.AddMessage(
+                await context.CommerceContext.AddMessage(
                    context.GetPolicy<KnownResultCodes>().Error,
                    "InvalidClientPolicy",
                    new object[] { "BraintreeClientPolicy" },
@@ -65,7 +65,7 @@ namespace Sitecore.Foundation.Commerce.Engine.Plugin.Payments.Pipelines.Blocks
                 var payment = arg.Payments.Where(p => !string.IsNullOrEmpty(p?.Id)).FirstOrDefault();
                 if (payment == null)
                 {
-                    context.CommerceContext.AddMessage(
+                    await context.CommerceContext.AddMessage(
                            context.GetPolicy<KnownResultCodes>().Error,
                            "InvalidOrMissingPropertyValue",
                            new object[] { "Payment" },
@@ -84,7 +84,7 @@ namespace Sitecore.Foundation.Commerce.Engine.Plugin.Payments.Pipelines.Blocks
 
                 if (existingPayment.Amount.Amount < payment.Amount.Amount)
                 {
-                    context.CommerceContext.AddMessage(
+                    await context.CommerceContext.AddMessage(
                         context.GetPolicy<KnownResultCodes>().Error,
                         "IllegalRefundOperation",
                         new object[] { order.Id, existingPayment.Id },
@@ -103,7 +103,7 @@ namespace Sitecore.Foundation.Commerce.Engine.Plugin.Payments.Pipelines.Blocks
                 {
                     var errorMessages = result.Errors.DeepAll().Aggregate(string.Empty, (current, error) => current + ("Error: " + (int)error.Code + " - " + error.Message + "\n"));
 
-                    context.Abort(context.CommerceContext.AddMessage(
+                    context.Abort(await context.CommerceContext.AddMessage(
                        context.GetPolicy<KnownResultCodes>().Error,
                        "PaymentRefundFailed",
                        new object[] { existingPayment.TransactionId },
@@ -129,7 +129,7 @@ namespace Sitecore.Foundation.Commerce.Engine.Plugin.Payments.Pipelines.Blocks
             }
             catch (BraintreeException ex)
             {
-                context.CommerceContext.AddMessage(
+                await context.CommerceContext.AddMessage(
                    context.GetPolicy<KnownResultCodes>().Error,
                    "PaymentRefundFailed",
                    new object[] { order.Id },

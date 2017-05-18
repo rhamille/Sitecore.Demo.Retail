@@ -35,7 +35,7 @@ namespace Sitecore.Foundation.Commerce.Engine.Plugin.Payments
                 {
                     d.Add<EnsureSettlePaymentRequestedBlock>().After<ValidateSalesActivityBlock>()
                      .Add<ValidateSettlementBlock>().After<EnsureSettlePaymentRequestedBlock>()
-                     .Add<UpdateFederatedPaymentAfterSettlementBlock>().Before<PersistSalesActivityBlock>();
+                     .Add<UpdateFederatedPaymentAfterSettlementBlock>().After<SettleFederatedPaymentBlock>();
                 })
 
                 .ConfigurePipeline<IRefundPaymentsPipeline>(d =>

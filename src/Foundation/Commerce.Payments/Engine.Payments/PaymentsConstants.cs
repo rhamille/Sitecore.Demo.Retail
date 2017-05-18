@@ -25,6 +25,7 @@ namespace Sitecore.Foundation.Commerce.Engine.Plugin.Payments
                 public const string RefundFederatedPaymentBlock = "Payments.block.refundfederatedpayment";
                 public const string VoidOnHoldOrderFederatedPaymentBlock = "Payments.block.voidonholdorderfederatedpayment";
                 public const string ValidateSettlementBlock = "Payments.block.validatesettlement";
+                public const string SettleFederatedPaymentBlock = "PaymentsBraintree.block.SettleFederatedPayment";
             }
         }
     }

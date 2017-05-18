@@ -1,15 +1,39 @@
 ﻿{
-    "AppSettings": {
-        "SiteTitle": "Sitecore Commerce Engine",
-        "BootStrapFile": "Global",
-        "DeploymentId": "Deployment01",
-        "EnvironmentName": "HabitatAuthoring",
-        "EncryptionProtectionType": "Machine",
-        "EncryptionCertificateHash": "Enter a valid certificate thumbprint for a PXF file. X-509 not supported yet",
-        "EncryptionSID": "Enter a valid SID for a domain registered user",
-        "EncryptionKeyStorageLocation": "c:\\Encryption-Keys\\"
+  "AppSettings": {
+    "SiteTitle": "Sitecore Commerce Engine",
+    "BootStrapFile": "Global",
+    "DeploymentId": "Deployment01",
+    "EnvironmentName": "HabitatAuthoring",
+    "EncryptionProtectionType": "Machine",
+    "EncryptionCertificateHash": "Enter a valid certificate thumbprint for a PXF file. X-509 not supported yet",
+    "EncryptionSID": "Enter a valid SID for a domain registered user",
+    "EncryptionKeyStorageLocation": "c:\\Encryption-Keys\\"
+  },
+  "ApplicationInsights": {
+    "InstrumentationKey": "",
+    "MinimumLevel": "Information"
+  },
+  "Logging": {
+    "IncludeScopes": false,
+    "LogLevel": {
+      "Default": "Information",
+      "System": "Warning",
+      "Microsoft": "Warning"
     },
-    "ApplicationInsights": {
-        "InstrumentationKey": ""
-    }
+    "ApplicationInsightsLoggingEnabled": false,
+    "SerilogLoggingEnabled": true
+  },
+  "Serilog": {
+    "MinimumLevel": "Information"
+  },
+  "Certificates": {
+    "Certificates": [
+      {
+        "Subject": "CN=retail.dev.local",
+        "IssuerCN": "CN=retail.dev.local",
+        "Thumbprint": "‎32BB44608CD9807AF01FC61ABF07AABE7C0E35BB"
+      }
+    ],
+    "ValidationEnabled": false 
+  } 
 }

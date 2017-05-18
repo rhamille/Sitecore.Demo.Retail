@@ -1,0 +1,10 @@
+﻿{
+  "Serilog": {
+    "MinimumLevel": "Information",
+    "WriteTo": [
+      {
+        "Name": "LiterateConsole"
+      }
+    ]
+  }
+}

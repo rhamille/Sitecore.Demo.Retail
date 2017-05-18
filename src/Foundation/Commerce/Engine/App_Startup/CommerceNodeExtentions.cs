@@ -24,8 +24,8 @@ namespace Sitecore.Foundation.Commerce.Engine.App_Startup
                 Environment = environment,
                 WebRootPath = hostEnv.WebRootPath,
                 LoggingPath = hostEnv.WebRootPath + @"\logs\",
-                BootStrapProviderPath = hostEnv.WebRootPath + @"\Bootstrap\", // The default
-                BootStrapEnvironmentPath = "Global", // The default
+              BootstrapProviderPath = hostEnv.WebRootPath + @"\Bootstrap\", // The default
+              BootstrapEnvironmentPath = "Global", // The default
             };
         }
 

@@ -107,7 +107,7 @@ namespace Sitecore.Foundation.Commerce.Engine.Plugin.Entitlements.Pipelines.Bloc
             }
 
             context.Abort(
-                context.CommerceContext.AddMessage(
+                await context.CommerceContext.AddMessage(
                     context.GetPolicy<KnownResultCodes>().Error,
                     "ProvisioningEntitlementErrors",
                     new object[] { order.Id },
