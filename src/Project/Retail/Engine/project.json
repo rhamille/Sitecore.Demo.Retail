@@ -30,7 +30,7 @@
         "Sitecore.Commerce.Plugin.SQL": "1.1.819",
         "Sitecore.Feature.Commerce.Entitlements.Engine": "1.0.0-*",
         "Sitecore.Feature.Commerce.Payments.Engine": "1.0.0-*",
-        "Sitecore.Feature.Commerce.HabitatData.Engine": "1.0.0-*"
+        "Sitecore.Feature.Commerce.HabitatData.Engine": "1.0.0-*",
         "Sitecore.Demo.Retail.Feature.Fulfillment.Engine": "1.0.0-*"
     },
     "tools": {

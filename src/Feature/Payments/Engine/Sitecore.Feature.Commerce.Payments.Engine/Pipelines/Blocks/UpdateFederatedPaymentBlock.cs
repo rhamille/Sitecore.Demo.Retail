@@ -35,7 +35,7 @@ namespace Sitecore.Feature.Commerce.Payments.Engine.Pipelines.Blocks
             if (!order.HasComponent<OnHoldOrderComponent>())
             {
                 var invalidOrderStateMessage = $"{this.Name}: Expected order in '{context.GetPolicy<KnownOrderStatusPolicy>().OnHold}' status but order was in '{order.Status}' status";
-                context.Abort(context.CommerceContext.AddMessage(
+                context.Abort(await context.CommerceContext.AddMessage(
                     context.GetPolicy<KnownResultCodes>().ValidationError,
                     "InvalidOrderState",
                     new object[] { context.GetPolicy<KnownOrderStatusPolicy>().OnHold, order.Status },
@@ -51,7 +51,7 @@ namespace Sitecore.Feature.Commerce.Payments.Engine.Pipelines.Blocks
             var payment = cart.GetComponent<FederatedPaymentComponent>();
             if (string.IsNullOrEmpty(payment.PaymentMethodNonce))
             {
-                context.Abort(context.CommerceContext.AddMessage(
+                context.Abort(await context.CommerceContext.AddMessage(
                     context.GetPolicy<KnownResultCodes>().Error,
                     "InvalidOrMissingPropertyValue",
                     new object[] { "PaymentMethodNonce" },
@@ -70,7 +70,7 @@ namespace Sitecore.Feature.Commerce.Payments.Engine.Pipelines.Blocks
             if (string.IsNullOrEmpty(braintreeClientPolicy?.Environment) || string.IsNullOrEmpty(braintreeClientPolicy?.MerchantId)
                 || string.IsNullOrEmpty(braintreeClientPolicy?.PublicKey) || string.IsNullOrEmpty(braintreeClientPolicy?.PrivateKey))
             {
-                context.CommerceContext.AddMessage(
+                await context.CommerceContext.AddMessage(
                    context.GetPolicy<KnownResultCodes>().Error,
                    "InvalidClientPolicy",
                    new object[] { "BraintreeClientPolicy" },
@@ -99,7 +99,7 @@ namespace Sitecore.Feature.Commerce.Payments.Engine.Pipelines.Blocks
                     {
                         var errorMessages = voidResult.Errors.DeepAll().Aggregate(string.Empty, (current, error) => current + ("Error: " + (int)error.Code + " - " + error.Message + "\n"));
 
-                        context.Abort(context.CommerceContext.AddMessage(
+                        context.Abort(await context.CommerceContext.AddMessage(
                            context.GetPolicy<KnownResultCodes>().Error,
                            "PaymentVoidFailed",
                            new object[] { orderPayment.TransactionId },
@@ -137,7 +137,7 @@ namespace Sitecore.Feature.Commerce.Payments.Engine.Pipelines.Blocks
                 {
                     string errorMessages = result.Errors.DeepAll().Aggregate(string.Empty, (current, error) => current + ("Error: " + (int)error.Code + " - " + error.Message + "\n"));
 
-                    context.Abort(context.CommerceContext.AddMessage(
+                    context.Abort(await context.CommerceContext.AddMessage(
                        context.GetPolicy<KnownResultCodes>().Error,
                        "CreatePaymentFailed",
                        new object[] { "PaymentMethodNonce" },

@@ -41,7 +41,7 @@ namespace Sitecore.Feature.Commerce.Payments.Engine.Pipelines.Blocks
             if (string.IsNullOrEmpty(braintreeClientPolicy?.Environment) || string.IsNullOrEmpty(braintreeClientPolicy?.MerchantId)
                 || string.IsNullOrEmpty(braintreeClientPolicy?.PublicKey) || string.IsNullOrEmpty(braintreeClientPolicy?.PrivateKey))
             {
-                context.CommerceContext.AddMessage(
+                await context.CommerceContext.AddMessage(
                    context.GetPolicy<KnownResultCodes>().Error,
                    "InvalidClientPolicy",
                    new object[] { "BraintreeClientPolicy" },
@@ -70,7 +70,7 @@ namespace Sitecore.Feature.Commerce.Payments.Engine.Pipelines.Blocks
                 {
                     var errorMessages = result.Errors.DeepAll().Aggregate(string.Empty, (current, error) => current + ("Error: " + (int)error.Code + " - " + error.Message + "\n"));
 
-                            context.Abort(context.CommerceContext.AddMessage(
+                            context.Abort(await context.CommerceContext.AddMessage(
                                context.GetPolicy<KnownResultCodes>().Error,
                                "PaymentVoidFailed",
                                new object[] { existingPayment.TransactionId },
@@ -81,7 +81,7 @@ namespace Sitecore.Feature.Commerce.Payments.Engine.Pipelines.Blocks
             }
             catch (BraintreeException ex)
             {
-                context.CommerceContext.AddMessage(
+                await context.CommerceContext.AddMessage(
                    context.GetPolicy<KnownResultCodes>().Error,
                    "PaymentVoidFailed",
                    new object[] { order.Id },
