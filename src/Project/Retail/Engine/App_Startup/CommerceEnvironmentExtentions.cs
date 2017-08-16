@@ -6,7 +6,7 @@ using Sitecore.Commerce.Core.Commands;
 using Sitecore.Commerce.Provider.FileSystem;
 using System;
 
-namespace Sitecore.Demo.Retail.Project.Engine.App_Startup
+namespace Sitecore.Project.Commerce.Retail.Engine.App_Startup
 {
     public static class CommerceEnvironmentExtentions
     {

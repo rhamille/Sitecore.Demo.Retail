@@ -1,9 +1,9 @@
-﻿using Sitecore.Demo.Retail.Feature.Catalog.Website.Factories;
+﻿using Sitecore.Feature.Commerce.Catalog.Website.Factories;
 using Sitecore.Feature.Metadata.Infrastructure.Pipelines.GetPageMetadata;
-using Sitecore.Demo.Retail.Foundation.Commerce.Website.Models;
+using Sitecore.Foundation.Commerce.Website.Models;
 using Sitecore.Foundation.DependencyInjection;
 
-namespace Sitecore.Demo.Retail.Project.Website.Infrastructure.Pipelines
+namespace Sitecore.Project.Commerce.Retail.Website.Infrastructure.Pipelines
 {
     [Service]
     public class SetProductCatalogMetadata

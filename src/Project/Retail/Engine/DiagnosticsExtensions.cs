@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Framework.Configuration;
 
-namespace Sitecore.Demo.Retail.Project.Engine
+namespace Sitecore.Project.Commerce.Retail.Engine
 {
     public static class DiagnosticsExtensions
     {

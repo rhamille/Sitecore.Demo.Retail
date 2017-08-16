@@ -6,10 +6,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Sitecore.Commerce.Core;
-using Sitecore.Demo.Retail.Project.Engine.App_Startup;
 using Sitecore.Framework.Diagnostics;
+using Sitecore.Project.Commerce.Retail.Engine.App_Startup;
 
-namespace Sitecore.Demo.Retail.Project.Engine
+namespace Sitecore.Project.Commerce.Retail.Engine
 {
     public class Startup
     {
