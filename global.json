@@ -1,5 +1,5 @@
 {
-    "projects": [ "src/Foundation/Commerce/legacyCommerce", "src/Project/Retail", "src/Foundation/Commerce.Payments", "src/Foundation/Commerce.Entitlements" ],
+    "projects": [ "src/Foundation/Commerce/legacyCommerce", "src/Project/Retail", "src/Foundation/Commerce.Payments", "src/Foundation/Commerce.Entitlements", "src/Feature/Fulfillment/Engine" ],
     "sdk": {
         "version": "1.0.0-preview2-003131"
     }
