@@ -35,7 +35,7 @@ namespace Sitecore.Demo.Retail.Feature.Fulfillment.Engine
         /// <param name="arg">The argument.</param>
         /// <param name="context">The context.</param>
         /// <returns></returns>
-        public override Task<FulfillmentFeeBook> Run(SaveFulfillmentFeeBookArgument arg, CommercePipelineExecutionContext context)
+        public async override Task<FulfillmentFeeBook> Run(SaveFulfillmentFeeBookArgument arg, CommercePipelineExecutionContext context)
         {
             Condition.Requires(arg).IsNotNull(string.Format("{0}: The argument cannot be null.", this.Name));
             Condition.Requires(arg.Name).IsNotNullOrEmpty(string.Format("{0}: The Fulfillment fee book name cannot be null or empty.", this.Name));
@@ -43,7 +43,7 @@ namespace Sitecore.Demo.Retail.Feature.Fulfillment.Engine
             Condition.Requires(arg.FulfillmentFees).IsLongerThan(0, string.Format("{0}: The Fulfillment fee collection must have one or more entries.", this.Name));
 
 
-            string str = context.CommerceContext.AddMessage(
+            string str = await context.CommerceContext.AddMessage(
                 context.GetPolicy<KnownResultCodes>().Information,
                 null,
                 null,
@@ -66,7 +66,7 @@ namespace Sitecore.Demo.Retail.Feature.Fulfillment.Engine
             {
                 if (fulfillmentOptionGroup.DefaultCount != 1)
                 {
-                    string reason = context.CommerceContext.AddMessage(
+                    string reason = await context.CommerceContext.AddMessage(
                         context.GetPolicy<KnownResultCodes>().ValidationError,
                         "FulfillmentFeeOptionDefaultNotFound",
                         new object[2] { fulfillmentOptionGroup.FulfillmentMethodName, fulfillmentOptionGroup.CurrencyCode },
@@ -74,7 +74,7 @@ namespace Sitecore.Demo.Retail.Feature.Fulfillment.Engine
                         );
 
                     context.Abort(reason, context);
-                    return Task.FromResult<FulfillmentFeeBook>(null);
+                    return await Task.FromResult<FulfillmentFeeBook>(null);
                 }
             }
 
@@ -88,7 +88,7 @@ namespace Sitecore.Demo.Retail.Feature.Fulfillment.Engine
                 FulfillmentFeeBook.FulfillmentFees = arg.FulfillmentFees;
             }
 
-            return Task.FromResult(FulfillmentFeeBook);
+            return await Task.FromResult(FulfillmentFeeBook);
         }
     }
 }

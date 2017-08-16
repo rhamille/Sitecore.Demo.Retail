@@ -35,7 +35,7 @@ namespace Sitecore.Demo.Retail.Feature.Payments.Engine.Pipelines.Blocks
             if (!order.Status.Equals(context.GetPolicy<KnownOrderStatusPolicy>().Completed, StringComparison.OrdinalIgnoreCase))
             {
                 var invalidOrderStateMessage = $"{this.Name}: Expected order in '{context.GetPolicy<KnownOrderStatusPolicy>().Completed}' status but order was in '{order.Status}' status";
-                context.Abort(context.CommerceContext.AddMessage(
+                context.Abort(await context.CommerceContext.AddMessage(
                     context.GetPolicy<KnownResultCodes>().ValidationError,
                     "InvalidOrderState",
                     new object[] { context.GetPolicy<KnownOrderStatusPolicy>().OnHold, order.Status },
@@ -103,7 +103,7 @@ namespace Sitecore.Demo.Retail.Feature.Payments.Engine.Pipelines.Blocks
                 {
                     var errorMessages = result.Errors.DeepAll().Aggregate(string.Empty, (current, error) => current + ("Error: " + (int)error.Code + " - " + error.Message + "\n"));
 
-                    context.Abort(context.CommerceContext.AddMessage(
+                    context.Abort(await context.CommerceContext.AddMessage(
                        context.GetPolicy<KnownResultCodes>().Error,
                        "PaymentRefundFailed",
                        new object[] { existingPayment.TransactionId },

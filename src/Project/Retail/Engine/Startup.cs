@@ -38,7 +38,7 @@ namespace Sitecore.Demo.Retail.Project.Engine
             services.ConfigureDataProtection(_configuration);
 
             _node = _hostEnv.CommerceNodeInitialize(_nodeInstanceId);
-            var environment = services.ConfigureCommerceEnvironment(_configuration, _node);
+            var environment = services.ConfigureCommerceEnvironment(_configuration, _node, this._hostServices);
 
             services.ConfigureCommerceNode(_configuration, _nodeInstanceId, environment, _node);
             services.AddOData();

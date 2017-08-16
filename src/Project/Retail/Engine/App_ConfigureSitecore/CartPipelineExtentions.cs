@@ -18,7 +18,7 @@ namespace Sitecore.Demo.Retail.Project.Engine.App_ConfigureSitecore
                 .ConfigurePipeline<ICalculateCartLinesPipeline>(builder => builder
                     .Add<PopulateCartLineItemsBlock>()
                     .Add<CalculateCartLinesPriceBlock>()
-                    .Add<ValidateCartLinesPriceBlock>()
+                    //.Add<ValidateCartLinesPriceBlock>()
                     .Add<CalculateCartLinesSubTotalsBlock>()
                     .Add<CalculateCartLinesFulfillmentBlock>()
                     .Add<ValidateCartCouponsBlock>()

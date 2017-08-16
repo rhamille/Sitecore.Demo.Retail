@@ -57,7 +57,7 @@ namespace Sitecore.Demo.Retail.Feature.Fulfillment.Engine
             else if (arg.Lines.Count() != list.Count())
             {
                 // This should never happen.
-                string reason = context.CommerceContext.AddMessage(
+                string reason = await context.CommerceContext.AddMessage(
                     context.GetPolicy<KnownResultCodes>().ValidationError,
                     "CartLinesFulfillmentComponentNotFound",
                     new object[2] { arg.Lines.Count(), list.Count() },
@@ -94,7 +94,7 @@ namespace Sitecore.Demo.Retail.Feature.Fulfillment.Engine
                 if (fulfillmentFee == null)
                 {
                     // This should never happen.
-                    string reason = context.CommerceContext.AddMessage(
+                    string reason = await context.CommerceContext.AddMessage(
                         context.GetPolicy<KnownResultCodes>().ValidationError,
                         "FulfillmentFeeNotFound",
                         new object[3] { lineFulfillmentMethodName, lineFulfillmentTypeName, currency },

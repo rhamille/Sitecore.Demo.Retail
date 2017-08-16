@@ -39,7 +39,7 @@ namespace Sitecore.Demo.Retail.Feature.Payments.Engine.Pipelines.Blocks
             if (string.IsNullOrEmpty(payment.TransactionId))
             {
                 await this.MoveToProblemList(arg, context);
-                context.Abort(context.CommerceContext.AddMessage(
+                context.Abort(await context.CommerceContext.AddMessage(
                     context.GetPolicy<KnownResultCodes>().Error,
                     "InvalidOrMissingPropertyValue",
                     new object[] { "TransactionId" },
@@ -52,7 +52,7 @@ namespace Sitecore.Demo.Retail.Feature.Payments.Engine.Pipelines.Blocks
             if (string.IsNullOrEmpty(braintreeClientPolicy?.Environment) || string.IsNullOrEmpty(braintreeClientPolicy?.MerchantId)
                 || string.IsNullOrEmpty(braintreeClientPolicy?.PublicKey) || string.IsNullOrEmpty(braintreeClientPolicy?.PrivateKey))
             {
-                context.Abort(context.CommerceContext.AddMessage(
+                context.Abort(await context.CommerceContext.AddMessage(
                    context.GetPolicy<KnownResultCodes>().Error,
                    "InvalidClientPolicy",
                    new object[] { "BraintreeClientPolicy" },
@@ -90,7 +90,7 @@ namespace Sitecore.Demo.Retail.Feature.Payments.Engine.Pipelines.Blocks
                         var errorMessages = result.Errors.DeepAll().Aggregate(string.Empty, (current, error) => current + ("Error: " + (int)error.Code + " - " + error.Message + "\n"));
                         await this.MoveToProblemList(arg, context);
 
-                        context.Abort(context.CommerceContext.AddMessage(
+                        context.Abort(await context.CommerceContext.AddMessage(
                            context.GetPolicy<KnownResultCodes>().Error,
                            "SettlePaymentFailed",
                            new object[] { payment.TransactionId },
@@ -105,7 +105,7 @@ namespace Sitecore.Demo.Retail.Feature.Payments.Engine.Pipelines.Blocks
             }
             catch (BraintreeException ex)
             {
-                context.Abort(context.CommerceContext.AddMessage(
+                context.Abort(await context.CommerceContext.AddMessage(
                    context.GetPolicy<KnownResultCodes>().Error,
                    "SettlePaymentFailed",
                    new object[] { payment.TransactionId },

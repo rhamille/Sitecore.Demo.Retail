@@ -35,8 +35,8 @@ namespace Sitecore.Demo.Retail.Feature.Payments.Engine
                 .ConfigurePipeline<ISettleSalesActivityPipeline>(d =>
                 {
                     d.Add<EnsureSettlePaymentRequestedBlock>().After<ValidateSalesActivityBlock>()
-                     .Add<ValidateSettlementBlock>().After<EnsureSettlePaymentRequestedBlock>()
-                     .Add<UpdateFederatedPaymentAfterSettlementBlock>().Before<PersistSalesActivityBlock>();
+                     .Add<ValidateSettlementBlock>().After<EnsureSettlePaymentRequestedBlock>();
+                     //.Add<UpdateFederatedPaymentAfterSettlementBlock>().Before<PersistSalesActivityBlock>();
                 })
 
                 .ConfigurePipeline<IRefundPaymentsPipeline>(d =>
