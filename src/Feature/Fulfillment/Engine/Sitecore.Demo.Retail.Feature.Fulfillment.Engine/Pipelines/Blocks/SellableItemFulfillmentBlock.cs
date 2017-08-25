@@ -38,7 +38,7 @@ namespace Sitecore.Demo.Retail.Feature.Fulfillment.Engine
 
             var product = context.CommerceContext.GetObjects<Product>().FirstOrDefault(p => p.ProductId.Equals(arg.FriendlyId, StringComparison.OrdinalIgnoreCase));
 
-            if (product[FulfillmentConstants.ProductAttributes.FulfillmentTypeAttributeName] != null)
+            if (product.HasProperty(FulfillmentConstants.ProductAttributes.FulfillmentTypeAttributeName) && product[FulfillmentConstants.ProductAttributes.FulfillmentTypeAttributeName] != null)
             {
                 arg.GetComponent<FulfillmentFeeComponent>().FulfillmentTypeName = product[FulfillmentConstants.ProductAttributes.FulfillmentTypeAttributeName].ToString();
             }

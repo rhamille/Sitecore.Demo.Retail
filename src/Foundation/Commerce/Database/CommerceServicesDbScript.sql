@@ -1,89 +1,89 @@
 USE [master]
 GO
 
-IF  EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N'demo.local_SitecoreCommerce.SharedEnvironments')
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] set single_user with rollback immediate
-DROP DATABASE [demo.local_SitecoreCommerce.SharedEnvironments]
+IF  EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N'habitat.commerceengine.dev.local_SharedEnvironments')
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] set single_user with rollback immediate
+DROP DATABASE [habitat.commerceengine.dev.local_SharedEnvironments]
 GO
 
-IF  EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N'demo.local_SitecoreCommerce.Global')
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] set single_user with rollback immediate
-DROP DATABASE [demo.local_SitecoreCommerce.Global]
+IF  EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N'habitat.commerceengine.dev.local_Global')
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] set single_user with rollback immediate
+DROP DATABASE [habitat.commerceengine.dev.local_Global]
 GO
 
-CREATE DATABASE [demo.local_SitecoreCommerce.SharedEnvironments]
+CREATE DATABASE [habitat.commerceengine.dev.local_SharedEnvironments]
 GO
 
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] MODIFY FILE
-( NAME = N'demo.local_SitecoreCommerce.SharedEnvironments' , SIZE = 1GB , MAXSIZE = 6GB, FILEGROWTH = 1GB )
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] MODIFY FILE
+( NAME = N'habitat.commerceengine.dev.local_SharedEnvironments' , SIZE = 1GB , MAXSIZE = 6GB, FILEGROWTH = 1GB )
 GO
 
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] MODIFY FILE
-( NAME = N'demo.local_SitecoreCommerce.SharedEnvironments_log' , SIZE = 100MB , MAXSIZE = 1GB , FILEGROWTH = 20MB)
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] MODIFY FILE
+( NAME = N'habitat.commerceengine.dev.local_SharedEnvironments_log' , SIZE = 100MB , MAXSIZE = 1GB , FILEGROWTH = 20MB)
 GO
 
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET COMPATIBILITY_LEVEL = 110
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET COMPATIBILITY_LEVEL = 110
 GO
 
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET ANSI_NULL_DEFAULT OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET ANSI_NULL_DEFAULT OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET ANSI_NULLS OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET ANSI_NULLS OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET ANSI_PADDING OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET ANSI_PADDING OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET ANSI_WARNINGS OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET ANSI_WARNINGS OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET ARITHABORT OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET ARITHABORT OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET AUTO_CLOSE OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET AUTO_CLOSE OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET AUTO_SHRINK OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET AUTO_SHRINK OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET AUTO_UPDATE_STATISTICS ON 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET AUTO_UPDATE_STATISTICS ON 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET CURSOR_CLOSE_ON_COMMIT OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET CURSOR_CLOSE_ON_COMMIT OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET CURSOR_DEFAULT  GLOBAL 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET CURSOR_DEFAULT  GLOBAL 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET CONCAT_NULL_YIELDS_NULL OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET CONCAT_NULL_YIELDS_NULL OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET NUMERIC_ROUNDABORT OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET NUMERIC_ROUNDABORT OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET QUOTED_IDENTIFIER OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET QUOTED_IDENTIFIER OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET RECURSIVE_TRIGGERS OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET RECURSIVE_TRIGGERS OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET DISABLE_BROKER 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET DISABLE_BROKER 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET DATE_CORRELATION_OPTIMIZATION OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET DATE_CORRELATION_OPTIMIZATION OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET TRUSTWORTHY OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET TRUSTWORTHY OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET ALLOW_SNAPSHOT_ISOLATION OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET PARAMETERIZATION SIMPLE 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET PARAMETERIZATION SIMPLE 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET READ_COMMITTED_SNAPSHOT OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET READ_COMMITTED_SNAPSHOT OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET HONOR_BROKER_PRIORITY OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET HONOR_BROKER_PRIORITY OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET RECOVERY SIMPLE 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET RECOVERY SIMPLE 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET MULTI_USER 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET MULTI_USER 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET PAGE_VERIFY CHECKSUM  
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET PAGE_VERIFY CHECKSUM  
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET DB_CHAINING OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET DB_CHAINING OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET TARGET_RECOVERY_TIME = 0 SECONDS 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET TARGET_RECOVERY_TIME = 0 SECONDS 
 GO
-/******ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET DELAYED_DURABILITY = DISABLED 
+/******ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET DELAYED_DURABILITY = DISABLED 
 GO ******/
-USE [demo.local_SitecoreCommerce.SharedEnvironments]
+USE [habitat.commerceengine.dev.local_SharedEnvironments]
 GO
 
 /****** Object:  Table [dbo].[Versions]    Script Date: 4/26/2016 11:46:17 AM ******/
@@ -406,7 +406,7 @@ as
 set nocount on
 
 -- If the list entry already exists, do not duplicate it
-IF NOT EXISTS (SELECT [ListName],[EnvironmentId],[CommerceEntityId] FROM [demo.local_SitecoreCommerce.SharedEnvironments].[dbo].[CommerceLists] 
+IF NOT EXISTS (SELECT [ListName],[EnvironmentId],[CommerceEntityId] FROM [habitat.commerceengine.dev.local_SharedEnvironments].[dbo].[CommerceLists] 
 WITH (updlock, rowlock, holdlock)
 WHERE [EnvironmentId] = @EnvironmentId AND [ListName] = @ListName AND [CommerceEntityId] = @CommerceEntityId )
 BEGIN
@@ -504,7 +504,7 @@ GO
 
 USE [master]
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.SharedEnvironments] SET  READ_WRITE 
+ALTER DATABASE [habitat.commerceengine.dev.local_SharedEnvironments] SET  READ_WRITE 
 GO
 
 USE [master]
@@ -514,7 +514,7 @@ USE [master]
 	DECLARE @roleName VARCHAR(100)
 	DECLARE @dynamicSQL VARCHAR(MAX)
 
-	SET @databaseName = 'demo.local_SitecoreCommerce.SharedEnvironments'
+	SET @databaseName = 'habitat.commerceengine.dev.local_SharedEnvironments'
 	SET @userName = HOST_NAME() + '\HabitatRuntimeUser'
 	SET @roleName = 'db_owner'
 
@@ -544,79 +544,79 @@ USE [master]
 		'END;'
 	EXEC( @dynamicSQL)
 	
-CREATE DATABASE [demo.local_SitecoreCommerce.Global]
+CREATE DATABASE [habitat.commerceengine.dev.local_Global]
 GO
 
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] MODIFY FILE
-( NAME = N'demo.local_SitecoreCommerce.Global' , SIZE = 100MB , MAXSIZE = 1GB, FILEGROWTH = 5024KB )
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] MODIFY FILE
+( NAME = N'habitat.commerceengine.dev.local_Global' , SIZE = 100MB , MAXSIZE = 1GB, FILEGROWTH = 5024KB )
 GO
 
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] MODIFY FILE
-( NAME = N'demo.local_SitecoreCommerce.Global_log' , SIZE = 50MB , MAXSIZE = 1GB , FILEGROWTH = 5024KB )
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] MODIFY FILE
+( NAME = N'habitat.commerceengine.dev.local_Global_log' , SIZE = 50MB , MAXSIZE = 1GB , FILEGROWTH = 5024KB )
 GO
 
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET COMPATIBILITY_LEVEL = 110
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET COMPATIBILITY_LEVEL = 110
 GO
 
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET ANSI_NULL_DEFAULT OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET ANSI_NULL_DEFAULT OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET ANSI_NULLS OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET ANSI_NULLS OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET ANSI_PADDING OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET ANSI_PADDING OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET ANSI_WARNINGS OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET ANSI_WARNINGS OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET ARITHABORT OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET ARITHABORT OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET AUTO_CLOSE OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET AUTO_CLOSE OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET AUTO_SHRINK OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET AUTO_SHRINK OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET AUTO_UPDATE_STATISTICS OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET AUTO_UPDATE_STATISTICS OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET CURSOR_CLOSE_ON_COMMIT OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET CURSOR_CLOSE_ON_COMMIT OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET CURSOR_DEFAULT  GLOBAL 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET CURSOR_DEFAULT  GLOBAL 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET CONCAT_NULL_YIELDS_NULL OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET CONCAT_NULL_YIELDS_NULL OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET NUMERIC_ROUNDABORT OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET NUMERIC_ROUNDABORT OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET QUOTED_IDENTIFIER OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET QUOTED_IDENTIFIER OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET RECURSIVE_TRIGGERS OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET RECURSIVE_TRIGGERS OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET  DISABLE_BROKER 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET  DISABLE_BROKER 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET DATE_CORRELATION_OPTIMIZATION OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET DATE_CORRELATION_OPTIMIZATION OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET TRUSTWORTHY OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET TRUSTWORTHY OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET ALLOW_SNAPSHOT_ISOLATION OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET PARAMETERIZATION SIMPLE 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET PARAMETERIZATION SIMPLE 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET READ_COMMITTED_SNAPSHOT OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET READ_COMMITTED_SNAPSHOT OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET HONOR_BROKER_PRIORITY OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET HONOR_BROKER_PRIORITY OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET RECOVERY SIMPLE 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET RECOVERY SIMPLE 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET  MULTI_USER 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET  MULTI_USER 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET PAGE_VERIFY CHECKSUM  
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET PAGE_VERIFY CHECKSUM  
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET DB_CHAINING OFF 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET DB_CHAINING OFF 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET TARGET_RECOVERY_TIME = 0 SECONDS 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET TARGET_RECOVERY_TIME = 0 SECONDS 
 GO
-/******ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET DELAYED_DURABILITY = DISABLED 
+/******ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET DELAYED_DURABILITY = DISABLED 
 GO ******/
-USE [demo.local_SitecoreCommerce.Global]
+USE [habitat.commerceengine.dev.local_Global]
 GO
 
 /****** Object:  Table [dbo].[Versions]    Script Date: 4/26/2016 11:46:17 AM ******/
@@ -919,7 +919,7 @@ as
 set nocount on
 
 -- If the list entry already exists, do not duplicate it
-IF NOT EXISTS (SELECT [ListName], [EnvironmentId],[CommerceEntityId] FROM [demo.local_SitecoreCommerce.Global].[dbo].[CommerceLists] 
+IF NOT EXISTS (SELECT [ListName], [EnvironmentId],[CommerceEntityId] FROM [habitat.commerceengine.dev.local_Global].[dbo].[CommerceLists] 
 WITH (updlock, rowlock, holdlock)
 WHERE [ListName] = @ListName  and [CommerceEntityId] = @CommerceEntityId AND [EnvironmentId] = @EnvironmentId)
 BEGIN
@@ -1030,7 +1030,7 @@ GO
 
 USE [master]
 GO
-ALTER DATABASE [demo.local_SitecoreCommerce.Global] SET  READ_WRITE 
+ALTER DATABASE [habitat.commerceengine.dev.local_Global] SET  READ_WRITE 
 GO
 
 USE [master]
@@ -1040,7 +1040,7 @@ USE [master]
 	DECLARE @roleName VARCHAR(100)
 	DECLARE @dynamicSQL VARCHAR(MAX)
 
-	SET @databaseName = 'demo.local_SitecoreCommerce.Global'
+	SET @databaseName = 'habitat.commerceengine.dev.local_Global'
 	SET @userName = HOST_NAME() + '\HabitatRuntimeUser'
 	SET @roleName = 'db_owner'
 
