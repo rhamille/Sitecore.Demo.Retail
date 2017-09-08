@@ -99,6 +99,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{9BCD92
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sitecore.Demo.Retail.Feature.Fulfillment.Engine", "src\Feature\Fulfillment\Engine\Sitecore.Demo.Retail.Feature.Fulfillment.Engine\Sitecore.Demo.Retail.Feature.Fulfillment.Engine.xproj", "{DB15884B-EE26-4E5E-9B83-E036F73509EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Commerce.ServiceProxy", "..\..\Repo\Sitecore.Demo.Retail\src\Foundation\Commerce\Website\Sitecore.Commerce.ServiceProxy\Sitecore.Foundation.Commerce.ServiceProxy.csproj", "{2E4655C5-9810-4A9A-8732-9A8411AE1EF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -172,6 +174,12 @@ Global
 		{DB15884B-EE26-4E5E-9B83-E036F73509EA}.Demo-Retail|Any CPU.Build.0 = Debug|Any CPU
 		{DB15884B-EE26-4E5E-9B83-E036F73509EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB15884B-EE26-4E5E-9B83-E036F73509EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E4655C5-9810-4A9A-8732-9A8411AE1EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E4655C5-9810-4A9A-8732-9A8411AE1EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E4655C5-9810-4A9A-8732-9A8411AE1EF2}.Demo-Retail|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E4655C5-9810-4A9A-8732-9A8411AE1EF2}.Demo-Retail|Any CPU.Build.0 = Debug|Any CPU
+		{2E4655C5-9810-4A9A-8732-9A8411AE1EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E4655C5-9810-4A9A-8732-9A8411AE1EF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -211,5 +219,6 @@ Global
 		{D7AB4B48-D3D1-4931-B5FF-532E811E3DAA} = {C847060A-D78A-4219-B5D2-088C20B4E3D5}
 		{9BCD92A2-AF04-45B0-B468-EEABC24C57E6} = {D7AB4B48-D3D1-4931-B5FF-532E811E3DAA}
 		{DB15884B-EE26-4E5E-9B83-E036F73509EA} = {9BCD92A2-AF04-45B0-B468-EEABC24C57E6}
+		{2E4655C5-9810-4A9A-8732-9A8411AE1EF2} = {4FB59E30-C4E0-4D12-BA4F-4536550B3C89}
 	EndGlobalSection
 EndGlobal
