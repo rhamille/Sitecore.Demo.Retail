@@ -1,0 +1,18 @@
+﻿---
+ID: "b42be8a3-cc18-4308-b791-4d754e233808"
+Parent: "c5b2c3e4-6041-4d0a-ba49-3f42de45cd46"
+Template: "ac7394d5-2aa7-4fdb-a7d8-b1b87f9fa661"
+Path: /sitecore/content/wisbis/Global/Links/Customer Service
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170105T033331Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

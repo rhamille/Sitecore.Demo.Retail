@@ -1,0 +1,25 @@
+﻿---
+ID: "e73eb09b-7852-437f-ad5e-ed1031fef696"
+Parent: "b42be8a3-cc18-4308-b791-4d754e233808"
+Template: "390333c8-751b-4332-84a3-6360b969a19f"
+Path: /sitecore/content/wisbis/Global/Links/Customer Service/News
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: News
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170105T042719Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "fe71c30e-f07d-4052-8594-c3028cd76e1f"
+      Hint: Link
+      Value: |
+        <link id="{8A29131E-BF21-4DA0-9D07-FE19033E3D09}" querystring="" target="" text="" anchor="" url="/Storefront/Home/Customer Service/News" title="" class="" linktype="internal" />

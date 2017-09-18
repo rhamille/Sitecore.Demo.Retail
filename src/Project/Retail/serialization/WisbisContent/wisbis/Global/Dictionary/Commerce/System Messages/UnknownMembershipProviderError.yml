@@ -1,0 +1,21 @@
+﻿---
+ID: "899bae1b-269b-4e79-8b1f-0e9a5fb93f6a"
+Parent: "b67e580c-88e7-4628-9b3f-cf4c04aff72e"
+Template: "ec4dd3f2-590d-404b-9189-2a12679749cc"
+Path: /sitecore/content/wisbis/Global/Dictionary/Commerce/System Messages/UnknownMembershipProviderError
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150416T064123Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "ddacdd55-5b08-405f-9e58-04f09aed640a"
+      Hint: Phrase
+      Value: An unknown error occurred. Please verify your entry and try again. If the problem persists, please contact your system administrator.

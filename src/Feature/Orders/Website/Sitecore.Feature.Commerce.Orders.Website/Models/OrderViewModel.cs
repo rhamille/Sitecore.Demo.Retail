@@ -13,6 +13,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Models
 
         public bool IsItemShipping { get; set; }
         public string OrderId { get; set; }
+        public string UserId { get; set; }
         public string ExternalId { get; set; }
         public DateTime LastModified { get; set; }
         public DateTime Created { get; set; }

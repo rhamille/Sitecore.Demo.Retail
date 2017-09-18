@@ -1,0 +1,14 @@
+﻿---
+ID: "14d27451-3845-49de-a361-e154b0d7c0a0"
+Parent: "4a6e299e-0456-4a4a-9372-2432014596e0"
+Template: "067ec866-b3fb-485b-bb49-6151fb086e78"
+Path: /sitecore/content/wisbis/Global/Map Points
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160129T052348Z

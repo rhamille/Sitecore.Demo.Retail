@@ -36,6 +36,7 @@ using Sitecore.Foundation.Commerce.Website.Models;
 using Sitecore.Foundation.Commerce.Website.Models.InputModels;
 using Sitecore.Foundation.Dictionary.Repositories;
 using Sitecore.Security.Authentication;
+using Sitecore.Security.Domains;
 using CommerceUser = Sitecore.Commerce.Entities.Customers.CommerceUser;
 
 namespace Sitecore.Foundation.Commerce.Website.Managers
@@ -60,8 +61,13 @@ namespace Sitecore.Foundation.Commerce.Website.Managers
         {
             Assert.ArgumentNotNullOrEmpty(userName, nameof(userName));
             Assert.ArgumentNotNullOrEmpty(password, nameof(password));
-
-            if (!AuthenticationManager.Login(userName, password, persistent))
+            var accountName = string.Empty;
+            var domain = Domain.GetDomain("CommerceUsers");
+            if (domain != null)
+            {
+                accountName = domain.GetFullName(userName);
+            }
+            if (!AuthenticationManager.Login(accountName, password, persistent))
             {
                 return false;
             }

@@ -1,0 +1,14 @@
+﻿---
+ID: "c5b2c3e4-6041-4d0a-ba49-3f42de45cd46"
+Parent: "4a6e299e-0456-4a4a-9372-2432014596e0"
+Template: "ac7394d5-2aa7-4fdb-a7d8-b1b87f9fa661"
+Path: /sitecore/content/wisbis/Global/Links
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150910T050716Z

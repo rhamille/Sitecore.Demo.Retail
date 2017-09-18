@@ -33,6 +33,7 @@ namespace Sitecore.Feature.Commerce.Customers.Website
             new ApiControllerMapping("account-addressmodify", "Customers", "AddressModify"),
             new ApiControllerMapping("account-updateprofile", "Customers", "UpdateProfile"),
             new ApiControllerMapping("account-changepassword", "Customers", "ChangePassword"),
+            new ApiControllerMapping("account-login", "Customers", "Login"),
         };
 
         public static void RegisterRoutes(RouteCollection routes)

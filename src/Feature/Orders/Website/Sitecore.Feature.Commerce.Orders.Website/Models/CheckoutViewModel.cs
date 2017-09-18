@@ -10,7 +10,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Models
     public class CheckoutViewModel
     {
         public CommerceCart Cart { get; set; }
-
+        public string OrderId { get; set; }
         /// <summary>
         ///   This collection holds all countries and their provinces (if any).
         ///   Each country and province is expressed as "code|name".  For example,

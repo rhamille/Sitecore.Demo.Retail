@@ -131,6 +131,9 @@
     <Content Include="App_Config\Include\Project\Project.Retail.Website.config" />
     <Content Include="App_Config\Include\zzz\z.Sitecore.Demo.Retail.DevSettings.config" />
     <Content Include="App_Config\Include\Project\Project.Retail.Website.Serialization.config" />
+    <Content Include="Assets\Images\SAP_Ariba_logo.png" />
+    <Content Include="Assets\Images\sap_ariba_logo.svg" />
+    <Content Include="Global.asax" />
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
@@ -152,11 +155,15 @@
     <Content Include="styles\nite-commerce\_overrides.scss" />
     <Content Include="styles\nite-commerce\_variables.scss" />
     <Content Include="styles\nite-commerce.scss" />
+    <Content Include="Views\Retail\Layouts\Wisbis.cshtml" />
     <None Include="Web.config">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Infrastructure\Pipelines\RaiseCommerceCultureChosenPageEvent.cs" />
     <Compile Include="Infrastructure\Pipelines\SetProductCatalogMetadata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

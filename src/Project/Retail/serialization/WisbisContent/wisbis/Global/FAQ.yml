@@ -1,0 +1,18 @@
+﻿---
+ID: "7758fdee-1891-434e-b018-08fe8795398e"
+Parent: "4a6e299e-0456-4a4a-9372-2432014596e0"
+Template: "41da2d61-d85a-40f1-be69-ddd18dd1bc93"
+Path: /sitecore/content/wisbis/Global/FAQ
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160301T102648Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,18 @@
+﻿---
+ID: "e968b479-e924-4013-8879-ee77671c75d2"
+Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
+Template: "0643d9d4-f30b-4b07-91d0-289cc324c9cf"
+Path: /sitecore/content/wisbis
+DB: master
+Languages:
+- Language: en
+  Fields:
+  - ID: "53b5af0a-265f-4e60-b2b2-4576ce0beccf"
+    Hint: Theme
+    Value: "{B4640F47-F4FE-41E2-AAC7-713C8179622C}"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170914T065152Z

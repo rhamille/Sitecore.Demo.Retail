@@ -144,6 +144,7 @@
     <Compile Include="Models\CardPaymentAcceptUrlApiModel.cs" />
     <Compile Include="Models\ChangePasswordApiModel.cs" />
     <Compile Include="Models\ForgotPasswordApiModel.cs" />
+    <Compile Include="Models\LoginApiModel.cs" />
     <Compile Include="Models\ProfileApiModel.cs" />
     <Compile Include="Models\RegisterApiModel.cs" />
     <Compile Include="Models\UserApiModel.cs" />

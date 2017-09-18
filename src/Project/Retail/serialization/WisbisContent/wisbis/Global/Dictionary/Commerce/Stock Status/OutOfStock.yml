@@ -1,0 +1,21 @@
+﻿---
+ID: "299ab043-a17a-4c0f-9354-7f966bf9f9ee"
+Parent: "343253c8-b06c-4a9b-b024-99d3e0931fb7"
+Template: "ec4dd3f2-590d-404b-9189-2a12679749cc"
+Path: /sitecore/content/wisbis/Global/Dictionary/Commerce/Stock Status/OutOfStock
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150223T143313Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "ddacdd55-5b08-405f-9e58-04f09aed640a"
+      Hint: Phrase
+      Value: "Out-Of-Stock"

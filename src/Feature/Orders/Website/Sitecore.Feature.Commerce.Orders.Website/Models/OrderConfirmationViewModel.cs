@@ -22,6 +22,10 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Models
     {
         public string ConfirmationId { get; set; }
 
+        public string OrderId { get; set; }
+
+        public string UserId { get; set; }
+
         public string OrderStatus { get; set; }
 
         public void Initialize(Rendering renderings, string confirmationId, string orderStatus)

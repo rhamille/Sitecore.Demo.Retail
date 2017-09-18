@@ -18,6 +18,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web.Mvc;
 using System.Web.UI;
 using Sitecore.Configuration;
@@ -123,6 +124,17 @@ namespace Sitecore.Feature.Commerce.Customers.Website.Controllers
             model.TelephoneNumber = user.Phone as string;
 
             return View(model);
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        public ActionResult Login(LoginApiModel model)
+        {
+            var success = this.AccountManager.Login(model.Email, model.Password, true);
+            Session["PunchOut"] = false;
+            if (success)
+                Session["PunchOut"] = true;
+            return new HttpStatusCodeResult(success ? HttpStatusCode.OK : HttpStatusCode.BadRequest);  // OK = 200
         }
 
         [HttpGet]
@@ -405,7 +417,7 @@ namespace Sitecore.Feature.Commerce.Customers.Website.Controllers
                 result.SetErrors(response.ServiceProviderResult);
                 if (response.ServiceProviderResult.Success && !string.IsNullOrWhiteSpace(model.Password) && !string.IsNullOrWhiteSpace(model.PasswordRepeat))
                 {
-                    var changePasswordModel = new ChangePasswordInputModel {NewPassword = model.Password, ConfirmPassword = model.PasswordRepeat};
+                    var changePasswordModel = new ChangePasswordInputModel { NewPassword = model.Password, ConfirmPassword = model.PasswordRepeat };
                     var passwordChangeResponse = AccountManager.UpdateUserPassword(CommerceUserContext.Current.UserName, changePasswordModel);
                     result.SetErrors(passwordChangeResponse.ServiceProviderResult);
                     if (passwordChangeResponse.ServiceProviderResult.Success)

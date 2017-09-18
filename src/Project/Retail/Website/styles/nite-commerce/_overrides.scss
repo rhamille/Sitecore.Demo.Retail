@@ -15,11 +15,22 @@
     }
 }
 
+.navbar {
+    padding: 30px 0;
+}
+
 /* Dropdown Minicart styles */
 
 .minicart-content {
     max-height: 405px;
     overflow-y: auto;
+}
+
+.ariba-logo {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 300px;
 }
 
 /* Styles for MVC validation helpers*/
@@ -48,4 +59,8 @@
 .headline-related {
     padding: 50px 0;
     border-bottom: 1px solid rgba(255,255,255,.4);
+}
+
+iframe {
+    border-top: 1px solid gray;
 }

@@ -1,0 +1,24 @@
+﻿---
+ID: "38e2c95d-412e-4950-8459-7bcdf979a8fc"
+Parent: "d7671e81-8224-437c-8a18-f0555d2f153c"
+Template: "d86ac339-3643-4617-b50e-d6c45f4773c9"
+Path: /sitecore/content/wisbis/Global/Product Search Lists/Recommended Products
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20141022T085904
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "bb8b5123-fd0c-48df-b908-b59c6d67d9cf"
+      Hint: Named Searches
+      Type: TreelistEx
+      Value: |
+        {C85426EB-2702-47EC-9BAC-44FEE195218F}
+        {42542F09-0874-4771-8DC6-B7F4CA385923}

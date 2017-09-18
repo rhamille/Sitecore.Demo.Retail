@@ -1,0 +1,18 @@
+﻿---
+ID: "2573fd94-3497-4d97-a6b3-d021f25a29e8"
+Parent: "c5b2c3e4-6041-4d0a-ba49-3f42de45cd46"
+Template: "ac7394d5-2aa7-4fdb-a7d8-b1b87f9fa661"
+Path: /sitecore/content/wisbis/Global/Links/Primary Products
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170105T033225Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

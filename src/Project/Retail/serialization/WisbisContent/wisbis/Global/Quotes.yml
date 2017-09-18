@@ -1,0 +1,14 @@
+﻿---
+ID: "03357c4f-03b6-4bd4-b4a9-c96b7131b7e6"
+Parent: "4a6e299e-0456-4a4a-9372-2432014596e0"
+Template: "a8f1b162-041f-46bf-81eb-5213ae8bc579"
+Path: /sitecore/content/wisbis/Global/Quotes
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151124T105754Z

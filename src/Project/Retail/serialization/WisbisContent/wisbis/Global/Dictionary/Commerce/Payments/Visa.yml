@@ -1,0 +1,17 @@
+﻿---
+ID: "803b33c9-b83c-4500-8a53-3bc1c9fbccb5"
+Parent: "aeed5709-e5cb-4b4f-a543-fd14fb749136"
+Template: "ec4dd3f2-590d-404b-9189-2a12679749cc"
+Path: /sitecore/content/wisbis/Global/Dictionary/Commerce/Payments/Visa
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160209T093028Z
+    - ID: "ddacdd55-5b08-405f-9e58-04f09aed640a"
+      Hint: Phrase
+      Value: Visa

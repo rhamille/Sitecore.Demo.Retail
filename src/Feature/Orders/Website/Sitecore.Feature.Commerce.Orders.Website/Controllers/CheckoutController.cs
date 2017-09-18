@@ -361,6 +361,8 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
             if (!string.IsNullOrWhiteSpace(confirmationId))
             {
                 var response = OrderManager.GetOrderDetails(CommerceUserContext.Current.UserId, confirmationId);
+                viewModel.OrderId = response.Result.ExternalId;
+                viewModel.UserId = CommerceUserContext.Current.UserId;
                 if (response.ServiceProviderResult.Success)
                 {
                     var order = response.Result;
@@ -645,7 +647,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 #warning Please refactor
         private void GetPaymentMethods(CheckoutApiModel result)
         {
-            var paymentMethodList = new List<PaymentMethod>();
+            var paymentMethodList = new List<Sitecore.Commerce.Entities.Payments.PaymentMethod>();
 
             var response = PaymentManager.GetPaymentMethods(CommerceUserContext.Current.UserId, new PaymentOption { PaymentOptionType = PaymentOptionType.PayCard });
             if (response.ServiceProviderResult.Success)

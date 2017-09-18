@@ -15,10 +15,10 @@ $(document).ready(function () {
 
         if ($('input:radio[name=SignupSelection]:checked').val() == "NewAccount") {
             $(".new-user").attr("disabled", false);
-            $("#LinkupEmail").attr("disabled", true);            
+            $("#LinkupEmail").attr("disabled", true);
         } else {
             $(".new-user").attr("disabled", true);
-            $("#LinkupEmail").attr("disabled", false);           
+            $("#LinkupEmail").attr("disabled", false);
         }
     });
 
@@ -43,18 +43,8 @@ function RegisterFailure(data) {
 function SetLoadingButton(cntx) {
     $(document).ready(function () {
         $("#registerButton").click(function (e) {
-            if ($('input:radio[name=SignupSelection]:checked').val() == "NewAccount") {
-                if ($("#UserName").val().length == 0) {
-                    e.preventDefault();
-                }
-            }
-            else if ($('input:radio[name=SignupSelection]:checked').val() == "LinkAccount") {
-                if ($("#LinkupEmail").val().length == 0) {
-                    e.preventDefault();
-                }
-            } else {
+            if ($("#UserName").val().length == 0) {
                 e.preventDefault();
-                throw "Sign up option not supported.";
             }
         })
 

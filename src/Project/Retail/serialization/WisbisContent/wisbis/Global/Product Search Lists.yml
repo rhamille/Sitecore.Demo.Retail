@@ -1,0 +1,14 @@
+﻿---
+ID: "d7671e81-8224-437c-8a18-f0555d2f153c"
+Parent: "4a6e299e-0456-4a4a-9372-2432014596e0"
+Template: "0f7a8207-3b70-4ee3-a45a-60579092f4e1"
+Path: /sitecore/content/wisbis/Global/Product Search Lists
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20141022T085841

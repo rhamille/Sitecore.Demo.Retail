@@ -1,0 +1,17 @@
+﻿---
+ID: "c6fa4163-321d-42fe-a06f-977688ce7b6c"
+Parent: "b67e580c-88e7-4628-9b3f-cf4c04aff72e"
+Template: "ec4dd3f2-590d-404b-9189-2a12679749cc"
+Path: /sitecore/content/wisbis/Global/Dictionary/Commerce/System Messages/LinkupSucceeded
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160413T132339Z
+    - ID: "ddacdd55-5b08-405f-9e58-04f09aed640a"
+      Hint: Phrase
+      Value: "Congratulations! We were able to successfully link your '{0}' account with the {1} account belonging to '{2}'. Please sign in to access your account."

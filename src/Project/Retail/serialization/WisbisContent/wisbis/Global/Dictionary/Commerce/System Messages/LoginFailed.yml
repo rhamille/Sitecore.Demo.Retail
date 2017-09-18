@@ -1,0 +1,17 @@
+﻿---
+ID: "815a7038-770b-4430-b9b8-f1b351b3a441"
+Parent: "b67e580c-88e7-4628-9b3f-cf4c04aff72e"
+Template: "ec4dd3f2-590d-404b-9189-2a12679749cc"
+Path: /sitecore/content/wisbis/Global/Dictionary/Commerce/System Messages/LoginFailed
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160413T131920Z
+    - ID: "ddacdd55-5b08-405f-9e58-04f09aed640a"
+      Hint: Phrase
+      Value: "The provider {0} returned error code {1} while processing user's credentials."

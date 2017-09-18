@@ -1,0 +1,17 @@
+﻿---
+ID: "633fc2e2-2986-4ff8-93b2-e4b90e69bd7f"
+Parent: "b67e580c-88e7-4628-9b3f-cf4c04aff72e"
+Template: "ec4dd3f2-590d-404b-9189-2a12679749cc"
+Path: /sitecore/content/wisbis/Global/Dictionary/Commerce/System Messages/ActivationCodeSent
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160413T132237Z
+    - ID: "ddacdd55-5b08-405f-9e58-04f09aed640a"
+      Hint: Phrase
+      Value: "Congratulations! We were able to locate your account, and have sent an activation code to {0}."

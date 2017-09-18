@@ -1,0 +1,17 @@
+﻿---
+ID: "8a50a4e0-fcce-4e0e-ad27-c7d57be6c0a8"
+Parent: "aeed5709-e5cb-4b4f-a543-fd14fb749136"
+Template: "ec4dd3f2-590d-404b-9189-2a12679749cc"
+Path: /sitecore/content/wisbis/Global/Dictionary/Commerce/Payments/Mastercard
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160209T093011Z
+    - ID: "ddacdd55-5b08-405f-9e58-04f09aed640a"
+      Hint: Phrase
+      Value: Mastercard

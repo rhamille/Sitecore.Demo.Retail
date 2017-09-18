@@ -1,0 +1,14 @@
+﻿---
+ID: "868ed24b-1d2b-4b32-a4ab-1d6a624303fd"
+Parent: "4a6e299e-0456-4a4a-9372-2432014596e0"
+Template: "920a1781-559f-4e1c-bb2e-6b9a2113fe6b"
+Path: /sitecore/content/wisbis/Global/Media
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150901T054311Z

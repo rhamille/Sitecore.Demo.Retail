@@ -51,7 +51,7 @@
             if (isCategory && catalogItem != null)
             {
                 @:currentCategory = "@catalogItem.ID.ToString()";
-            }
+                                                                                            }
         }
     </script>
 
@@ -75,5 +75,66 @@
         @Html.Sitecore().Placeholder("page-sidebar")
     </div>
     @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
+    <script>
+        var docheight;
+        var resizeTimer;
+        //If the retail website is hosted in an iframe.
+        if (window.self !== window.top) {
+
+
+            $(document).ready(function () {
+                //Send message to iframe parent to resize iframe height. This will remove the scroll bar appearing around the iframe.
+                docheight = $("body")[0].clientHeight;
+                window.parent.postMessage({ eventType: "resize", height: docheight }, "http://wisbis.dev.local");
+
+                //if user is not authenticed
+                @if (Sitecore.Context.User.IsAuthenticated)
+                {
+                    <text>
+                    window.parent.postMessage({ eventType: "bodyload" }, "http://wisbis.dev.local");
+                    </text>
+                }
+            });
+
+            $(window).resize(function () {
+                //Send message to iframe parent to resize iframe height. This will remove the scroll bar appearing around the iframe.
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function () {
+                    if (docheight != $("body")[0].clientHeight) {
+                        docheight = $("body")[0].clientHeight;
+                        window.parent.postMessage({ eventType: "resize", height: docheight },
+                            "http://wisbis.dev.local");
+                    }
+
+                }, 200);
+            });
+
+            window.addEventListener("message", receiveMessage, false);
+
+            ///Handle Messages from iframe parent.
+            function receiveMessage(event) {
+                //only accept messages if the parent is from wisbis.dev.local.
+                if (event.origin !== "http://wisbis.dev.local")
+                    return;
+
+                if (event.data.eventType === "login") {
+                    $.ajax({
+                        type: "POST",
+                        url: "api/storefront/customers/login",
+                        cache: false,
+                        contentType: "application/json; charset=utf-8",
+                        data: JSON.stringify(event.data.value),
+                        success: function (data, textstatus, xhr) {
+                            window.parent.postMessage({ eventType: "login", result: xhr.status == 200 ? true : false }, "http://wisbis.dev.local");
+
+                        },
+                        error: function (data) {
+                            window.parent.postMessage({ eventType: "login", result: false }, "http://wisbis.dev.local");
+                        }
+                    });
+                }
+            }
+        }
+    </script>
 </body>
 </html>

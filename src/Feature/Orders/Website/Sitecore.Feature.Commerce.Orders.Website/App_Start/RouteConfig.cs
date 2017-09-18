@@ -42,8 +42,12 @@ namespace Sitecore.Feature.Commerce.Orders.Website
             new ApiControllerMapping("orders-recentorders", "Orders", "RecentOrders"),
             new ApiControllerMapping("orders-reorder", "Orders", "Reorder"),
             new ApiControllerMapping("orders-cancelorder", "Orders", "CancelOrder"),
-            new ApiControllerMapping("checkout-updatemodel", "Checkout", "UpdateModel")
-        };
+            new ApiControllerMapping("checkout-updatemodel", "Checkout", "UpdateModel"),
+            new ApiControllerMapping("orders-punchoutrequest", "Orders", "PunchoutOrderRequest")
+
+
+
+    };
 
         public static void RegisterRoutes(RouteCollection routes)
         {
@@ -52,7 +56,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website
                 routes.MapRoute(
                     apiInfo.Name,
                     apiInfo.Url,
-                    new {controller = apiInfo.Controller, action = apiInfo.Action, id = UrlParameter.Optional});
+                    new { controller = apiInfo.Controller, action = apiInfo.Action, id = UrlParameter.Optional });
             }
         }
     }

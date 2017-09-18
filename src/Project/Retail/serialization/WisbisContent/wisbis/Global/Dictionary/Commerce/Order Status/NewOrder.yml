@@ -1,0 +1,17 @@
+﻿---
+ID: "2497a053-793c-4550-86fd-9ae59c334826"
+Parent: "8cee29ce-c8ce-4784-a2e7-cd4ece2f6110"
+Template: "ec4dd3f2-590d-404b-9189-2a12679749cc"
+Path: /sitecore/content/wisbis/Global/Dictionary/Commerce/Order Status/NewOrder
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150927T134036Z
+    - ID: "ddacdd55-5b08-405f-9e58-04f09aed640a"
+      Hint: Phrase
+      Value: New Order

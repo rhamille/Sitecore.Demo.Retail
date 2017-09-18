@@ -1,0 +1,14 @@
+﻿---
+ID: "83f42de2-9451-477b-b474-15ead6ac8fda"
+Parent: "4a6e299e-0456-4a4a-9372-2432014596e0"
+Template: "29d4b405-39eb-487d-9d6b-3f8467ab167d"
+Path: /sitecore/content/wisbis/Global/Teasers
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150827T063033Z

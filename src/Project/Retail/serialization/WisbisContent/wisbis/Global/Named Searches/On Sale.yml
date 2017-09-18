@@ -1,0 +1,21 @@
+﻿---
+ID: "808bdeef-98c8-4338-9136-c518ab6897c3"
+Parent: "c1d5d64a-76f0-41c8-a6bb-5c4afafc60d5"
+Template: "dcf0567f-b98f-4f5b-9ac8-4d5b91b0404f"
+Path: /sitecore/content/wisbis/Global/Named Searches/On Sale
+DB: master
+SharedFields:
+- ID: "ac51462c-8a8d-493b-9492-34d1f26f20f1"
+  Hint: __Default Bucket Query
+  Value: "+commercesearchitemtype:product&+location:{08BFB57F-DAC9-4B11-90C5-5D19647899EF}&custom:_content|television&custom:_content|fridge&"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20141022T130036Z
+    - ID: "439cdd2a-66a9-4d67-913a-5b696327c867"
+      Hint: Title
+      Value: On Sale

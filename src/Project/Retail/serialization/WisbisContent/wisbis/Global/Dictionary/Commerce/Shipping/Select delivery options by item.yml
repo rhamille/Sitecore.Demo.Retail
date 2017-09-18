@@ -1,0 +1,17 @@
+﻿---
+ID: "5fd7077f-e67e-42e3-8e2a-d667a44c2638"
+Parent: "e151ec1d-582a-4442-877c-0426fb4420de"
+Template: "ec4dd3f2-590d-404b-9189-2a12679749cc"
+Path: /sitecore/content/wisbis/Global/Dictionary/Commerce/Shipping/Select delivery options by item
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160209T092821Z
+    - ID: "ddacdd55-5b08-405f-9e58-04f09aed640a"
+      Hint: Phrase
+      Value: Select delivery options by item

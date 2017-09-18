@@ -1,0 +1,14 @@
+﻿---
+ID: "7d919ed7-6157-4836-bd60-2eab22dbdbae"
+Parent: "4a6e299e-0456-4a4a-9372-2432014596e0"
+Template: "f6fa45fa-ed12-4423-aa07-38393f7be27f"
+Path: /sitecore/content/wisbis/Global/Mails
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150317T211934Z

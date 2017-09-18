@@ -53,6 +53,38 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Repositories
             };
         }
 
+        public OrderViewModel Get(string userid,string orderid)
+        {
+            var commerceOrder = OrderManager.GetOrderDetails(userid, orderid).Result;
+            if (commerceOrder == null)
+                return null;
+
+            var lines = CreateOrderLines(commerceOrder).ToList();
+            var commerceTotal = (CommerceTotal)commerceOrder.Total;
+            return new OrderViewModel()
+            {
+                IsItemShipping = commerceOrder.Shipping != null && commerceOrder.Shipping.Count > 1 && commerceOrder.Lines.Count > 1,
+                OrderId = GetOrderId(commerceOrder),
+                ExternalId = commerceOrder.ExternalId,
+                StatusText = OrderManager.GetOrderStatusName(commerceOrder.Status),
+                Status = commerceOrder.Status,
+                LastModified = commerceOrder.LastModified,
+                Created = commerceOrder.Created,
+                Url = $"/accountmanagement/myorder?id={commerceOrder.ExternalId}",
+                Lines = lines,
+                Subtotal = commerceTotal.Subtotal,
+                Currency = commerceTotal.CurrencyCode,
+                TotalSavings = commerceTotal.LineItemDiscountAmount + commerceTotal.OrderLevelDiscountAmount,
+                ShippingTotal = commerceTotal.ShippingTotal,
+                TaxTotal = commerceTotal.TaxTotal?.Amount ?? 0,
+                Total = commerceTotal.Amount,
+                ShippingAddresses = GetShippingAddresses(commerceOrder).ToList(),
+                BillingAddresses = GetBillingAddresses(commerceOrder).ToList(),
+                PaymentInfo = GetPaymentInfo(commerceOrder).ToList(),
+                Adjustments = commerceOrder.Adjustments?.Select(a => a.Description) ?? Enumerable.Empty<string>(),
+            };
+        }
+
         public OrderViewModel Get(string externalId)
         {
             if (externalId == null)
@@ -69,6 +101,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Repositories
             {
                 IsItemShipping = commerceOrder.Shipping != null && commerceOrder.Shipping.Count > 1 && commerceOrder.Lines.Count > 1,
                 OrderId = GetOrderId(commerceOrder),
+                UserId = CommerceUserContext.Current.UserId,
                 ExternalId = commerceOrder.ExternalId,
                 StatusText = OrderManager.GetOrderStatusName(commerceOrder.Status),
                 Status = commerceOrder.Status,
