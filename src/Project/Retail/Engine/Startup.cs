@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Sitecore.Commerce.Core;
 using Sitecore.Framework.Diagnostics;
 using Sitecore.Project.Commerce.Retail.Engine.App_Startup;
+using System.Threading.Tasks;
 
 namespace Sitecore.Project.Commerce.Retail.Engine
 {
@@ -67,6 +68,14 @@ namespace Sitecore.Project.Commerce.Retail.Engine
             startEnvironmentPipeline.Start(this._node, this._configuration);
 
             app.ConfigureOData(contextPipeline, contextOpsServiceApiPipeline, _node);
+
+            var environmentName = this._configuration.GetSection("AppSettings:EnvironmentName").Value;
+            if (!string.IsNullOrEmpty(environmentName))
+            {
+                _node = _hostEnv.CommerceNodeInitialize(_nodeInstanceId);
+                _node.AddDataMessage("EnvironmentStartup", $"StartEnvironment={environmentName}");
+                Task.Run(() => startEnvironmentPipeline.Run(environmentName, _node.GetPipelineContextOptions())).Wait();
+            }
         }
     }
 }

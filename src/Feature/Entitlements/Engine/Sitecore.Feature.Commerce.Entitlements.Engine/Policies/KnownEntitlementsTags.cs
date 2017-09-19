@@ -9,7 +9,7 @@ namespace Sitecore.Feature.Commerce.Entitlements.Engine.Policies
         {
             this.WarrantyTags = new List<string> { "Warranty" };
             this.InstallationTags = new List<string> { "Installation", "Service" };
-            this.DigitalProductTags = new List<string> { "OnlineTraining", "OnlineLearning", "Subscription", "DigitalSubscription" };
+            this.DigitalProductTags = new List<string> { "OnlineTraining", "OnlineLearning", "Subscription", "DigitalSubscription", "GiftCards" };
         }
 
         /// <summary>

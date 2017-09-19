@@ -9,7 +9,8 @@
     "Sitecore.Commerce.Plugin.Fulfillment": "1.2.159",
     "Sitecore.Commerce.Plugin.ManagedLists": "1.2.159",
     "Sitecore.Commerce.Plugin.Pricing": "1.2.159",
-    "Sitecore.Framework.Pipelines": "2.0.71"
+    "Sitecore.Framework.Pipelines": "2.0.71",
+    "Sitecore.Commerce.Plugin.GiftCards": "1.2.159"
   },
 
     "frameworks": {
