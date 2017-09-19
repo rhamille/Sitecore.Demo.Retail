@@ -35,7 +35,7 @@
 
 </head>
 
-<body class="@(Sitecore.Context.PageMode.IsExperienceEditor ? "header-static" : "") @(Sitecore.Context.PageMode.IsNormal ? "" : (Sitecore.Context.PageMode.IsExperienceEditor ? "pagemode-edit" : "pagemode-preview"))">
+<body class="wisbis @(Sitecore.Context.PageMode.IsExperienceEditor ? "header-static" : "") @(Sitecore.Context.PageMode.IsNormal ? "" : (Sitecore.Context.PageMode.IsExperienceEditor ? "pagemode-edit" : "pagemode-preview"))">
 
 
     <form id="_CRSFform" action="#" method="post">
@@ -104,7 +104,7 @@
 
     var iframe = $("iframe")[0].contentWindow;
     $(".order-document").hide();
-
+    $("iframe").show();
 
     // Listen to message from child window(iframe)
     eventer(messageEvent, function (e) {
@@ -113,7 +113,7 @@
             return;
 
         if (e.data.eventType === "resize") {
-            document.getElementById("retailFrame").height = e.data.height;
+            document.getElementById("retailFrame").height = e.data.height+10;
 
         } else if (e.data.eventType === "getorder") {
 
@@ -134,10 +134,10 @@
 
             if (!e.data.result) {
                 $("iframe").attr("src", "");
-                $("iframe").hide();
+             
                 document.getElementById("retailFrame").height = 0;
             } else {
-                $("iframe").show();
+              
             }
 
         } else if (e.data.eventType === "bodyload") {

@@ -88,7 +88,7 @@
                 window.parent.postMessage({ eventType: "resize", height: docheight }, "http://wisbis.dev.local");
 
                 //if user is not authenticed
-                @if (Sitecore.Context.User.IsAuthenticated)
+                @if (!Sitecore.Context.User.IsAuthenticated)
                 {
                     <text>
                     window.parent.postMessage({ eventType: "bodyload" }, "http://wisbis.dev.local");

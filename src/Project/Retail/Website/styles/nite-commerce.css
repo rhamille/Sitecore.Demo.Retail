@@ -12840,7 +12840,10 @@ footer .nav-service li a {
   #miniCart-responsive {
     display: none; } }
 
-.navbar {
+.wisbis main {
+  margin-top: 118px; }
+
+.wisbis .navbar {
   padding: 30px 0; }
 
 /* Dropdown Minicart styles */
@@ -12876,6 +12879,6 @@ footer .nav-service li a {
   padding: 50px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
 
-iframe {
+.wisbis iframe {
   border-top: 1px solid gray; }
 

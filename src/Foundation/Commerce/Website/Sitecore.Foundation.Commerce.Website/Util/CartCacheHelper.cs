@@ -16,6 +16,8 @@
 // -------------------------------------------------------------------------------------------
 
 using System;
+using System.Net;
+using System.Web;
 using Sitecore.Commerce.Connect.CommerceServer;
 using Sitecore.Commerce.Connect.CommerceServer.Caching;
 using Sitecore.Commerce.Connect.CommerceServer.Orders.Models;
@@ -75,7 +77,8 @@ namespace Sitecore.Foundation.Commerce.Website.Util
         private string GetCustomerId(string customerId)
         {
             Guid csCustomerId;
-            return Guid.TryParse(customerId, out csCustomerId) ? Guid.Parse(customerId).ToString("D") : customerId;
+            var custID = Guid.TryParse(customerId, out csCustomerId) ? Guid.Parse(customerId).ToString("D") : customerId;
+            return custID + "_" + System.Web.HttpContext.Current.Session.SessionID;
         }
 
         private static ICacheProvider GetCacheProvider()

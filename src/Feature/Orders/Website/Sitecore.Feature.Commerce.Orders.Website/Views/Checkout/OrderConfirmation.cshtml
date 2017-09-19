@@ -34,5 +34,8 @@
     </div>
 </div>
 <script type="text/javascript">
-    window.parent.postMessage({ eventType: "getorder", userid:@Model.UserId, orderid:@Model.OrderId }, "http://wisbis.dev.local");
+    if (window.self !== window.top) {
+        window.parent.postMessage({ eventType: "getorder", userid: @Model.UserId, orderid: @Model.OrderId },
+            "http://wisbis.dev.local");
+    }
 </script>

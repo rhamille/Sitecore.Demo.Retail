@@ -59,6 +59,36 @@
                             </a>
                         </td>
                     </tr>
+                    <tr class="row">
+                        <td class="hidden-xs">
+                            <a data-bind="attr: {href: model.LineHrefs[$data.ExternalCartLineId]}">
+                                <img class="img-responsive" data-bind="attr: {src: model.LineImgSrcs[$data.ExternalCartLineId]}">
+                            </a>
+                        </td>
+                        <td class="cart-info form-group">
+
+                            
+                            <select class="form-control sortDropdown" id="sortDropDown">
+                                <option value="">Relevance</option>
+                                <option value="listprice+">List Price (Asc)</option>
+                                <option value="listprice-">List Price (Desc)</option>
+                                <option value="brand+">Brand (Asc)</option>
+                                <option value="brand-">Brand (Desc)</option>
+                                <option value="rating+">Rating (Asc)</option>
+                                <option value="rating-">Rating (Desc)</option>
+                            </select>
+
+                        </td>
+                        <td class="cart-quantity" style="width: 10%;">
+                            <input pid="logo" type="text" class="form-control form-control-quantity" placeholder="1"     
+                                   onfocusout="var input = this; setTimeout(function() { }, 200);">
+                        </td>
+                        <td class="cart-quantity">
+                            <input pid="logoname" type="text" class="form-control form-control-quantity" placeholder="1"
+                                   onfocusout="var input = this; setTimeout(function() { }, 200);">
+                        </td>
+                        <td class="cart-total text-right"></td><td class="cart-delete"></td>
+</tr>
                 </tbody>
             </table>
         </div>
@@ -354,7 +384,7 @@
 <script src="/Scripts/Orders/main.js"></script>
 
 <script>
-    
+
     if (!String.prototype.repeat) {
         String.prototype.repeat = function(count) {
             'use strict';

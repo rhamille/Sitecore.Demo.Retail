@@ -29,6 +29,10 @@ using Sitecore.Links;
 
 namespace Sitecore.Feature.Commerce.Orders.Website.Models
 {
+    public class CartLineEmbellishmentsApiiModel : BaseApiModel
+    {
+      
+    }
     public class CartLineApiModel : BaseApiModel
     {
         public CartLineApiModel(CartLine line, Item productItem)
@@ -54,6 +58,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Models
         public string Color { get; set; }
         public string LineDiscount { get; set; }
         public List<string> DiscountOfferNames { get; set; }
+
         public string Quantity { get; set; }
         public string LinePrice { get; set; }
         public string LineTotal { get; set; }

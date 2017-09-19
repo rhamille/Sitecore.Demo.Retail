@@ -72,7 +72,7 @@ namespace Sitecore.Foundation.Commerce.Website.Managers
                 return new ManagerResponse<CartResult, CommerceCart>(result, cart);
             }
 
-            var cartResult = LoadCartByName(CommerceConstants.CartSettings.DefaultCartName, userId, refresh);
+            var cartResult = LoadCartByName(System.Web.HttpContext.Current.Session.SessionID, userId, refresh);
             if (cartResult.Success && cartResult.Cart != null)
             {
                 cart = cartResult.Cart as CommerceCart;
@@ -116,7 +116,7 @@ namespace Sitecore.Foundation.Commerce.Website.Managers
         {
             Assert.ArgumentNotNull(inputModelList, nameof(inputModelList));
 
-            var cartResult = LoadCartByName(CommerceConstants.CartSettings.DefaultCartName, userId, false);
+            var cartResult = LoadCartByName(System.Web.HttpContext.Current.Session.SessionID, userId, false);
             if (!cartResult.Success || cartResult.Cart == null)
             {
                 var message = DictionaryPhraseRepository.Current.Get("/System Messages/Cart/Cart Not Found Error", "Could not retrieve the cart for the current user");
@@ -171,7 +171,7 @@ namespace Sitecore.Foundation.Commerce.Website.Managers
         {
             Assert.ArgumentNotNullOrEmpty(externalCartLineId, nameof(externalCartLineId));
 
-            var cartResult = LoadCartByName(CommerceConstants.CartSettings.DefaultCartName, userId);
+            var cartResult = LoadCartByName(System.Web.HttpContext.Current.Session.SessionID, userId);
             if (!cartResult.Success || cartResult.Cart == null)
             {
                 var message = DictionaryPhraseRepository.Current.Get("/System Messages/Cart/Cart Not Found Error", "Could not retrieve the cart for the current user");
@@ -207,7 +207,7 @@ namespace Sitecore.Foundation.Commerce.Website.Managers
             Assert.ArgumentNotNull(inputModel, nameof(inputModel));
             Assert.ArgumentNotNullOrEmpty(inputModel.ExternalCartLineId, nameof(inputModel.ExternalCartLineId));
 
-            var cartResult = LoadCartByName(CommerceConstants.CartSettings.DefaultCartName, userId);
+            var cartResult = LoadCartByName(System.Web.HttpContext.Current.Session.SessionID, userId);
             if (!cartResult.Success || cartResult.Cart == null)
             {
                 var message = DictionaryPhraseRepository.Current.Get("/System Messages/Cart/Cart Not Found Error", "Could not retrieve the cart for the current user");
@@ -247,7 +247,7 @@ namespace Sitecore.Foundation.Commerce.Website.Managers
             Assert.ArgumentNotNullOrEmpty(promoCode, nameof(promoCode));
 
             var result = new AddPromoCodeResult {Success = false};
-            var cartResult = LoadCartByName(CommerceConstants.CartSettings.DefaultCartName, userId);
+            var cartResult = LoadCartByName(System.Web.HttpContext.Current.Session.SessionID, userId);
             if (!cartResult.Success || cartResult.Cart == null)
             {
                 var message = DictionaryPhraseRepository.Current.Get("/System Messages/Cart/Cart Not Found Error", "Could not retrieve the cart for the current user");
@@ -275,7 +275,7 @@ namespace Sitecore.Foundation.Commerce.Website.Managers
             Assert.ArgumentNotNullOrEmpty(promoCode, nameof(promoCode));
 
             var result = new RemovePromoCodeResult {Success = false};
-            var cartResult = LoadCartByName(CommerceConstants.CartSettings.DefaultCartName, userId);
+            var cartResult = LoadCartByName(System.Web.HttpContext.Current.Session.SessionID, userId);
             if (!cartResult.Success || cartResult.Cart == null)
             {
                 var message = DictionaryPhraseRepository.Current.Get("/System Messages/Cart/Cart Not Found Error", "Could not retrieve the cart for the current user");
@@ -391,7 +391,7 @@ namespace Sitecore.Foundation.Commerce.Website.Managers
             Assert.ArgumentNotNullOrEmpty(previousUserId, nameof(previousUserId));
             Assert.ArgumentNotNullOrEmpty(newUserId, nameof(newUserId));
 
-            var cartResult = LoadCartByName(CommerceConstants.CartSettings.DefaultCartName, newUserId, true);
+            var cartResult = LoadCartByName(System.Web.HttpContext.Current.Session.SessionID, newUserId, true);
             if (!cartResult.Success || cartResult.Cart == null)
             {
                 cartResult.SystemMessages.Add(new SystemMessage {Message = DictionaryPhraseRepository.Current.Get("/System Messages/Cart/Cart Not Found Error", "Could not retrieve the cart for the current user")});
