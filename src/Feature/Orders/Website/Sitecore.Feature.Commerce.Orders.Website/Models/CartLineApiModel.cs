@@ -29,19 +29,21 @@ using Sitecore.Links;
 
 namespace Sitecore.Feature.Commerce.Orders.Website.Models
 {
-    public class CartLineEmbellishmentsApiiModel : BaseApiModel
+    public class CartLineEmbellishmentsApiModel : BaseApiModel
     {
-      
+        public string ProductId { get; set; }
+        public string Quantity { get; set; }
+        public string Input { get; set; }
     }
     public class CartLineApiModel : BaseApiModel
     {
         public CartLineApiModel(CartLine line, Item productItem)
         {
-            var product = (CommerceCartProduct) line.Product;
+            var product = (CommerceCartProduct)line.Product;
 
             Title = product.DisplayName;
             Color = product.Properties["Color"] as string;
-            var total = (CommerceTotal) line.Total;
+            var total = (CommerceTotal)line.Total;
             LineDiscount = total.LineItemDiscountAmount.ToCurrency(total.CurrencyCode);
             Quantity = line.Quantity.ToString(Context.Language.CultureInfo);
             LinePrice = product.Price.Amount.ToCurrency(product.Price.CurrencyCode);
@@ -51,7 +53,15 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Models
             Image = (line as CommerceCartLineWithImages)?.DefaultImage?.ImageUrl(150, 150) ?? string.Empty;
 
             DiscountOfferNames = line.Adjustments.Select(a => a.Description).ToList();
+            Embellishment = new CartLineEmbellishmentsApiModel()
+            {
+                ProductId = "TEST",
+                Quantity = "5",
+                Input = "Wow"
+            };
         }
+
+        public CartLineEmbellishmentsApiModel Embellishment { get; set; }
 
         public string Image { get; set; }
         public string Title { get; set; }

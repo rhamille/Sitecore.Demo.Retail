@@ -26,5 +26,12 @@ namespace Sitecore.Foundation.Commerce.Website.Models.InputModels
 
         [Required]
         public uint Quantity { get; set; }
+
+     
+        public string EType { get; set; }
+
+        public string EQuantity { get; set; }
+
+        public string ETextValue { get; set; }
     }
 }

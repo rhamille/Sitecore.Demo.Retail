@@ -12843,6 +12843,10 @@ footer .nav-service li a {
 .wisbis main {
   margin-top: 118px; }
 
+.wisbis section {
+  padding-top: 115px;
+  padding-bottom: 0px; }
+
 .wisbis .navbar {
   padding: 30px 0; }
 

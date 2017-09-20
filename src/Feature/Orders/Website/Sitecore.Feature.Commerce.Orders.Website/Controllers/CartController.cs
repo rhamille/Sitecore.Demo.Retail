@@ -17,6 +17,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
 using System.Web.UI;
 using Sitecore.Commerce.Connect.CommerceServer.Orders.Models;
@@ -175,7 +176,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                     return Json(validationResult, JsonRequestBehavior.AllowGet);
                 }
 
-                var response = CartManager.AddLineItemsToCart(CommerceUserContext.Current.UserId, new List<AddCartLineInputModel> {inputModel});
+                var response = CartManager.AddLineItemsToCart(CommerceUserContext.Current.UserId, new List<AddCartLineInputModel> { inputModel });
                 var result = new BaseApiModel(response.ServiceProviderResult);
                 return Json(result, JsonRequestBehavior.AllowGet);
             }
@@ -263,10 +264,14 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 
                 var response = CartManager.ChangeLineQuantity(CommerceUserContext.Current.UserId, inputModel);
                 var result = new CartApiModel(response.ServiceProviderResult);
+
                 if (response.ServiceProviderResult.Success && response.Result != null)
                 {
                     result.Initialize(response.Result);
-
+                    var linetoUpdate = result.Lines.FirstOrDefault(x => x.ExternalCartLineId.Equals(inputModel.ExternalCartLineId));
+                    ///TODO: Update embellishment properties from inputmodel.
+                    linetoUpdate.Embellishment.Quantity = inputModel.EQuantity;
+                    linetoUpdate.Embellishment.Input = inputModel.ETextValue;
                     if (HasBasketErrors(response.Result))
                     {
                         // We clear the cart from the cache when basket errors are detected.  This stops the message from being displayed over and over as the
@@ -282,6 +287,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                 return Json(new ErrorApiModel("UpdateLineItem", e), JsonRequestBehavior.AllowGet);
             }
         }
+
 
         [AllowAnonymous]
         [HttpPost]

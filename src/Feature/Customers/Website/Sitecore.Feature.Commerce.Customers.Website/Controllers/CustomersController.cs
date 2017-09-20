@@ -132,8 +132,15 @@ namespace Sitecore.Feature.Commerce.Customers.Website.Controllers
         {
             var success = this.AccountManager.Login(model.Email, model.Password, true);
             Session["PunchOut"] = false;
+            Session["Ariba"] = false;
+            Session["OCI"] = false;
+            Session["3"] = false;
             if (success)
+            {
                 Session["PunchOut"] = true;
+                ///TODO: Remap usertype to the correct 4 user types.
+                Session[model.UserType] = true;
+            }
             return new HttpStatusCodeResult(success ? HttpStatusCode.OK : HttpStatusCode.BadRequest);  // OK = 200
         }
 

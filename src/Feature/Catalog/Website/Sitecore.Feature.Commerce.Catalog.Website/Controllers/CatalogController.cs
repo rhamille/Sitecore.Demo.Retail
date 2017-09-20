@@ -21,6 +21,8 @@ using System.Linq;
 using System.Text;
 using System.Web;
 using System.Web.Helpers;
+using System.Web.Http;
+using System.Web.Http.Results;
 using System.Web.Mvc;
 using System.Web.UI;
 using Sitecore.Commerce.Connect.CommerceServer.Catalog.Fields;
@@ -352,7 +354,7 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
             return View(model);
         }
 
-        [HttpPost]
+        [System.Web.Mvc.HttpPost]
         [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         [SkipAnalyticsTracking]
         public JsonResult FacetApplied(string facetValue, bool? isApplied)
@@ -365,7 +367,7 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
             return new BaseApiModel();
         }
 
-        [HttpPost]
+        [System.Web.Mvc.HttpPost]
         [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         [SkipAnalyticsTracking]
         public JsonResult SortOrderApplied(string sortField, SortDirection? sortDirection)
@@ -382,11 +384,11 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
         {
             if (CatalogManager.CatalogContext == null)
             {
-                return Context.PageMode.IsExperienceEditor ? (ActionResult) this.InfoMessage(InfoMessage.Error("This rendering cannot be shown without a valid catalog context.")) : new EmptyResult();
+                return Context.PageMode.IsExperienceEditor ? (ActionResult)this.InfoMessage(InfoMessage.Error("This rendering cannot be shown without a valid catalog context.")) : new EmptyResult();
             }
             if (!ProductViewModelFactory.IsValid(RenderingContext.Current.Rendering.Item))
             {
-                return Context.PageMode.IsExperienceEditor ? (ActionResult) this.InfoMessage(InfoMessage.Error("Invalid datasource. Please pick a product.")) : new EmptyResult();
+                return Context.PageMode.IsExperienceEditor ? (ActionResult)this.InfoMessage(InfoMessage.Error("Invalid datasource. Please pick a product.")) : new EmptyResult();
             }
 
             var model = ProductViewModelFactory.Create(RenderingContext.Current.Rendering.Item);
@@ -397,11 +399,11 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
         {
             if (CatalogManager.CatalogContext == null)
             {
-                return Context.PageMode.IsExperienceEditor ? (ActionResult) this.InfoMessage(InfoMessage.Error("This rendering cannot be shown without a valid catalog context.")) : new EmptyResult();
+                return Context.PageMode.IsExperienceEditor ? (ActionResult)this.InfoMessage(InfoMessage.Error("This rendering cannot be shown without a valid catalog context.")) : new EmptyResult();
             }
             if (!ProductViewModelFactory.IsValid(RenderingContext.Current.Rendering.Item))
             {
-                return Context.PageMode.IsExperienceEditor ? (ActionResult) this.InfoMessage(InfoMessage.Error("Invalid datasource. Please pick a product.")) : new EmptyResult();
+                return Context.PageMode.IsExperienceEditor ? (ActionResult)this.InfoMessage(InfoMessage.Error("Invalid datasource. Please pick a product.")) : new EmptyResult();
             }
 
             var model = ProductViewModelFactory.Create(RenderingContext.Current.Rendering.Item);
@@ -417,11 +419,11 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
         {
             if (CatalogManager.CatalogContext == null)
             {
-                return Context.PageMode.IsExperienceEditor ? (ActionResult) this.InfoMessage(InfoMessage.Error("This rendering cannot be shown without a valid catalog context.")) : new EmptyResult();
+                return Context.PageMode.IsExperienceEditor ? (ActionResult)this.InfoMessage(InfoMessage.Error("This rendering cannot be shown without a valid catalog context.")) : new EmptyResult();
             }
             if (!ProductViewModelFactory.IsValid(RenderingContext.Current.Rendering.Item))
             {
-                return Context.PageMode.IsExperienceEditor ? (ActionResult) this.InfoMessage(InfoMessage.Error("Invalid datasource. Please pick a product.")) : new EmptyResult();
+                return Context.PageMode.IsExperienceEditor ? (ActionResult)this.InfoMessage(InfoMessage.Error("Invalid datasource. Please pick a product.")) : new EmptyResult();
             }
 
             var model = ProductViewModelFactory.Create(RenderingContext.Current.Rendering.Item);
@@ -432,11 +434,11 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
         {
             if (CatalogManager.CatalogContext == null)
             {
-                return Context.PageMode.IsExperienceEditor ? (ActionResult) this.InfoMessage(InfoMessage.Error("This rendering cannot be shown without a valid catalog context.")) : new EmptyResult();
+                return Context.PageMode.IsExperienceEditor ? (ActionResult)this.InfoMessage(InfoMessage.Error("This rendering cannot be shown without a valid catalog context.")) : new EmptyResult();
             }
             if (!ProductViewModelFactory.IsValid(RenderingContext.Current.Rendering.Item))
             {
-                return Context.PageMode.IsExperienceEditor ? (ActionResult) this.InfoMessage(InfoMessage.Error("Invalid datasource. Please pick a product.")) : new EmptyResult();
+                return Context.PageMode.IsExperienceEditor ? (ActionResult)this.InfoMessage(InfoMessage.Error("Invalid datasource. Please pick a product.")) : new EmptyResult();
             }
 
             var model = ProductViewModelFactory.Create(RenderingContext.Current.Rendering.Item);
@@ -447,11 +449,11 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
         {
             if (CatalogManager.CatalogContext == null)
             {
-                return Context.PageMode.IsExperienceEditor ? (ActionResult) this.InfoMessage(InfoMessage.Error("This rendering cannot be shown without a valid catalog context.")) : new EmptyResult();
+                return Context.PageMode.IsExperienceEditor ? (ActionResult)this.InfoMessage(InfoMessage.Error("This rendering cannot be shown without a valid catalog context.")) : new EmptyResult();
             }
             if (!ProductViewModelFactory.IsValid(RenderingContext.Current.Rendering.Item))
             {
-                return Context.PageMode.IsExperienceEditor ? (ActionResult) this.InfoMessage(InfoMessage.Error("Invalid datasource. Please pick a product.")) : new EmptyResult();
+                return Context.PageMode.IsExperienceEditor ? (ActionResult)this.InfoMessage(InfoMessage.Error("Invalid datasource. Please pick a product.")) : new EmptyResult();
             }
 
             var model = ProductViewModelFactory.Create(RenderingContext.Current.Rendering.Item);
@@ -462,11 +464,11 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
         {
             if (CatalogManager.CatalogContext == null || StorefrontContext.Current == null)
             {
-                return Context.PageMode.IsExperienceEditor ? (ActionResult) this.InfoMessage(InfoMessage.Error("This rendering cannot be shown without a valid catalog context.")) : new EmptyResult();
+                return Context.PageMode.IsExperienceEditor ? (ActionResult)this.InfoMessage(InfoMessage.Error("This rendering cannot be shown without a valid catalog context.")) : new EmptyResult();
             }
             if (!ProductViewModelFactory.IsValid(RenderingContext.Current.Rendering.Item))
             {
-                return Context.PageMode.IsExperienceEditor ? (ActionResult) this.InfoMessage(InfoMessage.Error("Invalid datasource. Please pick a product.")) : new EmptyResult();
+                return Context.PageMode.IsExperienceEditor ? (ActionResult)this.InfoMessage(InfoMessage.Error("Invalid datasource. Please pick a product.")) : new EmptyResult();
             }
 
             var model = ProductViewModelFactory.Create(RenderingContext.Current.Rendering.Item);
@@ -505,6 +507,46 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
             return new EmptyResult();
         }
 
+        /// <summary>
+        /// TODO: Get Product Embellishments.
+        /// </summary>
+        /// <param name="productids">Contains an array of all the product id's in the cart.</param>
+        /// <returns>Array of all the products in the cart including each products embellishment options.</returns>
+        [System.Web.Mvc.HttpGet]
+        public JsonResult GetEmbellishments([FromUri] List<string> productids)
+        {
+            var items = new List<RelatedCatalogAPIViewModel>();
+
+            foreach (var productid in productids)
+            {
+                var item = Context.Database.GetItem(ID.Parse(productid));
+                if (item == null)
+                    continue;
+                item = item.Parent;
+
+                var relatedCatalogItemsModel = GetRelationshipsFromItem(item, null);
+                if (relatedCatalogItemsModel == null)
+                    continue;
+
+                var catalog = new RelatedCatalogAPIViewModel()
+                {
+                    ProductID = productid
+                };
+                catalog.RelatedProducts.AddRange(relatedCatalogItemsModel.RelatedProducts[0].ChildProducts.Select(x => new ProductEmbellishmentAPIViewModel()
+                {
+                    Name = x.ProductName,
+                    Description = x.Description,
+                    ProductID = x.ProductId
+                }));
+                items.Add(catalog);
+            }
+
+
+            return Json(items, JsonRequestBehavior.AllowGet);
+
+
+        }
+
         public ActionResult RelatedCatalogItems()
         {
             if (CatalogManager.CatalogContext == null || StorefrontContext.Current == null)
@@ -519,7 +561,7 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
             return View(relatedCatalogItemsModel);
         }
 
-        [HttpGet]
+        [System.Web.Mvc.HttpGet]
         public ActionResult CheckGiftCardBalance()
         {
             if (CatalogManager.CatalogContext == null || StorefrontContext.Current == null)
@@ -530,7 +572,7 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
             return View();
         }
 
-        [HttpPost]
+        [System.Web.Mvc.HttpPost]
         [ValidateJsonAntiForgeryToken]
         [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         [SkipAnalyticsTracking]
@@ -574,8 +616,8 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
             }
         }
 
-        [AllowAnonymous]
-        [HttpPost]
+        [System.Web.Mvc.AllowAnonymous]
+        [System.Web.Mvc.HttpPost]
         [ValidateJsonAntiForgeryToken]
         [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         [SkipAnalyticsTracking]
@@ -613,7 +655,7 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
             }
         }
 
-        [HttpPost]
+        [System.Web.Mvc.HttpPost]
         [ValidateJsonAntiForgeryToken]
         [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         [SkipAnalyticsTracking]

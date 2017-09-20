@@ -17,5 +17,6 @@ namespace Sitecore.Feature.Commerce.Customers.Website.Models
         [Required]
         public string Password { get; set; }
 
+        public string UserType { get; set; }
     }
 }

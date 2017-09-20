@@ -59,36 +59,37 @@
                             </a>
                         </td>
                     </tr>
-                    <tr class="row">
+                    <!-- TODO: If item has embellishments add this row.-->
+                    <tr class="row" data-bind="if: $data.hasEmbellishments">
                         <td class="hidden-xs">
                             <a data-bind="attr: {href: model.LineHrefs[$data.ExternalCartLineId]}">
                                 <img class="img-responsive" data-bind="attr: {src: model.LineImgSrcs[$data.ExternalCartLineId]}">
                             </a>
                         </td>
                         <td class="cart-info form-group">
-
-                            
-                            <select class="form-control sortDropdown" id="sortDropDown">
-                                <option value="">Relevance</option>
-                                <option value="listprice+">List Price (Asc)</option>
-                                <option value="listprice-">List Price (Desc)</option>
-                                <option value="brand+">Brand (Asc)</option>
-                                <option value="brand-">Brand (Desc)</option>
-                                <option value="rating+">Rating (Asc)</option>
-                                <option value="rating-">Rating (Desc)</option>
-                            </select>
+                            <!--TODO: remap dropdown based on ProductEmbellishmentAPIViewModel fields after update.-->
+                            <select class="form-control sortDropdown" pid="edropdown" data-bind="options:$data.embellishments,
+                                    optionsText:'Name',
+                                    optionsValue:'ProductID',
+                                    value:$data.embellishment.embellishmenttype,
+                                    optionsCaption:'Choose',
+                                    attr: {'data-ExternalCartLineId': $data.ExternalCartLineId},
+                                    event: { change: model.selectionChanged }"></select>
 
                         </td>
                         <td class="cart-quantity" style="width: 10%;">
-                            <input pid="logo" type="text" class="form-control form-control-quantity" placeholder="1"     
-                                   onfocusout="var input = this; setTimeout(function() { }, 200);">
+                            <input pid="equantity" type="text" class="form-control form-control-quantity" placeholder=""
+                                   data-bind="value: $data.embellishment.quantity, attr: {'data-ExternalCartLineId': $data.ExternalCartLineId}"
+                                   onfocusout="var input = this; setTimeout(function() {updateLineItem(input); }, 200);">
                         </td>
                         <td class="cart-quantity">
-                            <input pid="logoname" type="text" class="form-control form-control-quantity" placeholder="1"
-                                   onfocusout="var input = this; setTimeout(function() { }, 200);">
+                            <input pid="etextvalue" type="text" class="form-control form-control-quantity" placeholder=""
+                                   data-bind="value: $data.embellishment.textvalue, attr: {'data-ExternalCartLineId': $data.ExternalCartLineId}"
+                                   onfocusout="var input = this; setTimeout(function() {updateLineItem(input); }, 200);">
                         </td>
-                        <td class="cart-total text-right"></td><td class="cart-delete"></td>
-</tr>
+                        <td class="cart-total text-right"></td>
+                        <td class="cart-delete"></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -519,6 +520,11 @@
             var option = model.LineShippingOptions[line.ExternalCartLineId];
             if (!model.groupedLines[option.Description])
                 model.groupedLines[option.Description] = [];
+            line.selectedCountry = "";
+            ///TODO: update embellishments object in CheckoutViewModel
+            if(typeof line.embellishment === "undefined"){
+                line.embellishment = { quantity: "", textvalue: "",embellishmenttype:"" };
+            }
             model.groupedLines[option.Description].push(line);
         });
 
@@ -696,18 +702,59 @@
 
     function updateLineItem(input) {
         var $input = $(input);
+        var quantity = $("main").find("[data-ExternalCartLineId='" + $input.attr('data-ExternalCartLineId') + "'][pid='quantity']:first");
+        var equantity = $("main").find("[data-ExternalCartLineId='" + $input.attr('data-ExternalCartLineId') + "'][pid='equantity']:first");
+        var etextvalue = $("main").find("[data-ExternalCartLineId='" + $input.attr('data-ExternalCartLineId') + "'][pid='etextvalue']:first");
+        var etype = $("main").find("[data-ExternalCartLineId='" + $input.attr('data-ExternalCartLineId') + "'][pid='edropdown']:first");
+
         AJAXPost(StorefrontUri('api/storefront/cart/UpdateLineItem'),
-            JSON.stringify({ExternalCartLineId: $input.attr('data-ExternalCartLineId'), Quantity: $input.val()}),
+            JSON.stringify({ExternalCartLineId: $input.attr('data-ExternalCartLineId'), Quantity: quantity.val(),EQuantity:equantity.val(),ETextValue:etextvalue.val(),EType:""}),
             updateModel);
+
+
     }
 
     function updateModel() {
         AJAXPost(StorefrontUri('api/storefront/checkout/UpdateModel'), '', function(newModel) {
+            ///TODO: much of this code can be removed as the embellishments will be passed through in the cart object.
+            var temp = model.embellishments;
+            var embellishments = $.map(model.groupedLines["Ship items"],function(val){
+                return {ExternalCartLineId:val.ExternalCartLineId,embellishment:val.embellishment};
+
+            });
+
             model = newModel;
+            model.selectionChanged =function (ko_object, js_evt) {
+                if(js_evt.cancelable === false) {
+                    updateLineItem($(js_evt.target));
+                }
+            };
+            model.embellishments = temp;
             if (!model.HasLines)
                 location.href = StorefrontUri('ShoppingCart');
-            else
+            else{
+                $.each(model.Cart.Lines,function(index){
+                    //add product embellishment types back to model
+                    model.Cart.Lines[index].hasEmbellishments = false;
+                    var types = $.grep(model.embellishments,function(n, i) {
+                        return (n.ProductID.replace("{","").replace("}","").toLowerCase() === model.Cart.Lines[index].Product.SitecoreProductItemId);
+                    });
+                    if (types.length > 0) {
+                        model.Cart.Lines[index].embellishments = types[0].RelatedProducts;
+                        model.Cart.Lines[index].hasEmbellishments = true;
+                    }
+
+
+                    //Remap embellishments from before refresh.
+                    var arr = $.grep(embellishments, function( n, i ) {
+                        return ( n.ExternalCartLineId === model.Cart.Lines[index].ExternalCartLineId );
+                    });
+                    if(arr.length > 0){
+                        model.Cart.Lines[index].embellishment = arr[0].embellishment;
+                    }
+                });
                 applyModel();
+            }
         });
     }
 
@@ -753,9 +800,38 @@
     }
 
     var model = @Html.Raw(JsonConvert.SerializeObject(Model));
-    applyModel();
-    if (model.DefaultAddress != null)
-        setShippingAddress();
+    model.selectionChanged =function (ko_object, js_evt) {
+        if(js_evt.cancelable === false) {
+            updateLineItem($(js_evt.target));
+        }
+    };
+    var embellismentIds =  "@Html.Raw(string.Join("&",Model.Cart.Lines.Select(x => "productids="+x.Product.SitecoreProductItemId)))";
+    AJAXGet(StorefrontUri('api/storefront/catalog/getembellishments?'+embellismentIds),
+          "",
+          enrichModel);
+    var embellishments = {};
+    function enrichModel(data, success, sender) {
+        model.embellishments = data;
+
+        $.each(model.Cart.Lines,
+            function(index) {
+                //add product embellishment types back to model
+                model.Cart.Lines[index].hasEmbellishments = false;
+                var types = $.grep(model.embellishments,function(n, i) {
+                    return (n.ProductID.replace("{","").replace("}","").toLowerCase() === model.Cart.Lines[index].Product.SitecoreProductItemId);
+                });
+                if (types.length > 0) {
+                    model.Cart.Lines[index].embellishments = types[0].RelatedProducts;
+                    model.Cart.Lines[index].hasEmbellishments = true;
+                }
+            });
+        applyModel();
+
+        if (model.DefaultAddress != null)
+            setShippingAddress();
+
+    }
+
 
     function setPaymentMethodsSinglePageCheckout() {
         var data = "{";

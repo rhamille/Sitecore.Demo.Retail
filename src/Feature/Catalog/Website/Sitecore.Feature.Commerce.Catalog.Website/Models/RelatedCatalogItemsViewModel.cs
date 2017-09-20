@@ -31,4 +31,25 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Models
 
         public List<RelationshipViewModel> RelatedCategories { get; }
     }
+
+
+    public class RelatedCatalogAPIViewModel
+    {
+        public RelatedCatalogAPIViewModel()
+        {
+            RelatedProducts = new List<ProductEmbellishmentAPIViewModel>();
+        }
+        public List<ProductEmbellishmentAPIViewModel> RelatedProducts { get; }
+        public string ProductID { get; set; }
+    }
+
+    /// <summary>
+    /// Update this viewmodel with the appropriate properties for an embellishment
+    /// </summary>
+    public class ProductEmbellishmentAPIViewModel
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string ProductID { get; set; }
+    }
 }

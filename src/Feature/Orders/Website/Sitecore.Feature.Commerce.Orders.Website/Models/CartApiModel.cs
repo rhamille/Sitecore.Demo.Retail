@@ -72,6 +72,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Models
 
         public List<string> PromoCodes { get; set; }
 
+
         public virtual void Initialize(Cart cart)
         {
             Lines = new List<CartLineApiModel>();
@@ -101,6 +102,8 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Models
                 var productItem = catalogManager.GetProduct(product.ProductId, product.ProductCatalog);
 
                 var cartLine = new CartLineApiModel(line, productItem);
+
+
                 Lines.Add(cartLine);
             }
 

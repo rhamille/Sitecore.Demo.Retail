@@ -33,7 +33,8 @@ namespace Sitecore.Feature.Commerce.Catalog.Website
             new ApiControllerMapping("catalog-checkgiftcardbalance", "Catalog", "CheckGiftCardBalance"),
             new ApiControllerMapping("catalog-signupforbackinstocknotification", "Catalog", "SignUpForBackInStockNotification"),
             new ApiControllerMapping("catalog-sortorderapplied", "Catalog", "SortOrderApplied"),
-            new ApiControllerMapping("catalog-switchcurrency", "Catalog", "SwitchCurrency")
+            new ApiControllerMapping("catalog-switchcurrency", "Catalog", "SwitchCurrency"),
+            new ApiControllerMapping("catalog-getembellishments", "Catalog", "GetEmbellishments")
         };
 
         public static void RegisterRoutes(RouteCollection routes)
