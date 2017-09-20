@@ -10,6 +10,7 @@
                 public const string InitializeEnvironmentPromotionsBlock = "HabitatData.block.InitializeEnvironmentPromotions";
                 public const string InitializeEnvironmentGiftCardsBlock = "HabitatData.block.InitializeEnvironmentGiftCards";
                 public const string InitializeEnvironmentSellableItemsBlock = "HabitatData.block.InitializeEnvironmentSellableItems";
+                public const string AddCartLineGiftCardBlock = "HabitatData.block.AddCartLineGiftCard";
             }
         }
 

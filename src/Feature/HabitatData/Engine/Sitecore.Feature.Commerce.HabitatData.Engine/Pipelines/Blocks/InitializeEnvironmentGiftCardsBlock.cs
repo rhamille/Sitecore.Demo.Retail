@@ -24,7 +24,7 @@ namespace Sitecore.Feature.Commerce.HabitatData.Engine.Pipelines.Blocks
 
         public override async Task<string> Run(string arg, CommercePipelineExecutionContext context)
         {
-            if (arg != "Habitat" && arg != "HabitatShops")
+            if (arg != "HabitatAuthoring" && arg != "HabitatShops")
             {
                 return arg;
             }

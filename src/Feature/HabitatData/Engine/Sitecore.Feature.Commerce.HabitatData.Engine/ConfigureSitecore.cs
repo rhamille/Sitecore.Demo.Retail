@@ -4,6 +4,7 @@ using Sitecore.Commerce.Core;
 using Sitecore.Feature.Commerce.HabitatData.Engine.Pipelines.Blocks;
 using Sitecore.Framework.Configuration;
 using Sitecore.Framework.Pipelines.Definitions.Extensions;
+using Sitecore.Commerce.Plugin.Carts;
 
 namespace Sitecore.Feature.Commerce.HabitatData.Engine
 {
@@ -24,6 +25,11 @@ namespace Sitecore.Feature.Commerce.HabitatData.Engine
                         .Add<InitializeEnvironmentPricingBlock>()
                         .Add<InitializeEnvironmentPromotionsBlock>();
                 })
+
+                .ConfigurePipeline<IAddCartLinePipeline>(configure => configure.Add<AddCartLineGiftCardBlock>().Before<PersistCartBlock>())
+
+                .ConfigurePipeline<IUpdateCartLinePipeline>(configure => configure.Add<AddCartLineGiftCardBlock>().Before<ICalculateCartPipeline>())
+                
             );
         }
     }

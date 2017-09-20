@@ -73,7 +73,7 @@ namespace Sitecore.Feature.Commerce.HabitatData.Engine.Pipelines.Blocks
             this.CreateLineOptix25PctOffPromotion(book, context);
 
             // Cart promotions
-            this.CreateCartFreeShippingPromotion(book, context);
+            //this.CreateCartFreeShippingPromotion(book, context);
             this.CreateCartExclusive5PctOffCouponPromotion(book, context);
             this.CreateCartExclusive5OffCouponPromotion(book, context);
             this.CreateCart15PctOffCouponPromotion(book, context);
