@@ -524,7 +524,7 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
                     continue;
                 item = item.Parent;
 
-                var relatedCatalogItemsModel = GetRelationshipsFromItem(item, null);
+                var relatedCatalogItemsModel = GetRelationshipsFromItem(item, null,"Embellishments");
                 if (relatedCatalogItemsModel == null)
                     continue;
 
@@ -865,7 +865,7 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
             return newFilter.ToString();
         }
 
-        public RelatedCatalogItemsViewModel GetRelationshipsFromItem(Item catalogItem, Rendering rendering)
+        public RelatedCatalogItemsViewModel GetRelationshipsFromItem(Item catalogItem, Rendering rendering,string relationshipname = "")
         {
             if (catalogItem == null || !catalogItem.IsDerived(global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.CatalogItem.Id) || !catalogItem.FieldHasValue(global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.CatalogItem.Fields.RelationshipList))
             {
@@ -876,6 +876,10 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
 
             var model = new RelatedCatalogItemsViewModel();
             var productRelationshipInfoList = field.GetRelationships();
+            if (!string.IsNullOrEmpty(relationshipname))
+            {
+                productRelationshipInfoList = field.GetRelationships(relationshipname);
+            }
             productRelationshipInfoList = productRelationshipInfoList.OrderBy(x => x.Rank);
             var productModelList = GroupRelationshipsByDescription(productRelationshipInfoList);
             model.RelatedProducts.AddRange(productModelList);
