@@ -48,6 +48,9 @@ using Sitecore.Foundation.SitecoreExtensions.Attributes;
 using Sitecore.Foundation.SitecoreExtensions.Extensions;
 using Sitecore.Mvc.Controllers;
 using Sitecore.Mvc.Presentation;
+using Sitecore.Rules;
+using Sitecore.Rules.Conditions;
+using Sitecore.Security.Accounts;
 
 namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
 {
@@ -90,7 +93,6 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
             {
                 return this.InfoMessage(InfoMessage.Error(AlertTexts.InvalidDataSourceTemplateFriendlyMessage));
             }
-
             return View(viewModel);
         }
 
@@ -227,6 +229,20 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
             }
 
             var item = RenderingContext.Current.Rendering.Item;
+            var entitlementrole = Context.User.Profile["Spend Role"];
+            if (entitlementrole != null)
+            {
+                var itemrole = Sitecore.Context.Database.SelectSingleItem(
+                    "fast:/sitecore/Commerce/Settings/Entitlement Settings//*[@@name='" + entitlementrole + "']");
+
+                var cid = itemrole?["Navigation Catalog"];
+                if (cid != null)
+                {
+                    item = Sitecore.Context.Database.GetItem(ID.Parse(cid));
+                }
+
+            }
+
             var dataSource = item.IsDerived(global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.NavigationItem.Id) ? item?.TargetItem(global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.NavigationItem.Fields.CategoryDatasource) : null;
             if (dataSource == null)
             {
@@ -524,7 +540,7 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
                     continue;
                 item = item.Parent;
 
-                var relatedCatalogItemsModel = GetRelationshipsFromItem(item, null,"Embellishments");
+                var relatedCatalogItemsModel = GetRelationshipsFromItem(item, null, "Embellishments");
                 if (relatedCatalogItemsModel == null)
                     continue;
 
@@ -865,7 +881,7 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
             return newFilter.ToString();
         }
 
-        public RelatedCatalogItemsViewModel GetRelationshipsFromItem(Item catalogItem, Rendering rendering,string relationshipname = "")
+        public RelatedCatalogItemsViewModel GetRelationshipsFromItem(Item catalogItem, Rendering rendering, string relationshipname = "")
         {
             if (catalogItem == null || !catalogItem.IsDerived(global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.CatalogItem.Id) || !catalogItem.FieldHasValue(global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.CatalogItem.Fields.RelationshipList))
             {

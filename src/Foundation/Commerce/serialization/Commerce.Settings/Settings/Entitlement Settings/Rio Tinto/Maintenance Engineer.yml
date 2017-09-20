@@ -1,0 +1,27 @@
+﻿---
+ID: "db6b0186-2537-4f9f-b9dc-65b399fe5f36"
+Parent: "af67d347-b607-4f65-adec-994af5c24412"
+Template: "3aa6af6f-707f-4229-869a-e131ed6492a2"
+Path: /sitecore/Commerce/Settings/Entitlement Settings/Rio Tinto/Maintenance Engineer
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0075ddd8-c8d3-49bd-90e2-55e34589587e"
+      Hint: Catalog
+      Value: "{0EE6CE54-C292-4616-A12F-C6A8820A64FE}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170920T071222Z
+    - ID: "39a21afa-0684-416c-b141-c4d8517ec1d6"
+      Hint: Spend Limit
+      Value: 50000
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "90db63bc-3fde-4eeb-83e0-dbc2bb658343"
+      Hint: Navigation Catalog
+      Value: "{D3C1FB69-778A-4CDF-8B11-0B2F4D800CFA}"

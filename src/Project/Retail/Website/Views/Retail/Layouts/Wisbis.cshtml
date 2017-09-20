@@ -53,10 +53,10 @@
                     <div class="col-xs-4 col-xs-offset-2" id="bs-example-navbar-collapse-1">
 
                         <form id="signinariba" class="navbar-form" role="form">
-                            <input type="hidden" name="ariba" value="usertype">
+                            <input type="hidden" name="qantaspilot" value="usertype">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input id="emailariba" type="email" class="form-control" name="email" value="aribauser@test.com" placeholder="Email Address">
+                                <input id="emailariba" type="email" class="form-control" name="email" value="qantaspilot@test.com" placeholder="Email Address">
                             </div>
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
@@ -65,10 +65,10 @@
                             <button type="submit" class="btn btn-primary">Login</button>
                         </form>
                         <form id="signinoci" class="navbar-form" role="form">
-                            <input type="hidden" name="oci" value="usertype">
+                            <input type="hidden" name="qantasengineer" value="usertype">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input id="emailoci" type="email" class="form-control" name="email" value="colesuser@test.com" placeholder="Email Address">
+                                <input id="emailoci" type="email" class="form-control" name="email" value="qantasengineer@test.com" placeholder="Email Address">
                             </div>
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
@@ -81,10 +81,10 @@
                     <div class="col-xs-4" id="bs-example-navbar-collapse-1">
 
                         <form id="signin2" class="navbar-form" role="form">
-                            <input type="hidden" name="2" value="usertype">
+                            <input type="hidden" name="riotintoengineer" value="usertype">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input id="email2" type="email" class="form-control" name="email" value="blacwooduser@test.com" placeholder="Email Address">
+                                <input id="email2" type="email" class="form-control" name="email" value="riotintoengineer@test.com" placeholder="Email Address">
                             </div>
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
@@ -189,7 +189,9 @@
             }
 
         } else if (e.data.eventType === "bodyload") {
-
+            if ($(formtoSubmit).length == 0) {
+                return;
+            }
             var form = $(formtoSubmit)
                 .serializeArray()
                 .reduce(function (m, o) {
@@ -197,7 +199,9 @@
                     return m;
                 },
                 {});
+            formtoSubmit = null;
             iframe.postMessage({ eventType: "login", value: form }, "http://retail.dev.local");
+            
 
         }
 

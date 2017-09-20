@@ -11,7 +11,7 @@ SharedFields:
     ar|sitecore\Commerce Catalog Administrator|pe|+item:create|+item:read|+item:rename|+item:delete|+item:write|^*|pd|+item:create|+item:read|+item:rename|+item:delete|+item:write|^*|ar|sitecore\Commerce Merchandiser|pe|+item:create|+item:read|+item:rename|+item:delete|+item:write|^*|pd|+item:create|+item:read|+item:rename|+item:delete|+item:write|^*|ar|sitecore\Commerce Catalog Groups Administrator|pe|+item:read|pd|+item:read|
 - ID: "ed3ebccd-a230-4659-923f-014707e1945d"
   Hint: Selected Catalogs
-  Value: Habitat_Master
+  Value: Habitat_Master|Qantas|Rio Tinto
 Languages:
 - Language: "de-DE"
   Fields:
@@ -34,7 +34,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20130226T110900
+      Value: 20130226T000900Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

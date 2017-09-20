@@ -210,6 +210,7 @@
     <Compile Include="Extensions\HtmlExtensions.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
     <Compile Include="Extensions\SiteContextExtensions.cs" />
+    <Compile Include="Fields\UserField.cs" />
     <Compile Include="Infrastructure\ComputedFields\VariantInfoComputedField.cs" />
     <Compile Include="Infrastructure\Connect\Arguments\GetProductBulkPricesRequest.cs" />
     <Compile Include="Infrastructure\Connect\Arguments\GetSupportedCurrenciesRequest.cs" />

@@ -1,0 +1,27 @@
+﻿---
+ID: "af67c943-c817-4b20-b52b-cd89e34b3251"
+Parent: "d054372c-04dc-46a0-89f9-b8df5eef71d2"
+Template: "3aa6af6f-707f-4229-869a-e131ed6492a2"
+Path: /sitecore/Commerce/Settings/Entitlement Settings/Qantas/Engineer
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0075ddd8-c8d3-49bd-90e2-55e34589587e"
+      Hint: Catalog
+      Value: "{9245C39D-4EBB-4B86-98E7-1697E851C141}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170920T060751Z
+    - ID: "39a21afa-0684-416c-b141-c4d8517ec1d6"
+      Hint: Spend Limit
+      Value: 500
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "90db63bc-3fde-4eeb-83e0-dbc2bb658343"
+      Hint: Navigation Catalog
+      Value: "{223FD252-C301-4ABB-877A-5BE8BC4CC7ED}"
