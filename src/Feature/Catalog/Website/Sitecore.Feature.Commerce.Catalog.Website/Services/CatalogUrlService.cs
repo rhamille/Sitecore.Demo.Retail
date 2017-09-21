@@ -202,8 +202,8 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Services
             var itemName = folder;
             if (folder != null && folder.Contains(_urlTokenDelimiter))
             {
-                var tokens = folder.Split(new[] {_urlTokenDelimiter}, StringSplitOptions.None);
-                itemName = tokens[tokens.Length - 1];
+                itemName = folder.Substring(folder.IndexOf('_') + 1, folder.Length - folder.IndexOf('_') - 1);
+               // itemName = tokens[tokens.Length - 1];
             }
 
             return DecodeUrlToken(itemName);

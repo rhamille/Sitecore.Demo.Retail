@@ -1,0 +1,14 @@
+﻿---
+ID: "b1c97560-cb5a-42f1-83ac-7b3a29422581"
+Parent: "a78d4818-f1b6-43fe-a692-d25f3034bcb8"
+Template: "64ca6109-64ab-487f-853f-a406ff3115b6"
+Path: /sitecore/content/Storefront/Home/RioTinto/Shop/*/*
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150108T213319Z

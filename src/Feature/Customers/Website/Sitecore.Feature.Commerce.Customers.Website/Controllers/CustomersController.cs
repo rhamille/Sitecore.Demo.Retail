@@ -132,9 +132,6 @@ namespace Sitecore.Feature.Commerce.Customers.Website.Controllers
         {
             var success = this.AccountManager.Login(model.Email, model.Password, true);
             Session["PunchOut"] = false;
-            Session["Ariba"] = false;
-            Session["OCI"] = false;
-            Session["3"] = false;
             if (success)
             {
                 Session["PunchOut"] = true;
