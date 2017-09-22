@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Web.Mvc;
@@ -9,6 +10,7 @@ using System.Web.UI;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Serialization;
+using Sitecore.Collections.Debugging;
 using Sitecore.Commerce.Connect.CommerceServer.Orders.Models;
 using Sitecore.Commerce.Entities.Orders;
 using Sitecore.Diagnostics;
@@ -74,6 +76,15 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
         public OrdersViewModelRepository OrdersViewModelRepository { get; }
         public StorefrontContext StorefrontContext { get; }
         public OrderViewModelRepository OrderViewModelRepository { get; }
+
+        public ActionResult SendOrderEQuote(string userid, string orderod)
+        {
+            var message = new MailMessage("wisbis@test.com", "user@test.com");
+               message.Subject = "WIS";
+               message.Body = "Body";
+               MainUtil.SendMail(message);
+            return new EmptyResult();
+        }
 
         public XmlActionResult<cXML> PunchoutOrderRequest(string userid,string orderid)
         {

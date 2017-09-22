@@ -1,0 +1,77 @@
+﻿---
+ID: "05a90088-602c-4348-871f-a6e22f3751f4"
+Parent: "e47497ac-3374-4a25-8719-910e888fa25f"
+Template: "26c54307-6d31-46cf-a96b-70678c4fef7d"
+Path: /sitecore/system/Workflows/Order Entitlement Exceeded/Draft/__OnSave/Auto Submit Action
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/16x16/submit.png
+- ID: "67918816-9524-4666-87b3-c07aff9cebd3"
+  Hint: Role Name
+  Value: |
+    sitecore\Sitecore Minimal Page Editor
+- ID: "ada004e1-3b87-476a-b44e-0c66606d0f47"
+  Hint: Type
+  Value: Sitecore.Workflows.Simple.AutoSubmitAction,Sitecore.Kernel
+- ID: "fa367915-b5a1-4e32-b35f-d7c9ecd399eb"
+  Hint: Next state
+  Value: "{0392FEE4-56F0-4121-9E19-FB7DA81B7EF8}"
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Automatisk afsendelseshandling
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170728T142130Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Auto. Submit-Aktion"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170728T142459Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20080313T043332Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 自動投稿アクション
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170728T142806Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -242,6 +242,7 @@
     <Compile Include="Infrastructure\Pipelines\ResetContact.cs" />
     <Compile Include="Infrastructure\Pipelines\LoggedIn\SetCommerceUser.cs" />
     <Compile Include="Infrastructure\Pipelines\VaryByCurrency.cs" />
+    <Compile Include="Infrastructure\Workflows\EntitlementExceededAction.cs" />
     <Compile Include="Managers\AccountManager.cs" />
     <Compile Include="Managers\BaseManager.cs" />
     <Compile Include="Managers\CartManager.cs" />

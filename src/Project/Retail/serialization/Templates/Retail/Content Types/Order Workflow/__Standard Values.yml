@@ -7,10 +7,10 @@ DB: master
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
-  Value: "{A5BC37E7-ED96-4C1E-8590-A26E64DB55EA}"
+  Value: "{CFBF655E-C3DE-4E7C-B33D-363D824CDDCB}"
 - ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
   Hint: __Default workflow
-  Value: "{A5BC37E7-ED96-4C1E-8590-A26E64DB55EA}"
+  Value: "{CFBF655E-C3DE-4E7C-B33D-363D824CDDCB}"
 Languages:
 - Language: en
   Versions:
