@@ -185,7 +185,7 @@
              
                 document.getElementById("retailFrame").height = 0;
             } else {
-              
+                document.getElementById('retailFrame').contentWindow.location.reload();
             }
 
         } else if (e.data.eventType === "bodyload") {

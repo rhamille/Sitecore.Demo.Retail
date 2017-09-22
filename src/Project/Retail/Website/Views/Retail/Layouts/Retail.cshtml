@@ -126,7 +126,7 @@
                         data: JSON.stringify(event.data.value),
                         success: function (data, textstatus, xhr) {
                             window.parent.postMessage({ eventType: "login", result: xhr.status == 200 ? true : false }, "http://wisbis.dev.local");
-
+                            
                         },
                         error: function (data) {
                             window.parent.postMessage({ eventType: "login", result: false }, "http://wisbis.dev.local");

@@ -739,7 +739,7 @@
                     var types = $.grep(model.embellishments,function(n, i) {
                         return (n.ProductID.replace("{","").replace("}","").toLowerCase() === model.Cart.Lines[index].Product.SitecoreProductItemId);
                     });
-                    if (types.length > 0) {
+                    if (types.length > 0 && types[0].RelatedProducts.length > 0) {
                         model.Cart.Lines[index].embellishments = types[0].RelatedProducts;
                         model.Cart.Lines[index].hasEmbellishments = true;
                     }
@@ -820,7 +820,7 @@
                 var types = $.grep(model.embellishments,function(n, i) {
                     return (n.ProductID.replace("{","").replace("}","").toLowerCase() === model.Cart.Lines[index].Product.SitecoreProductItemId);
                 });
-                if (types.length > 0) {
+                if (types.length > 0 && types[0].RelatedProducts.length > 0) {
                     model.Cart.Lines[index].embellishments = types[0].RelatedProducts;
                     model.Cart.Lines[index].hasEmbellishments = true;
                 }
