@@ -1,0 +1,37 @@
+﻿---
+ID: "cdc5225e-f643-40b5-afe5-143757bd37aa"
+Parent: "0392fee4-56f0-4121-9e19-fb7da81b7ef8"
+Template: "a37ff052-48bf-414e-bab8-ab1700d9b5e8"
+Path: /sitecore/system/Workflows/Order Entitlement Exceeded/Awaiting Approval/Send Email
+DB: master
+SharedFields:
+- ID: "0399700d-23e1-42bc-a8ca-f1a51190029a"
+  Hint: Subject
+  Value: Please check order spend limit
+- ID: "351a6771-a1fe-4e92-b164-8b5d5b295b0f"
+  Hint: From
+  Value: wisbis@test.com
+- ID: "424df68d-ca9f-4b95-8c9c-c3d37862e420"
+  Hint: To
+  Value: approver@test.com
+- ID: "ac4af2f7-6121-4f99-a313-20f192a60b02"
+  Hint: Type
+  Value: Sitecore.Foundation.Commerce.Website.Infrastructure.Workflows.EntitlementExceededActionEmail, Sitecore.Foundation.Commerce.Website
+- ID: "b6699a12-8c1f-4c91-a370-2bcc6938a609"
+  Hint: Mail server
+  Value: localhost
+- ID: "c5e6e8a7-5465-48fd-b6d1-046e48809f07"
+  Hint: Message
+  Value: "Confirm Order Spend Limit Exceeded for order: {orderid}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170922T010803Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
