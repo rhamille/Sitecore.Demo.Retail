@@ -708,7 +708,7 @@
         var etype = $("main").find("[data-ExternalCartLineId='" + $input.attr('data-ExternalCartLineId') + "'][pid='edropdown']:first");
 
         AJAXPost(StorefrontUri('api/storefront/cart/UpdateLineItem'),
-            JSON.stringify({ExternalCartLineId: $input.attr('data-ExternalCartLineId'), Quantity: quantity.val(),EQuantity:equantity.val(),ETextValue:etextvalue.val(),EType:""}),
+            JSON.stringify({ExternalCartLineId: $input.attr('data-ExternalCartLineId'), Quantity: quantity.val(),EQuantity:1,ETextValue:etextvalue.val(),EType:"Shirt Text"}),
             updateModel);
 
 

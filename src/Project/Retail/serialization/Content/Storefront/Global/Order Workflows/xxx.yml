@@ -1,0 +1,24 @@
+﻿---
+ID: "bc21a0ad-e24d-4671-8542-649d77337cba"
+Parent: "c8533001-10f2-4707-93e4-18a75d860cdf"
+Template: "a71dd9e3-e1d7-4181-986f-a0e67f924dd4"
+Path: /sitecore/content/Storefront/Global/Order Workflows/xxx
+DB: master
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{CFBF655E-C3DE-4E7C-B33D-363D824CDDCB}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170925T031638Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{241B158F-8894-408D-A195-6D84915A40E0}"
+    - ID: "f31ff0a1-dc60-46ff-bbdb-9ccc61142ef6"
+      Hint: OrderId
+      Value: "{db07fa77-9698-4ca4-b676-b6ec65303436}"

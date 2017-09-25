@@ -19,7 +19,7 @@ namespace Sitecore.Project.Commerce.Retail.Engine.App_Startup
 
             var loggingConfig = new LoggerConfiguration()
                 .Enrich.With(new ScLogEnricher())
-                .MinimumLevel.Information(); // leave all filtering to the MS provider
+                .MinimumLevel.Debug(); // leave all filtering to the MS provider
 
             if (hostEnv.IsDevelopment())
             {
@@ -31,7 +31,7 @@ namespace Sitecore.Project.Commerce.Retail.Engine.App_Startup
             {
                 //// Uncomment if you want to log into Mongo
                 ////.WriteTo.MongoDBCapped("mongodb://localhost/logs", collectionName: "SitecoreCommerce")
-                loggingConfig.WriteTo.RollingFile($@"{logsPath}\SCF.{DateTimeOffset.UtcNow:yyyyMMdd}.log.{nodeInstanceId}.txt", Serilog.Events.LogEventLevel.Warning, "{ThreadId} {Timestamp:HH:mm:ss} {ScLevel} {Message}{NewLine}{Exception}");
+                loggingConfig.WriteTo.RollingFile($@"{logsPath}\SCF.{DateTimeOffset.UtcNow:yyyyMMdd}.log.{nodeInstanceId}.txt", Serilog.Events.LogEventLevel.Debug, "{ThreadId} {Timestamp:HH:mm:ss} {ScLevel} {Message}{NewLine}{Exception}");
             }
             else if (hostEnv.IsEnvironment("load"))
             {

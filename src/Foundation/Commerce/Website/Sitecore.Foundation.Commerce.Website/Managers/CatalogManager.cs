@@ -555,15 +555,15 @@ namespace Sitecore.Foundation.Commerce.Website.Managers
             return new CategorySearchResults(childCategoryList, childCategoryList.Count, 1, 1, new List<FacetCategory>());
         }
 
-        public ManagerResponse<GetStockInformationResult, IEnumerable<StockInformation>> GetProductInventory(string productId)
+        public ManagerResponse<GetStockInformationResult, IEnumerable<StockInformation>> GetProductInventory(string productId, string productCatalog)
         {
-            var currentProductItem = GetProduct(productId);
+            var currentProductItem = GetProduct(productId, productCatalog);
             if (currentProductItem == null)
             {
                 return null;
             }
 
-            var catalogName = currentProductItem[Templates.Commerce.CatalogItem.Fields.CatalogName];
+            var catalogName = productCatalog; //currentProductItem[Templates.Commerce.CatalogItem.Fields.CatalogName];
             var products = new List<CommerceInventoryProduct>();
             if (currentProductItem.HasChildren)
             {

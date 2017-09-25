@@ -6,6 +6,7 @@ using Sitecore.Commerce.Plugin.Fulfillment;
 using Sitecore.Commerce.Plugin.Payments;
 using Sitecore.Commerce.Plugin.Promotions;
 using Sitecore.Commerce.Plugin.Tax;
+using Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks;
 using Sitecore.Framework.Pipelines.Definitions.Extensions;
 
 namespace Sitecore.Project.Commerce.Retail.Engine.App_ConfigureSitecore
@@ -17,7 +18,8 @@ namespace Sitecore.Project.Commerce.Retail.Engine.App_ConfigureSitecore
             services.Sitecore().Pipelines(config => config
                 .ConfigurePipeline<ICalculateCartLinesPipeline>(builder => builder
                     .Add<PopulateCartLineItemsBlock>()
-                    .Add<CalculateCartLinesPriceBlock>()
+                    //.Add<CalculateCartLinesPriceBlock>()
+                    .Add<CalculateCartLinesPriceBlockExtension>()
                     //.Add<ValidateCartLinesPriceBlock>()
                     .Add<CalculateCartLinesSubTotalsBlock>()
                     .Add<CalculateCartLinesFulfillmentBlock>()

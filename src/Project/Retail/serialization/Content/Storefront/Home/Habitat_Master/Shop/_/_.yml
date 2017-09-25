@@ -1,0 +1,14 @@
+﻿---
+ID: "3aa5c872-cf6e-409c-a7c7-501d084cecfb"
+Parent: "d2087208-83ad-4006-9878-44fa8acf807d"
+Template: "64ca6109-64ab-487f-853f-a406ff3115b6"
+Path: /sitecore/content/Storefront/Home/Habitat_Master/Shop/*/*
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150108T213319Z

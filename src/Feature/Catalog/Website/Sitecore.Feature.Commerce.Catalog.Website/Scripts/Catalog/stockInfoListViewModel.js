@@ -20,6 +20,7 @@ var StockInfoListViewModel = function () {
     self.load = function () {
         ClearGlobalMessages();
         var data = {};
+        data.ProductCatalog = $('#product-catalog').val();
         data.ProductId = $('#product-id').val();
         AJAXPost("/api/storefront/catalog/GetCurrentProductStockInfo", JSON.stringify(data), function (data, success, sender) {
             if (success && data && data.Success) {
@@ -43,6 +44,7 @@ var StockInfoListViewModel = function () {
     self.switchInfo = function () {
         ClearGlobalMessages();
 
+        var productCatalog = $("#product-catalog").val();
         var productId = $("#product-id").val();
         var variantId = $('#VariantId') && $('#VariantId').length > 0 ? $('#VariantId').val() : "";
         var item = ko.utils.arrayFirst(this.stockInfos(), function (si) {
@@ -53,7 +55,7 @@ var StockInfoListViewModel = function () {
             return null;
         });
 
-        if (item == null) {
+        if (item === null) {
             self.selectedStockInfo(self.stockInfos()[0]);
         } else {
             self.selectedStockInfo(item);

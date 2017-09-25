@@ -176,6 +176,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                     return Json(validationResult, JsonRequestBehavior.AllowGet);
                 }
 
+                //TODO: inputModel to have subLines
                 var response = CartManager.AddLineItemsToCart(CommerceUserContext.Current.UserId, new List<AddCartLineInputModel> { inputModel });
                 var result = new BaseApiModel(response.ServiceProviderResult);
                 return Json(result, JsonRequestBehavior.AllowGet);
@@ -263,15 +264,25 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                 }
 
                 var response = CartManager.ChangeLineQuantity(CommerceUserContext.Current.UserId, inputModel);
+
+                //var hostUri = Request.Url?.GetLeftPart(UriPartial.Authority);
+                //var acceptHeaders = Request.Headers["Accept"];
+                //var userAgent = Request.Headers["User-Agent"];
+
                 var result = new CartApiModel(response.ServiceProviderResult);
 
                 if (response.ServiceProviderResult.Success && response.Result != null)
                 {
                     result.Initialize(response.Result);
-                    var linetoUpdate = result.Lines.FirstOrDefault(x => x.ExternalCartLineId.Equals(inputModel.ExternalCartLineId));
-                    ///TODO: Update embellishment properties from inputmodel.
-                    linetoUpdate.Embellishment.Quantity = inputModel.EQuantity;
-                    linetoUpdate.Embellishment.Input = inputModel.ETextValue;
+                    
+                    //var linetoUpdate = result.Lines.FirstOrDefault(x => x.ExternalCartLineId.Equals(inputModel.ExternalCartLineId));
+                    //TODO: Update embellishment properties from inputmodel.
+                    //linetoUpdate.Embellishment.Quantity = inputModel.EQuantity;
+                    //linetoUpdate.Embellishment.Input = inputModel.ETextValue;
+
+                    //TODO : refactor but insert here for now
+                    response = CartManager.SaveCartLineEmbellishment(CommerceUserContext.Current.UserId, inputModel.ExternalCartLineId, uint.Parse(inputModel.EQuantity), inputModel.EType, inputModel.ETextValue);
+
                     if (HasBasketErrors(response.Result))
                     {
                         // We clear the cart from the cache when basket errors are detected.  This stops the message from being displayed over and over as the

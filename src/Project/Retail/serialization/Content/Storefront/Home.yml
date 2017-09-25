@@ -905,22 +905,9 @@ Languages:
               </rls>
             </r>
             <r
-              uid="{3C2F52A6-A439-456D-A812-04A831DB8A0F}">
-              <rls>
-                <ruleset>
-                  <rule
-                    uid="{00000000-0000-0000-0000-000000000000}"
-                    s:name="Default">
-                    <conditions>
-                      <condition
-                        uid="F248E8C92643472BB82B5D73F5A1D427"
-                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
-                    </conditions>
-                    <actions />
-                  </rule>
-                </ruleset>
-              </rls>
-            </r>
+              uid="{3C2F52A6-A439-456D-A812-04A831DB8A0F}"
+              s:ds="{8BE90A48-53EA-465A-A9A3-8379FF0DAFB6}"
+              s:par="" />
             <r
               uid="{FAD6585A-A605-4FDE-B461-3ADE0A1D7FA4}">
               <p:d />

@@ -38,6 +38,8 @@ using Sitecore.Foundation.Commerce.Website.Util;
 using Sitecore.Foundation.Dictionary.Repositories;
 using WebGrease.Css.Extensions;
 using AddShippingInfoRequest = Sitecore.Commerce.Engine.Connect.Services.Carts.AddShippingInfoRequest;
+using Sitecore.Commerce.Engine.Connect;
+using Sitecore.Foundation.Commerce.ServiceProxy;
 
 namespace Sitecore.Foundation.Commerce.Website.Managers
 {
@@ -148,6 +150,8 @@ namespace Sitecore.Foundation.Commerce.Website.Managers
                 //UpdateStockInformation(cartLine, inputModel.CatalogName);      
 
                 lines.Add(cartLine);
+
+                //TODO: refactor and process subLines too
             }
 
             CartCacheHelper.InvalidateCartCache(userId);
@@ -228,6 +232,50 @@ namespace Sitecore.Foundation.Commerce.Website.Managers
             {
                 cartLineToChange.Quantity = inputModel.Quantity;
                 var request = new UpdateCartLinesRequest(cart, new[] {cartLineToChange});
+                RefreshCart(request, true);
+                result = CartServiceProvider.UpdateCartLines(request);
+            }
+
+            if (result.Success && result.Cart != null)
+            {
+                CartCacheHelper.AddCartToCache(result.Cart as CommerceCart);
+            }
+
+            AddBasketErrorsToResult(result.Cart as CommerceCart, result);
+
+            return new ManagerResponse<CartResult, CommerceCart>(result, result.Cart as CommerceCart);
+        }
+
+        public ManagerResponse<CartResult, CommerceCart> SaveCartLineEmbellishment(string userId, string externalCartLineId, uint embelishmentQuantity, string embelishmentType, string embelishmentValue)
+        {
+            //Assert.ArgumentNotNull(inputModel, nameof(inputModel));
+            Assert.ArgumentNotNullOrEmpty(externalCartLineId, "ExternalCartLineId");
+
+            var cartResult = LoadCartByName(System.Web.HttpContext.Current.Session.SessionID, userId);
+            if (!cartResult.Success || cartResult.Cart == null)
+            {
+                var message = DictionaryPhraseRepository.Current.Get("/System Messages/Cart/Cart Not Found Error", "Could not retrieve the cart for the current user");
+                cartResult.SystemMessages.Add(new SystemMessage { Message = message });
+                return new ManagerResponse<CartResult, CommerceCart>(cartResult, cartResult.Cart as CommerceCart);
+            }
+
+            CartCacheHelper.InvalidateCartCache(userId);
+
+            var cart = cartResult.Cart;
+            var result = new CartResult { Cart = cart, Success = true };
+            var cartLineToChange = cart.Lines.SingleOrDefault(cl => cl.Product != null && cl.ExternalCartLineId == externalCartLineId);
+
+            var query = EngineConnectUtilityExtension.GetShopsContainer(string.Empty, cart.ShopName, cart.UserId, cart.CustomerId, "", "", new DateTime?()); //.SetupSession(cart.ExternalId, hostUri, acceptHeaders, userAgents);
+            var url = Proxy.GetValue(query.SaveCartLineEmbellishment(cart.ExternalId, cartLineToChange.ExternalCartLineId,"", cartLineToChange.ExternalCartLineId, embelishmentQuantity, embelishmentType, embelishmentValue));
+
+            if (embelishmentQuantity == 0 && cartLineToChange != null)
+            {
+                result = RemoveCartLines(cart, new[] { cartLineToChange }, true);
+            }
+            else if (cartLineToChange != null)
+            {
+                cartLineToChange.Quantity = embelishmentQuantity;
+                var request = new UpdateCartLinesRequest(cart, new[] { cartLineToChange });
                 RefreshCart(request, true);
                 result = CartServiceProvider.UpdateCartLines(request);
             }
