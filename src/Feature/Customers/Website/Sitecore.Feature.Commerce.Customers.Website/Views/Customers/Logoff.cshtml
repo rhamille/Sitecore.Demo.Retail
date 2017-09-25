@@ -12,7 +12,9 @@
 // -------------------------------------------------------------------------------------------*@
 
 <div>
-    <a href="@Url.Action("LogOffAndRedirect", "Customers")" class="btn btn-warning btn-lg">
+    <a href="@Url.Action("LogOffAndRedirect", "Customers", new { v = DateTime.UtcNow
+               .Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc))
+               .TotalMilliseconds.ToString() })" class="btn btn-warning btn-lg">
         <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> @Html.Sitecore().Text("/Customers/Log off/Log off", "Log off")
     </a>
 </div>

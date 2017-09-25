@@ -86,7 +86,11 @@ namespace Sitecore.Foundation.Commerce.Website.Managers
             {
                 Tracker.Current.EndVisit(true);
             }
+
             AuthenticationManager.Logout();
+            Tracker.Current.EndTracking();
+            HttpContext.Current.Session.Clear();
+            HttpContext.Current.Session.Abandon();
         }
 
         public ManagerResponse<GetUserResult, CommerceUser> GetUser(string userName)
