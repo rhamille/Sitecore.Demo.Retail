@@ -364,7 +364,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\..\Repo\Sitecore.Demo.Retail\src\Foundation\Commerce\Website\Sitecore.Commerce.ServiceProxy\Sitecore.Foundation.Commerce.ServiceProxy.csproj">
+    <ProjectReference Include="..\Sitecore.Commerce.ServiceProxy\Sitecore.Foundation.Commerce.ServiceProxy.csproj">
       <Project>{2E4655C5-9810-4A9A-8732-9A8411AE1EF2}</Project>
       <Name>Sitecore.Foundation.Commerce.ServiceProxy</Name>
     </ProjectReference>
