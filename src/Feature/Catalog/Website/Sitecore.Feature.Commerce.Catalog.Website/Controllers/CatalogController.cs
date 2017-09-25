@@ -548,12 +548,17 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
                 {
                     ProductID = productid
                 };
-                catalog.RelatedProducts.AddRange(relatedCatalogItemsModel.RelatedProducts[0].ChildProducts.Select(x => new ProductEmbellishmentAPIViewModel()
+
+                foreach (var r in relatedCatalogItemsModel.RelatedProducts)
                 {
-                    Name = x.ProductName,
-                    Description = x.Description,
-                    ProductID = x.ProductId
-                }));
+                    catalog.RelatedProducts.AddRange(r.ChildProducts.Select(x => new ProductEmbellishmentAPIViewModel()
+                    {
+                        Name = x.ProductName,
+                        Description = x.Description,
+                        ProductID = x.ProductId
+                    }));
+                }
+
                 items.Add(catalog);
             }
 
@@ -609,8 +614,9 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
                     return Json(validationResult, JsonRequestBehavior.AllowGet);
                 }
 
+                var productCatalog = model.ProductCatalog;
                 var productId = model.ProductId;
-                var response = CatalogManager.GetProductInventory(productId);
+                var response = CatalogManager.GetProductInventory(productId, productCatalog);
                 var result = new StockInfoListApiModel(response.ServiceProviderResult);
                 if (response.Result == null)
                 {

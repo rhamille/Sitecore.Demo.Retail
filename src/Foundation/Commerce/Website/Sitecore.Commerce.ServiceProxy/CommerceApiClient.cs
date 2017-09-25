@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 9/8/2017 11:01:13 AM
+// Generation date: 9/22/2017 10:05:56 AM
 namespace Sitecore.Commerce.Core
 {
     /// <summary>
@@ -61452,6 +61452,233 @@ namespace Sitecore.Framework.Caching
         }
     }
 }
+namespace Sitecore.Feature.Commerce.Embellishments.Engine.Components
+{
+    /// <summary>
+    /// There are no comments for EmbellishmentComponentSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("EmbellishmentComponentSingle")]
+    public partial class EmbellishmentComponentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EmbellishmentComponent>
+    {
+        /// <summary>
+        /// Initialize a new EmbellishmentComponentSingle object.
+        /// </summary>
+        public EmbellishmentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new EmbellishmentComponentSingle object.
+        /// </summary>
+        public EmbellishmentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new EmbellishmentComponentSingle object.
+        /// </summary>
+        public EmbellishmentComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EmbellishmentComponent> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for ChildComponents in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ChildComponents")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::Sitecore.Commerce.Core.Component> ChildComponents
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ChildComponents == null))
+                {
+                    this._ChildComponents = Context.CreateQuery<global::Sitecore.Commerce.Core.Component>(GetPath("ChildComponents"));
+                }
+                return this._ChildComponents;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sitecore.Commerce.Core.Component> _ChildComponents;
+    }
+    /// <summary>
+    /// There are no comments for EmbellishmentComponent in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("EmbellishmentComponent")]
+    public partial class EmbellishmentComponent : global::Sitecore.Commerce.Core.Component
+    {
+        /// <summary>
+        /// Create a new EmbellishmentComponent object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        /// <param name="quantity">Initial value of Quantity.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static EmbellishmentComponent CreateEmbellishmentComponent(string ID, long quantity)
+        {
+            EmbellishmentComponent embellishmentComponent = new EmbellishmentComponent();
+            embellishmentComponent.Id = ID;
+            embellishmentComponent.Quantity = quantity;
+            return embellishmentComponent;
+        }
+        /// <summary>
+        /// There are no comments for Property ItemId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ItemId")]
+        public string ItemId
+        {
+            get
+            {
+                return this._ItemId;
+            }
+            set
+            {
+                this.OnItemIdChanging(value);
+                this._ItemId = value;
+                this.OnItemIdChanged();
+                this.OnPropertyChanged("ItemId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ItemId;
+        partial void OnItemIdChanging(string value);
+        partial void OnItemIdChanged();
+        /// <summary>
+        /// There are no comments for Property ExternalId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExternalId")]
+        public string ExternalId
+        {
+            get
+            {
+                return this._ExternalId;
+            }
+            set
+            {
+                this.OnExternalIdChanging(value);
+                this._ExternalId = value;
+                this.OnExternalIdChanged();
+                this.OnPropertyChanged("ExternalId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ExternalId;
+        partial void OnExternalIdChanging(string value);
+        partial void OnExternalIdChanged();
+        /// <summary>
+        /// There are no comments for Property Quantity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Quantity")]
+        public long Quantity
+        {
+            get
+            {
+                return this._Quantity;
+            }
+            set
+            {
+                this.OnQuantityChanging(value);
+                this._Quantity = value;
+                this.OnQuantityChanged();
+                this.OnPropertyChanged("Quantity");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private long _Quantity;
+        partial void OnQuantityChanging(long value);
+        partial void OnQuantityChanged();
+        /// <summary>
+        /// There are no comments for Property Type in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Type")]
+        public string Type
+        {
+            get
+            {
+                return this._Type;
+            }
+            set
+            {
+                this.OnTypeChanging(value);
+                this._Type = value;
+                this.OnTypeChanged();
+                this.OnPropertyChanged("Type");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Type;
+        partial void OnTypeChanging(string value);
+        partial void OnTypeChanged();
+        /// <summary>
+        /// There are no comments for Property Value in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Value")]
+        public string Value
+        {
+            get
+            {
+                return this._Value;
+            }
+            set
+            {
+                this.OnValueChanging(value);
+                this._Value = value;
+                this.OnValueChanged();
+                this.OnPropertyChanged("Value");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Value;
+        partial void OnValueChanging(string value);
+        partial void OnValueChanged();
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponent as global::Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponent> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponent as global::Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponent> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sitecore.Commerce.Core.Component to its derived type global::Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponent
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle CastToEmbellishmentComponent(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sitecore.Commerce.Core.Component> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponent> query = source.CastTo<global::Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponent>();
+            return new global::Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle(source.Context, query.GetPath(null));
+        }
+    }
+}
 namespace Sitecore.Feature.Commerce.Entitlements.Engine.Entities
 {
     /// <summary>
@@ -62067,6 +62294,94 @@ namespace Sitecore.Commerce.EntityViews.Commands
         }
     }
 }
+namespace Sitecore.Feature.Commerce.Embellishments.Engine.Commands
+{
+    /// <summary>
+    /// There are no comments for SaveCartLineEmbellishmentsCommandSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("SaveCartLineEmbellishmentsCommandSingle")]
+    public partial class SaveCartLineEmbellishmentsCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SaveCartLineEmbellishmentsCommand>
+    {
+        /// <summary>
+        /// Initialize a new SaveCartLineEmbellishmentsCommandSingle object.
+        /// </summary>
+        public SaveCartLineEmbellishmentsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new SaveCartLineEmbellishmentsCommandSingle object.
+        /// </summary>
+        public SaveCartLineEmbellishmentsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new SaveCartLineEmbellishmentsCommandSingle object.
+        /// </summary>
+        public SaveCartLineEmbellishmentsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SaveCartLineEmbellishmentsCommand> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for SaveCartLineEmbellishmentsCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("SaveCartLineEmbellishmentsCommand")]
+    public partial class SaveCartLineEmbellishmentsCommand : global::Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new SaveCartLineEmbellishmentsCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static SaveCartLineEmbellishmentsCommand CreateSaveCartLineEmbellishmentsCommand(string ID)
+        {
+            SaveCartLineEmbellishmentsCommand saveCartLineEmbellishmentsCommand = new SaveCartLineEmbellishmentsCommand();
+            saveCartLineEmbellishmentsCommand.Id = ID;
+            return saveCartLineEmbellishmentsCommand;
+        }
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommand as global::Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommand as global::Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle CastToSaveCartLineEmbellishmentsCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommand> query = source.CastTo<global::Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommand>();
+            return new global::Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle(source.Context, query.GetPath(null));
+        }
+    }
+}
 namespace System.Transactions
 {
     /// <summary>
@@ -62111,7 +62426,17 @@ namespace Sitecore.Commerce.Engine
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         protected global::System.Type ResolveTypeFromName(string typeName)
         {
-            global::System.Type resolvedType = this.DefaultResolveType(typeName, "Sitecore.Feature.Commerce.Entitlements.Engine.Entities", "Sitecore.Feature.Commerce.Entitlements.Engine.Entities");
+            global::System.Type resolvedType = this.DefaultResolveType(typeName, "Sitecore.Feature.Commerce.Embellishments.Engine.Components", "Sitecore.Feature.Commerce.Embellishments.Engine.Components");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Feature.Commerce.Embellishments.Engine.Commands", "Sitecore.Feature.Commerce.Embellishments.Engine.Commands");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Feature.Commerce.Entitlements.Engine.Entities", "Sitecore.Feature.Commerce.Entitlements.Engine.Entities");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -62337,6 +62662,22 @@ namespace Sitecore.Commerce.Engine
         protected string ResolveNameFromType(global::System.Type clientType)
         {
             global::Microsoft.OData.Client.OriginalNameAttribute originalNameAttribute = (global::Microsoft.OData.Client.OriginalNameAttribute)global::System.Linq.Enumerable.SingleOrDefault(global::Microsoft.OData.Client.Utility.GetCustomAttributes(clientType, typeof(global::Microsoft.OData.Client.OriginalNameAttribute), true));
+            if (clientType.Namespace.Equals("Sitecore.Feature.Commerce.Embellishments.Engine.Components", global::System.StringComparison.Ordinal))
+            {
+                if (originalNameAttribute != null)
+                {
+                    return string.Concat("Sitecore.Feature.Commerce.Embellishments.Engine.Components.", originalNameAttribute.OriginalName);
+                }
+                return string.Concat("Sitecore.Feature.Commerce.Embellishments.Engine.Components.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("Sitecore.Feature.Commerce.Embellishments.Engine.Commands", global::System.StringComparison.Ordinal))
+            {
+                if (originalNameAttribute != null)
+                {
+                    return string.Concat("Sitecore.Feature.Commerce.Embellishments.Engine.Commands.", originalNameAttribute.OriginalName);
+                }
+                return string.Concat("Sitecore.Feature.Commerce.Embellishments.Engine.Commands.", clientType.Name);
+            }
             if (clientType.Namespace.Equals("Sitecore.Feature.Commerce.Entitlements.Engine.Entities", global::System.StringComparison.Ordinal))
             {
                 if (originalNameAttribute != null)
@@ -65746,6 +66087,15 @@ namespace Sitecore.Commerce.Engine
       <ComplexType Name=""ICache"" Abstract=""true"" />
       <ComplexType Name=""SitecoreCacheFactoryDelegate"" />
     </Schema>
+    <Schema Namespace=""Sitecore.Feature.Commerce.Embellishments.Engine.Components"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <EntityType Name=""EmbellishmentComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
+        <Property Name=""ItemId"" Type=""Edm.String"" />
+        <Property Name=""ExternalId"" Type=""Edm.String"" />
+        <Property Name=""Quantity"" Type=""Edm.Int64"" Nullable=""false"" />
+        <Property Name=""Type"" Type=""Edm.String"" />
+        <Property Name=""Value"" Type=""Edm.String"" />
+      </EntityType>
+    </Schema>
     <Schema Namespace=""Sitecore.Feature.Commerce.Entitlements.Engine.Entities"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <EntityType Name=""DigitalProduct"" BaseType=""Sitecore.Commerce.Plugin.Entitlements.Entitlement"" />
       <EntityType Name=""Installation"" BaseType=""Sitecore.Commerce.Plugin.Entitlements.Entitlement"" />
@@ -65761,6 +66111,9 @@ namespace Sitecore.Commerce.Engine
     <Schema Namespace=""Sitecore.Commerce.EntityViews.Commands"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <EntityType Name=""DoActionCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""GetEntityViewCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+    </Schema>
+    <Schema Namespace=""Sitecore.Feature.Commerce.Embellishments.Engine.Commands"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <EntityType Name=""SaveCartLineEmbellishmentsCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
     </Schema>
     <Schema Namespace=""System.Transactions"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <EnumType Name=""TransactionScopeAsyncFlowOption"">
@@ -66105,6 +66458,16 @@ namespace Sitecore.Commerce.Engine
         <Parameter Name=""FulfillmentFees"" Type=""Collection(Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFee)"" />
         <ReturnType Type=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       </Action>
+      <Action Name=""SaveCartLineEmbellishment"">
+        <Parameter Name=""cartId"" Type=""Edm.String"" Unicode=""false"" />
+        <Parameter Name=""lineId"" Type=""Edm.String"" Unicode=""false"" />
+        <Parameter Name=""itemId"" Type=""Edm.String"" Unicode=""false"" />
+        <Parameter Name=""externalId"" Type=""Edm.String"" Unicode=""false"" />
+        <Parameter Name=""quantity"" Type=""Edm.Int64"" Nullable=""false"" />
+        <Parameter Name=""type"" Type=""Edm.String"" Unicode=""false"" />
+        <Parameter Name=""value"" Type=""Edm.String"" Unicode=""false"" />
+        <ReturnType Type=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+      </Action>
       <EntityContainer Name=""Container"">
         <EntitySet Name=""CommerceEntities"" EntityType=""Sitecore.Commerce.Core.CommerceEntity"">
           <NavigationPropertyBinding Path=""Components"" Target=""Components"" />
@@ -66283,6 +66646,7 @@ namespace Sitecore.Commerce.Engine
         <ActionImport Name=""AddCouponToCart"" Action=""Sitecore.Commerce.Engine.AddCouponToCart"" EntitySet=""Commands"" />
         <ActionImport Name=""RemoveCouponFromCart"" Action=""Sitecore.Commerce.Engine.RemoveCouponFromCart"" EntitySet=""Commands"" />
         <ActionImport Name=""SaveFulfillmentFeeBook"" Action=""Sitecore.Commerce.Engine.SaveFulfillmentFeeBook"" EntitySet=""Commands"" />
+        <ActionImport Name=""SaveCartLineEmbellishment"" Action=""Sitecore.Commerce.Engine.SaveCartLineEmbellishment"" EntitySet=""Commands"" />
       </EntityContainer>
     </Schema>
   </edmx:DataServices>
@@ -67172,6 +67536,30 @@ namespace Sitecore.Commerce.Engine
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/SaveFulfillmentFeeBook()?$expand=" + expands, new global::Microsoft.OData.Client.BodyOperationParameter("name", name),
                     new global::Microsoft.OData.Client.BodyOperationParameter("FulfillmentFees", FulfillmentFees));
+        }
+        /// <summary>
+        /// There are no comments for SaveCartLineEmbellishment in the schema.
+        /// </summary>
+        [global::Microsoft.OData.Client.OriginalNameAttribute("SaveCartLineEmbellishment")]
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::Sitecore.Commerce.Core.Commands.CommerceCommand> SaveCartLineEmbellishment(string cartId, string lineId, string itemId, string externalId, long quantity, string type, string value)
+        {
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/SaveCartLineEmbellishment", new global::Microsoft.OData.Client.BodyOperationParameter("cartId", cartId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("lineId", lineId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("itemId", itemId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("externalId", externalId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("quantity", quantity),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("type", type),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("value", value));
+        }
+		public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::Sitecore.Commerce.Core.Commands.CommerceCommand> SaveCartLineEmbellishment(string cartId, string lineId, string itemId, string externalId, long quantity, string type, string value, string expands)
+        {
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/SaveCartLineEmbellishment()?$expand=" + expands, new global::Microsoft.OData.Client.BodyOperationParameter("cartId", cartId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("lineId", lineId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("itemId", itemId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("externalId", externalId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("quantity", quantity),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("type", type),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("value", value));
         }
     }
 }

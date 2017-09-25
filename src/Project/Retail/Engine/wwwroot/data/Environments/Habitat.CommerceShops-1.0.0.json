@@ -1196,6 +1196,12 @@
       {
         "$type": "Sitecore.Commerce.Core.TransactionsPolicy, Sitecore.Commerce.Core",
         "TransactionalityEnabled": true
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Catalog.Cs.LoggingPolicy, Sitecore.Commerce.Plugin.Catalog.Cs",
+        "LogCsProductFromCache": true,
+        "LogTranslateProductFromContext": true,
+        "LogTranslateProduct": true
       }
     ]
   }

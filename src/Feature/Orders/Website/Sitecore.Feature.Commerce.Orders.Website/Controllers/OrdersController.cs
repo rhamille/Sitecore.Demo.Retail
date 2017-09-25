@@ -25,6 +25,9 @@ using Sitecore.Foundation.Commerce.Website.Models.InputModels;
 using Sitecore.Foundation.SitecoreExtensions.Attributes;
 using Sitecore.Shell.Framework.Commands.Masters;
 using Order = Sitecore.ApplicationCenter.Applications.Order;
+using Sitecore.Foundation.Commerce.Website.Util;
+using Sitecore.Foundation.Commerce.ServiceProxy;
+using Sitecore.Commerce.Plugin.Orders;
 
 namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 {
@@ -89,7 +92,12 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
         public XmlActionResult<cXML> PunchoutOrderRequest(string userid,string orderid)
         {
             var orderViewModel = OrderViewModelRepository.Get(userid,orderid);
-           // var orderViewModel = GetOrderViewModel();
+
+            var query = EngineConnectUtilityExtension.GetShopsContainer(string.Empty, "Storefront", userid, userid, "", "", new DateTime?()); //.SetupSession(cart.ExternalId, hostUri, acceptHeaders, userAgents);
+            var orderEngine = Proxy.GetValue(query.Orders.ByKey(orderid).Expand("Lines($expand=CartLineComponents),Components"));
+
+
+            // var orderViewModel = GetOrderViewModel();
             //https://success.coupa.com/Suppliers/Integration_Resources/Sample_Punchout_Order_Message
             var cXML = new cXML()
             {
@@ -204,6 +212,12 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                             UnitOfMeasure = "EA"
 
                         }
+                        , Comments = new Comments()
+                        {
+                            type = "Embellishment - Shirt Text",
+                            Text = new[] { orderEngine == null ? "" : orderEngine.Lines.Where(o => o.Id == orderItem.OrderLineId).FirstOrDefault().CartLineComponents.OfType<Embellishments.Engine.Components.EmbellishmentComponent>().FirstOrDefault().Value }
+                        }
+                       
                         /*ShipTo = new ShipTo()
                         {
                             Address = new Address()

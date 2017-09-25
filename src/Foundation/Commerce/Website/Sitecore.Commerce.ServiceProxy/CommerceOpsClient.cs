@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 9/8/2017 11:01:16 AM
+// Generation date: 4/21/2017 11:48:18 AM
 namespace CommerceOps.Sitecore.Commerce.Core.Commands
 {
     /// <summary>
@@ -11166,6 +11166,103 @@ namespace CommerceOps.Sitecore.Commerce.Core
             global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.StateProvinceComponent> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Core.StateProvinceComponent>();
             return new global::CommerceOps.Sitecore.Commerce.Core.StateProvinceComponentSingle(source.Context, query.GetPath(null));
         }
+    }
+}
+namespace CommerceOps.Plugin.Sample.Payments.Braintree
+{
+    /// <summary>
+    /// There are no comments for BraintreeClientPolicy in the schema.
+    /// </summary>
+    public partial class BraintreeClientPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
+    {
+        /// <summary>
+        /// There are no comments for Property Environment in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string Environment
+        {
+            get
+            {
+                return this._Environment;
+            }
+            set
+            {
+                this.OnEnvironmentChanging(value);
+                this._Environment = value;
+                this.OnEnvironmentChanged();
+                this.OnPropertyChanged("Environment");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Environment;
+        partial void OnEnvironmentChanging(string value);
+        partial void OnEnvironmentChanged();
+        /// <summary>
+        /// There are no comments for Property MerchantId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string MerchantId
+        {
+            get
+            {
+                return this._MerchantId;
+            }
+            set
+            {
+                this.OnMerchantIdChanging(value);
+                this._MerchantId = value;
+                this.OnMerchantIdChanged();
+                this.OnPropertyChanged("MerchantId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _MerchantId;
+        partial void OnMerchantIdChanging(string value);
+        partial void OnMerchantIdChanged();
+        /// <summary>
+        /// There are no comments for Property PublicKey in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string PublicKey
+        {
+            get
+            {
+                return this._PublicKey;
+            }
+            set
+            {
+                this.OnPublicKeyChanging(value);
+                this._PublicKey = value;
+                this.OnPublicKeyChanged();
+                this.OnPropertyChanged("PublicKey");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _PublicKey;
+        partial void OnPublicKeyChanging(string value);
+        partial void OnPublicKeyChanged();
+        /// <summary>
+        /// There are no comments for Property PrivateKey in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string PrivateKey
+        {
+            get
+            {
+                return this._PrivateKey;
+            }
+            set
+            {
+                this.OnPrivateKeyChanging(value);
+                this._PrivateKey = value;
+                this.OnPrivateKeyChanged();
+                this.OnPropertyChanged("PrivateKey");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _PrivateKey;
+        partial void OnPrivateKeyChanging(string value);
+        partial void OnPrivateKeyChanged();
     }
 }
 namespace CommerceOps.Sitecore.Commerce.Core.Caching
@@ -49985,669 +50082,6 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Tax
         partial void OnIsShippingChanged();
     }
 }
-namespace CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine
-{
-    /// <summary>
-    /// There are no comments for FulfillmentFeeCachePolicy in the schema.
-    /// </summary>
-    public partial class FulfillmentFeeCachePolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
-    {
-        /// <summary>
-        /// Create a new FulfillmentFeeCachePolicy object.
-        /// </summary>
-        /// <param name="expiration">Initial value of Expiration.</param>
-        /// <param name="allowCaching">Initial value of AllowCaching.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static FulfillmentFeeCachePolicy CreateFulfillmentFeeCachePolicy(int expiration, bool allowCaching)
-        {
-            FulfillmentFeeCachePolicy fulfillmentFeeCachePolicy = new FulfillmentFeeCachePolicy();
-            fulfillmentFeeCachePolicy.Expiration = expiration;
-            fulfillmentFeeCachePolicy.AllowCaching = allowCaching;
-            return fulfillmentFeeCachePolicy;
-        }
-        /// <summary>
-        /// There are no comments for Property CacheName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string CacheName
-        {
-            get
-            {
-                return this._CacheName;
-            }
-            set
-            {
-                this.OnCacheNameChanging(value);
-                this._CacheName = value;
-                this.OnCacheNameChanged();
-                this.OnPropertyChanged("CacheName");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _CacheName;
-        partial void OnCacheNameChanging(string value);
-        partial void OnCacheNameChanged();
-        /// <summary>
-        /// There are no comments for Property Expiration in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public int Expiration
-        {
-            get
-            {
-                return this._Expiration;
-            }
-            set
-            {
-                this.OnExpirationChanging(value);
-                this._Expiration = value;
-                this.OnExpirationChanged();
-                this.OnPropertyChanged("Expiration");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private int _Expiration;
-        partial void OnExpirationChanging(int value);
-        partial void OnExpirationChanged();
-        /// <summary>
-        /// There are no comments for Property AllowCaching in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public bool AllowCaching
-        {
-            get
-            {
-                return this._AllowCaching;
-            }
-            set
-            {
-                this.OnAllowCachingChanging(value);
-                this._AllowCaching = value;
-                this.OnAllowCachingChanged();
-                this.OnPropertyChanged("AllowCaching");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private bool _AllowCaching;
-        partial void OnAllowCachingChanging(bool value);
-        partial void OnAllowCachingChanged();
-    }
-    /// <summary>
-    /// There are no comments for GlobalPolicy in the schema.
-    /// </summary>
-    public partial class GlobalPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
-    {
-        /// <summary>
-        /// There are no comments for Property DefaultFulfillmentFeeBookName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string DefaultFulfillmentFeeBookName
-        {
-            get
-            {
-                return this._DefaultFulfillmentFeeBookName;
-            }
-            set
-            {
-                this.OnDefaultFulfillmentFeeBookNameChanging(value);
-                this._DefaultFulfillmentFeeBookName = value;
-                this.OnDefaultFulfillmentFeeBookNameChanged();
-                this.OnPropertyChanged("DefaultFulfillmentFeeBookName");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _DefaultFulfillmentFeeBookName;
-        partial void OnDefaultFulfillmentFeeBookNameChanging(string value);
-        partial void OnDefaultFulfillmentFeeBookNameChanged();
-    }
-    /// <summary>
-    /// There are no comments for FulfillmentCommerceCommandSingle in the schema.
-    /// </summary>
-    public partial class FulfillmentCommerceCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FulfillmentCommerceCommand>
-    {
-        /// <summary>
-        /// Initialize a new FulfillmentCommerceCommandSingle object.
-        /// </summary>
-        public FulfillmentCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
-
-        /// <summary>
-        /// Initialize a new FulfillmentCommerceCommandSingle object.
-        /// </summary>
-        public FulfillmentCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
-
-        /// <summary>
-        /// Initialize a new FulfillmentCommerceCommandSingle object.
-        /// </summary>
-        public FulfillmentCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<FulfillmentCommerceCommand> query)
-            : base(query) {}
-
-    }
-    /// <summary>
-    /// There are no comments for FulfillmentCommerceCommand in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// Id
-    /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("Id")]
-    public partial class FulfillmentCommerceCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
-    {
-        /// <summary>
-        /// Create a new FulfillmentCommerceCommand object.
-        /// </summary>
-        /// <param name="ID">Initial value of Id.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static FulfillmentCommerceCommand CreateFulfillmentCommerceCommand(string ID)
-        {
-            FulfillmentCommerceCommand fulfillmentCommerceCommand = new FulfillmentCommerceCommand();
-            fulfillmentCommerceCommand.Id = ID;
-            return fulfillmentCommerceCommand;
-        }
-    }
-    /// <summary>
-    /// There are no comments for GetFulfillmentFeeBookCommandSingle in the schema.
-    /// </summary>
-    public partial class GetFulfillmentFeeBookCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<GetFulfillmentFeeBookCommand>
-    {
-        /// <summary>
-        /// Initialize a new GetFulfillmentFeeBookCommandSingle object.
-        /// </summary>
-        public GetFulfillmentFeeBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
-
-        /// <summary>
-        /// Initialize a new GetFulfillmentFeeBookCommandSingle object.
-        /// </summary>
-        public GetFulfillmentFeeBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
-
-        /// <summary>
-        /// Initialize a new GetFulfillmentFeeBookCommandSingle object.
-        /// </summary>
-        public GetFulfillmentFeeBookCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetFulfillmentFeeBookCommand> query)
-            : base(query) {}
-
-    }
-    /// <summary>
-    /// There are no comments for GetFulfillmentFeeBookCommand in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// Id
-    /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("Id")]
-    public partial class GetFulfillmentFeeBookCommand : FulfillmentCommerceCommand
-    {
-        /// <summary>
-        /// Create a new GetFulfillmentFeeBookCommand object.
-        /// </summary>
-        /// <param name="ID">Initial value of Id.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static GetFulfillmentFeeBookCommand CreateGetFulfillmentFeeBookCommand(string ID)
-        {
-            GetFulfillmentFeeBookCommand getFulfillmentFeeBookCommand = new GetFulfillmentFeeBookCommand();
-            getFulfillmentFeeBookCommand.Id = ID;
-            return getFulfillmentFeeBookCommand;
-        }
-    }
-    /// <summary>
-    /// There are no comments for SaveFulfillmentFeeBookCommandSingle in the schema.
-    /// </summary>
-    public partial class SaveFulfillmentFeeBookCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SaveFulfillmentFeeBookCommand>
-    {
-        /// <summary>
-        /// Initialize a new SaveFulfillmentFeeBookCommandSingle object.
-        /// </summary>
-        public SaveFulfillmentFeeBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
-
-        /// <summary>
-        /// Initialize a new SaveFulfillmentFeeBookCommandSingle object.
-        /// </summary>
-        public SaveFulfillmentFeeBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
-
-        /// <summary>
-        /// Initialize a new SaveFulfillmentFeeBookCommandSingle object.
-        /// </summary>
-        public SaveFulfillmentFeeBookCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SaveFulfillmentFeeBookCommand> query)
-            : base(query) {}
-
-    }
-    /// <summary>
-    /// There are no comments for SaveFulfillmentFeeBookCommand in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// Id
-    /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("Id")]
-    public partial class SaveFulfillmentFeeBookCommand : FulfillmentCommerceCommand
-    {
-        /// <summary>
-        /// Create a new SaveFulfillmentFeeBookCommand object.
-        /// </summary>
-        /// <param name="ID">Initial value of Id.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static SaveFulfillmentFeeBookCommand CreateSaveFulfillmentFeeBookCommand(string ID)
-        {
-            SaveFulfillmentFeeBookCommand saveFulfillmentFeeBookCommand = new SaveFulfillmentFeeBookCommand();
-            saveFulfillmentFeeBookCommand.Id = ID;
-            return saveFulfillmentFeeBookCommand;
-        }
-    }
-    /// <summary>
-    /// There are no comments for FulfillmentFeeComponentSingle in the schema.
-    /// </summary>
-    public partial class FulfillmentFeeComponentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FulfillmentFeeComponent>
-    {
-        /// <summary>
-        /// Initialize a new FulfillmentFeeComponentSingle object.
-        /// </summary>
-        public FulfillmentFeeComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
-
-        /// <summary>
-        /// Initialize a new FulfillmentFeeComponentSingle object.
-        /// </summary>
-        public FulfillmentFeeComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
-
-        /// <summary>
-        /// Initialize a new FulfillmentFeeComponentSingle object.
-        /// </summary>
-        public FulfillmentFeeComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<FulfillmentFeeComponent> query)
-            : base(query) {}
-
-        /// <summary>
-        /// There are no comments for ChildComponents in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> ChildComponents
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ChildComponents == null))
-                {
-                    this._ChildComponents = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Core.Component>(GetPath("ChildComponents"));
-                }
-                return this._ChildComponents;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> _ChildComponents;
-    }
-    /// <summary>
-    /// There are no comments for FulfillmentFeeComponent in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// Id
-    /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("Id")]
-    public partial class FulfillmentFeeComponent : global::CommerceOps.Sitecore.Commerce.Core.Component
-    {
-        /// <summary>
-        /// Create a new FulfillmentFeeComponent object.
-        /// </summary>
-        /// <param name="ID">Initial value of Id.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static FulfillmentFeeComponent CreateFulfillmentFeeComponent(string ID)
-        {
-            FulfillmentFeeComponent fulfillmentFeeComponent = new FulfillmentFeeComponent();
-            fulfillmentFeeComponent.Id = ID;
-            return fulfillmentFeeComponent;
-        }
-        /// <summary>
-        /// There are no comments for Property FulfillmentTypeName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string FulfillmentTypeName
-        {
-            get
-            {
-                return this._FulfillmentTypeName;
-            }
-            set
-            {
-                this.OnFulfillmentTypeNameChanging(value);
-                this._FulfillmentTypeName = value;
-                this.OnFulfillmentTypeNameChanged();
-                this.OnPropertyChanged("FulfillmentTypeName");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _FulfillmentTypeName;
-        partial void OnFulfillmentTypeNameChanging(string value);
-        partial void OnFulfillmentTypeNameChanged();
-    }
-    /// <summary>
-    /// Class containing all extension methods
-    /// </summary>
-    public static class ExtensionMethods
-    {
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
-        {
-            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="id">The value of id</param>
-        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand> source,
-            string id)
-        {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "Id", id }
-            };
-            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand
-        /// </summary>
-        /// <param name="source">source entity</param>
-        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle CastToFulfillmentCommerceCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
-        {
-            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand> query = source.CastTo<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand>();
-            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle(source.Context, query.GetPath(null));
-        }
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
-        {
-            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="id">The value of id</param>
-        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand> source,
-            string id)
-        {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "Id", id }
-            };
-            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Cast an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand to its derived type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand
-        /// </summary>
-        /// <param name="source">source entity</param>
-        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle CastToGetFulfillmentFeeBookCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand> source)
-        {
-            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand> query = source.CastTo<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand>();
-            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle(source.Context, query.GetPath(null));
-        }
-        /// <summary>
-        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand
-        /// </summary>
-        /// <param name="source">source entity</param>
-        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle CastToGetFulfillmentFeeBookCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
-        {
-            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand> query = source.CastTo<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand>();
-            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle(source.Context, query.GetPath(null));
-        }
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
-        {
-            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="id">The value of id</param>
-        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand> source,
-            string id)
-        {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "Id", id }
-            };
-            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Cast an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand to its derived type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand
-        /// </summary>
-        /// <param name="source">source entity</param>
-        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle CastToSaveFulfillmentFeeBookCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand> source)
-        {
-            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand> query = source.CastTo<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand>();
-            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle(source.Context, query.GetPath(null));
-        }
-        /// <summary>
-        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand
-        /// </summary>
-        /// <param name="source">source entity</param>
-        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle CastToSaveFulfillmentFeeBookCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
-        {
-            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand> query = source.CastTo<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand>();
-            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle(source.Context, query.GetPath(null));
-        }
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponent as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponent> source, global::System.Collections.Generic.Dictionary<string, object> keys)
-        {
-            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponent as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="id">The value of id</param>
-        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponent> source,
-            string id)
-        {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "Id", id }
-            };
-            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Component to its derived type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponent
-        /// </summary>
-        /// <param name="source">source entity</param>
-        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle CastToFulfillmentFeeComponent(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Component> source)
-        {
-            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponent> query = source.CastTo<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponent>();
-            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle(source.Context, query.GetPath(null));
-        }
-    }
-}
-namespace CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Policies
-{
-    /// <summary>
-    /// There are no comments for KnownEntitlementsTags in the schema.
-    /// </summary>
-    public partial class KnownEntitlementsTags : global::CommerceOps.Sitecore.Commerce.Core.Policy
-    {
-        /// <summary>
-        /// There are no comments for Property WarrantyTags in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Collections.ObjectModel.ObservableCollection<string> WarrantyTags
-        {
-            get
-            {
-                return this._WarrantyTags;
-            }
-            set
-            {
-                this.OnWarrantyTagsChanging(value);
-                this._WarrantyTags = value;
-                this.OnWarrantyTagsChanged();
-                this.OnPropertyChanged("WarrantyTags");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Collections.ObjectModel.ObservableCollection<string> _WarrantyTags = new global::System.Collections.ObjectModel.ObservableCollection<string>();
-        partial void OnWarrantyTagsChanging(global::System.Collections.ObjectModel.ObservableCollection<string> value);
-        partial void OnWarrantyTagsChanged();
-        /// <summary>
-        /// There are no comments for Property DigitalProductTags in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Collections.ObjectModel.ObservableCollection<string> DigitalProductTags
-        {
-            get
-            {
-                return this._DigitalProductTags;
-            }
-            set
-            {
-                this.OnDigitalProductTagsChanging(value);
-                this._DigitalProductTags = value;
-                this.OnDigitalProductTagsChanged();
-                this.OnPropertyChanged("DigitalProductTags");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Collections.ObjectModel.ObservableCollection<string> _DigitalProductTags = new global::System.Collections.ObjectModel.ObservableCollection<string>();
-        partial void OnDigitalProductTagsChanging(global::System.Collections.ObjectModel.ObservableCollection<string> value);
-        partial void OnDigitalProductTagsChanged();
-        /// <summary>
-        /// There are no comments for Property InstallationTags in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Collections.ObjectModel.ObservableCollection<string> InstallationTags
-        {
-            get
-            {
-                return this._InstallationTags;
-            }
-            set
-            {
-                this.OnInstallationTagsChanging(value);
-                this._InstallationTags = value;
-                this.OnInstallationTagsChanged();
-                this.OnPropertyChanged("InstallationTags");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Collections.ObjectModel.ObservableCollection<string> _InstallationTags = new global::System.Collections.ObjectModel.ObservableCollection<string>();
-        partial void OnInstallationTagsChanging(global::System.Collections.ObjectModel.ObservableCollection<string> value);
-        partial void OnInstallationTagsChanged();
-    }
-}
-namespace CommerceOps.Sitecore.Feature.Commerce.Payments.Engine.Policies
-{
-    /// <summary>
-    /// There are no comments for BraintreeClientPolicy in the schema.
-    /// </summary>
-    public partial class BraintreeClientPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
-    {
-        /// <summary>
-        /// There are no comments for Property Environment in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string Environment
-        {
-            get
-            {
-                return this._Environment;
-            }
-            set
-            {
-                this.OnEnvironmentChanging(value);
-                this._Environment = value;
-                this.OnEnvironmentChanged();
-                this.OnPropertyChanged("Environment");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _Environment;
-        partial void OnEnvironmentChanging(string value);
-        partial void OnEnvironmentChanged();
-        /// <summary>
-        /// There are no comments for Property MerchantId in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string MerchantId
-        {
-            get
-            {
-                return this._MerchantId;
-            }
-            set
-            {
-                this.OnMerchantIdChanging(value);
-                this._MerchantId = value;
-                this.OnMerchantIdChanged();
-                this.OnPropertyChanged("MerchantId");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _MerchantId;
-        partial void OnMerchantIdChanging(string value);
-        partial void OnMerchantIdChanged();
-        /// <summary>
-        /// There are no comments for Property PublicKey in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string PublicKey
-        {
-            get
-            {
-                return this._PublicKey;
-            }
-            set
-            {
-                this.OnPublicKeyChanging(value);
-                this._PublicKey = value;
-                this.OnPublicKeyChanged();
-                this.OnPropertyChanged("PublicKey");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _PublicKey;
-        partial void OnPublicKeyChanging(string value);
-        partial void OnPublicKeyChanged();
-        /// <summary>
-        /// There are no comments for Property PrivateKey in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string PrivateKey
-        {
-            get
-            {
-                return this._PrivateKey;
-            }
-            set
-            {
-                this.OnPrivateKeyChanging(value);
-                this._PrivateKey = value;
-                this.OnPrivateKeyChanged();
-                this.OnPropertyChanged("PrivateKey");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _PrivateKey;
-        partial void OnPrivateKeyChanging(string value);
-        partial void OnPrivateKeyChanged();
-    }
-}
 namespace CommerceOps.Sitecore.Commerce.Plugin.Shops
 {
     /// <summary>
@@ -51722,22 +51156,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         protected global::System.Type ResolveTypeFromName(string typeName)
         {
-            global::System.Type resolvedType = this.DefaultResolveType(typeName, "Sitecore.Feature.Commerce.Entitlements.Engine.Policies", "CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Policies");
-            if ((resolvedType != null))
-            {
-                return resolvedType;
-            }
-            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Commerce.Plugin.Orders.DelayedAvailability", "CommerceOps.Sitecore.Commerce.Plugin.Orders.DelayedAvailability");
-            if ((resolvedType != null))
-            {
-                return resolvedType;
-            }
-            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Feature.Commerce.Payments.Engine.Policies", "CommerceOps.Sitecore.Feature.Commerce.Payments.Engine.Policies");
-            if ((resolvedType != null))
-            {
-                return resolvedType;
-            }
-            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Demo.Retail.Feature.Fulfillment.Engine", "CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine");
+            global::System.Type resolvedType = this.DefaultResolveType(typeName, "Sitecore.Commerce.Plugin.Orders.DelayedAvailability", "CommerceOps.Sitecore.Commerce.Plugin.Orders.DelayedAvailability");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -51828,6 +51247,11 @@ namespace CommerceOps.Sitecore.Commerce.Engine
                 return resolvedType;
             }
             resolvedType = this.DefaultResolveType(typeName, "Sitecore.Commerce.Plugin.Payments", "CommerceOps.Sitecore.Commerce.Plugin.Payments");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "Plugin.Sample.Payments.Braintree", "CommerceOps.Plugin.Sample.Payments.Braintree");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -51937,21 +51361,9 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         protected string ResolveNameFromType(global::System.Type clientType)
         {
-            if (clientType.Namespace.Equals("CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Policies", global::System.StringComparison.Ordinal))
-            {
-                return string.Concat("Sitecore.Feature.Commerce.Entitlements.Engine.Policies.", clientType.Name);
-            }
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Plugin.Orders.DelayedAvailability", global::System.StringComparison.Ordinal))
             {
                 return string.Concat("Sitecore.Commerce.Plugin.Orders.DelayedAvailability.", clientType.Name);
-            }
-            if (clientType.Namespace.Equals("CommerceOps.Sitecore.Feature.Commerce.Payments.Engine.Policies", global::System.StringComparison.Ordinal))
-            {
-                return string.Concat("Sitecore.Feature.Commerce.Payments.Engine.Policies.", clientType.Name);
-            }
-            if (clientType.Namespace.Equals("CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine", global::System.StringComparison.Ordinal))
-            {
-                return string.Concat("Sitecore.Demo.Retail.Feature.Fulfillment.Engine.", clientType.Name);
             }
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.EntityViews.Commands", global::System.StringComparison.Ordinal))
             {
@@ -52024,6 +51436,10 @@ namespace CommerceOps.Sitecore.Commerce.Engine
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Plugin.Payments", global::System.StringComparison.Ordinal))
             {
                 return string.Concat("Sitecore.Commerce.Plugin.Payments.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("CommerceOps.Plugin.Sample.Payments.Braintree", global::System.StringComparison.Ordinal))
+            {
+                return string.Concat("Plugin.Sample.Payments.Braintree.", clientType.Name);
             }
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Plugin.Catalog", global::System.StringComparison.Ordinal))
             {
@@ -52626,6 +52042,14 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""Code"" Type=""Edm.String"" />
         <Property Name=""DisplayName"" Type=""Sitecore.Commerce.Core.Localized_1OfString"" />
       </EntityType>
+    </Schema>
+    <Schema Namespace=""Plugin.Sample.Payments.Braintree"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""BraintreeClientPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""Environment"" Type=""Edm.String"" />
+        <Property Name=""MerchantId"" Type=""Edm.String"" />
+        <Property Name=""PublicKey"" Type=""Edm.String"" />
+        <Property Name=""PrivateKey"" Type=""Edm.String"" />
+      </ComplexType>
     </Schema>
     <Schema Namespace=""Sitecore.Commerce.Core.Caching"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <ComplexType Name=""EntityMemoryCachingPolicy"" BaseType=""Sitecore.Commerce.Core.CachePolicy"">
@@ -54164,37 +53588,6 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""Priority"" Type=""Edm.Int32"" Nullable=""false"" />
         <Property Name=""IsCompounded"" Type=""Edm.Boolean"" Nullable=""false"" />
         <Property Name=""IsShipping"" Type=""Edm.Boolean"" Nullable=""false"" />
-      </ComplexType>
-    </Schema>
-    <Schema Namespace=""Sitecore.Demo.Retail.Feature.Fulfillment.Engine"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
-      <ComplexType Name=""FulfillmentFeeCachePolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
-        <Property Name=""CacheName"" Type=""Edm.String"" />
-        <Property Name=""Expiration"" Type=""Edm.Int32"" Nullable=""false"" />
-        <Property Name=""AllowCaching"" Type=""Edm.Boolean"" Nullable=""false"" />
-      </ComplexType>
-      <ComplexType Name=""GlobalPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
-        <Property Name=""DefaultFulfillmentFeeBookName"" Type=""Edm.String"" />
-      </ComplexType>
-      <EntityType Name=""FulfillmentCommerceCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
-      <EntityType Name=""GetFulfillmentFeeBookCommand"" BaseType=""Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand"" />
-      <EntityType Name=""SaveFulfillmentFeeBookCommand"" BaseType=""Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand"" />
-      <EntityType Name=""FulfillmentFeeComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
-        <Property Name=""FulfillmentTypeName"" Type=""Edm.String"" />
-      </EntityType>
-    </Schema>
-    <Schema Namespace=""Sitecore.Feature.Commerce.Entitlements.Engine.Policies"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
-      <ComplexType Name=""KnownEntitlementsTags"" BaseType=""Sitecore.Commerce.Core.Policy"">
-        <Property Name=""WarrantyTags"" Type=""Collection(Edm.String)"" />
-        <Property Name=""DigitalProductTags"" Type=""Collection(Edm.String)"" />
-        <Property Name=""InstallationTags"" Type=""Collection(Edm.String)"" />
-      </ComplexType>
-    </Schema>
-    <Schema Namespace=""Sitecore.Feature.Commerce.Payments.Engine.Policies"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
-      <ComplexType Name=""BraintreeClientPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
-        <Property Name=""Environment"" Type=""Edm.String"" />
-        <Property Name=""MerchantId"" Type=""Edm.String"" />
-        <Property Name=""PublicKey"" Type=""Edm.String"" />
-        <Property Name=""PrivateKey"" Type=""Edm.String"" />
       </ComplexType>
     </Schema>
     <Schema Namespace=""Sitecore.Commerce.Plugin.Shops"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">

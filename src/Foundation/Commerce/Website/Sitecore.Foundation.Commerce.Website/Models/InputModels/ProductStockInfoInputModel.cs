@@ -22,6 +22,9 @@ namespace Sitecore.Foundation.Commerce.Website.Models.InputModels
     public class ProductStockInfoInputModel
     {
         [Required]
+        public string ProductCatalog { get; set; }
+
+        [Required]
         public string ProductId { get; set; }
     }
 }
