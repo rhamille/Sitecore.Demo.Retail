@@ -215,7 +215,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                         , Comments = new Comments()
                         {
                             type = "Embellishment - Shirt Text",
-                            Text = new[] { orderEngine == null ? "" : orderEngine.Lines.Where(o => o.Id == orderItem.OrderLineId).FirstOrDefault().CartLineComponents.OfType<Embellishments.Engine.Components.EmbellishmentComponent>().FirstOrDefault().Value }
+                            Text = GetEmbelishments(orderEngine, orderItem)
                         }
                        
                         /*ShipTo = new ShipTo()
@@ -246,6 +246,20 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 
 
             return new XmlActionResult<cXML>(cXML);
+        }
+
+        private string[] GetEmbelishments(Sitecore.Commerce.Plugin.Orders.Order orderEngine, OrderLineViewModel orderItem)
+        {
+            if(string.IsNullOrEmpty(orderItem.OrderLineId))
+                return new [] { "" };
+
+            var line = orderEngine.Lines.FirstOrDefault(o => o.Id == orderItem.OrderLineId);
+
+            if (line == null)
+                return new [] {""};
+                var embellishmentComponents = line.CartLineComponents.OfType<Embellishments.Engine.Components.EmbellishmentComponent>().Select(x => x.Value);
+
+                return  embellishmentComponents.Any() ? embellishmentComponents.ToArray() : new [] { "" };
         }
 
         [HttpGet]
