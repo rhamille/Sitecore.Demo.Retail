@@ -77,7 +77,9 @@ namespace Sitecore.Feature.Commerce.Customers.Website.Controllers
         {
             AccountManager.Logout();
 
-            return RedirectToLocal("/");
+            return RedirectToLocal("/?t=" + DateTime.UtcNow
+               .Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc))
+               .TotalMilliseconds);
         }
 
         [HttpGet]
@@ -130,7 +132,7 @@ namespace Sitecore.Feature.Commerce.Customers.Website.Controllers
         [AllowAnonymous]
         public ActionResult Login(LoginApiModel model)
         {
-            var success = this.AccountManager.Login(model.Email, model.Password, true);
+            var success = this.AccountManager.Login(model.Email, model.Password, false);
             Session["PunchOut"] = false;
             if (success)
             {

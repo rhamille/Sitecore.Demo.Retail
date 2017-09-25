@@ -33,6 +33,36 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #main-container {
+            height: 100%;
+            width: 100%;
+            min-height: 550px;
+            position: relative;
+        }
+
+        #smallContainer {
+            height: 100%;
+            position: relative;
+        }
+        /*no width specified*/
+        #iframeContainer {
+            height: 100%;
+            position: relative;
+        }
+
+        #retailFrame {
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+    </style>
 </head>
 
 <body class="wisbis @(Sitecore.Context.PageMode.IsExperienceEditor ? "header-static" : "") @(Sitecore.Context.PageMode.IsNormal ? "" : (Sitecore.Context.PageMode.IsExperienceEditor ? "pagemode-edit" : "pagemode-preview"))">
@@ -118,7 +148,7 @@
                 <button type="button" class="btn btn-primary">Close</button>
             </div>
         </section>
-        <main role="main">
+        <main role="main" id="iframeContainer">
            
             @Html.Sitecore().Placeholder("page-layout")
             <iframe id="retailFrame" src="" name="frame1" scrolling="auto" frameborder="no" align="center" width="100%" onload="" style="display: none;"></iframe>
@@ -142,7 +172,7 @@
         evt.preventDefault();
         formtoSubmit = $(this).parent("form");
         var iframe = $("iframe")[0].contentWindow;
-        $("iframe").attr("src", "http://retail.dev.local");
+        $("iframe").attr("src", "http://retail.dev.local/AccountManagement?t=" + Date.now());
     });
 
     var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";

@@ -274,14 +274,15 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                 if (response.ServiceProviderResult.Success && response.Result != null)
                 {
                     result.Initialize(response.Result);
-                    
+
                     //var linetoUpdate = result.Lines.FirstOrDefault(x => x.ExternalCartLineId.Equals(inputModel.ExternalCartLineId));
                     //TODO: Update embellishment properties from inputmodel.
                     //linetoUpdate.Embellishment.Quantity = inputModel.EQuantity;
                     //linetoUpdate.Embellishment.Input = inputModel.ETextValue;
 
                     //TODO : refactor but insert here for now
-                    response = CartManager.SaveCartLineEmbellishment(CommerceUserContext.Current.UserId, inputModel.ExternalCartLineId, uint.Parse(inputModel.EQuantity), inputModel.EType, inputModel.ETextValue);
+                    if (!string.IsNullOrEmpty(inputModel.ETextValue))
+                        response = CartManager.SaveCartLineEmbellishment(CommerceUserContext.Current.UserId, inputModel.ExternalCartLineId, uint.Parse(inputModel.EQuantity), inputModel.EType, inputModel.ETextValue);
 
                     if (HasBasketErrors(response.Result))
                     {

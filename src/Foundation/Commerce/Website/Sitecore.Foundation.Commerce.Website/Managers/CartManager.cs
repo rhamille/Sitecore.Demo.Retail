@@ -274,7 +274,7 @@ namespace Sitecore.Foundation.Commerce.Website.Managers
             }
             else if (cartLineToChange != null)
             {
-                cartLineToChange.Quantity = embelishmentQuantity;
+                //cartLineToChange.Quantity = embelishmentQuantity;
                 var request = new UpdateCartLinesRequest(cart, new[] { cartLineToChange });
                 RefreshCart(request, true);
                 result = CartServiceProvider.UpdateCartLines(request);
