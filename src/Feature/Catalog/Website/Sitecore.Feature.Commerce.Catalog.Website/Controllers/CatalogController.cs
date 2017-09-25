@@ -548,12 +548,15 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
                 {
                     ProductID = productid
                 };
-                catalog.RelatedProducts.AddRange(relatedCatalogItemsModel.RelatedProducts[0].ChildProducts.Select(x => new ProductEmbellishmentAPIViewModel()
-                {
-                    Name = x.ProductName,
-                    Description = x.Description,
-                    ProductID = x.ProductId
-                }));
+                if (!relatedCatalogItemsModel.RelatedProducts.Any()) continue;
+                catalog.RelatedProducts.AddRange(
+                    relatedCatalogItemsModel.RelatedProducts[0].ChildProducts.Select(
+                        x => new ProductEmbellishmentAPIViewModel()
+                        {
+                            Name = x.ProductName,
+                            Description = x.Description,
+                            ProductID = x.ProductId
+                        }));
                 items.Add(catalog);
             }
 
