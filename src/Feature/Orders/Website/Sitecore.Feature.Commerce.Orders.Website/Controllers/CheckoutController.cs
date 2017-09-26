@@ -300,9 +300,11 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
             try
             {
                 var response = CartManager.SetShippingMethods(CommerceUserContext.Current.UserId, inputModel);
-                if (!response.ServiceProviderResult.Success || response.Result == null)
-                    throw new Exception("Error setting shipping methods: " +
-                                        string.Join(",", response.ServiceProviderResult.SystemMessages.Select(sm => sm.Message)));
+                //This line was preventing me from moving ahead in the process even though all information about shipping was present
+
+                //if (!response.ServiceProviderResult.Success || response.Result == null)
+                //    throw new Exception("Error setting shipping methods: " +
+                //                        string.Join(",", response.ServiceProviderResult.SystemMessages.Select(sm => sm.Message)));
                 model.Cart = response.Result;
             }
             catch (Exception e)

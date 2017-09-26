@@ -32,14 +32,14 @@ using Sitecore.Commerce.Plugin.Orders;
 namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 {
 
-    public class XmlActionResult<T> : ActionResult
+    public class XmlActionResult : ActionResult
     {
-        private readonly T _document;
+        private readonly object _document;
 
         public Formatting Formatting { get; set; }
         public string MimeType { get; set; }
 
-        public XmlActionResult(T document)
+        public XmlActionResult(object document)
         {
             if (document == null)
                 throw new ArgumentNullException("document");
@@ -55,7 +55,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
         {
             context.HttpContext.Response.Clear();
             context.HttpContext.Response.ContentType = MimeType;
-            XmlSerializer ser = new XmlSerializer(typeof(T));
+            XmlSerializer ser = new XmlSerializer(this._document.GetType());
             ser.Serialize(context.HttpContext.Response.OutputStream, _document);
 
         }
@@ -89,14 +89,28 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
             return new EmptyResult();
         }
 
-        public XmlActionResult<cXML> PunchoutOrderRequest(string userid,string orderid)
+        public XmlActionResult PunchoutOrderRequest(string userid,string orderid, string exportformat = "cxml")
         {
             var orderViewModel = OrderViewModelRepository.Get(userid,orderid);
 
             var query = EngineConnectUtilityExtension.GetShopsContainer(string.Empty, "Storefront", userid, userid, "", "", new DateTime?()); //.SetupSession(cart.ExternalId, hostUri, acceptHeaders, userAgents);
             var orderEngine = Proxy.GetValue(query.Orders.ByKey(orderid).Expand("Lines($expand=CartLineComponents),Components"));
 
+            switch (exportformat.ToLower())
+            {
+                case "oagxml":
+                    return ExportAsOAGXML(orderViewModel, orderEngine);
+                case "ocixml":
+                    return ExportAsOCIXML(orderViewModel, orderEngine);
+                case "cxml":
+                default:
+                    return ExportAsCXML(orderViewModel, orderEngine);
+            }
+            
+        }
 
+        private XmlActionResult ExportAsCXML(OrderViewModel orderViewModel, Sitecore.Commerce.Plugin.Orders.Order orderEngine)
+        {
             // var orderViewModel = GetOrderViewModel();
             //https://success.coupa.com/Suppliers/Integration_Resources/Sample_Punchout_Order_Message
             var cXML = new cXML()
@@ -110,38 +124,37 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                 From = new From()
                 {
                     Credential = new Credential[1]
-                            {
-                                new Credential()
-                                {
-                                    domain = "NetworkID"
-                                }
-                            }
+                    {
+                        new Credential()
+                        {
+                            domain = "NetworkID"
+                        }
+                    }
                 },
                 To = new To()
                 {
                     Credential = new Credential[1]
+                    {
+                        new Credential()
+                        {
+                            domain = "NetworkID",
+                            Identity = new Identity()
                             {
-                                new Credential()
-                                {
-                                    domain = "NetworkID",
-                                    Identity = new Identity()
-                                    {
-                                        Value = "user@sitecore.com"
-                                    }
-                                }
+                                Value = "user@sitecore.com"
                             }
+                        }
+                    }
                 },
                 Sender = new Sender()
                 {
                     Credential = new Credential[1]
-                            {
-                                new Credential()
-                                {
-                                    domain = "NetworkID",
-                                }
-                            }
+                    {
+                        new Credential()
+                        {
+                            domain = "NetworkID",
+                        }
+                    }
                 }
-
             });
 
             var message = new Message()
@@ -189,8 +202,8 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                     {
                         ItemID = new ItemID()
                         {
-                            SupplierPartAuxiliaryID = new SupplierPartAuxiliaryID() { Value = "AS-df" },
-                            SupplierPartID = new SupplierPartID() { Value = "1234" }
+                            SupplierPartAuxiliaryID = new SupplierPartAuxiliaryID() {Value = "AS-df"},
+                            SupplierPartID = new SupplierPartID() {Value = "1234"}
                         },
                         ItemDetail = new ItemDetail()
                         {
@@ -198,7 +211,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                             {
                                 new Description()
                                 {
-                                    Text = new []{orderItem.Title}
+                                    Text = new[] {orderItem.Title}
                                 }
                             },
                             UnitPrice = new UnitPrice()
@@ -210,9 +223,9 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                                 }
                             },
                             UnitOfMeasure = "EA"
-
                         }
-                        , Comments = new Comments()
+                        ,
+                        Comments = new Comments()
                         {
                             type = "Embellishment - Shirt Text",
                             Text = GetEmbelishments(orderEngine, orderItem)
@@ -236,18 +249,106 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 
                             }
                         },*/
-
-
                     });
             }
-            ((PunchOutOrderMessage)message.Item).ItemIn = items.ToArray();
+            ((PunchOutOrderMessage) message.Item).ItemIn = items.ToArray();
             topNodes.Add(message);
             cXML.Items = topNodes.ToArray();
 
 
-            return new XmlActionResult<cXML>(cXML);
+            return new XmlActionResult(cXML);
         }
 
+
+        private XmlActionResult ExportAsOAGXML(OrderViewModel orderViewModel, Sitecore.Commerce.Plugin.Orders.Order orderEngine)
+        {
+            // var orderViewModel = GetOrderViewModel();
+            //https://success.coupa.com/Suppliers/Integration_Resources/Sample_Punchout_Order_Message
+            var oagXml = new oagXML()
+            {
+               
+            };
+
+            return new XmlActionResult(oagXml);
+        }
+
+        private XmlActionResult ExportAsOCIXML(OrderViewModel orderViewModel, Sitecore.Commerce.Plugin.Orders.Order orderEngine)
+        {
+            // var orderViewModel = GetOrderViewModel();
+            //https://success.coupa.com/Suppliers/Integration_Resources/Sample_Punchout_Order_Message
+            var ociXml = new ociXML()
+            {
+                CatalogHeader = "Catalog Header",
+                Catalog = new BusinessDocumentCatalog
+                {
+                    CatalogID = 11,
+                    Product = orderViewModel.Lines.Select(x => new BusinessDocumentCatalogProduct
+                    {
+                        CatalogKey = 11111,
+                        ParentCategoryID = 44120000,
+                        Description = new BusinessDocumentCatalogProductDescription { Language = "EN", Value = x.Title.ToString()},
+                        ManufacturerDescription = new BusinessDocumentCatalogProductManufacturerDescription()
+                        {
+                            ID = 1,
+                            PartnerID = new BusinessDocumentCatalogProductManufacturerDescriptionPartnerID()
+                            {
+                                Value = 4712,
+                                Code = "Other"
+                            },
+                            PartnerProductID = new BusinessDocumentCatalogProductManufacturerDescriptionPartnerProductID()
+                            {
+                                Value = 4711,
+                                Code = "Other2"
+                            },
+                        },
+                        ParentCategoryIDSpecified = true,
+                        ProductID = new BusinessDocumentCatalogProductProductID
+                        {
+                            Value = x.OrderLineId,
+                            Code = "Buyer"
+                        },
+                        ProductType = "Good Type",
+                        ShoppingBasketItem = new BusinessDocumentCatalogProductShoppingBasketItem
+                        {
+                            ItemText = new BusinessDocumentCatalogProductShoppingBasketItemItemText()
+                            {
+                                Value = x.Title,
+                                Language = "EN"
+                            },
+                            LeadTime = 1,
+                            NetPrice = new BusinessDocumentCatalogProductShoppingBasketItemNetPrice
+                            {
+                                PriceUnit = 5, 
+                                Price = new BusinessDocumentCatalogProductShoppingBasketItemNetPricePrice
+                                {
+                                    Value = x.ItemPrice,
+                                    Currency = x.Currency,
+                                   
+                                },
+                                PriceUnitSpecified = true,
+                            },
+                            Quantity = new BusinessDocumentCatalogProductShoppingBasketItemQuantity()
+                            {
+                                Value = (byte) x.Quantity,
+                                UoM = "EA"
+                            },
+                            Quote = new BusinessDocumentCatalogProductShoppingBasketItemQuote()
+                            {
+                                QuoteID = 111,
+                                QuoteItemID = 1111
+                            },
+                            RefManufacturerDescription = 3,
+                            RefVendorDescription = 2,
+                            Text = GetEmbelishments(orderEngine, x)
+                        }
+
+                    }).ToArray() 
+                    
+                }
+            };
+            
+            return new XmlActionResult(ociXml);
+        }
         private string[] GetEmbelishments(Sitecore.Commerce.Plugin.Orders.Order orderEngine, OrderLineViewModel orderItem)
         {
             if(string.IsNullOrEmpty(orderItem.OrderLineId))

@@ -30,12 +30,36 @@
                     @Html.Sitecore().Field("Email Sent Message", Html.Sitecore().CurrentItem.Children["Order Confirmation"])
                 </p>
             </div>
+            <div>
+                <input type="radio" name="exportFormat" id="cxml" value="Ariba" checked="checked"> Ariba (cXML)
+                <input type="radio" name="exportFormat" id="oagxml" value="OAGXML"> OAGXML
+                <input type="radio" name="exportFormat" id="ocixml" value="OCI"> OCI <br>
+                <button type="button" onclick="exportOrder()">Export</button>
+            </div>
         </div>
     </div>
 </div>
 <script type="text/javascript">
-    if (window.self !== window.top) {
-        window.parent.postMessage({ eventType: "getorder", userid: '@Model.UserId', orderid: '@Model.OrderId' },
-            "http://wisbis.dev.local");
+
+
+    function exportOrder() {
+        if (document.getElementById("cxml").checked) {
+            if (window.self !== window.top) {
+                window.parent.postMessage({ eventType: "getorder", userid: '@Model.UserId', orderid: '@Model.OrderId', exportformat: 'cxml' },
+                    "http://wisbis.dev.local");
+            }
+        }
+        else if (document.getElementById("oagxml").checked) {
+            if (window.self !== window.top) {
+                window.parent.postMessage({ eventType: "getorder", userid: '@Model.UserId', orderid: '@Model.OrderId', exportformat: 'oagxml' },
+                    "http://wisbis.dev.local");
+            }
+        }
+        else if (document.getElementById("ocixml").checked) {
+             if (window.self !== window.top) {
+                window.parent.postMessage({ eventType: "getorder", userid: '@Model.UserId', orderid: '@Model.OrderId', exportformat: 'ocixml' },
+                    "http://wisbis.dev.local");
+            }
+        }
     }
 </script>

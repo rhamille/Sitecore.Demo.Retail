@@ -18140,7 +18140,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Templates
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/cXML")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/cXML", IsNullable = false)]
-    public partial class cXML
+    public partial class cXML : XmlDocumentBase
     {
 
         private object[] itemsField;

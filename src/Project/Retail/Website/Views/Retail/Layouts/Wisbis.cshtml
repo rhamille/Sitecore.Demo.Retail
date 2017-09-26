@@ -206,7 +206,7 @@
                     $('html, body').animate({ scrollTop: 0 }, 'fast');
                 }
             };
-            xhttp.open("GET", "http://retail.dev.local/api/storefront/Orders/PunchoutOrderRequest?userid=" + e.data.userid + "&orderid=" + e.data.orderid, true);
+            xhttp.open("GET", "http://retail.dev.local/api/storefront/Orders/PunchoutOrderRequest?userid=" + e.data.userid + "&orderid=" + e.data.orderid + "&exportformat=" + e.data.exportformat, true);
             xhttp.send();
            
 
