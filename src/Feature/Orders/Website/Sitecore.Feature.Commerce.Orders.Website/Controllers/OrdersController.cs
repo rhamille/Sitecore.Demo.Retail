@@ -24,7 +24,7 @@ using Sitecore.Foundation.Commerce.Website.Models;
 using Sitecore.Foundation.Commerce.Website.Models.InputModels;
 using Sitecore.Foundation.SitecoreExtensions.Attributes;
 using Sitecore.Shell.Framework.Commands.Masters;
-using Order = Sitecore.ApplicationCenter.Applications.Order;
+//using Order = Sitecore.Commerce.Plugin.Orders;
 using Sitecore.Foundation.Commerce.Website.Util;
 using Sitecore.Foundation.Commerce.ServiceProxy;
 using Sitecore.Commerce.Plugin.Orders;
