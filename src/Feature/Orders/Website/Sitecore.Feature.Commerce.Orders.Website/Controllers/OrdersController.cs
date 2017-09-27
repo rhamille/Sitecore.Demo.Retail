@@ -28,6 +28,7 @@ using Sitecore.Shell.Framework.Commands.Masters;
 using Sitecore.Foundation.Commerce.Website.Util;
 using Sitecore.Foundation.Commerce.ServiceProxy;
 using Sitecore.Commerce.Plugin.Orders;
+using Sitecore.Feature.Commerce.Embellishments.Engine.Components;
 
 namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 {
@@ -228,7 +229,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                         Comments = new Comments()
                         {
                             type = "Embellishment - Shirt Text",
-                            Text = GetEmbelishments(orderEngine, orderItem)
+                            Text = GetEmbelishments(orderEngine, orderItem).Select(y => y.Value).ToArray()
                         }
                        
                         /*ShipTo = new ShipTo()
@@ -266,7 +267,75 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
             //https://success.coupa.com/Suppliers/Integration_Resources/Sample_Punchout_Order_Message
             var oagXml = new oagXML()
             {
-               
+               header = new responseHeader
+               {
+                   version = 1,
+                   @return = new responseHeaderReturn
+                   {
+                       returnCode = "5"
+                   }
+
+               },
+               body = new responseBody
+               {
+                   OrderLinesDataElements = orderViewModel.Lines.Select(x => new responseBodyOrderLine
+                   {
+                       item = new responseBodyOrderLineItem
+                       {
+                           itemDescription = x.Title,
+                           itemNumber = new responseBodyOrderLineItemItemNumber
+                           {
+                               supplierItemNumber = new responseBodyOrderLineItemItemNumberSupplierItemNumber
+                               {
+                                   itemID = x.OrderLineId,
+                                  
+                               },
+                               
+                           }, 
+                           lineType = "GOODS",
+                           quantity = (byte) x.Quantity,
+                           unitOfMeasure = new responseBodyOrderLineItemUnitOfMeasure
+                           {
+                               supplierUnitOfMeasure = new responseBodyOrderLineItemUnitOfMeasureSupplierUnitOfMeasure
+                               {
+                                   supplierUOMQuantity = null,
+                                   supplierUOMType = "EACH"
+                               },
+                               
+                           },
+                           
+                       },
+                       additionalAttributes = new responseBodyOrderLineAdditionalAttributes
+                       {
+                           Attributes = GetEmbelishments(orderEngine, x).Select(y => new responseBodyOrderLineAdditionalAttribute
+                           {
+                               Value = y.Value,
+                               name = y.Name,
+                               type = y.Type
+                           }).ToArray()
+                       },
+                       category = new responseBodyOrderLineCategory
+                       {
+                           categoryCode = new responseBodyOrderLineCategoryCategoryCode
+                           {
+                               Value = 53101602,
+                               categoryCodeIdentifier = "SUPPLIER"
+                           },
+
+                       },
+                       price = new responseBodyOrderLinePrice
+                       {
+                           currency = x.Currency,
+                           unitPrice = x.ItemPrice
+                       },
+                       supplier = new responseBodyOrderLineSupplier
+                       {
+                           supplierDUNS = 750371544,
+                           supplierName = "J. BLACKWOOD &amp; SON PTY LTD"
+                       },
+                       
+                   }).ToArray()
+               }
             };
 
             return new XmlActionResult(oagXml);
@@ -339,7 +408,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                             },
                             RefManufacturerDescription = 3,
                             RefVendorDescription = 2,
-                            Text = GetEmbelishments(orderEngine, x)
+                            Text = GetEmbelishments(orderEngine, x).Select(y => y.Value).ToArray()
                         }
 
                     }).ToArray() 
@@ -349,18 +418,18 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
             
             return new XmlActionResult(ociXml);
         }
-        private string[] GetEmbelishments(Sitecore.Commerce.Plugin.Orders.Order orderEngine, OrderLineViewModel orderItem)
+        private EmbellishmentComponent[] GetEmbelishments(Sitecore.Commerce.Plugin.Orders.Order orderEngine, OrderLineViewModel orderItem)
         {
             if(string.IsNullOrEmpty(orderItem.OrderLineId))
-                return new [] { "" };
+                return new EmbellishmentComponent[0];
 
             var line = orderEngine.Lines.FirstOrDefault(o => o.Id == orderItem.OrderLineId);
 
             if (line == null)
-                return new [] {""};
-                var embellishmentComponents = line.CartLineComponents.OfType<Embellishments.Engine.Components.EmbellishmentComponent>().Select(x => x.Value);
+                return new EmbellishmentComponent[0];
+            var embellishmentComponents = line.CartLineComponents.OfType<Embellishments.Engine.Components.EmbellishmentComponent>().Select(x => x);
 
-                return  embellishmentComponents.Any() ? embellishmentComponents.ToArray() : new [] { "" };
+                return  embellishmentComponents.Any() ? embellishmentComponents.ToArray() :  new EmbellishmentComponent[0]; ;
         }
 
         [HttpGet]
