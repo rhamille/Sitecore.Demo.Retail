@@ -2,7 +2,7 @@
 ID: "c8533001-10f2-4707-93e4-18a75d860cdf"
 Parent: "67a61d44-9c33-4490-8f6e-ae6c1819682f"
 Template: "4d20a1ec-f81c-4472-897e-4a542f95f927"
-Path: /sitecore/content/Storefront/Global/Order Workflows
+Path: /sitecore/content/Storefront/Global/RioTinto Order Workflows
 DB: master
 Languages:
 - Language: en

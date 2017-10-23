@@ -4,6 +4,8 @@
     "Braintree": "3.8.0",
     "Sitecore.Commerce.Core": "1.2.159",
     "Sitecore.Commerce.Plugin.Entitlements": "1.2.159",
+    "Sitecore.Commerce.Plugin.Customers.Cs": "1.2.159",
+    "Sitecore.Commerce.Plugin.SQL": "1.2.159",
     "Sitecore.Framework.Configuration": "1.1.44",
     "Sitecore.Framework.Pipelines": "2.0.71"
   },

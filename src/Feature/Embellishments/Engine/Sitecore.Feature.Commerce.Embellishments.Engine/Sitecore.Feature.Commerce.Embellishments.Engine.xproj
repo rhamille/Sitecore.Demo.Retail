@@ -6,7 +6,7 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>9791d222-90bc-4e52-9fa3-aec0dc4d334e</ProjectGuid>
+    <ProjectGuid>27773c31-71f2-4824-beea-b9ee393668d4</ProjectGuid>
     <RootNamespace>Sitecore.Feature.Commerce.Embellishments.Engine</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>

@@ -1,8 +1,8 @@
 ﻿---
-ID: "bc21a0ad-e24d-4671-8542-649d77337cba"
+ID: "5e41aa34-d032-4ace-8f13-a90ed7a62176"
 Parent: "c8533001-10f2-4707-93e4-18a75d860cdf"
 Template: "a71dd9e3-e1d7-4181-986f-a0e67f924dd4"
-Path: /sitecore/content/Storefront/Global/Order Workflows/xxx
+Path: /sitecore/content/Storefront/Global/RioTinto Order Workflows/123123
 DB: master
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
@@ -15,10 +15,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170925T031638Z
+      Value: 20170928T065548Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{241B158F-8894-408D-A195-6D84915A40E0}"
-    - ID: "f31ff0a1-dc60-46ff-bbdb-9ccc61142ef6"
-      Hint: OrderId
-      Value: "{db07fa77-9698-4ca4-b676-b6ec65303436}"
+      Value: "{0392FEE4-56F0-4121-9E19-FB7DA81B7EF8}"
