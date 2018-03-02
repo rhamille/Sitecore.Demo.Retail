@@ -40,7 +40,7 @@
       {
         "$type": "Sitecore.Commerce.Plugin.Customers.Cs.ProfilesSqlPolicy, Sitecore.Commerce.Plugin.Customers.Cs",
         "Server": ".",
-        "Database": "habitat.csservices.dev.local_Profiles",
+        "Database": "demo.local_CommerceServer.Profiles",
         "TrustedConnection": true,
         "UserName": "",
         "Password": "",
@@ -120,7 +120,7 @@
         "UserName": "",
         "Password": "",
         "Server": ".",
-        "Database": "habitat.commerceengine.dev.local_SharedEnvironments",
+        "Database": "demo.local_SitecoreCommerce.SharedEnvironments",
         "AdditionalParameters": "",
         "ConnectTimeout": 120000,
         "CleanEnvironmentTimeout": 120000
@@ -131,7 +131,7 @@
         "UserName": "",
         "Password": "",
         "Server": ".",
-        "Database": "habitat.csservices.dev.local_ProductCatalog",
+        "Database": "demo.local_CommerceServer.ProductCatalog",
         "AdditionalParameters": "",
         "ConnectTimeout": 120000
       },
@@ -145,8 +145,8 @@
         "ItemRelationshipsCacheTimeout": "10",
         "ItemAssociationsCacheTimeout": "10",
         "CatalogCollectionCacheTimeout": "10",
-        "ServiceUrl": "http://habitat.csservices.dev.local:1004/HabitatRetail_CatalogWebService/CatalogWebService.asmx",
-        "SiteName": "HabitatRetail",
+        "ServiceUrl": "http://habitat.csservices.dev.local:1004/Habitat_CatalogWebService/CatalogWebService.asmx",
+        "SiteName": "Habitat",
         "UseServiceAgent": false,
         "DebugLevel": "Production"
       },
@@ -155,7 +155,7 @@
         "PublicKey": "registry:HKEY_LOCAL_MACHINE\\SOFTWARE\\CommerceServer\\Encryption\\Keys\\HabitatRetail,PublicKey",
         "PrivateKey1": "registry:HKEY_LOCAL_MACHINE\\SOFTWARE\\CommerceServer\\Encryption\\Keys\\HabitatRetail,PrivateKey",
         "KeyIndex": "1",
-        "SiteName": "HabitatRetail",
+        "SiteName": "Habitat",
         "DebugLevel": "Production"
       },
       {

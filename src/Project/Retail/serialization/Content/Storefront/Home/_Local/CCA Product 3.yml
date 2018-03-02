@@ -1,0 +1,29 @@
+﻿---
+ID: "7933ff20-878b-45b4-907c-e19421dfa9a2"
+Parent: "2479dc14-604a-4fd3-a2ca-10e6954a95cc"
+Template: "c7d9d293-4ef8-4380-8e10-c4632e729f39"
+Path: /sitecore/content/Storefront/Home/_Local/CCA Product 3
+DB: master
+SharedFields:
+- ID: "e8ab122c-6f54-4d4e-aec6-f81addc558fc"
+  Hint: TeaserLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{997A03C3-4A03-4EFD-9D12-ED97E9B44450}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0f6b5546-e0ab-4487-81de-640c1aa1b65b"
+      Hint: TeaserImage
+      Value: |
+        <image mediaid="{604D111A-BE63-4C8B-8CB9-132FA1D638ED}" ></image>
+    - ID: "13d97a52-7c4e-407c-960d-fadde8a3c1b1"
+      Hint: TeaserSummary
+      Value: Take advantage of our limited time promotion on 600ml Coca Cola.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171113T003621Z
+    - ID: "4a59d072-5b41-4a79-a157-2b2ccac10f2b"
+      Hint: TeaserTitle
+      Value: "Coca Cola - Coke Is It!"

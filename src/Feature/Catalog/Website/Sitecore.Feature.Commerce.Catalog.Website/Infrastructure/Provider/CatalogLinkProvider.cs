@@ -61,7 +61,7 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Infrastructure.Provider
             var urlService = DependencyResolver.Current.GetService<CatalogUrlService>();
 
             //TODO: Incorporate the url options in the catalog URL building
-            if (Context.PageMode.IsExperienceEditor)
+            if (Context.Site != null && Context.PageMode.IsExperienceEditor)
                 return urlService.GetProductCatalogUrl(item);
 
             var url = UseShopLinks ? urlService.BuildShopUrl(item, IncludeCatalog, IncludeFriendlyName) : urlService.BuildUrl(item, IncludeCatalog, IncludeFriendlyName);

@@ -1,0 +1,21 @@
+﻿---
+ID: "3ff742f4-ec9f-4d2a-8cf5-40a195432f1d"
+Parent: "213828e8-3d5b-49b3-b0d9-d76cc91f0ed0"
+Template: "061574e1-59dd-4b62-9680-1c84efbe6773"
+Path: /sitecore/content/Storefront/Home/Checkout/_Local/Headline
+DB: master
+SharedFields:
+- ID: "3af50903-63a9-464b-a375-b94983624e7d"
+  Hint: Teaser Icon
+  Value: "{7DF61C56-6CB1-4E83-84AF-C29EB857A359}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171217T233031Z
+    - ID: "4a59d072-5b41-4a79-a157-2b2ccac10f2b"
+      Hint: TeaserTitle
+      Value: Headline

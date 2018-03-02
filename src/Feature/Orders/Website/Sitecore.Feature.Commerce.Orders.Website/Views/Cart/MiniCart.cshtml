@@ -10,8 +10,12 @@
     // either express or implied. See the License for the specific language governing permissions
     // and limitations under the License.
     // -------------------------------------------------------------------------------------------*@
-
-<li class="dropdown" id="miniCart">
+@{
+    bool hideControl = false;
+    hideControl = @ViewBag.HideUserContorl;
+}
+@if (!hideControl) { 
+<li class="dropdown" id="miniCart">   
     <a href="#" class="dropdown-toggle toggle-cart" data-toggle="dropdown">
         <span class="glyphicon glyphicon-shopping-cart"></span><span class="badge bg-primary" id="miniCartItemCount" data-bind="text: lineitemcount"></span> 
     </a>
@@ -62,3 +66,4 @@
         initMiniShoppingCart("miniCart");
     });
 </script>
+}

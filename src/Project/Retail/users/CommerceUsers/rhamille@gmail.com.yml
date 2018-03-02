@@ -3,7 +3,7 @@ Username: |
   CommerceUsers\rhamille@gmail.com
 Email: rhamille@gmail.com
 Comment: 
-Created: "2017-08-27T15:56:21.0000000Z"
+Created: "2017-11-09T09:33:43.0000000Z"
 IsApproved: True
 Properties:
 - Key: IsAdministrator
@@ -24,12 +24,10 @@ Properties:
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: digestcredentialhash
-  Value: db9955920d0e0c12cf40f7cb8e0a5747
+  Value: efacedcc7919744fa5732707c6f7c983
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: digestcredentialhashwithoutdomain
-  Value: 580bc98876fd9c0418b3b4d4ab770208
+  Value: 990c420f4b914960e9cfb4e6b59d29cd
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
-Roles:
-  MemberOf: User Role

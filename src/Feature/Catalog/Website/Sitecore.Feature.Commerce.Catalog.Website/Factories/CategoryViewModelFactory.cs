@@ -57,7 +57,8 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Factories
 
                 foreach (var productViewModel in categoryViewModel.ChildProducts)
                 {
-                    var productItem = childProducts.SearchResultItems.Single(item => item.Name == productViewModel.ProductId);
+                    var productItem = childProducts.SearchResultItems.Where(x => x != null).SingleOrDefault(item => item.Name == productViewModel.ProductId);
+                    if (productItem == null) continue;
                     productViewModel.CustomerAverageRating = this.CatalogManager.GetProductRating(productItem);
                 }
             }

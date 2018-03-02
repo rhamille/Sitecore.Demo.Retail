@@ -1,0 +1,21 @@
+﻿---
+ID: "67b74c33-2349-41d1-9d30-13a680ae8c6c"
+Parent: "4e5fd550-6b4c-40cf-b639-e99563d41247"
+Template: "6d00d695-0cab-47d7-8929-a03ea002eb19"
+Path: /sitecore/system/Marketing Control Panel/Test Lab/2017/11/13/05/25/Home/Content Teaser with Image and Summary/Variation Name
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 99
+- ID: "c5230c52-c652-435b-8b1d-b6c96a96330d"
+  Hint: Name
+  Value: Variation Name
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171113T052541Z

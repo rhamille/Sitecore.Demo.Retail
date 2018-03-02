@@ -4,6 +4,27 @@ Parent: "a0616639-4bf9-4eba-a6a6-ae9fc851af63"
 Template: "64ca6109-64ab-487f-853f-a406ff3115b6"
 Path: /sitecore/content/Storefront/Home/Shop/*/*
 DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: |
+    <tracking>
+      <profile
+        id="{B61F489F-F8B8-471A-895A-8ACDB80E9A8F}"
+        name="CCA Persona"
+        presets="frances the frequently ordered|100||">
+        <key
+          name="Frequently Ordered Page"
+          value="5" />
+        <key
+          name="Catalog Page"
+          value="0" />
+        <key
+          name="Promotion Page"
+          value="0" />
+      </profile>
+    </tracking>
 Languages:
 - Language: en
   Versions:

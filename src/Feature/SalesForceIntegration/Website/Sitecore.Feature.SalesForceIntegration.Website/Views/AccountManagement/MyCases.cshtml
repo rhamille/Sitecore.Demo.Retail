@@ -1,0 +1,77 @@
+﻿@model Sitecore.Security.UserProfile
+@{
+    Layout = null;
+}
+@Html.HiddenFor(x => x.Email)
+<table id="data-table" class="table table-hover">
+    <thead>
+        <tr>
+            <th>Case Number</th>
+            <th>Appointment Date</th>
+            <th>Subject</th>
+            <th>Status</th>
+            <th width="10%">&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+@*<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />*@
+<style>
+    #data-table.table > tbody > tr > td {
+        padding-top: 15px;
+    }
+
+    #data-table .btn.btn-primary {
+        margin-top: -5px;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+
+        var email = $('#Email').val();
+        var url = "http://ccademo.southeastasia.cloudapp.azure.com/sitecore/api/sfcase/" + email;
+        $('#data-table').DataTable({
+            "paging": false,
+            "ordering": false,
+            "info": false,
+            "searching": false,
+            "processing": true,
+            "serverSide": true,
+            "ajax": url,
+            "columns": [
+                { "data": "caseNumberField" },
+                { "data": "appointmentDateField" },
+                { "data": "subjectField" },
+                { "data": "statusField" },
+				{ sortable: false,
+					 "render": function ( data, type, full, meta ) {
+					     return "<button id='" + data.caseNumberField + "' class='btn btn-primary' onclick='ConfirmAppointment(this.id)'>Confirm Date</button>";
+					 }
+				}
+            ],
+            "columnDefs": [{
+                "targets": 4,
+                "data": null,
+            }]
+        });
+
+
+    });
+
+    function ConfirmAppointment(caseNumber) {
+        var result = confirm("Are you sure you want confirm case number : " + caseNumber + " ?");
+        if (result) {
+
+            var url = "http://ccademo.southeastasia.cloudapp.azure.com/sitecore/api/sfcase/" + caseNumber;
+
+            $.ajax({
+                url: url,
+                type: 'put',
+                success: function (result) {
+                    location.reload(true);
+                }
+            });
+        }
+    }
+</script>

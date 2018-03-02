@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sitecore.Feature.SalesForceIntegration.Website.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Sitecore_Feature_SalesForceIntegration_Website_sfgoal_GoalWebServiceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://na73.salesforce.com/services/Soap/class/GoalWebService</Value>
+    </Setting>
+    <Setting Name="Sitecore_Feature_SalesForceIntegration_Website_sfpartner_SforceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://login.salesforce.com/services/Soap/u/41.0</Value>
+    </Setting>
+    <Setting Name="Sitecore_Feature_SalesForceIntegration_Website_sfcase_CaseWebServiceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://na73.salesforce.com/services/Soap/class/CaseWebService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

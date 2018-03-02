@@ -1,0 +1,39 @@
+﻿---
+Username: |
+  CommerceUsers\support@cca.com
+Email: support@cca.com
+Comment: 
+Created: "2017-11-14T04:21:43.0000000Z"
+IsApproved: True
+Properties:
+- Key: FullName
+  Value: Dan
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: IsAdministrator
+  Value: False
+  ValueType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: Portrait
+  Value: office/16x16/default_user.png
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: ProfileItemId
+  Value: "{0FFEC1BD-4D35-49CF-8B7D-7F01930834ED}"
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: __Serialization
+  Value: |
+    {"UserName":"support@cca.com","FirstName":null,"LastName":null,"Email":"support@cca.com","Comment":null,"IsDisabled":false,"CreationDate":"2017-11-14T04:21:43.4731296Z","LastActivityDate":"0001-01-01T00:00:00","LastLoginDate":"0001-01-01T00:00:00","LastDisabledDate":"0001-01-01T00:00:00","LastPasswordChangedDate":"0001-01-01T00:00:00","Shops":["storefront"],"Customers":[],"ExternalId":null,"Properties":[]}
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: digestcredentialhash
+  Value: 17d47096e2dc5bd8fd76c552603f1e24
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: digestcredentialhashwithoutdomain
+  Value: 495e76f260f1e6e4d59ca3a05b26f891
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+Roles:
+  MemberOf: User Role

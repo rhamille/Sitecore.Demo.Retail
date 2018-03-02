@@ -27,6 +27,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website
         private static readonly List<ApiControllerMapping> _apiInfoList = new List<ApiControllerMapping>
         {
             new ApiControllerMapping("cart-addcartline", "Cart", "AddCartLine"),
+            new ApiControllerMapping("cart-addvoicecartline", "Cart", "AddVoiceCartLine"),
             new ApiControllerMapping("cart-applydiscount", "Cart", "ApplyDiscount"),
             new ApiControllerMapping("cart-deletelineitem", "Cart", "DeleteLineItem"),
             new ApiControllerMapping("cart-getcurrentcart", "Cart", "GetCurrentCart"),
@@ -39,15 +40,12 @@ namespace Sitecore.Feature.Commerce.Orders.Website
             new ApiControllerMapping("checkout-setshippingmethod", "Checkout", "SetShippingMethods"),
             new ApiControllerMapping("checkout-setpaymentmethod", "Checkout", "SetPaymentMethods"),
             new ApiControllerMapping("checkout-submitorder", "Checkout", "SubmitOrder"),
+             new ApiControllerMapping("checkout-submitvoiceorder", "Checkout", "SubmitVoiceOrder"),
             new ApiControllerMapping("orders-recentorders", "Orders", "RecentOrders"),
             new ApiControllerMapping("orders-reorder", "Orders", "Reorder"),
             new ApiControllerMapping("orders-cancelorder", "Orders", "CancelOrder"),
-            new ApiControllerMapping("checkout-updatemodel", "Checkout", "UpdateModel"),
-            new ApiControllerMapping("orders-punchoutrequest", "Orders", "PunchoutOrderRequest")
-
-
-
-    };
+            new ApiControllerMapping("checkout-updatemodel", "Checkout", "UpdateModel")
+        };
 
         public static void RegisterRoutes(RouteCollection routes)
         {

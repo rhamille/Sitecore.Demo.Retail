@@ -1,0 +1,28 @@
+﻿---
+ID: "dd325435-6f90-4662-ada8-a529214d1c0e"
+Parent: "7979dccb-a815-4833-bc6e-f67fc9e106c7"
+Template: "042c770b-89ae-466a-9a31-18397780c535"
+Path: /sitecore/content/Storefront/Home/Customer Service/News/2017/12/08/05/01/test2
+DB: master
+SharedFields:
+- ID: "c464d2d7-3382-428a-bcdf-0963c60ba0e3"
+  Hint: NewsDate
+  Value: 20171208Z
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171208T050118Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\colin
+    - ID: "bd9ecd4a-c0b0-4233-a3cd-d995519ac87b"
+      Hint: NewsTitle
+      Value: test2
+    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
+      Hint: BrowserTitle
+      Value: test2

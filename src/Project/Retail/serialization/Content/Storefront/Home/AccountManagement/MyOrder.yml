@@ -9,6 +9,26 @@ SharedFields:
   Hint: ShowInNavigation
   Type: Checkbox
   Value: 0
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: |
+    <tracking>
+      <profile
+        id="{4F7F3405-9606-495E-8D44-55177A382BB3}"
+        name="Retail Persona"
+        presets="frances the frequently ordered|100||">
+        <key
+          name="Catalog Page"
+          value="0" />
+        <key
+          name="Frequently Ordered"
+          value="5" />
+        <key
+          name="Promotion Page"
+          value="0" />
+      </profile>
+    </tracking>
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 300

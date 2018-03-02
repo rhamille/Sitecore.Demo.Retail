@@ -1,0 +1,29 @@
+﻿---
+ID: "cf10da58-2529-452f-a9d5-1ebaeb43c992"
+Parent: "2479dc14-604a-4fd3-a2ca-10e6954a95cc"
+Template: "c7d9d293-4ef8-4380-8e10-c4632e729f39"
+Path: /sitecore/content/Storefront/Home/_Local/CCA Product 2
+DB: master
+SharedFields:
+- ID: "e8ab122c-6f54-4d4e-aec6-f81addc558fc"
+  Hint: TeaserLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{5D6AFF3F-42D7-4CF5-8213-4BF96A4FB4F6}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0f6b5546-e0ab-4487-81de-640c1aa1b65b"
+      Hint: TeaserImage
+      Value: |
+        <image mediaid="{14144B6D-850A-443A-9536-589BE76780AB}"></image>
+    - ID: "13d97a52-7c4e-407c-960d-fadde8a3c1b1"
+      Hint: TeaserSummary
+      Value: With a wide range of exciting flavours to choose from, explore how Fanta can increase your soft drink ranges. 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171113T003524Z
+    - ID: "4a59d072-5b41-4a79-a157-2b2ccac10f2b"
+      Hint: TeaserTitle
+      Value: Fanta

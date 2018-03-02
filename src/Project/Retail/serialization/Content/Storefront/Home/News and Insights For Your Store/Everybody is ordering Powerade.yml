@@ -1,0 +1,93 @@
+﻿---
+ID: "e09e7dac-c2cf-43a6-901c-0efadb0c59d2"
+Parent: "ed3c9b4c-f879-4798-9e10-b860931539a7"
+Template: "843fe5e3-63c2-48d6-8feb-bab096b9715e"
+Path: /sitecore/content/Storefront/Home/News and Insights For Your Store/Everybody is ordering Powerade
+DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: |
+    <tracking>
+      <event
+        id="{E11D4D65-BF78-4FC9-BA0A-262A05A39FBE}"
+        name="Why buy Powerade" />
+    </tracking>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{F2F6C03B-28D0-4AAC-A9E2-D9EB3F30C088}"
+              p:after="*[1=2]"
+              s:ds=""
+              s:id="{44922793-E345-4C97-B93E-969AF32E2990}"
+              s:par="TriggerGoal=SalesForce"
+              s:ph="header-top" />
+          </d>
+        </r>
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: Everybody is ordering Powerade
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171114T002149Z
+    - ID: "9492e0bb-9df9-46e7-8188-ec795c4ade44"
+      Hint: Image
+      Value: |
+        <image mediaid="{C62AF053-EBD9-407A-AE29-4207D77DB198}" />
+    - ID: "ac3fd4db-8266-476d-9635-67814d91e901"
+      Hint: Summary
+      Value: Learn how other customers in your area are increasing profits with PowerAde.
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
+      Hint: Title
+      Value: Everybody is ordering Powerade
+    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
+      Hint: BrowserTitle
+      Value: Everybody is ordering Powerade
+    - ID: "d74f396d-5c5e-4916-bd0a-bfd58b6b1967"
+      Hint: Body
+      Value: |
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">So why is <a href="/Search?query=powerade">Powerade </a>proving to be such a popular product with its target audience and outselling it&rsquo;s competitors? Before we can answer this question, let&rsquo;s first learn more about the top 5 benefits of the product&hellip;.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px 0px 0px 48px;"><strong><span style="margin: 0px; color: black;">1.<span style="margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></strong><strong><span style="margin: 0px; color: black;">WHAT DOES &ldquo;ISOTONIC&rdquo; MEAN?</span></strong></p>
+        <p style="margin: 0px 0px 0px 48px;"><span style="margin: 0px; color: black;">The term isotonic means that the fluid has the same concentration of &ldquo;solutes&rdquo; (i.e. particles) as that found in your blood and cells. This means that when you ingest it, other fluid does not shift into your gut to dilute it; instead, the fluid in the isotonic drink just readily crosses over into the bloodstream.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px 0px 0px 48px;"><strong><span style="margin: 0px; color: black;">2.<span style="margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></strong><strong><span style="margin: 0px; color: black;">WHAT ARE ELECTROLYTES?</span></strong></p>
+        <p style="margin: 0px 0px 0px 48px;"><span style="margin: 0px; color: black;">POWERADE ION4 contains four electrolytes &ndash; Sodium, Potassium, Calcium and Magnesium &ndash; lost in sweat. Sodium and Potassium help you to retain fluid so you stay hydrated, as well as maintaining your blood volume, sweat rate and muscle blood flow. Without these electrolytes your urinary output increases (ie. water passes straight through) and you won&rsquo;t remain hydrated.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px 0px 0px 48px;"><span style="margin: 0px; color: black;">There is also evidence that consuming sodium-containing sport drinks, , stops your thirst mechanism from being switched off prematurely1,2. Although we often look for drinks to &ldquo;quench our thirst&rdquo;, you also want to use your thirst to tell you whether you still need to drink more.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px 0px 0px 48px;"><span style="margin: 0px; color: black;">Calcium and magnesium, also found in sweat, help athletes meet their daily requirements of these electrolytes or minerals.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px 0px 0px 48px;"><strong><span style="margin: 0px; color: black;">3.<span style="margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></strong><strong><span style="margin: 0px; color: black;">CARBOHYDRATES = ENERGY FOR MUSCLES</span></strong></p>
+        <p style="margin: 0px 0px 0px 48px;"><span style="margin: 0px; color: black;">Carbohydrate is the main fuel source for muscles when working at a moderate to high intensity (i.e. at jogging pace or faster), and late in prolonged endurance exercise3. It is also the preferred fuel source for the brain4. We have a limited capacity to store carbohydrate (glucose or glycogen) in our body, so those who exercise regularly will require additional supplies from their diet to maintain adequate stores. Studies have shown that providing carbohydrate during exercise results in better exercise performance in sessions of as little as one hour of very high intensity5,6; for sessions of intermittent high intensity exercise, such as football and rugby3,4,7 and for more prolonged (greater than 90 mins) endurance exercise such as long distance running and triathlons3, 4, 7.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px 0px 0px 48px;"><strong><span style="margin: 0px; color: black;">4.<span style="margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></strong><strong><span style="margin: 0px; color: black;">WHY DRINK A SPORTS DRINK, AS OPPOSED TO WATER?</span></strong></p>
+        <p style="margin: 0px 0px 0px 48px;"><span style="margin: 0px; color: black;">The two main perspectives which differentiate a sports drink from water alone are the additional supply of fuel (carbohydrates) and electrolytes with the hydration. Also several studies have provided evidence that people will drink more of a flavoured drink than an unflavoured one1,6. Hence, a refreshing, palatable drink such as POWERADE Isotonicwill generally be consumed more readily, thereby further enhancing total fluid intake and reducing the risk of dehydration. POWERADE Isotoniccomes in a great range of flavours, all of which make it easier for you to keep drinking the amount you need to stay hydrated.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px 0px 0px 48px;"><strong><span style="margin: 0px; color: black;">5.<span style="margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></strong><strong><span style="margin: 0px; color: black;">POWERADE ZERO</span></strong></p>
+        <p style="margin: 0px 0px 0px 48px;"><span style="margin: 0px; color: black;">Powerade Zero is designed for those people wanting to rehydrate with an electrolyte solution, but not the added sugar. So whilst Powerade Zero will not provide additional energy when you are working out, it&rsquo;s handy level of electrolytes can be used in addition to Powerade ION4 during or after exercise, instead of plain water, to help rehydrate you fast and keep urine loss to a minimum.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px;"><strong><span style="margin: 0px; color: black;">So now we know the benefits of the product, how are other customers in your area maximising profits with this product?</span></strong></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">According to the latest findings from Roy Morgan Research, Twice as many men (10%) as women (5%) drink these beverages, while young Aussies aged under 25 (14%) are more likely to consume them than any other age group.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">Powering ahead of the pack is Powerade, drunk by well over half (58%) of sports drink consumers in an average seven days. Long-time rival Gatorade is chosen by 33% of people who drink these beverages, while Australasian brand Maximus is a distant third (7%). Of course, these figures are not cut and dried: a certain portion of each brand&rsquo;s consumers drink at least one other brand during the same time period.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">In addition to the &lsquo;fitspiration&rsquo; that characterises much of its marketing, the sports drink category distinguishes itself from other non-alcoholic beverages (carbonated soft drinks and energy drinks, for example) by emphasizing its sports-science credentials: special formulas, isotonic qualities, electrolytes and so on. This has not gone unnoticed by sporty Australians.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">In fact, people who play sport are noticeably more likely to drink sports drinks than the average Aussie. For instance, 28% of people who play baseball, 24% of those who play rugby union, and 22% of those who play Australian Rules football consume at least one of these beverages in any given seven days &ndash; all well above the national average (8%).</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">In summary, Powerade is storming ahead in the Australian market and resinates with its target audience due to its alignment with sport and fitness enthusiasts. Therefore, Powerade is a great product to stock all year round, even more so in Summer.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>

@@ -786,7 +786,7 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
         {
             var cacheKey = CreateCacheKey("Navigation", category, null);
 
-            var navigationViewModel = this.GetFromCache<NavigationViewModel>(cacheKey);
+            NavigationViewModel navigationViewModel = null; // this.GetFromCache<NavigationViewModel>(cacheKey);
             if (navigationViewModel != null)
             {
                 return navigationViewModel;

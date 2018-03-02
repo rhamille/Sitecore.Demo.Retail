@@ -1,0 +1,38 @@
+﻿---
+ID: "9b9db8b8-e0d7-4c59-a799-565bf191c6a3"
+Parent: "bd83779c-8839-4ec5-93b5-b73bb2451f0b"
+Template: "042c770b-89ae-466a-9a31-18397780c535"
+Path: /sitecore/content/Storefront/Home/Customer Service/News/2017/11/14/23/18/CCA News Article
+DB: master
+SharedFields:
+- ID: "c464d2d7-3382-428a-bcdf-0963c60ba0e3"
+  Hint: NewsDate
+  Value: 20171114Z
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171114T231805Z
+    - ID: "3437eaac-6ee8-460b-a33d-da1f714b5a93"
+      Hint: NewsImage
+      Value: |
+        <image mediaid="{9DC3FC93-6E42-4B66-ACCA-3DBDC5BE4F31}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "801612c7-5e98-4e3c-80d2-a34d0eebcbda"
+      Hint: NewsBody
+      Value: <p>News article body</p>
+    - ID: "9d08271a-1672-44dd-b7ef-0a6ec34fcba7"
+      Hint: NewsSummary
+      Value: <p>News articles summary</p>
+    - ID: "bd9ecd4a-c0b0-4233-a3cd-d995519ac87b"
+      Hint: NewsTitle
+      Value: CCA News Article
+    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
+      Hint: BrowserTitle
+      Value: CCA News Article

@@ -29,7 +29,7 @@ If ($csResourceFolderSetting -eq $null) { Write-Host "Expected dacpac resources"
 
 $sitecoreWebsiteFolderSetting = ($settings.iis.websites | Where { $_.id -eq "sitecore" } | Select)
 If ($sitecoreWebsiteFolderSetting -eq $null) { Write-Host "Expected sitecore iis website settings" -ForegroundColor red; exit; }
-      
+<#      
 # Step 0: check if all files exist that are needed
 Write-Host "`nStep 0: Checking if all needed files exist" -foregroundcolor Yellow
 if ((ManageFile\Confirm-Resources $settings.resources -verbose) -ne 0) { Exit }
@@ -99,6 +99,7 @@ If((ManageCommerceServer\Fix-AuthorizationStores -csSiteSetting $settings.siteco
 # Step 16 Restarting IIS 
 Write-Host "Restarting IIS for after Authorization Store changes"
 If((ManageIIS\Reset-IIS -Verbose) -ne 0) { If((ManageIIS\Reset-IIS -Verbose) -ne 0) { Exit } }
+#>
 
 # Step 16: Bootstrap Commerce Engine and Initialise Environments
 Write-Host "`nStep 16: Bootstrap Commerce Engine and Initialise Environments" -foregroundcolor Yellow

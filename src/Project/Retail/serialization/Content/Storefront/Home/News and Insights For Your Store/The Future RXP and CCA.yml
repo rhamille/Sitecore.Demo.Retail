@@ -1,0 +1,64 @@
+﻿---
+ID: "a3613faf-d4de-463d-9947-0ff5ab4d59d9"
+Parent: "ed3c9b4c-f879-4798-9e10-b860931539a7"
+Template: "843fe5e3-63c2-48d6-8feb-bab096b9715e"
+Path: /sitecore/content/Storefront/Home/News and Insights For Your Store/The Future RXP and CCA
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: The Future RXP and CCA
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171114T045136Z
+    - ID: "9492e0bb-9df9-46e7-8188-ec795c4ade44"
+      Hint: Image
+      Value: |
+        <image mediaid="{7E30F53B-9BEB-49BC-B15C-428197F0D401}" />
+    - ID: "ac3fd4db-8266-476d-9635-67814d91e901"
+      Hint: Summary
+      Value: |
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">CCA and RXP partner to stride into the future with Sitecore, the content and commerce platform that turns shoppers into customers for life. </span></p>
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
+      Hint: Title
+      Value: "RXP and CCA - The Future of ECommerce"
+    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
+      Hint: BrowserTitle
+      Value: The Future RXP and CCA
+    - ID: "d74f396d-5c5e-4916-bd0a-bfd58b6b1967"
+      Hint: Body
+      Value: |
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">CCA and RXP partner to stride into the future with Sitecore, the content and commerce platform that turns shoppers into customers for life. </span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px;"><strong><span style="margin: 0px; color: black;">A powerful framework for content and commerce</span></strong></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">Ideal for B2C, B2B, and B2X brands selling online, Sitecore Experience Commerce (XC) uses everything you know about your customers to deliver shopping experiences that are shaped by their interaction history and context, transforming prospects into lifelong fans. Owning the experience for each unique customer, from awareness to advocacy and from one purchase to the next&mdash;that&rsquo;s how you develop lifetime customer relationships</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px;"><strong><span style="margin: 0px; color: black;">Features and benefits</span></strong></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">Product information, contextual content, and digital marketing come together in our commerce platform to drive valuable, personalized shopping experiences throughout the customer lifecycle.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px 0px 0px 48px;"><strong><span style="margin: 0px; color: black;">1.<span style="margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></strong><strong><span style="margin: 0px; color: black;">Create and edit personalized shopping experiences</span></strong></p>
+        <p style="margin: 0px 0px 0px 48px;"><span style="margin: 0px; color: black;">The web-based and touch-enabled dashboard lets you create rich personalized experiences with content, product pages, search, email, and mobile. Edit products and content in the context of the device they are intended for, while previewing how difference audiences will see different experiences.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px 0px 0px 48px;"><strong><span style="margin: 0px; color: black;">2.<span style="margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></strong><strong><span style="margin: 0px; color: black;">Test everything, optimize everything</span></strong></p>
+        <p style="margin: 0px 0px 0px 48px;"><span style="margin: 0px; color: black;">Every new or edited experience is automatically tested against previous versions, similar content, and promotions. Test checkout, shipping options, content, and then optimize, test, and repeat. Audiences and segments can also be optimized for engagement&mdash;you just review and approve them. Content, promotion, and merchandising recommendations are paired with automated and manual segments of customers for a best match.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px 0px 0px 48px;"><strong><span style="margin: 0px; color: black;">3.<span style="margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></strong><strong><span style="margin: 0px; color: black;">Know every customer</span></strong></p>
+        <p style="margin: 0px 0px 0px 48px;"><span style="margin: 0px; color: black;">Personalize every customer&rsquo;s experience by adapting to their needs in context. The Experience Database captures preferences, behavior, and persona matches for every single customer, and every individual experience, for a 360-degree customer profile. A customer&rsquo;s Experience Profile&reg; captures all commerce behavior such as carts, orders, and search criteria, and when combined with other digital behavior, makes for a powerful experience.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px 0px 0px 48px;"><strong><span style="margin: 0px; color: black;">4.<span style="margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></strong><strong><span style="margin: 0px; color: black;">Commerce experience management in the cloud</span></strong></p>
+        <p style="margin: 0px 0px 0px 48px;"><span style="margin: 0px; color: black;">Sitecore Experience Commerce can run on Azure and with Sitecore XP and the Sitecore&reg; Experience Manager Cloud Edition, which removes an enormous amount of setup and configuration yet delivers all the same value as Sitecore XP on Azure&mdash;you sign up and immediately start developing your solution.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px;"><strong><span style="margin: 0px; color: black;">Sitecore Experience Commerce add-ons</span></strong></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">Combined with Sitecore XP, Sitecore Experience Commerce add-ons give you flexibility to easily integrate with other systems.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px;"><strong><span style="margin: 0px; color: black;">MICROSOFT D365 CONNECT</span></strong></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">If you&rsquo;re already a Microsoft Dynamics AX for Retail customer, or considering it as a point of sale or ERP solution, you can use this to connect bricks and mortar to online experiences to provide an integrated, end-to-end omnichannel commerce solution based on Microsoft&rsquo;s retail platform.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">Learn more</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px;"><strong><span style="margin: 0px; color: black;">SITECORE&reg; COMMERCE CONNECT</span></strong></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">If you&rsquo;re a Sitecore Experience Platform user and need to connect an existing commerce implementation, you&rsquo;re in luck. Commerce Connect is Sitecore&rsquo;s native integration layer for seamlessly integrating third-party commerce platforms into Sitecore XP.</span></p>
+        <p style="margin: 0px;"><span style="margin: 0px; color: black;">&nbsp;</span></p>

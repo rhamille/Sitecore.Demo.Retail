@@ -74,11 +74,11 @@ namespace Sitecore.Feature.Commerce.HabitatData.Engine.Pipelines.Blocks
 
             // Cart promotions
             //this.CreateCartFreeShippingPromotion(book, context);
-            this.CreateCartExclusive5PctOffCouponPromotion(book, context);
-            this.CreateCartExclusive5OffCouponPromotion(book, context);
-            this.CreateCart15PctOffCouponPromotion(book, context);
-            this.CreateCartExclusive10PctOffPromotion(book, context);
-            this.CreateCartExclusive65PctBraintreePromotion(book, context);
+            //this.CreateCartExclusive5PctOffCouponPromotion(book, context);
+            //this.CreateCartExclusive5OffCouponPromotion(book, context);
+            //this.CreateCart15PctOffCouponPromotion(book, context);
+            //this.CreateCartExclusive10PctOffPromotion(book, context);
+            //this.CreateCartExclusive65PctBraintreePromotion(book, context);
 
             return arg;
         }

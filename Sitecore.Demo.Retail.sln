@@ -119,6 +119,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{D31908
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sitecore.Feature.Commerce.Embellishments.Engine", "src\Feature\Embellishments\Engine\Sitecore.Feature.Commerce.Embellishments.Engine\Sitecore.Feature.Commerce.Embellishments.Engine.xproj", "{9791D222-90BC-4E52-9FA3-AEC0DC4D334E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SalesForcIntegration", "SalesForcIntegration", "{CADDE9D9-83FB-49B5-ACCC-CC5B18FEFAC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{663191CE-48EB-4FBA-A1D7-E7FDCC894DC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.SalesForceIntegration.Website", "src\Feature\SalesForceIntegration\Website\Sitecore.Feature.SalesForceIntegration.Website\Sitecore.Feature.SalesForceIntegration.Website.csproj", "{9202BC47-51A5-47BC-BEFE-7DDE7341DBCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -216,6 +222,12 @@ Global
 		{9791D222-90BC-4E52-9FA3-AEC0DC4D334E}.Demo-Retail|Any CPU.Build.0 = Debug|Any CPU
 		{9791D222-90BC-4E52-9FA3-AEC0DC4D334E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9791D222-90BC-4E52-9FA3-AEC0DC4D334E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9202BC47-51A5-47BC-BEFE-7DDE7341DBCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9202BC47-51A5-47BC-BEFE-7DDE7341DBCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9202BC47-51A5-47BC-BEFE-7DDE7341DBCA}.Demo-Retail|Any CPU.ActiveCfg = Debug|Any CPU
+		{9202BC47-51A5-47BC-BEFE-7DDE7341DBCA}.Demo-Retail|Any CPU.Build.0 = Debug|Any CPU
+		{9202BC47-51A5-47BC-BEFE-7DDE7341DBCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9202BC47-51A5-47BC-BEFE-7DDE7341DBCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -265,5 +277,8 @@ Global
 		{A01417C5-8EFF-44C5-8D12-D8B89869DC64} = {C847060A-D78A-4219-B5D2-088C20B4E3D5}
 		{D3190829-FBE3-4E2B-BE88-9575AE79C089} = {A01417C5-8EFF-44C5-8D12-D8B89869DC64}
 		{9791D222-90BC-4E52-9FA3-AEC0DC4D334E} = {D3190829-FBE3-4E2B-BE88-9575AE79C089}
+		{CADDE9D9-83FB-49B5-ACCC-CC5B18FEFAC0} = {C847060A-D78A-4219-B5D2-088C20B4E3D5}
+		{663191CE-48EB-4FBA-A1D7-E7FDCC894DC5} = {CADDE9D9-83FB-49B5-ACCC-CC5B18FEFAC0}
+		{9202BC47-51A5-47BC-BEFE-7DDE7341DBCA} = {663191CE-48EB-4FBA-A1D7-E7FDCC894DC5}
 	EndGlobalSection
 EndGlobal

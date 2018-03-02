@@ -74,11 +74,17 @@ namespace Sitecore.Foundation.Commerce.Website.Util
             return cart;
         }
 
+        //private string GetCustomerId(string customerId)
+        //{
+        //    Guid csCustomerId;
+        //    var custID = Guid.TryParse(customerId, out csCustomerId) ? Guid.Parse(customerId).ToString("D") : customerId;
+        //    return custID + "_" + System.Web.HttpContext.Current.Session.SessionID;
+        //}
+
         private string GetCustomerId(string customerId)
         {
             Guid csCustomerId;
-            var custID = Guid.TryParse(customerId, out csCustomerId) ? Guid.Parse(customerId).ToString("D") : customerId;
-            return custID + "_" + System.Web.HttpContext.Current.Session.SessionID;
+            return Guid.TryParse(customerId, out csCustomerId) ? Guid.Parse(customerId).ToString("D") : customerId;
         }
 
         private static ICacheProvider GetCacheProvider()

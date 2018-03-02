@@ -75,6 +75,11 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Models
 
         public virtual void Initialize(Cart cart)
         {
+            if (cart == null)
+            {
+                return;
+            }
+
             Lines = new List<CartLineApiModel>();
             Adjustments = new List<CartAdjustmentApiModel>();
             PromoCodes = new List<string>();
@@ -90,10 +95,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Models
             ShippingTotal = 0.0M.ToCurrency();
             ShippingTotalAmount = 0.0M;
 
-            if (cart == null)
-            {
-                return;
-            }
+         
 
             var catalogManager = DependencyResolver.Current.GetService<CatalogManager>();
             foreach (var line in cart.Lines ?? Enumerable.Empty<CartLine>())

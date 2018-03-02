@@ -1,0 +1,77 @@
+﻿---
+ID: "032c0458-6cf5-4623-95a8-73b0cdf8d2fc"
+Parent: "5a88bcf0-a962-46ba-af07-cca3e717e94b"
+Template: "042c770b-89ae-466a-9a31-18397780c535"
+Path: "/sitecore/content/Storefront/Home/Customer Service/News/2016/12/29/08/43/RXP and CCA - The Future of ECommerce"
+DB: master
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: 
+- ID: "c464d2d7-3382-428a-bcdf-0963c60ba0e3"
+  Hint: NewsDate
+  Value: 20161229T000000Z
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161229T084337Z
+    - ID: "3437eaac-6ee8-460b-a33d-da1f714b5a93"
+      Hint: NewsImage
+      Value: |
+        <image mediaid="{7E30F53B-9BEB-49BC-B15C-428197F0D401}" />
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: 
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "801612c7-5e98-4e3c-80d2-a34d0eebcbda"
+      Hint: NewsBody
+      Value: |
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">CCA and RXP partner to stride into the future with Sitecore, the content and commerce platform that turns shoppers into customers for life.</span></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><strong><span style="margin: 0px; color: black;">A powerful framework for content and commerce</span></strong></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">Ideal for B2C, B2B, and B2X brands selling online, Sitecore Experience Commerce (XC) uses everything you know about your customers to deliver shopping experiences that are shaped by their interaction history and context, transforming prospects into lifelong fans. Owning the experience for each unique customer, from awareness to advocacy and from one purchase to the next&mdash;that&rsquo;s how you develop lifetime customer relationships</span></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><strong><span style="margin: 0px; color: black;">Features and benefits</span></strong></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">Product information, contextual content, and digital marketing come together in our commerce platform to drive valuable, personalized shopping experiences throughout the customer lifecycle.</span></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px 0px 0px 48px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><strong><span style="margin: 0px; color: black;">1.<span style="margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></strong><strong><span style="margin: 0px; color: black;">Create and edit personalized shopping experiences</span></strong></p>
+        <p style="margin: 0px 0px 0px 48px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">The web-based and touch-enabled dashboard lets you create rich personalized experiences with content, product pages, search, email, and mobile. Edit products and content in the context of the device they are intended for, while previewing how difference audiences will see different experiences.</span></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px 0px 0px 48px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><strong><span style="margin: 0px; color: black;">2.<span style="margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></strong><strong><span style="margin: 0px; color: black;">Test everything, optimize everything</span></strong></p>
+        <p style="margin: 0px 0px 0px 48px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">Every new or edited experience is automatically tested against previous versions, similar content, and promotions. Test checkout, shipping options, content, and then optimize, test, and repeat. Audiences and segments can also be optimized for engagement&mdash;you just review and approve them. Content, promotion, and merchandising recommendations are paired with automated and manual segments of customers for a best match.</span></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px 0px 0px 48px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><strong><span style="margin: 0px; color: black;">3.<span style="margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></strong><strong><span style="margin: 0px; color: black;">Know every customer</span></strong></p>
+        <p style="margin: 0px 0px 0px 48px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">Personalize every customer&rsquo;s experience by adapting to their needs in context. The Experience Database captures preferences, behavior, and persona matches for every single customer, and every individual experience, for a 360-degree customer profile. A customer&rsquo;s Experience Profile&reg; captures all commerce behavior such as carts, orders, and search criteria, and when combined with other digital behavior, makes for a powerful experience.</span></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px 0px 0px 48px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><strong><span style="margin: 0px; color: black;">4.<span style="margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></strong><strong><span style="margin: 0px; color: black;">Commerce experience management in the cloud</span></strong></p>
+        <p style="margin: 0px 0px 0px 48px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">Sitecore Experience Commerce can run on Azure and with Sitecore XP and the Sitecore&reg; Experience Manager Cloud Edition, which removes an enormous amount of setup and configuration yet delivers all the same value as Sitecore XP on Azure&mdash;you sign up and immediately start developing your solution.</span></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><strong><span style="margin: 0px; color: black;">Sitecore Experience Commerce add-ons</span></strong></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">Combined with Sitecore XP, Sitecore Experience Commerce add-ons give you flexibility to easily integrate with other systems.</span></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><strong><span style="margin: 0px; color: black;">MICROSOFT D365 CONNECT</span></strong></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">If you&rsquo;re already a Microsoft Dynamics AX for Retail customer, or considering it as a point of sale or ERP solution, you can use this to connect bricks and mortar to online experiences to provide an integrated, end-to-end omnichannel commerce solution based on Microsoft&rsquo;s retail platform.</span></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">Learn more</span></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">&nbsp;</span></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><strong><span style="margin: 0px; color: black;">SITECORE&reg; COMMERCE CONNECT</span></strong></p>
+        <p style="margin: 0px; color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; color: black;">If you&rsquo;re a Sitecore Experience Platform user and need to connect an existing commerce implementation, you&rsquo;re in luck. Commerce Connect is Sitecore&rsquo;s native integration layer for seamlessly integrating third-party commerce platforms into Sitecore XP.</span></p>
+    - ID: "9d08271a-1672-44dd-b7ef-0a6ec34fcba7"
+      Hint: NewsSummary
+      Value: |
+        <p><span style="color: rgb(0, 0, 0); letter-spacing: normal; background-color: rgb(255, 255, 255);">CCA and RXP partner to stride into the future with Sitecore, the content and commerce platform that turns shoppers into customers for life.</span></p>
+    - ID: "bb7a38c0-323c-4f81-8eb9-288abf7c4638"
+      Hint: MetaDescription
+      Value: "RXP and CCA - The Future of ECommerce"
+    - ID: "bd9ecd4a-c0b0-4233-a3cd-d995519ac87b"
+      Hint: NewsTitle
+      Value: "RXP and CCA - The Future of ECommerce"
+    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
+      Hint: BrowserTitle
+      Value: "RXP and CCA - The Future of ECommerce"
