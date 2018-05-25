@@ -1,0 +1,21 @@
+﻿---
+ID: "d64a7bc9-cad3-44fb-9964-284c6594b184"
+Parent: "a58ca6cd-09c0-4674-9184-f4d7689b837d"
+Template: "72296cfa-6354-47ad-901a-17f1651e9505"
+Path: /sitecore/system/Marketing Control Panel/Test Lab/2017/11/13/10/50/Home/Content Teaser with Image and Summary
+DB: master
+SharedFields:
+- ID: "4549eb29-846c-4682-80b6-fd2cba0c1c51"
+  Hint: Original Value
+  Value: "{B9B4B1C3-6CF5-47E6-9123-7AF32B74CCB6}"
+- ID: "895e3a86-982b-409a-aa41-0bc1fe4f4d36"
+  Hint: Name
+  Value: Content Teaser with Image and Summary
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171113T105011Z

@@ -89,7 +89,7 @@
                 "UserName": "",
                 "Password": "",
                 "Server": ".",
-                "Database": "habitat.commerceengine.dev.local_SharedEnvironments",
+                "Database": "demo.local_SitecoreCommerce.SharedEnvironments",
                 "AdditionalParameters": "",
                 "ConnectTimeout": 120000,
                 "CleanEnvironmentTimeout": 120000,
@@ -105,7 +105,7 @@
                 "UserName": "",
                 "Password": "",
                 "Server": ".",
-                "Database": "habitat.csservices.dev.local_ProductCatalog",
+                "Database": "demo.local_CommerceServer.ProductCatalog",
                 "AdditionalParameters": "",
                 "ConnectTimeout": 120000,
                 "PolicyId": "1edf834d65714efb949218f02720334e",
@@ -114,31 +114,31 @@
                     "$values": []
                 }
             },
-            {
-                "$type": "Sitecore.Commerce.Plugin.CsAgent.CsCatalogPolicy, Sitecore.Commerce.Plugin.CsAgent",
-                "CacheEnable": true,
-                "EnableInventorySystem": true,
-                "SchemaTimeout": "10",
-                "ItemInformationCacheTimeout": "10",
-                "ItemHierarchyCacheTimeout": "10",
-                "ItemRelationshipsCacheTimeout": "10",
-                "ItemAssociationsCacheTimeout": "10",
-                "CatalogCollectionCacheTimeout": "10",
-                "ServiceUrl": "http://habitat.csservices.dev.local:1004/HabitatRetail_CatalogWebService/CatalogWebService.asmx",
-                "SiteName": "HabitatRetail",
-                "DebugLevel": "Production",
-                "PolicyId": "04698b7d04e249d4a3e1324b1f13989b",
-                "Models": {
-                    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-                    "$values": []
-                }
-            },
+          {
+            "$type": "Sitecore.Commerce.Plugin.CsAgent.CsCatalogPolicy, Sitecore.Commerce.Plugin.CsAgent",
+            "CacheEnable": true,
+            "EnableInventorySystem": true,
+            "SchemaTimeout": "10",
+            "ItemInformationCacheTimeout": "10",
+            "ItemHierarchyCacheTimeout": "10",
+            "ItemRelationshipsCacheTimeout": "10",
+            "ItemAssociationsCacheTimeout": "10",
+            "CatalogCollectionCacheTimeout": "10",
+            "ServiceUrl": "http://habitat.csservices.dev.local:1004/Habitat_CatalogWebService/CatalogWebService.asmx",
+            "SiteName": "Habitat",
+            "DebugLevel": "Production",
+            "PolicyId": "04698b7d04e249d4a3e1324b1f13989b",
+            "Models": {
+              "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
+              "$values": []
+            }
+          },
             {
                 "$type": "Sitecore.Commerce.Plugin.CsAgent.CsProfilesPolicy, Sitecore.Commerce.Plugin.CsAgent",
                 "PublicKey": "registry:HKEY_LOCAL_MACHINE\\SOFTWARE\\CommerceServer\\Encryption\\Keys\\HabitatRetail,PublicKey",
                 "PrivateKey1": "registry:HKEY_LOCAL_MACHINE\\SOFTWARE\\CommerceServer\\Encryption\\Keys\\HabitatRetail,PrivateKey",
                 "KeyIndex": "1",
-                "SiteName": "HabitatRetail",
+                "SiteName": "Habitat",
                 "DebugLevel": "Production",
                 "PolicyId": "b48aa48009084cc78e5e7de25aa24ca5",
                 "Models": {

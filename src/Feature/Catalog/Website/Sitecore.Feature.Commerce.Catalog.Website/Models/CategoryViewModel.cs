@@ -38,7 +38,8 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Models
                 var factory = DependencyResolver.Current.GetService<ProductViewModelFactory>();
                 foreach (var child in products.SearchResultItems)
                 {
-                    ChildProducts.Add(factory.Create(child));
+                    if(child != null)
+                        ChildProducts.Add(factory.Create(child));
                 }
 
                 ChildProductFacets = products.Facets;

@@ -1,0 +1,14 @@
+﻿---
+ID: "b1da2dae-28d6-4eb3-a077-03324d78b818"
+Parent: "92e9dd28-9c20-4751-84d4-fbd6088c2e59"
+Template: "f6925719-6564-4bf4-b9f4-427eeef7eebb"
+Path: /sitecore/Commerce/Settings/Entitlement Settings/Subway
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171215T015345Z

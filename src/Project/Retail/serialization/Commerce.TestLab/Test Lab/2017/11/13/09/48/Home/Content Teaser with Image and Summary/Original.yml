@@ -1,0 +1,24 @@
+﻿---
+ID: "e2fd82d3-988f-42f6-ac5b-8bc515d0092b"
+Parent: "7f2dda83-3ce8-49e7-ad9c-2cb80b81671f"
+Template: "6d00d695-0cab-47d7-8929-a03ea002eb19"
+Path: /sitecore/system/Marketing Control Panel/Test Lab/2017/11/13/09/48/Home/Content Teaser with Image and Summary/Original
+DB: master
+SharedFields:
+- ID: "77c2a8f6-ab1c-40b7-be7b-ebcb615b770a"
+  Hint: Datasource
+  Value: "{7933FF20-878B-45B4-907C-E19421DFA9A2}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "c5230c52-c652-435b-8b1d-b6c96a96330d"
+  Hint: Name
+  Value: Original
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171113T094851Z

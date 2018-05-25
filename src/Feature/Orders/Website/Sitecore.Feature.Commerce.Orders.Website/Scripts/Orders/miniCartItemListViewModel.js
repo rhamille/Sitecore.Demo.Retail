@@ -20,8 +20,14 @@ function MiniCartItemListViewModel(data) {
             self.miniCartItems.push(new MiniCartItemViewModel(this.Image, this.title, this.Quantity, this.LinePrice, this.ProductUrl, this.ExternalCartLineId));
         });
 
-        self.lineitemcount = ko.observable(data.Lines.length);
-        self.total = ko.observable(data.Subtotal);
+        if (data.Lines) {
+            self.lineitemcount = ko.observable(data.Lines.length);
+            self.total = ko.observable(data.Subtotal);
+        }
+        else {
+            self.lineitemcount = 0;
+            self.total = 0;
+        }
 
         self.reload = function (data) {
             self.miniCartItems.removeAll();

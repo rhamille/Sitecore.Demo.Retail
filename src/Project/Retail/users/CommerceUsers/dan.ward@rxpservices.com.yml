@@ -1,0 +1,35 @@
+﻿---
+Username: |
+  CommerceUsers\dan.ward@rxpservices.com
+Email: dan.ward@rxpservices.com
+Comment: 
+Created: "2017-11-14T08:06:43.0000000Z"
+IsApproved: True
+Properties:
+- Key: IsAdministrator
+  Value: False
+  ValueType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: Portrait
+  Value: office/16x16/default_user.png
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: ProfileItemId
+  Value: "{0FFEC1BD-4D35-49CF-8B7D-7F01930834ED}"
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: __Serialization
+  Value: |
+    {"UserName":"dan.ward@rxpservices.com","FirstName":null,"LastName":null,"Email":"dan.ward@rxpservices.com","Comment":null,"IsDisabled":false,"CreationDate":"2017-11-14T08:06:43.3753937Z","LastActivityDate":"0001-01-01T00:00:00","LastLoginDate":"0001-01-01T00:00:00","LastDisabledDate":"0001-01-01T00:00:00","LastPasswordChangedDate":"0001-01-01T00:00:00","Shops":["storefront"],"Customers":[],"ExternalId":null,"Properties":[]}
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: digestcredentialhash
+  Value: f50e6bcfc24c61a2b71b7045f2843a90
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: digestcredentialhashwithoutdomain
+  Value: fc06b8482f83f22ffd5ca6d85008841c
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+Roles:
+  MemberOf: User Role

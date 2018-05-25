@@ -22,6 +22,47 @@ namespace Sitecore.Feature.Commerce.Payments.Engine.Pipelines.Blocks
             var cart = arg.Cart;
             if (!cart.HasComponent<FederatedPaymentComponent>())
             {
+                cart.Totals.PaymentsTotal = cart.Totals.GrandTotal;
+                cart.Components.Add(new FederatedPaymentComponent(cart.Totals.GrandTotal)
+                {
+                    
+                    Amount = cart.Totals.GrandTotal,
+                    BillingParty = new Party
+                    {
+                        Address1 = "18 Margaret Street",
+                        Address2 = "",
+                        AddressName = "testaddress",
+                        City = "NY",
+                        Country = "United States",
+                        CountryCode = "US",
+                        Email = "",
+                        ExternalId = "0",
+                        FirstName = "",
+                        IsPrimary = false,
+                        LastName = "",
+                        Name = "",
+                        Organization = null,
+                        PhoneNumber = "",
+                        State = "New York",
+                        StateCode = "NY",
+                        ZipPostalCode = "10011",
+                    },
+                    CardType = "",
+                    Comments = "",
+                    Id = System.Guid.NewGuid().ToString(),
+                    PaymentMethod = new EntityReference
+                    {
+                        EntityTarget = "3c86b4a2-7d72-4110-a697-82d6cd0b6619",
+
+                    },
+                    PaymentMethodNonce = System.Guid.NewGuid().ToString(),
+                    ExpiresMonth = 11,
+                    ExpiresYear = 2022,
+                    MaskedNumber = "411111******1111",
+                    TransactionId = "g52askc5",
+                    TransactionStatus = "authorized",
+
+                });
                 return await Task.FromResult(arg);
             }
 

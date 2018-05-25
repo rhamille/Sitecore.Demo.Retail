@@ -3,7 +3,7 @@ Username: |
   CommerceUsers\riotintoengineer@test.com
 Email: riotintoengineer@test.com
 Comment: 
-Created: "2017-09-20T09:14:09.0000000Z"
+Created: "2017-11-09T09:33:43.0000000Z"
 IsApproved: True
 Properties:
 - Key: IsAdministrator
@@ -28,12 +28,10 @@ Properties:
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: digestcredentialhash
-  Value: 04d86d794e341025ca066320e3d14efe
+  Value: 4062777ed4b42a3bc1dce7ac70781774
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: digestcredentialhashwithoutdomain
-  Value: ae6350500dc3889c1596664b3b2d5f26
+  Value: 21149b35c8b408a85886e00b6076d77c
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
-Roles:
-  MemberOf: User Role

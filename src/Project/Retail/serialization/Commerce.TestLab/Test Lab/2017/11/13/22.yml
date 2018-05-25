@@ -1,0 +1,14 @@
+﻿---
+ID: "e2103008-2910-40a9-9070-3018931c3348"
+Parent: "05569014-0be4-4927-897d-f9f7e79d17fc"
+Template: "adb6ca4f-03ef-4f47-b9ac-9ce2ba53ff97"
+Path: /sitecore/system/Marketing Control Panel/Test Lab/2017/11/13/22
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171113T222522Z

@@ -1,0 +1,41 @@
+﻿---
+Username: |
+  CommerceUsers\owner@subway.com
+Email: owner@subway.com
+Comment: 
+Created: "2017-12-18T03:58:41.0000000Z"
+IsApproved: True
+Properties:
+- Key: IsAdministrator
+  Value: False
+  ValueType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: Portrait
+  Value: office/16x16/default_user.png
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: ProfileItemId
+  Value: "{0FFEC1BD-4D35-49CF-8B7D-7F01930834ED}"
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: Spend Role
+  Value: Store Manager
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: __Serialization
+  Value: |
+    {"UserName":"owner@subway.com","FirstName":null,"LastName":null,"Email":"owner@subway.com","Comment":null,"IsDisabled":false,"CreationDate":"2017-12-18T03:58:41.385683Z","LastActivityDate":"0001-01-01T00:00:00","LastLoginDate":"0001-01-01T00:00:00","LastDisabledDate":"0001-01-01T00:00:00","LastPasswordChangedDate":"0001-01-01T00:00:00","Shops":["storefront"],"Customers":[],"ExternalId":null,"Properties":[]}
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: digestcredentialhash
+  Value: f089f76d190dba408398f9127eb2723c
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: digestcredentialhashwithoutdomain
+  Value: 46a75866ec27f7a57e57955a9c77283e
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+Roles:
+  MemberOf: |
+    habitat\CCA Store Owner
+  MemberOf: User Role

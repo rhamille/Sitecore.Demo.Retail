@@ -76,10 +76,23 @@ namespace Sitecore.Feature.Commerce.Customers.Website.Controllers
         public ActionResult LogOffAndRedirect()
         {
             AccountManager.Logout();
-
+            SetTheme("");
             return RedirectToLocal("/?t=" + DateTime.UtcNow
                .Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc))
                .TotalMilliseconds);
+        }
+
+        private void SetTheme(string email)
+        {
+            Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
+            var item = master.GetItem("/sitecore/system/Settings/Project/Themes/Retail/Nite Commerce");
+
+            using (new Sitecore.SecurityModel.SecurityDisabler())
+            {
+                item.Editing.BeginEdit();
+                item["Css assets"] = (email.ToLower().Contains("@subway.com")) ? "/styles/nite-commerce.min-subway.css" : "/styles/nite-commerce.min.css";
+                item.Editing.EndEdit();
+            }
         }
 
         [HttpGet]
@@ -141,6 +154,12 @@ namespace Sitecore.Feature.Commerce.Customers.Website.Controllers
                 Session[model.UserType] = true;
             }
             return new HttpStatusCodeResult(success ? HttpStatusCode.OK : HttpStatusCode.BadRequest);  // OK = 200
+        }
+
+        private void SetTheme()
+        {
+            Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
+            var item = master.GetItem("/sitecore/content");
         }
 
         [HttpGet]

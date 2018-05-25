@@ -3,7 +3,7 @@ Username: |
   CommerceUsers\qantasengineer@test.com
 Email: qantasengineer@test.com
 Comment: 
-Created: "2017-09-20T07:32:03.0000000Z"
+Created: "2017-11-09T09:33:36.0000000Z"
 IsApproved: True
 Properties:
 - Key: IsAdministrator
@@ -28,12 +28,10 @@ Properties:
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: digestcredentialhash
-  Value: 69396e34ea3d56b0e421b710678f13e0
+  Value: 2ba7526fa49ff085fe69302155d1ea37
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: digestcredentialhashwithoutdomain
-  Value: d562a09a6a2bd8b64a6368ba64b8af30
+  Value: 587648e27b0a18db6c3df021c27c8ef1
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
-Roles:
-  MemberOf: User Role

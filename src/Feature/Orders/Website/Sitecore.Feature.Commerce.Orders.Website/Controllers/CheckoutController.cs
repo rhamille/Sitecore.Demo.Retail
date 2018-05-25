@@ -37,6 +37,7 @@ using Sitecore.Foundation.SitecoreExtensions.Extensions;
 using Sitecore.Links;
 using Sitecore.Mvc.Controllers;
 using Sitecore.Mvc.Presentation;
+using System.Configuration;
 
 namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 {
@@ -300,8 +301,6 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
             try
             {
                 var response = CartManager.SetShippingMethods(CommerceUserContext.Current.UserId, inputModel);
-                //This line was preventing me from moving ahead in the process even though all information about shipping was present
-
                 //if (!response.ServiceProviderResult.Success || response.Result == null)
                 //    throw new Exception("Error setting shipping methods: " +
                 //                        string.Join(",", response.ServiceProviderResult.SystemMessages.Select(sm => sm.Message)));
@@ -363,8 +362,6 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
             if (!string.IsNullOrWhiteSpace(confirmationId))
             {
                 var response = OrderManager.GetOrderDetails(CommerceUserContext.Current.UserId, confirmationId);
-                viewModel.OrderId = response.Result.ExternalId;
-                viewModel.UserId = CommerceUserContext.Current.UserId;
                 if (response.ServiceProviderResult.Success)
                 {
                     var order = response.Result;
@@ -437,8 +434,8 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        [ValidateJsonAntiForgeryToken]
-        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
+        //[ValidateJsonAntiForgeryToken]
+        //[OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         [SkipAnalyticsTracking]
         public JsonResult SubmitOrder(SubmitOrderInputModel inputModel)
         {
@@ -466,6 +463,69 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                 return Json(new ErrorApiModel("SubmitOrder", e), JsonRequestBehavior.AllowGet);
             }
         }
+
+
+
+        [AllowAnonymous]
+        [HttpPost]
+        //[ValidateJsonAntiForgeryToken]
+        //[OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
+        [SkipAnalyticsTracking]
+        public JsonResult SubmitVoiceOrder()
+        {
+            try
+            {
+                var userId = ConfigurationManager.AppSettings["VoiceUserId"];
+
+                AccountManager.Login("ccademocustomer@cca.com", "b", true);
+                var getCartResponse = CartManager.GetCart(userId, true);
+                if (!getCartResponse.ServiceProviderResult.Success || getCartResponse.Result == null)
+                {
+                    return Json(new SubmitOrderApiModel(getCartResponse.ServiceProviderResult), JsonRequestBehavior.AllowGet);
+                }
+
+                var cart = (CommerceCart)getCartResponse.ServiceProviderResult.Cart;
+
+                var inputModel = new SubmitOrderInputModel
+                {
+                    BillingAddress = null,
+                    CreditCardPayment = null,
+                    GiftCardPayment = null,
+                    UserEmail = "test@test.com",
+                    FederatedPayment = new FederatedPaymentInputModelItem
+                    {
+                        Amount = cart.Total.Amount,
+                        CardToken = "",
+                        CardPaymentAcceptCardPrefix = "paypal",
+                        PaymentMethodID = null
+                    }
+                };
+
+                //Assert.ArgumentNotNull(inputModel, nameof(inputModel));
+                if (String.IsNullOrEmpty(inputModel.UserEmail))
+                {
+                    inputModel.UserEmail = Request.Cookies["email"]?.Value;
+                }
+
+
+                var validationResult = this.CreateJsonResult();
+                var response = OrderManager.SubmitVisitorOrder(userId, inputModel);
+                var result = new SubmitOrderApiModel(response.ServiceProviderResult);
+                //if (!response.ServiceProviderResult.Success || response.Result == null || response.ServiceProviderResult.CartWithErrors != null)
+                //{
+                //    return Json(result, JsonRequestBehavior.AllowGet);
+                //}
+
+                //result.Initialize($"checkout/OrderConfirmation?{ConfirmationIdQueryString}={response.Result.OrderID}");
+                result.Data = response.Result?.TrackingNumber;
+                return Json(result, JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception e)
+            {
+                return Json(new ErrorApiModel("SubmitOrder", e), JsonRequestBehavior.AllowGet);
+            }
+        }
+
 
         [AllowAnonymous]
         [HttpPost]
@@ -649,7 +709,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 #warning Please refactor
         private void GetPaymentMethods(CheckoutApiModel result)
         {
-            var paymentMethodList = new List<Sitecore.Commerce.Entities.Payments.PaymentMethod>();
+            var paymentMethodList = new List<PaymentMethod>();
 
             var response = PaymentManager.GetPaymentMethods(CommerceUserContext.Current.UserId, new PaymentOption { PaymentOptionType = PaymentOptionType.PayCard });
             if (response.ServiceProviderResult.Success)

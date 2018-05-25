@@ -1,0 +1,18 @@
+﻿---
+ID: "4cedb438-9187-4edd-b351-181ddcc5e7e8"
+Parent: "90c9f769-4d13-426a-9c4f-f6d376bed509"
+Template: "adb6ca4f-03ef-4f47-b9ac-9ce2ba53ff97"
+Path: /sitecore/content/Storefront/Home/Customer Service/News/2017/12/08/05
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171208T050118Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\colin

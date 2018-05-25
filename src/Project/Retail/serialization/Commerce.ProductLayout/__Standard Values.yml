@@ -19,6 +19,26 @@ SharedFields:
   Hint: __Insert Rules
   Type: TreelistEx
   Value: "{4664108F-D564-432F-9761-A9A4C4DA3629}"
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: |
+    <tracking>
+      <profile
+        id="{4F7F3405-9606-495E-8D44-55177A382BB3}"
+        name="Retail Persona"
+        presets="peta the product navigator|100||">
+        <key
+          name="Catalog Page"
+          value="0" />
+        <key
+          name="Frequently Ordered"
+          value="0" />
+        <key
+          name="Promotion Page"
+          value="0" />
+      </profile>
+    </tracking>
 - ID: "b5e7b1df-4155-4862-8d81-1e63ed6d3bc2"
   Hint: Tools Navigation Facets
   Type: Multilist

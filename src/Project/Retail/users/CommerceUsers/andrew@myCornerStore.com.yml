@@ -1,0 +1,39 @@
+﻿---
+Username: |
+  CommerceUsers\andrew@myCornerStore.com
+Email: andrew@myCornerStore.com
+Comment: 
+Created: "2017-11-14T10:28:07.0000000Z"
+IsApproved: True
+Properties:
+- Key: FullName
+  Value: Andrew Ward
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: IsAdministrator
+  Value: False
+  ValueType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: Portrait
+  Value: office/16x16/default_user.png
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: ProfileItemId
+  Value: "{0FFEC1BD-4D35-49CF-8B7D-7F01930834ED}"
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: __Serialization
+  Value: |
+    {"UserName":"CommerceUsers\\andrew@myCornerStore.com","FirstName":"Andrew","LastName":"Ward","Email":"andrew@myCornerStore.com","Comment":"","IsDisabled":false,"CreationDate":"2017-11-14T10:28:07.310959Z","LastActivityDate":"0001-01-01T00:00:00","LastLoginDate":"0001-01-01T00:00:00","LastDisabledDate":"0001-01-01T00:00:00","LastPasswordChangedDate":"0001-01-01T00:00:00","Shops":["storefront"],"Customers":["{34d562b7-d2b6-41ca-9dc5-919c20035094}"],"ExternalId":"{34d562b7-d2b6-41ca-9dc5-919c20035094}","Properties":[{"Key":"Phone","Value":"0404292383"}]}
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: digestcredentialhash
+  Value: ba956c38bbb740ba68937dc6ce7cb9f2
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: digestcredentialhashwithoutdomain
+  Value: da5dc913956cfa778b847cc77090e2b2
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+Roles:
+  MemberOf: User Role

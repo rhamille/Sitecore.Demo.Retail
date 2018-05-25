@@ -33,6 +33,75 @@ Languages:
     - ID: "03972573-f2e1-4750-973c-abe93fae5f81"
       Hint: Payment Total Label
       Value: "Sub total:"
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{C2A81618-1A61-4101-A9C9-90402FC06C0F}"
+              p:before="*"
+              s:ds="{CC78AED5-A1D1-42EF-A2E6-C83B52CB6050}"
+              s:id="{A25C9850-AAB7-46A6-84B7-0DFAB32FC357}"
+              s:ph="/page-layout/section_87232a10-13e2-42b6-a04a-c111ff75732a/col-huge_c071dce5-d08b-4d02-aba9-9d22b3814fed">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{9098358A-8325-4C55-8A85-9991F450BA90}"
+                    s:name="Encourage Promotion Navigation Behaviour">
+                    <actions>
+                      <action
+                        uid="212A4800514442A7A8F9BA4BE9046659"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{3F64CE0A-8054-41F2-8ED7-48AA3E4306A3}" />
+                    </actions>
+                    <conditions>
+                      <condition
+                        uid="8801DC73F139466CA568DA7AEB65B6C2"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Retail Persona"
+                        s:PatternName="Frances the Frequently Ordered" />
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="E02A08B67DB1436295352BB734253072"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{C071DCE5-D08B-4D02-ABA9-9D22B3814FED}"
+              p:after="r[@uid='{C2A81618-1A61-4101-A9C9-90402FC06C0F}']"
+              s:id="{0AD8EC59-33EC-4103-AAD4-F3A49BFDB92C}"
+              s:ph="/page-layout/section_87232a10-13e2-42b6-a04a-c111ff75732a" />
+            <r
+              uid="{87232A10-13E2-42B6-A04A-C111FF75732A}"
+              p:after="r[@uid='{C071DCE5-D08B-4D02-ABA9-9D22B3814FED}']"
+              s:id="{D201A487-5099-48A1-8189-55944F70C6CB}"
+              s:ph="page-layout" />
+            <r
+              uid="{204B0F9A-F783-4796-BFA0-1EE167CFED65}"
+              p:after="r[@uid='{87232A10-13E2-42B6-A04A-C111FF75732A}']"
+              s:ds="{E7C14FBE-123B-4879-BC46-E2CB6EAA68C1}"
+              s:id="{A2216CA7-B205-4042-A345-72117D0086C3}"
+              s:par="Background&amp;ContainerIsFluid&amp;UseStaticPlaceholderNames"
+              s:ph="/page-layout/page-header" />
+            <r
+              uid="{3C8989F0-7FA3-426B-9403-7D3073D8BE68}">
+              <p:d />
+            </r>
+          </d>
+        </r>
     - ID: "10c5a9bd-14ed-49f6-ba5c-70f4bd0bd4a1"
       Hint: Shipping Label
       Value: "Shipping:"

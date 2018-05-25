@@ -148,6 +148,7 @@ namespace Sitecore.Foundation.Commerce.Website.Managers
 
         public Category GetCategory(Item item)
         {
+            if (item == null) return null;
             var category = new Category(item)
             {
                 RequiredFacets = CommerceSearchManager.GetFacetFieldsForItem(item).Select(f => f.ToQueryFacet()).ToList(),

@@ -17,7 +17,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web.Mvc;
 using System.Web.UI;
 using Sitecore.Commerce.Connect.CommerceServer.Orders.Models;
@@ -32,12 +31,20 @@ using Sitecore.Foundation.Commerce.Website.Models.InputModels;
 using Sitecore.Foundation.Commerce.Website.Util;
 using Sitecore.Foundation.SitecoreExtensions.Attributes;
 using Sitecore.Mvc.Controllers;
+using System.Configuration;
+using Sitecore.Links;
 
 namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 {
     public class CartController : SitecoreController
     {
-        public CartController(CartManager cartManager, CommerceUserContext commerceUserContext, CartCacheHelper cartCacheHelper, PricingManager pricingManager, CurrencyManager currencyManager, StorefrontContext storefrontContext)
+        public CartController(CartManager cartManager,
+                              CommerceUserContext commerceUserContext,
+                              CartCacheHelper cartCacheHelper,
+                              PricingManager pricingManager,
+                              CurrencyManager currencyManager,
+                              StorefrontContext storefrontContext,
+                              CatalogManager catalogManager)
         {
             Assert.ArgumentNotNull(cartManager, nameof(cartManager));
 
@@ -47,6 +54,8 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
             PricingManager = pricingManager;
             CurrencyManager = currencyManager;
             StorefrontContext = storefrontContext;
+            _catalogManager = catalogManager;
+
         }
 
         private CartManager CartManager { get; }
@@ -55,6 +64,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
         private PricingManager PricingManager { get; }
         private CurrencyManager CurrencyManager { get; }
         public StorefrontContext StorefrontContext { get; }
+        public CatalogManager _catalogManager { get; }
 
         [HttpGet]
         public override ActionResult Index()
@@ -64,6 +74,10 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 
         public ActionResult MiniCart(bool updateCart = false)
         {
+            var user =  CommerceUserContext.Current.UserName;
+
+            ViewBag.HideUserContorl = (user.ToLower().Contains("staff@subway.com"));
+
             return PartialView();
         }
 
@@ -161,8 +175,8 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
+        //[ValidateAntiForgeryToken]
+        //[OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         [SkipAnalyticsTracking]
         public JsonResult AddCartLine(AddCartLineInputModel inputModel)
         {
@@ -176,8 +190,59 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                     return Json(validationResult, JsonRequestBehavior.AllowGet);
                 }
 
-                //TODO: inputModel to have subLines
                 var response = CartManager.AddLineItemsToCart(CommerceUserContext.Current.UserId, new List<AddCartLineInputModel> { inputModel });
+                var result = new BaseApiModel(response.ServiceProviderResult);
+                return Json(result, JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception e)
+            {
+                return Json(new ErrorApiModel("AddCartLine", e), JsonRequestBehavior.AllowGet);
+            }
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
+        //[ValidateAntiForgeryToken]
+        //[OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
+        [SkipAnalyticsTracking]
+        public JsonResult AddVoiceCartLine(int quantity1, int quantity2)
+        {
+            try
+            {
+
+                var productIds = ConfigurationManager.AppSettings["VoiceOrderProductIds"].Split(',');
+
+                var userId = ConfigurationManager.AppSettings["VoiceUserId"]; 
+                var product1 = _catalogManager.GetProduct(productIds[0]);
+                var product2 = _catalogManager.GetProduct(productIds[1]);
+
+                var inputModel1 = new AddCartLineInputModel
+                {
+                    CatalogName = "Habitat_Master",
+                    ImageUrl = "",
+                    ProductId = productIds[0],
+                    ProductUrl = product1 != null ? LinkManager.GetDynamicUrl(product1) : null,
+                    VariantId = null,
+                    Quantity = quantity1
+                };
+
+                var inputModel2 = new AddCartLineInputModel
+                {
+                    CatalogName = "Habitat_Master",
+                    ImageUrl = "",
+                    ProductId = productIds[1],
+                    ProductUrl = product2 != null ? LinkManager.GetDynamicUrl(product2) : null,
+                    VariantId = null,
+                    Quantity = quantity2
+                };
+
+                var validationResult = this.CreateJsonResult();
+                if (validationResult.HasErrors)
+                {
+                    return Json(validationResult, JsonRequestBehavior.AllowGet);
+                }
+
+                var response = CartManager.AddLineItemsToCart(userId, new List<AddCartLineInputModel> { inputModel1, inputModel2 });
                 var result = new BaseApiModel(response.ServiceProviderResult);
                 return Json(result, JsonRequestBehavior.AllowGet);
             }
@@ -294,25 +359,10 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                 }
 
                 var response = CartManager.ChangeLineQuantity(CommerceUserContext.Current.UserId, inputModel);
-
-                //var hostUri = Request.Url?.GetLeftPart(UriPartial.Authority);
-                //var acceptHeaders = Request.Headers["Accept"];
-                //var userAgent = Request.Headers["User-Agent"];
-
                 var result = new CartApiModel(response.ServiceProviderResult);
-
                 if (response.ServiceProviderResult.Success && response.Result != null)
                 {
                     result.Initialize(response.Result);
-
-                    //var linetoUpdate = result.Lines.FirstOrDefault(x => x.ExternalCartLineId.Equals(inputModel.ExternalCartLineId));
-                    //TODO: Update embellishment properties from inputmodel.
-                    //linetoUpdate.Embellishment.Quantity = inputModel.EQuantity;
-                    //linetoUpdate.Embellishment.Input = inputModel.ETextValue;
-
-                    //TODO : refactor but insert here for now
-                    if (!string.IsNullOrEmpty(inputModel.ETextValue))
-                        response = CartManager.SaveCartLineEmbellishment(CommerceUserContext.Current.UserId, inputModel.ExternalCartLineId, uint.Parse(inputModel.EQuantity), inputModel.EType, inputModel.ETextValue);
 
                     if (HasBasketErrors(response.Result))
                     {
@@ -329,7 +379,6 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
                 return Json(new ErrorApiModel("UpdateLineItem", e), JsonRequestBehavior.AllowGet);
             }
         }
-
 
         [AllowAnonymous]
         [HttpPost]

@@ -1,0 +1,25 @@
+﻿---
+ID: "d2a159f1-69ab-4bb4-bee2-7a3e80d891fa"
+Parent: "f9154495-27ad-4481-a010-682851103141"
+Template: "1c7896ce-1723-4e58-9bc6-f319be39d6bf"
+Path: "/sitecore/system/Marketing Control Panel/Test Lab/2017/11/13/23/22/Home BFE6F4B13AFA4666828ADB0EAEF95307/Version/Home - Version 6"
+DB: master
+SharedFields:
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Type: Checkbox
+  Value: 1
+- ID: "c5230c52-c652-435b-8b1d-b6c96a96330d"
+  Hint: Name
+  Value: "Home - Version 6"
+- ID: "cbe25853-2a04-4393-8440-109781f10379"
+  Hint: Datasource
+  Value: "sitecore://{441B60D3-09BB-4111-A3AD-D10076B78B54}?lang=en&ver=6"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171113T232212Z

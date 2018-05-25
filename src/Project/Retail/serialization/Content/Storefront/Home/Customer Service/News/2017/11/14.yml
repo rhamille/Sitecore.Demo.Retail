@@ -1,0 +1,14 @@
+﻿---
+ID: "354f2864-6bd5-4558-a8b2-82b1de51da59"
+Parent: "6724b23b-be82-46c4-8a22-e8fdc2f8a52a"
+Template: "adb6ca4f-03ef-4f47-b9ac-9ce2ba53ff97"
+Path: /sitecore/content/Storefront/Home/Customer Service/News/2017/11/14
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171114T100220Z
