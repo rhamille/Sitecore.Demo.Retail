@@ -1,4 +1,6 @@
-﻿using Sitecore.Commerce.Engine;
+﻿extern alias FoundationServiceProxy;
+
+using Sitecore.Commerce.Engine;
 using Microsoft.OData.Client;
 using Sitecore.Analytics;
 using Sitecore.Commerce.Engine.Connect;
@@ -13,14 +15,41 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Web;
+using Sitecore.Commerce.Services;
+using FoundationServiceProxy::Sitecore.Commerce.Core;
+using Sitecore.ContentSearch.Utilities;
+using FoundationServiceProxy::CommerceOps.Sitecore.Commerce.Engine;
 
 namespace Sitecore.Foundation.Commerce.Website.Util
 {
+    public static class ServiceProviderResultExtensions
+    {
+        private static SystemMessage CreateSystemMessage(string message)
+        {
+            return new SystemMessage() { Message = message };
+        }
+        public static void HandleCommandMessages(this ServiceProviderResult result, FoundationServiceProxy.Sitecore.Commerce.Core.Commands.CommerceCommand command)
+        {
+            if (command == null)
+                return;
+            if (command.ResponseCode.Equals("error", StringComparison.OrdinalIgnoreCase))
+                result.Success = false;
+            command.Messages.Where<CommandMessage>((Func<CommandMessage, bool>)(m =>
+            {
+                if (!m.Code.Equals("error", StringComparison.OrdinalIgnoreCase))
+                    return m.Code.Equals("validationerror", StringComparison.OrdinalIgnoreCase);
+                return true;
+            })).ForEach<CommandMessage>((Action<CommandMessage>)(m => result.SystemMessages.Add(CreateSystemMessage(m.Text))));
+        }
+    }
+
     public static class EngineConnectUtilityExtension
     {
         private static readonly ConcurrentDictionary<string, string> EnvironmentCache = new ConcurrentDictionary<string, string>();
         private static readonly ConcurrentDictionary<string, string> CurrencyCache = new ConcurrentDictionary<string, string>();
         private static CommerceEngineConfiguration _engineConfiguration;
+
+        
 
         public static CultureInfo CurrentCulture
         {
@@ -38,9 +67,9 @@ namespace Sitecore.Foundation.Commerce.Website.Util
             }
         }
 
-        public static Container GetShopsContainer(string environment = "", string shopName = "", string userId = "", string customerId = "", string language = "", string currency = "", DateTime? effectiveDate = null)
+        public static FoundationServiceProxy::Sitecore.Commerce.Engine.Container GetShopsContainer(string environment = "", string shopName = "", string userId = "", string customerId = "", string language = "", string currency = "", DateTime? effectiveDate = null)
         {
-            Container container = new Container(new Uri(EngineConnectUtility.EngineConfiguration.ShopsServiceUrl));
+            var container = new FoundationServiceProxy::Sitecore.Commerce.Engine.Container(new Uri(EngineConnectUtility.EngineConfiguration.ShopsServiceUrl));
             string roles = string.Empty;
             if ((Account)Context.User != (Account)null && Context.User.Roles != null && Context.User.Roles.Any<Role>())
                 roles = Context.User.Roles.Aggregate<Role, string>(roles, (Func<string, Role, string>)((current, role) => current + role.Name + "|"));

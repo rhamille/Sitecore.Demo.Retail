@@ -1,7 +1,14 @@
 ﻿using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Commerce.Core;
+using Sitecore.Commerce.EntityViews;
 using Sitecore.Framework.Configuration;
+using Sitecore.Framework.Pipelines.Definitions.Extensions;
+using Sitecore.Framework.Pipelines.Definitions;
+using System;
+using Sitecore.Commerce.Plugin.Carts;
+using Sitecore.Feature.Commerce.SubLines.Engine.Pipelines.Blocks;
+using Sitecore.Feature.Commerce.SubLines.Engine.Pipelines;
 
 namespace Sitecore.Feature.Commerce.SubLines.Engine
 {
@@ -15,22 +22,14 @@ namespace Sitecore.Feature.Commerce.SubLines.Engine
 
             //services.Sitecore().Pipelines(config => config
 
-            //    .ConfigurePipeline<IProvisionEntitlementsPipeline>(c =>
-            //    {
-            //        c.Add<ProvisionWarrantyEntitlementsBlock>().After<ProvisionEntitlementsBlock>()
-            //            .Add<ProvisionDigitalProductEntitlementsBlock>().After<ProvisionEntitlementsBlock>()
-            //            .Add<ProvisionInstallationEntitlementsBlock>().After<ProvisionEntitlementsBlock>();
-            //    })
-
-            //    .ConfigurePipeline<IGetEntityViewPipeline>(c =>
-            //    {
-            //        c.Add<GetOrderDigitalProductEntitlementDetailsViewBlock>().After<GetOrderEntitlementsViewBlock>()
-            //            .Add<GetCustomerDigitalProductEntitlementDetailsViewBlock>().After<GetCustomerEntitlementsViewBlock>()
-            //            .Add<GetOrderWarrantyEntitlementDetailsViewBlock>().After<GetOrderEntitlementsViewBlock>()
-            //            .Add<GetCustomerWarrantyEntitlementDetailsViewBlock>().After<GetCustomerEntitlementsViewBlock>()
-            //            .Add<GetOrderInstallationEntitlementDetailsViewBlock>().After<GetOrderEntitlementsViewBlock>()
-            //            .Add<GetCustomerInstallationEntitlementDetailsViewBlock>().After<GetCustomerEntitlementsViewBlock>();
-            //    })
+            //    .ConfigurePipeline<IConfigureServiceApiPipeline>((Framework.Pipelines.Definitions.PipelineDefinition<IConfigureServiceApiPipeline> configure) => configure
+            //        .Add<Pipelines.Blocks.ConfigureServiceApiBlock>())
+            //    .ConfigurePipeline<ICalculateCartLinesPipeline>(configure => configure
+            //        .Add<PopulateCartSubLineComponentItemsBlock>().After<CalculateCartLinesTotalsBlock>(), order: 1001)
+            //    //.ConfigurePipeline<ICalculateCartLinesPipeline>(configure => configure
+            //    //    .Add<CalculateCartSubLinesSubTotalsBlock>().After<CalculateCartLinesSubTotalsBlock>(), order: 1001)
+            //    .ConfigurePipeline<ICalculateCartLinesPipeline>(configure => configure
+            //        .Add<CalculateCartSubLinesSubTotalsBlock>().After<PopulateCartSubLineComponentItemsBlock>(), order: 1001)
             //);
         }
     }

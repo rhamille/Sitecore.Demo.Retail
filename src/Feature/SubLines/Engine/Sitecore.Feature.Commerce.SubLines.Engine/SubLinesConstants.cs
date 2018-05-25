@@ -6,6 +6,7 @@
         {
             public static class Blocks
             {
+                public const string ConfigureServiceApiBlock = "SubLines.block.ConfigureServiceApiBlock";
                 //public const string ProvisionWarrantyEntitlementsBlock = "Entitlements.block.ProvisionWarrantyEntitlements";
                 //public const string ProvisionInstallationEntitlementsBlock = "Entitlements.block.ProvisionInstallationEntitlements";
                 //public const string ProvisionDigitalProductEntitlementsBlock = "Entitlements.block.ProvisionDigitalProductEntitlements";

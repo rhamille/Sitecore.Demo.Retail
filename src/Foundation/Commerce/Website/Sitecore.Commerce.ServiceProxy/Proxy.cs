@@ -32,7 +32,7 @@ namespace Sitecore.Foundation.Commerce.ServiceProxy
 		//public static Container GetContainer()
 		//{
 		//    // TODO MOVE URL TO CONFIG
-		//    var container = new Container(new Uri("http://localhost:5000/api/"))
+		//    var container = new Container(new Uri("http://localhost:6000/api/"))
 		//    {
 		//        MergeOption = MergeOption.OverwriteChanges,
 		//        DisableInstanceAnnotationMaterialization = true

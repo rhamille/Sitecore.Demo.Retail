@@ -187,6 +187,36 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
             }
         }
 
+        [AllowAnonymous]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
+        [SkipAnalyticsTracking]
+        public JsonResult AddKitCartLine(string ProductId ,string VariantId ,string CatalogName,decimal? Quantity ,string ImageUrl ,string ProductUrl , ICollection<AddCartLineInputModel> SubLines)
+        {
+            try
+            {
+                var inputModel = new AddCartLineInputModel() { ProductId = ProductId, VariantId = VariantId, CatalogName = CatalogName, Quantity = Quantity, ImageUrl = ImageUrl, ProductUrl = ProductUrl, SubLines = SubLines };
+
+                Assert.ArgumentNotNull(inputModel, nameof(inputModel));
+
+                var validationResult = this.CreateJsonResult();
+                if (validationResult.HasErrors)
+                {
+                    return Json(validationResult, JsonRequestBehavior.AllowGet);
+                }
+
+                //TODO: inputModel to have subLines
+                var response = CartManager.AddLineItemsToCart(CommerceUserContext.Current.UserId, new List<AddCartLineInputModel> { inputModel });
+                var result = new BaseApiModel(response.ServiceProviderResult);
+                return Json(result, JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception e)
+            {
+                return Json(new ErrorApiModel("AddCartLine", e), JsonRequestBehavior.AllowGet);
+            }
+        }
+
         [Authorize]
         [HttpPost]
         [ValidateJsonAntiForgeryToken]

@@ -43,6 +43,10 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Models
 
         public string ParentCategoryId { get; set; }
 
+        public string Configuration => Item.IsDerived(global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.Product.Id)
+            && Item.Fields[global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.Product.FieldNames.Configuration] != null
+            ? Item.Fields[global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.Product.FieldNames.Configuration].ToString() : "";
+
         public string ParentCategoryName { get; set; }
 
         public HtmlString DescriptionRender => PageContext.Current.HtmlHelper.Sitecore().Field(global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.Product.FieldNames.Description, Item);
@@ -64,6 +68,10 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Models
         public decimal VariantSavingsPercentage => CalculateSavingsPercentage(LowestPricedVariantAdjustedPrice, LowestPricedVariantListPrice);
 
         public bool IsOnSale => Item.IsDerived(global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.Product.Id) && Item.Fields[global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.Product.FieldNames.OnSale].IsChecked();
+
+        public bool IsKitBase => Item.IsDerived(global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.Product.Id)
+            && Item.Fields[global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.Product.FieldNames.IsKitBase] != null 
+            && Item.Fields[global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.Product.FieldNames.IsKitBase].IsChecked();
 
         public IEnumerable<string> Tags
         {
@@ -162,5 +170,7 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Models
         public override string ImagesFieldName => Templates.Generated.Product.Fields.Images;
         public override string DescriptionFieldName => Templates.Generated.Product.Fields.Description;
         public override string TitleFieldName => FieldIDs.DisplayName.ToString();
+
+        public RelatedCatalogItemsViewModel ProductRelationships { get; set; }
     }
 }

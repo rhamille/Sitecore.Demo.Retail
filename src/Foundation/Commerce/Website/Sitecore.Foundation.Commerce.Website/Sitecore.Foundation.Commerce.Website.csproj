@@ -225,6 +225,7 @@
     <Compile Include="Constants.cs" />
     <Compile Include="Extensions\HtmlExtensions.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
+    <Compile Include="Extensions\PipelineUtilityExtension.cs" />
     <Compile Include="Extensions\SiteContextExtensions.cs" />
     <Compile Include="Fields\UserField.cs" />
     <Compile Include="Infrastructure\ComputedFields\VariantInfoComputedField.cs" />
@@ -367,6 +368,7 @@
     <ProjectReference Include="..\Sitecore.Commerce.ServiceProxy\Sitecore.Foundation.Commerce.ServiceProxy.csproj">
       <Project>{2E4655C5-9810-4A9A-8732-9A8411AE1EF2}</Project>
       <Name>Sitecore.Foundation.Commerce.ServiceProxy</Name>
+      <Aliases>FoundationServiceProxy</Aliases>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

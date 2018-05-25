@@ -14,6 +14,7 @@
 // and limitations under the License.
 // -------------------------------------------------------------------------------------------
 
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Sitecore.Foundation.Commerce.Website.Models.InputModels
@@ -34,5 +35,7 @@ namespace Sitecore.Foundation.Commerce.Website.Models.InputModels
         public string ImageUrl { get; set; }
 
         public string ProductUrl { get; set; }
+
+        public ICollection<AddCartLineInputModel> SubLines { get; set; }
     }
 }

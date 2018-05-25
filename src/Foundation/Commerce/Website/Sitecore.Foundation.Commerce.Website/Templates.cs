@@ -87,6 +87,8 @@ namespace Sitecore.Foundation.Commerce.Website
                 {
                     public const string Description = "Description";
                     public const string OnSale = "OnSale";
+                    public const string IsKitBase = "IsKitBase";
+                    public const string Configuration = "Configuration";
                     public const string PriceCardName = "PriceCardName";
                     public const string Rating = "Rating";
                 }

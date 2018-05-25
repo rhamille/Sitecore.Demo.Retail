@@ -15,6 +15,7 @@
 // either express or implied. See the License for the specific language governing permissions 
 // and limitations under the License.
 // -------------------------------------------------------------------------------------------
+extern alias FoundationServiceProxy;
 
 using System;
 using System.Collections.Generic;
@@ -39,7 +40,8 @@ using Sitecore.Foundation.Dictionary.Repositories;
 using WebGrease.Css.Extensions;
 using AddShippingInfoRequest = Sitecore.Commerce.Engine.Connect.Services.Carts.AddShippingInfoRequest;
 using Sitecore.Commerce.Engine.Connect;
-using Sitecore.Foundation.Commerce.ServiceProxy;
+using FoundationServiceProxy::Sitecore.Foundation.Commerce.ServiceProxy;
+using System.Collections.ObjectModel;
 
 namespace Sitecore.Foundation.Commerce.Website.Managers
 {
@@ -148,6 +150,22 @@ namespace Sitecore.Foundation.Commerce.Website.Managers
                     }
                 };
                 //UpdateStockInformation(cartLine, inputModel.CatalogName);      
+
+                if (inputModel.SubLines != null && inputModel.SubLines.Count > 0)
+                {
+                    cartLine.SubLines = new ReadOnlyCollection<CartLine>(inputModel.SubLines.Select(subline =>
+                        new CommerceCartLine(subline.CatalogName, subline.ProductId, subline.VariantId == "-1" ? null : subline.VariantId, (uint)subline.Quantity)
+                        {
+                            Properties =
+                            {
+                                ["ProductUrl"] = subline.ProductUrl,
+                                ["ImageUrl"] = subline.ImageUrl
+                            }
+                        } as CartLine
+                        ).ToList()
+                        );
+                }
+                
 
                 lines.Add(cartLine);
 

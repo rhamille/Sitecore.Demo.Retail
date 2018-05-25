@@ -1,11 +1,14 @@
 {
     "version": "1.0.0-*",
   "dependencies": {
-    "Braintree": "3.8.0",
     "Sitecore.Commerce.Core": "1.2.159",
-    "Sitecore.Commerce.Plugin.Orders": "1.2.159",
-    "Sitecore.Framework.Configuration": "1.1.44",
-    "Sitecore.Framework.Pipelines": "2.0.71"
+    "Sitecore.Commerce.Plugin.Carts": "1.2.159",
+    "Sitecore.Commerce.Plugin.Catalog": "1.2.159",
+    "Sitecore.Commerce.Plugin.Availability": "1.2.159",
+    "Sitecore.Commerce.Plugin.Pricing": "1.2.159",
+    "Sitecore.Commerce.Plugin.Catalog.Cs": "1.2.159",
+    "Sitecore.Commerce.Plugin.Inventory": "1.2.159",
+    "Sitecore.Commerce.Plugin.Inventory.Cs": "1.2.159"
   },
     "frameworks": {
         "net461": {

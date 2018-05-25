@@ -31,7 +31,8 @@
     "Sitecore.Feature.Commerce.Payments.Engine": "1.0.0-*",
     "Sitecore.Feature.Commerce.HabitatData.Engine": "1.0.0-*",
     "Sitecore.Demo.Retail.Feature.Fulfillment.Engine": "1.0.0-*",
-    "Sitecore.Feature.Commerce.Embellishments.Engine": "1.0.0-*"
+    "Sitecore.Feature.Commerce.Embellishments.Engine": "1.0.0-*",
+    "Sitecore.Feature.Commerce.SubLines.Engine": "1.0.0-*"
   },
     "tools": {
         "Microsoft.AspNetCore.Server.IISIntegration.Tools": "1.0.0-preview2-final"

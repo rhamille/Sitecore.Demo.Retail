@@ -122,7 +122,8 @@ function UpdateAvailableRegions(countryCode) {
 
 function getCheckoutData() {
     AJAXPost("/api/storefront/checkout/GetCheckoutData", null, function (data, success, sender) {
-        if (success && data.Success) {
+      if (success && data.Success) {
+        alert('x');
             checkoutDataViewModel = new CheckoutDataViewModel(data);
             ko.applyBindingsWithValidation(checkoutDataViewModel, document.getElementById("checkoutSection"));
             $('#orderShippingPreference').removeAttr('disabled');

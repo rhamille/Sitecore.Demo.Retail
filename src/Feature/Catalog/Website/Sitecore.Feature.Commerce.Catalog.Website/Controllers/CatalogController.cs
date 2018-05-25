@@ -443,6 +443,13 @@ namespace Sitecore.Feature.Commerce.Catalog.Website.Controllers
             }
 
             var model = ProductViewModelFactory.Create(RenderingContext.Current.Rendering.Item);
+
+            var isCatalogItem = RenderingContext.Current.Rendering.Item.IsDerived(global::Sitecore.Foundation.Commerce.Website.Templates.Commerce.CatalogItem.Id);
+
+            var catalogItem = isCatalogItem ? RenderingContext.Current.Rendering.Item : CatalogItemContext.Current?.Item;
+
+            model.ProductRelationships = GetRelationshipsFromItem(catalogItem, RenderingContext.Current.Rendering); ;
+            
             return View(model);
         }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿extern alias FoundationServiceProxy;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -26,9 +27,9 @@ using Sitecore.Foundation.SitecoreExtensions.Attributes;
 using Sitecore.Shell.Framework.Commands.Masters;
 //using Order = Sitecore.Commerce.Plugin.Orders;
 using Sitecore.Foundation.Commerce.Website.Util;
-using Sitecore.Foundation.Commerce.ServiceProxy;
+//using Sitecore.Foundation.Commerce.ServiceProxy;
 using Sitecore.Commerce.Plugin.Orders;
-using Sitecore.Feature.Commerce.Embellishments.Engine.Components;
+using FoundationServiceProxy.Sitecore.Feature.Commerce.Embellishments.Engine.Components;
 
 namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 {
@@ -92,22 +93,22 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 
         public XmlActionResult PunchoutOrderRequest(string userid,string orderid, string exportformat = "cxml")
         {
-            var orderViewModel = OrderViewModelRepository.Get(userid,orderid);
+            //var orderViewModel = OrderViewModelRepository.Get(userid,orderid);
 
-            var query = EngineConnectUtilityExtension.GetShopsContainer(string.Empty, "Storefront", userid, userid, "", "", new DateTime?()); //.SetupSession(cart.ExternalId, hostUri, acceptHeaders, userAgents);
-            var orderEngine = Proxy.GetValue(query.Orders.ByKey(orderid).Expand("Lines($expand=CartLineComponents),Components"));
+            //var query = EngineConnectUtilityExtension.GetShopsContainer(string.Empty, "Storefront", userid, userid, "", "", new DateTime?()); //.SetupSession(cart.ExternalId, hostUri, acceptHeaders, userAgents);
+            //var orderEngine = FoundationServiceProxy.Sitecore.fo.Commerce.ServiceProxy.Proxy.GetValue(query.Orders.ByKey(orderid).Expand("Lines($expand=CartLineComponents),Components"));
 
-            switch (exportformat.ToLower())
-            {
-                case "oagxml":
-                    return ExportAsOAGXML(orderViewModel, orderEngine);
-                case "ocixml":
-                    return ExportAsOCIXML(orderViewModel, orderEngine);
-                case "cxml":
-                default:
-                    return ExportAsCXML(orderViewModel, orderEngine);
-            }
-            
+            //switch (exportformat.ToLower())
+            //{
+            //    case "oagxml":
+            //        return ExportAsOAGXML(orderViewModel, orderEngine);
+            //    case "ocixml":
+            //        return ExportAsOCIXML(orderViewModel, orderEngine);
+            //    case "cxml":
+            //    default:
+            //        return ExportAsCXML(orderViewModel, orderEngine);
+            //}
+            return ExportAsCXML(null, null);
         }
 
         private XmlActionResult ExportAsCXML(OrderViewModel orderViewModel, Sitecore.Commerce.Plugin.Orders.Order orderEngine)
@@ -427,7 +428,7 @@ namespace Sitecore.Feature.Commerce.Orders.Website.Controllers
 
             if (line == null)
                 return new EmbellishmentComponent[0];
-            var embellishmentComponents = line.CartLineComponents.OfType<Embellishments.Engine.Components.EmbellishmentComponent>().Select(x => x);
+            var embellishmentComponents = line.CartLineComponents.OfType<FoundationServiceProxy.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponent>().Select(x => x);
 
                 return  embellishmentComponents.Any() ? embellishmentComponents.ToArray() :  new EmbellishmentComponent[0]; ;
         }

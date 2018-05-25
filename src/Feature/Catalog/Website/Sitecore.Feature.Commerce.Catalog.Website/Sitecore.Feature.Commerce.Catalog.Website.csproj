@@ -191,6 +191,8 @@
     <Content Include="Views\Catalog\ProductTeaser.cshtml" />
     <Content Include="Views\Catalog\_CategorySearchResult.cshtml" />
     <Content Include="Views\Catalog\_ProductSearchResult.cshtml" />
+    <Content Include="Views\Catalog\_ProductInformation.cshtml" />
+    <Content Include="Views\Catalog\_KitInformation.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

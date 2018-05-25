@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 4/21/2017 11:48:18 AM
+// Generation date: 1/26/2018 3:50:59 PM
 namespace CommerceOps.Sitecore.Commerce.Core.Commands
 {
     /// <summary>
@@ -20,19 +20,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new CommerceCommandSingle object.
         /// </summary>
         public CommerceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CommerceCommandSingle object.
         /// </summary>
         public CommerceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CommerceCommandSingle object.
         /// </summary>
         public CommerceCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CommerceCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -192,19 +192,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new BootstrapCommandSingle object.
         /// </summary>
         public BootstrapCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new BootstrapCommandSingle object.
         /// </summary>
         public BootstrapCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new BootstrapCommandSingle object.
         /// </summary>
         public BootstrapCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<BootstrapCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -237,19 +237,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new InitializeEnvironmentCommandSingle object.
         /// </summary>
         public InitializeEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new InitializeEnvironmentCommandSingle object.
         /// </summary>
         public InitializeEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new InitializeEnvironmentCommandSingle object.
         /// </summary>
         public InitializeEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<InitializeEnvironmentCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -282,19 +282,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new CleanEnvironmentCommandSingle object.
         /// </summary>
         public CleanEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CleanEnvironmentCommandSingle object.
         /// </summary>
         public CleanEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CleanEnvironmentCommandSingle object.
         /// </summary>
         public CleanEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CleanEnvironmentCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -327,19 +327,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new GetPossibleApprovalStatusesCommandSingle object.
         /// </summary>
         public GetPossibleApprovalStatusesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetPossibleApprovalStatusesCommandSingle object.
         /// </summary>
         public GetPossibleApprovalStatusesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetPossibleApprovalStatusesCommandSingle object.
         /// </summary>
         public GetPossibleApprovalStatusesCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetPossibleApprovalStatusesCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -372,19 +372,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new SetApprovalStatusCommandSingle object.
         /// </summary>
         public SetApprovalStatusCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new SetApprovalStatusCommandSingle object.
         /// </summary>
         public SetApprovalStatusCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new SetApprovalStatusCommandSingle object.
         /// </summary>
         public SetApprovalStatusCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SetApprovalStatusCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -417,19 +417,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new ClearCacheStoreCacheCommandSingle object.
         /// </summary>
         public ClearCacheStoreCacheCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ClearCacheStoreCacheCommandSingle object.
         /// </summary>
         public ClearCacheStoreCacheCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ClearCacheStoreCacheCommandSingle object.
         /// </summary>
         public ClearCacheStoreCacheCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ClearCacheStoreCacheCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -462,19 +462,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new ClearCacheStoreCommandSingle object.
         /// </summary>
         public ClearCacheStoreCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ClearCacheStoreCommandSingle object.
         /// </summary>
         public ClearCacheStoreCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ClearCacheStoreCommandSingle object.
         /// </summary>
         public ClearCacheStoreCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ClearCacheStoreCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -507,19 +507,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new ClearEnvironmentCacheCommandSingle object.
         /// </summary>
         public ClearEnvironmentCacheCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ClearEnvironmentCacheCommandSingle object.
         /// </summary>
         public ClearEnvironmentCacheCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ClearEnvironmentCacheCommandSingle object.
         /// </summary>
         public ClearEnvironmentCacheCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ClearEnvironmentCacheCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -552,19 +552,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new GetCacheStoreCommandSingle object.
         /// </summary>
         public GetCacheStoreCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetCacheStoreCommandSingle object.
         /// </summary>
         public GetCacheStoreCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetCacheStoreCommandSingle object.
         /// </summary>
         public GetCacheStoreCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetCacheStoreCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -597,19 +597,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new GenerateUniqueCodeCommandSingle object.
         /// </summary>
         public GenerateUniqueCodeCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GenerateUniqueCodeCommandSingle object.
         /// </summary>
         public GenerateUniqueCodeCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GenerateUniqueCodeCommandSingle object.
         /// </summary>
         public GenerateUniqueCodeCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GenerateUniqueCodeCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -642,19 +642,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new GetLocalizableMessageCommandSingle object.
         /// </summary>
         public GetLocalizableMessageCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetLocalizableMessageCommandSingle object.
         /// </summary>
         public GetLocalizableMessageCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetLocalizableMessageCommandSingle object.
         /// </summary>
         public GetLocalizableMessageCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetLocalizableMessageCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -687,19 +687,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new ValidateContextCommandSingle object.
         /// </summary>
         public ValidateContextCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ValidateContextCommandSingle object.
         /// </summary>
         public ValidateContextCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ValidateContextCommandSingle object.
         /// </summary>
         public ValidateContextCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ValidateContextCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -732,19 +732,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new CloneEntityCommandSingle object.
         /// </summary>
         public CloneEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CloneEntityCommandSingle object.
         /// </summary>
         public CloneEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CloneEntityCommandSingle object.
         /// </summary>
         public CloneEntityCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CloneEntityCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -777,19 +777,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new DeleteEntityCommandSingle object.
         /// </summary>
         public DeleteEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DeleteEntityCommandSingle object.
         /// </summary>
         public DeleteEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DeleteEntityCommandSingle object.
         /// </summary>
         public DeleteEntityCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DeleteEntityCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -822,19 +822,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new EntitySerializerCommandSingle object.
         /// </summary>
         public EntitySerializerCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new EntitySerializerCommandSingle object.
         /// </summary>
         public EntitySerializerCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new EntitySerializerCommandSingle object.
         /// </summary>
         public EntitySerializerCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EntitySerializerCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -867,19 +867,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new FindEntityCommandSingle object.
         /// </summary>
         public FindEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new FindEntityCommandSingle object.
         /// </summary>
         public FindEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new FindEntityCommandSingle object.
         /// </summary>
         public FindEntityCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<FindEntityCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -912,19 +912,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new GetEntityFromReferenceCommandSingle object.
         /// </summary>
         public GetEntityFromReferenceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetEntityFromReferenceCommandSingle object.
         /// </summary>
         public GetEntityFromReferenceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetEntityFromReferenceCommandSingle object.
         /// </summary>
         public GetEntityFromReferenceCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetEntityFromReferenceCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -957,19 +957,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new GetRawEntityCommandSingle object.
         /// </summary>
         public GetRawEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetRawEntityCommandSingle object.
         /// </summary>
         public GetRawEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetRawEntityCommandSingle object.
         /// </summary>
         public GetRawEntityCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetRawEntityCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1002,19 +1002,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new PersistEntityCommandSingle object.
         /// </summary>
         public PersistEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new PersistEntityCommandSingle object.
         /// </summary>
         public PersistEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new PersistEntityCommandSingle object.
         /// </summary>
         public PersistEntityCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PersistEntityCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1047,19 +1047,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new ValidateNameCommandSingle object.
         /// </summary>
         public ValidateNameCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ValidateNameCommandSingle object.
         /// </summary>
         public ValidateNameCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ValidateNameCommandSingle object.
         /// </summary>
         public ValidateNameCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ValidateNameCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1092,19 +1092,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new ExportEnvironmentCommandSingle object.
         /// </summary>
         public ExportEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ExportEnvironmentCommandSingle object.
         /// </summary>
         public ExportEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ExportEnvironmentCommandSingle object.
         /// </summary>
         public ExportEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ExportEnvironmentCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1137,19 +1137,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new GetEnvironmentArtifactStoreIdCommandSingle object.
         /// </summary>
         public GetEnvironmentArtifactStoreIdCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetEnvironmentArtifactStoreIdCommandSingle object.
         /// </summary>
         public GetEnvironmentArtifactStoreIdCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetEnvironmentArtifactStoreIdCommandSingle object.
         /// </summary>
         public GetEnvironmentArtifactStoreIdCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetEnvironmentArtifactStoreIdCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1182,19 +1182,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new GetEnvironmentCommandSingle object.
         /// </summary>
         public GetEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetEnvironmentCommandSingle object.
         /// </summary>
         public GetEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetEnvironmentCommandSingle object.
         /// </summary>
         public GetEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetEnvironmentCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1227,19 +1227,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new ImportEnvironmentCommandSingle object.
         /// </summary>
         public ImportEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ImportEnvironmentCommandSingle object.
         /// </summary>
         public ImportEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ImportEnvironmentCommandSingle object.
         /// </summary>
         public ImportEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ImportEnvironmentCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1272,19 +1272,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new FindEntitiesInListCommandSingle object.
         /// </summary>
         public FindEntitiesInListCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new FindEntitiesInListCommandSingle object.
         /// </summary>
         public FindEntitiesInListCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new FindEntitiesInListCommandSingle object.
         /// </summary>
         public FindEntitiesInListCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<FindEntitiesInListCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1317,19 +1317,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new GetListMetadataCommandSingle object.
         /// </summary>
         public GetListMetadataCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetListMetadataCommandSingle object.
         /// </summary>
         public GetListMetadataCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetListMetadataCommandSingle object.
         /// </summary>
         public GetListMetadataCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetListMetadataCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1362,19 +1362,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new MoveEntitiesToListCommandSingle object.
         /// </summary>
         public MoveEntitiesToListCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new MoveEntitiesToListCommandSingle object.
         /// </summary>
         public MoveEntitiesToListCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new MoveEntitiesToListCommandSingle object.
         /// </summary>
         public MoveEntitiesToListCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<MoveEntitiesToListCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1407,19 +1407,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new RemoveListEntitiesCommandSingle object.
         /// </summary>
         public RemoveListEntitiesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RemoveListEntitiesCommandSingle object.
         /// </summary>
         public RemoveListEntitiesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RemoveListEntitiesCommandSingle object.
         /// </summary>
         public RemoveListEntitiesCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RemoveListEntitiesCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1452,19 +1452,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new RunMinionCommandSingle object.
         /// </summary>
         public RunMinionCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RunMinionCommandSingle object.
         /// </summary>
         public RunMinionCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RunMinionCommandSingle object.
         /// </summary>
         public RunMinionCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RunMinionCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1497,19 +1497,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new PerformanceCounterCommandSingle object.
         /// </summary>
         public PerformanceCounterCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new PerformanceCounterCommandSingle object.
         /// </summary>
         public PerformanceCounterCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new PerformanceCounterCommandSingle object.
         /// </summary>
         public PerformanceCounterCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PerformanceCounterCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1542,19 +1542,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new ResetNodeContextCommandSingle object.
         /// </summary>
         public ResetNodeContextCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ResetNodeContextCommandSingle object.
         /// </summary>
         public ResetNodeContextCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ResetNodeContextCommandSingle object.
         /// </summary>
         public ResetNodeContextCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ResetNodeContextCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1587,19 +1587,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new GetPipelineConfigurationCommandSingle object.
         /// </summary>
         public GetPipelineConfigurationCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetPipelineConfigurationCommandSingle object.
         /// </summary>
         public GetPipelineConfigurationCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetPipelineConfigurationCommandSingle object.
         /// </summary>
         public GetPipelineConfigurationCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetPipelineConfigurationCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1632,19 +1632,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new RunningPluginsCommandSingle object.
         /// </summary>
         public RunningPluginsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RunningPluginsCommandSingle object.
         /// </summary>
         public RunningPluginsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RunningPluginsCommandSingle object.
         /// </summary>
         public RunningPluginsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RunningPluginsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1677,19 +1677,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new AddPolicyToEntityCommandSingle object.
         /// </summary>
         public AddPolicyToEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddPolicyToEntityCommandSingle object.
         /// </summary>
         public AddPolicyToEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddPolicyToEntityCommandSingle object.
         /// </summary>
         public AddPolicyToEntityCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddPolicyToEntityCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1722,19 +1722,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new GetPolicySetCommandSingle object.
         /// </summary>
         public GetPolicySetCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetPolicySetCommandSingle object.
         /// </summary>
         public GetPolicySetCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetPolicySetCommandSingle object.
         /// </summary>
         public GetPolicySetCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetPolicySetCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -1767,19 +1767,19 @@ namespace CommerceOps.Sitecore.Commerce.Core.Commands
         /// Initialize a new RemovePolicyFromEntityCommandSingle object.
         /// </summary>
         public RemovePolicyFromEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RemovePolicyFromEntityCommandSingle object.
         /// </summary>
         public RemovePolicyFromEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RemovePolicyFromEntityCommandSingle object.
         /// </summary>
         public RemovePolicyFromEntityCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RemovePolicyFromEntityCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -2996,19 +2996,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new CommerceEnvironmentSingle object.
         /// </summary>
         public CommerceEnvironmentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CommerceEnvironmentSingle object.
         /// </summary>
         public CommerceEnvironmentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CommerceEnvironmentSingle object.
         /// </summary>
         public CommerceEnvironmentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CommerceEnvironment> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for Components in the schema.
@@ -3349,19 +3349,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new PolicySetSingle object.
         /// </summary>
         public PolicySetSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new PolicySetSingle object.
         /// </summary>
         public PolicySetSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new PolicySetSingle object.
         /// </summary>
         public PolicySetSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PolicySet> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for Components in the schema.
@@ -5047,11 +5047,11 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// <param name="logPolicySetFromCache">Initial value of LogPolicySetFromCache.</param>
         /// <param name="logDeserializeEntity">Initial value of LogDeserializeEntity.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static LoggingPolicy CreateLoggingPolicy(bool logBlockCompletions, 
-                    bool logBlockStart, 
-                    bool logPipelineStart, 
-                    bool logPipelineCompletion, 
-                    bool logPolicySetFromCache, 
+        public static LoggingPolicy CreateLoggingPolicy(bool logBlockCompletions,
+                    bool logBlockStart,
+                    bool logPipelineStart,
+                    bool logPipelineCompletion,
+                    bool logPolicySetFromCache,
                     bool logDeserializeEntity)
         {
             LoggingPolicy loggingPolicy = new LoggingPolicy();
@@ -8680,19 +8680,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new GetCacheStoresCommandSingle object.
         /// </summary>
         public GetCacheStoresCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetCacheStoresCommandSingle object.
         /// </summary>
         public GetCacheStoresCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetCacheStoresCommandSingle object.
         /// </summary>
         public GetCacheStoresCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetCacheStoresCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -8725,19 +8725,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new GetCurrencySetCommandSingle object.
         /// </summary>
         public GetCurrencySetCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetCurrencySetCommandSingle object.
         /// </summary>
         public GetCurrencySetCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetCurrencySetCommandSingle object.
         /// </summary>
         public GetCurrencySetCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetCurrencySetCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -8770,19 +8770,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new GetCurrencySetsCommandSingle object.
         /// </summary>
         public GetCurrencySetsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetCurrencySetsCommandSingle object.
         /// </summary>
         public GetCurrencySetsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetCurrencySetsCommandSingle object.
         /// </summary>
         public GetCurrencySetsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetCurrencySetsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -8815,19 +8815,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new GetCountriesCommandSingle object.
         /// </summary>
         public GetCountriesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetCountriesCommandSingle object.
         /// </summary>
         public GetCountriesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetCountriesCommandSingle object.
         /// </summary>
         public GetCountriesCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetCountriesCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -8860,19 +8860,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new GetCountryCommandSingle object.
         /// </summary>
         public GetCountryCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetCountryCommandSingle object.
         /// </summary>
         public GetCountryCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetCountryCommandSingle object.
         /// </summary>
         public GetCountryCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetCountryCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -8905,19 +8905,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new ValidatePartyCommandSingle object.
         /// </summary>
         public ValidatePartyCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ValidatePartyCommandSingle object.
         /// </summary>
         public ValidatePartyCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ValidatePartyCommandSingle object.
         /// </summary>
         public ValidatePartyCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ValidatePartyCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -8950,19 +8950,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new ComponentSingle object.
         /// </summary>
         public ComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ComponentSingle object.
         /// </summary>
         public ComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ComponentSingle object.
         /// </summary>
         public ComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<Component> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -9143,19 +9143,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new ApprovalComponentSingle object.
         /// </summary>
         public ApprovalComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ApprovalComponentSingle object.
         /// </summary>
         public ApprovalComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ApprovalComponentSingle object.
         /// </summary>
         public ApprovalComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ApprovalComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -9277,19 +9277,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new EnvironmentCacheComponentSingle object.
         /// </summary>
         public EnvironmentCacheComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new EnvironmentCacheComponentSingle object.
         /// </summary>
         public EnvironmentCacheComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new EnvironmentCacheComponentSingle object.
         /// </summary>
         public EnvironmentCacheComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EnvironmentCacheComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -9409,19 +9409,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new FromEntityCacheComponentSingle object.
         /// </summary>
         public FromEntityCacheComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new FromEntityCacheComponentSingle object.
         /// </summary>
         public FromEntityCacheComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new FromEntityCacheComponentSingle object.
         /// </summary>
         public FromEntityCacheComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<FromEntityCacheComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -9475,19 +9475,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new ContactComponentSingle object.
         /// </summary>
         public ContactComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ContactComponentSingle object.
         /// </summary>
         public ContactComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ContactComponentSingle object.
         /// </summary>
         public ContactComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ContactComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -9741,19 +9741,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new InternetLocationSingle object.
         /// </summary>
         public InternetLocationSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new InternetLocationSingle object.
         /// </summary>
         public InternetLocationSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new InternetLocationSingle object.
         /// </summary>
         public InternetLocationSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<InternetLocation> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -9897,19 +9897,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new MessageComponentSingle object.
         /// </summary>
         public MessageComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new MessageComponentSingle object.
         /// </summary>
         public MessageComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new MessageComponentSingle object.
         /// </summary>
         public MessageComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<MessageComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -10007,19 +10007,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new MessagesComponentSingle object.
         /// </summary>
         public MessagesComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new MessagesComponentSingle object.
         /// </summary>
         public MessagesComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new MessagesComponentSingle object.
         /// </summary>
         public MessagesComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<MessagesComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -10162,19 +10162,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new PropertiesComponentSingle object.
         /// </summary>
         public PropertiesComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new PropertiesComponentSingle object.
         /// </summary>
         public PropertiesComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new PropertiesComponentSingle object.
         /// </summary>
         public PropertiesComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PropertiesComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -10228,19 +10228,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new CurrenciesComponentSingle object.
         /// </summary>
         public CurrenciesComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CurrenciesComponentSingle object.
         /// </summary>
         public CurrenciesComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CurrenciesComponentSingle object.
         /// </summary>
         public CurrenciesComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CurrenciesComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -10316,19 +10316,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new RegionComponentSingle object.
         /// </summary>
         public RegionComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RegionComponentSingle object.
         /// </summary>
         public RegionComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RegionComponentSingle object.
         /// </summary>
         public RegionComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RegionComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for StatesProvinces in the schema.
@@ -10447,19 +10447,19 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// Initialize a new StateProvinceComponentSingle object.
         /// </summary>
         public StateProvinceComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new StateProvinceComponentSingle object.
         /// </summary>
         public StateProvinceComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new StateProvinceComponentSingle object.
         /// </summary>
         public StateProvinceComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<StateProvinceComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -11166,103 +11166,6 @@ namespace CommerceOps.Sitecore.Commerce.Core
             global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.StateProvinceComponent> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Core.StateProvinceComponent>();
             return new global::CommerceOps.Sitecore.Commerce.Core.StateProvinceComponentSingle(source.Context, query.GetPath(null));
         }
-    }
-}
-namespace CommerceOps.Plugin.Sample.Payments.Braintree
-{
-    /// <summary>
-    /// There are no comments for BraintreeClientPolicy in the schema.
-    /// </summary>
-    public partial class BraintreeClientPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
-    {
-        /// <summary>
-        /// There are no comments for Property Environment in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string Environment
-        {
-            get
-            {
-                return this._Environment;
-            }
-            set
-            {
-                this.OnEnvironmentChanging(value);
-                this._Environment = value;
-                this.OnEnvironmentChanged();
-                this.OnPropertyChanged("Environment");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _Environment;
-        partial void OnEnvironmentChanging(string value);
-        partial void OnEnvironmentChanged();
-        /// <summary>
-        /// There are no comments for Property MerchantId in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string MerchantId
-        {
-            get
-            {
-                return this._MerchantId;
-            }
-            set
-            {
-                this.OnMerchantIdChanging(value);
-                this._MerchantId = value;
-                this.OnMerchantIdChanged();
-                this.OnPropertyChanged("MerchantId");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _MerchantId;
-        partial void OnMerchantIdChanging(string value);
-        partial void OnMerchantIdChanged();
-        /// <summary>
-        /// There are no comments for Property PublicKey in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string PublicKey
-        {
-            get
-            {
-                return this._PublicKey;
-            }
-            set
-            {
-                this.OnPublicKeyChanging(value);
-                this._PublicKey = value;
-                this.OnPublicKeyChanged();
-                this.OnPropertyChanged("PublicKey");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _PublicKey;
-        partial void OnPublicKeyChanging(string value);
-        partial void OnPublicKeyChanged();
-        /// <summary>
-        /// There are no comments for Property PrivateKey in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string PrivateKey
-        {
-            get
-            {
-                return this._PrivateKey;
-            }
-            set
-            {
-                this.OnPrivateKeyChanging(value);
-                this._PrivateKey = value;
-                this.OnPrivateKeyChanged();
-                this.OnPropertyChanged("PrivateKey");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _PrivateKey;
-        partial void OnPrivateKeyChanging(string value);
-        partial void OnPrivateKeyChanged();
     }
 }
 namespace CommerceOps.Sitecore.Commerce.Core.Caching
@@ -11992,19 +11895,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog.Cs
         /// Initialize a new EnsureCatalogCommandSingle object.
         /// </summary>
         public EnsureCatalogCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new EnsureCatalogCommandSingle object.
         /// </summary>
         public EnsureCatalogCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new EnsureCatalogCommandSingle object.
         /// </summary>
         public EnsureCatalogCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EnsureCatalogCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -12037,19 +11940,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog.Cs
         /// Initialize a new GetCatalogContextCommandSingle object.
         /// </summary>
         public GetCatalogContextCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetCatalogContextCommandSingle object.
         /// </summary>
         public GetCatalogContextCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetCatalogContextCommandSingle object.
         /// </summary>
         public GetCatalogContextCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetCatalogContextCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -12082,19 +11985,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog.Cs
         /// Initialize a new GetProductCommandSingle object.
         /// </summary>
         public GetProductCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetProductCommandSingle object.
         /// </summary>
         public GetProductCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetProductCommandSingle object.
         /// </summary>
         public GetProductCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetProductCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -13151,19 +13054,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Customers.Cs
         /// Initialize a new GetUserSiteTermsCommandSingle object.
         /// </summary>
         public GetUserSiteTermsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetUserSiteTermsCommandSingle object.
         /// </summary>
         public GetUserSiteTermsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetUserSiteTermsCommandSingle object.
         /// </summary>
         public GetUserSiteTermsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetUserSiteTermsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -13196,19 +13099,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Customers.Cs
         /// Initialize a new ValidateAddressCommandSingle object.
         /// </summary>
         public ValidateAddressCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ValidateAddressCommandSingle object.
         /// </summary>
         public ValidateAddressCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ValidateAddressCommandSingle object.
         /// </summary>
         public ValidateAddressCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ValidateAddressCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -13241,19 +13144,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Customers.Cs
         /// Initialize a new ValidateCustomerCommandSingle object.
         /// </summary>
         public ValidateCustomerCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ValidateCustomerCommandSingle object.
         /// </summary>
         public ValidateCustomerCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ValidateCustomerCommandSingle object.
         /// </summary>
         public ValidateCustomerCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ValidateCustomerCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -13286,19 +13189,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Customers.Cs
         /// Initialize a new CustomerDetailsComponentSingle object.
         /// </summary>
         public CustomerDetailsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CustomerDetailsComponentSingle object.
         /// </summary>
         public CustomerDetailsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CustomerDetailsComponentSingle object.
         /// </summary>
         public CustomerDetailsComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CustomerDetailsComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -13667,19 +13570,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
         /// Initialize a new GetInventoryCatalogCommandSingle object.
         /// </summary>
         public GetInventoryCatalogCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetInventoryCatalogCommandSingle object.
         /// </summary>
         public GetInventoryCatalogCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetInventoryCatalogCommandSingle object.
         /// </summary>
         public GetInventoryCatalogCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetInventoryCatalogCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -13712,19 +13615,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
         /// Initialize a new GetInventoryItemCommandSingle object.
         /// </summary>
         public GetInventoryItemCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetInventoryItemCommandSingle object.
         /// </summary>
         public GetInventoryItemCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetInventoryItemCommandSingle object.
         /// </summary>
         public GetInventoryItemCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetInventoryItemCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -13757,19 +13660,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
         /// Initialize a new GetInventorySkuCommandSingle object.
         /// </summary>
         public GetInventorySkuCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetInventorySkuCommandSingle object.
         /// </summary>
         public GetInventorySkuCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetInventorySkuCommandSingle object.
         /// </summary>
         public GetInventorySkuCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetInventorySkuCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -13802,19 +13705,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
         /// Initialize a new AllocationComponentSingle object.
         /// </summary>
         public AllocationComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AllocationComponentSingle object.
         /// </summary>
         public AllocationComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AllocationComponentSingle object.
         /// </summary>
         public AllocationComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AllocationComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -13859,13 +13762,13 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
         /// <param name="dateAvailable">Initial value of DateAvailable.</param>
         /// <param name="expires">Initial value of Expires.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static AllocationComponent CreateAllocationComponent(string ID, 
-                    bool isAvailable, 
-                    decimal onHandUnits, 
-                    decimal stockOutThreshold, 
-                    global::System.DateTimeOffset lastRestockDate, 
-                    global::System.DateTimeOffset lastModifiedDate, 
-                    global::System.DateTimeOffset dateAvailable, 
+        public static AllocationComponent CreateAllocationComponent(string ID,
+                    bool isAvailable,
+                    decimal onHandUnits,
+                    decimal stockOutThreshold,
+                    global::System.DateTimeOffset lastRestockDate,
+                    global::System.DateTimeOffset lastModifiedDate,
+                    global::System.DateTimeOffset dateAvailable,
                     global::System.DateTimeOffset expires)
         {
             AllocationComponent allocationComponent = new AllocationComponent();
@@ -16108,19 +16011,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Returns
         /// Initialize a new RequestRmaCommandSingle object.
         /// </summary>
         public RequestRmaCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RequestRmaCommandSingle object.
         /// </summary>
         public RequestRmaCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RequestRmaCommandSingle object.
         /// </summary>
         public RequestRmaCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RequestRmaCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -16153,19 +16056,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Returns
         /// Initialize a new ReturnedItemReceivedCommandSingle object.
         /// </summary>
         public ReturnedItemReceivedCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ReturnedItemReceivedCommandSingle object.
         /// </summary>
         public ReturnedItemReceivedCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ReturnedItemReceivedCommandSingle object.
         /// </summary>
         public ReturnedItemReceivedCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ReturnedItemReceivedCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -16198,19 +16101,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Returns
         /// Initialize a new ValidateAndRequestRmaCommandSingle object.
         /// </summary>
         public ValidateAndRequestRmaCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ValidateAndRequestRmaCommandSingle object.
         /// </summary>
         public ValidateAndRequestRmaCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ValidateAndRequestRmaCommandSingle object.
         /// </summary>
         public ValidateAndRequestRmaCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ValidateAndRequestRmaCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -16243,19 +16146,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Returns
         /// Initialize a new ValidateRmaRequestCommandSingle object.
         /// </summary>
         public ValidateRmaRequestCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ValidateRmaRequestCommandSingle object.
         /// </summary>
         public ValidateRmaRequestCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ValidateRmaRequestCommandSingle object.
         /// </summary>
         public ValidateRmaRequestCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ValidateRmaRequestCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -16288,19 +16191,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Returns
         /// Initialize a new ItemReturnedComponentSingle object.
         /// </summary>
         public ItemReturnedComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ItemReturnedComponentSingle object.
         /// </summary>
         public ItemReturnedComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ItemReturnedComponentSingle object.
         /// </summary>
         public ItemReturnedComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ItemReturnedComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -16456,19 +16359,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Returns
         /// Initialize a new OrderRmasComponentSingle object.
         /// </summary>
         public OrderRmasComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new OrderRmasComponentSingle object.
         /// </summary>
         public OrderRmasComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new OrderRmasComponentSingle object.
         /// </summary>
         public OrderRmasComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<OrderRmasComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -16611,19 +16514,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Returns
         /// Initialize a new RmaLineComponentSingle object.
         /// </summary>
         public RmaLineComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RmaLineComponentSingle object.
         /// </summary>
         public RmaLineComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RmaLineComponentSingle object.
         /// </summary>
         public RmaLineComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RmaLineComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -17815,19 +17718,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new GetBulkPricesCommandSingle object.
         /// </summary>
         public GetBulkPricesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetBulkPricesCommandSingle object.
         /// </summary>
         public GetBulkPricesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetBulkPricesCommandSingle object.
         /// </summary>
         public GetBulkPricesCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetBulkPricesCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -17860,19 +17763,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new GetCatalogCommandSingle object.
         /// </summary>
         public GetCatalogCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetCatalogCommandSingle object.
         /// </summary>
         public GetCatalogCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetCatalogCommandSingle object.
         /// </summary>
         public GetCatalogCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetCatalogCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -17905,19 +17808,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new GetCatalogsCommandSingle object.
         /// </summary>
         public GetCatalogsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetCatalogsCommandSingle object.
         /// </summary>
         public GetCatalogsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetCatalogsCommandSingle object.
         /// </summary>
         public GetCatalogsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetCatalogsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -17950,19 +17853,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new GetSellableItemCommandSingle object.
         /// </summary>
         public GetSellableItemCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetSellableItemCommandSingle object.
         /// </summary>
         public GetSellableItemCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetSellableItemCommandSingle object.
         /// </summary>
         public GetSellableItemCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetSellableItemCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -17995,19 +17898,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new RemoveListPricesCommandSingle object.
         /// </summary>
         public RemoveListPricesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RemoveListPricesCommandSingle object.
         /// </summary>
         public RemoveListPricesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RemoveListPricesCommandSingle object.
         /// </summary>
         public RemoveListPricesCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RemoveListPricesCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -18040,19 +17943,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new UpdateListPricesCommandSingle object.
         /// </summary>
         public UpdateListPricesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new UpdateListPricesCommandSingle object.
         /// </summary>
         public UpdateListPricesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new UpdateListPricesCommandSingle object.
         /// </summary>
         public UpdateListPricesCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<UpdateListPricesCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -18085,19 +17988,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new BrandingComponentSingle object.
         /// </summary>
         public BrandingComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new BrandingComponentSingle object.
         /// </summary>
         public BrandingComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new BrandingComponentSingle object.
         /// </summary>
         public BrandingComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<BrandingComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -18173,19 +18076,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new CatalogComponentSingle object.
         /// </summary>
         public CatalogComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CatalogComponentSingle object.
         /// </summary>
         public CatalogComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CatalogComponentSingle object.
         /// </summary>
         public CatalogComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CatalogComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildCategories in the schema.
@@ -18326,19 +18229,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new CategorySingle object.
         /// </summary>
         public CategorySingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CategorySingle object.
         /// </summary>
         public CategorySingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CategorySingle object.
         /// </summary>
         public CategorySingle(global::Microsoft.OData.Client.DataServiceQuerySingle<Category> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ParentCatalog in the schema.
@@ -18551,13 +18454,13 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// <param name="version">Initial value of Version.</param>
         /// <param name="isPersisted">Initial value of IsPersisted.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static Category CreateCategory(bool isSearchable, 
-                    bool showChildrenHorizontal, 
-                    bool showSiblings, 
-                    int itemCount, 
-                    int totalChildItems, 
-                    string ID, 
-                    int version, 
+        public static Category CreateCategory(bool isSearchable,
+                    bool showChildrenHorizontal,
+                    bool showSiblings,
+                    int itemCount,
+                    int totalChildItems,
+                    string ID,
+                    int version,
                     bool isPersisted)
         {
             Category category = new Category();
@@ -19302,19 +19205,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new SellableItemSingle object.
         /// </summary>
         public SellableItemSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new SellableItemSingle object.
         /// </summary>
         public SellableItemSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new SellableItemSingle object.
         /// </summary>
         public SellableItemSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SellableItem> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for Components in the schema.
@@ -19697,19 +19600,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new ClassificationComponentSingle object.
         /// </summary>
         public ClassificationComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ClassificationComponentSingle object.
         /// </summary>
         public ClassificationComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ClassificationComponentSingle object.
         /// </summary>
         public ClassificationComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ClassificationComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -19807,19 +19710,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new ClearanceComponentSingle object.
         /// </summary>
         public ClearanceComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ClearanceComponentSingle object.
         /// </summary>
         public ClearanceComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ClearanceComponentSingle object.
         /// </summary>
         public ClearanceComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ClearanceComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -19919,19 +19822,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new CustomerRatingComponentSingle object.
         /// </summary>
         public CustomerRatingComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CustomerRatingComponentSingle object.
         /// </summary>
         public CustomerRatingComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CustomerRatingComponentSingle object.
         /// </summary>
         public CustomerRatingComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CustomerRatingComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -20033,19 +19936,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new CustomerReviewsComponentSingle object.
         /// </summary>
         public CustomerReviewsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CustomerReviewsComponentSingle object.
         /// </summary>
         public CustomerReviewsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CustomerReviewsComponentSingle object.
         /// </summary>
         public CustomerReviewsComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CustomerReviewsComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -20121,19 +20024,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new DigitalItemComponentSingle object.
         /// </summary>
         public DigitalItemComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DigitalItemComponentSingle object.
         /// </summary>
         public DigitalItemComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DigitalItemComponentSingle object.
         /// </summary>
         public DigitalItemComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DigitalItemComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -20301,19 +20204,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new ExternalMappingComponentSingle object.
         /// </summary>
         public ExternalMappingComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ExternalMappingComponentSingle object.
         /// </summary>
         public ExternalMappingComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ExternalMappingComponentSingle object.
         /// </summary>
         public ExternalMappingComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ExternalMappingComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -20389,19 +20292,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new FeatureComponentSingle object.
         /// </summary>
         public FeatureComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new FeatureComponentSingle object.
         /// </summary>
         public FeatureComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new FeatureComponentSingle object.
         /// </summary>
         public FeatureComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<FeatureComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -20501,19 +20404,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new GameItemComponentSingle object.
         /// </summary>
         public GameItemComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GameItemComponentSingle object.
         /// </summary>
         public GameItemComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GameItemComponentSingle object.
         /// </summary>
         public GameItemComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GameItemComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -20747,19 +20650,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new ImageryComponentSingle object.
         /// </summary>
         public ImageryComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ImageryComponentSingle object.
         /// </summary>
         public ImageryComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ImageryComponentSingle object.
         /// </summary>
         public ImageryComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ImageryComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -20835,19 +20738,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new ItemVariationComponentSingle object.
         /// </summary>
         public ItemVariationComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ItemVariationComponentSingle object.
         /// </summary>
         public ItemVariationComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ItemVariationComponentSingle object.
         /// </summary>
         public ItemVariationComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ItemVariationComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -20967,19 +20870,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new ItemVariationsComponentSingle object.
         /// </summary>
         public ItemVariationsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ItemVariationsComponentSingle object.
         /// </summary>
         public ItemVariationsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ItemVariationsComponentSingle object.
         /// </summary>
         public ItemVariationsComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ItemVariationsComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -21033,19 +20936,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new ItemVariationSelectedComponentSingle object.
         /// </summary>
         public ItemVariationSelectedComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ItemVariationSelectedComponentSingle object.
         /// </summary>
         public ItemVariationSelectedComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ItemVariationSelectedComponentSingle object.
         /// </summary>
         public ItemVariationSelectedComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ItemVariationSelectedComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -21121,19 +21024,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new ManufacturerComponentSingle object.
         /// </summary>
         public ManufacturerComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ManufacturerComponentSingle object.
         /// </summary>
         public ManufacturerComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ManufacturerComponentSingle object.
         /// </summary>
         public ManufacturerComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ManufacturerComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -21253,19 +21156,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new MarketingComponentSingle object.
         /// </summary>
         public MarketingComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new MarketingComponentSingle object.
         /// </summary>
         public MarketingComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new MarketingComponentSingle object.
         /// </summary>
         public MarketingComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<MarketingComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -21367,19 +21270,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new MusicItemComponentSingle object.
         /// </summary>
         public MusicItemComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new MusicItemComponentSingle object.
         /// </summary>
         public MusicItemComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new MusicItemComponentSingle object.
         /// </summary>
         public MusicItemComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<MusicItemComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -21697,19 +21600,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new PhoneItemComponentSingle object.
         /// </summary>
         public PhoneItemComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new PhoneItemComponentSingle object.
         /// </summary>
         public PhoneItemComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new PhoneItemComponentSingle object.
         /// </summary>
         public PhoneItemComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PhoneItemComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -21752,11 +21655,11 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// <param name="mMS">Initial value of MMS.</param>
         /// <param name="mp3PlaybackCapability">Initial value of Mp3PlaybackCapability.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static PhoneItemComponent CreatePhoneItemComponent(string ID, 
-                    bool isPreOwned, 
-                    bool bluetoothEnabled, 
-                    bool builtInDigitalCamera, 
-                    bool mMS, 
+        public static PhoneItemComponent CreatePhoneItemComponent(string ID,
+                    bool isPreOwned,
+                    bool bluetoothEnabled,
+                    bool builtInDigitalCamera,
+                    bool mMS,
                     bool mp3PlaybackCapability)
         {
             PhoneItemComponent phoneItemComponent = new PhoneItemComponent();
@@ -22020,19 +21923,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new PhysicalItemComponentSingle object.
         /// </summary>
         public PhysicalItemComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new PhysicalItemComponentSingle object.
         /// </summary>
         public PhysicalItemComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new PhysicalItemComponentSingle object.
         /// </summary>
         public PhysicalItemComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PhysicalItemComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -22075,11 +21978,11 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// <param name="weight">Initial value of Weight.</param>
         /// <param name="depth">Initial value of Depth.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static PhysicalItemComponent CreatePhysicalItemComponent(string ID, 
-                    double length, 
-                    double width, 
-                    double height, 
-                    double weight, 
+        public static PhysicalItemComponent CreatePhysicalItemComponent(string ID,
+                    double length,
+                    double width,
+                    double height,
+                    double weight,
                     double depth)
         {
             PhysicalItemComponent physicalItemComponent = new PhysicalItemComponent();
@@ -22365,19 +22268,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new ProtectionPlanComponentSingle object.
         /// </summary>
         public ProtectionPlanComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ProtectionPlanComponentSingle object.
         /// </summary>
         public ProtectionPlanComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ProtectionPlanComponentSingle object.
         /// </summary>
         public ProtectionPlanComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ProtectionPlanComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -22497,19 +22400,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new RelatedItemsComponentSingle object.
         /// </summary>
         public RelatedItemsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RelatedItemsComponentSingle object.
         /// </summary>
         public RelatedItemsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RelatedItemsComponentSingle object.
         /// </summary>
         public RelatedItemsComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RelatedItemsComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -22585,19 +22488,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new SalesRankingComponentSingle object.
         /// </summary>
         public SalesRankingComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new SalesRankingComponentSingle object.
         /// </summary>
         public SalesRankingComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new SalesRankingComponentSingle object.
         /// </summary>
         public SalesRankingComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SalesRankingComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -22723,19 +22626,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new SellerComponentSingle object.
         /// </summary>
         public SellerComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new SellerComponentSingle object.
         /// </summary>
         public SellerComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new SellerComponentSingle object.
         /// </summary>
         public SellerComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SellerComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -22833,19 +22736,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new SoftwareItemComponentSingle object.
         /// </summary>
         public SoftwareItemComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new SoftwareItemComponentSingle object.
         /// </summary>
         public SoftwareItemComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new SoftwareItemComponentSingle object.
         /// </summary>
         public SoftwareItemComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SoftwareItemComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -23077,19 +22980,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// Initialize a new WarrantyComponentSingle object.
         /// </summary>
         public WarrantyComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new WarrantyComponentSingle object.
         /// </summary>
         public WarrantyComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new WarrantyComponentSingle object.
         /// </summary>
         public WarrantyComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<WarrantyComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -24394,12 +24297,12 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Coupons
         /// <param name="maxCouponPrefixLength">Initial value of MaxCouponPrefixLength.</param>
         /// <param name="maxCouponCodeLength">Initial value of MaxCouponCodeLength.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static GlobalCouponsPolicy CreateGlobalCouponsPolicy(int minAllocationCount, 
-                    int minPrivateCouponTotal, 
-                    int generatedCouponCodeLength, 
-                    int maxNumberOfPrivateCoupons, 
-                    int maxCouponSuffixLength, 
-                    int maxCouponPrefixLength, 
+        public static GlobalCouponsPolicy CreateGlobalCouponsPolicy(int minAllocationCount,
+                    int minPrivateCouponTotal,
+                    int generatedCouponCodeLength,
+                    int maxNumberOfPrivateCoupons,
+                    int maxCouponSuffixLength,
+                    int maxCouponPrefixLength,
                     int maxCouponCodeLength)
         {
             GlobalCouponsPolicy globalCouponsPolicy = new GlobalCouponsPolicy();
@@ -25113,19 +25016,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Coupons
         /// Initialize a new AddCouponCommandSingle object.
         /// </summary>
         public AddCouponCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddCouponCommandSingle object.
         /// </summary>
         public AddCouponCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddCouponCommandSingle object.
         /// </summary>
         public AddCouponCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddCouponCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -25158,19 +25061,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Coupons
         /// Initialize a new CouponsCommerceCommandSingle object.
         /// </summary>
         public CouponsCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CouponsCommerceCommandSingle object.
         /// </summary>
         public CouponsCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CouponsCommerceCommandSingle object.
         /// </summary>
         public CouponsCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CouponsCommerceCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -25203,19 +25106,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Coupons
         /// Initialize a new AddPrivateCouponCommandSingle object.
         /// </summary>
         public AddPrivateCouponCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddPrivateCouponCommandSingle object.
         /// </summary>
         public AddPrivateCouponCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddPrivateCouponCommandSingle object.
         /// </summary>
         public AddPrivateCouponCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddPrivateCouponCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -25248,19 +25151,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Coupons
         /// Initialize a new AddPublicCouponCommandSingle object.
         /// </summary>
         public AddPublicCouponCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddPublicCouponCommandSingle object.
         /// </summary>
         public AddPublicCouponCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddPublicCouponCommandSingle object.
         /// </summary>
         public AddPublicCouponCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddPublicCouponCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -25293,19 +25196,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Coupons
         /// Initialize a new NewCouponAllocationCommandSingle object.
         /// </summary>
         public NewCouponAllocationCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new NewCouponAllocationCommandSingle object.
         /// </summary>
         public NewCouponAllocationCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new NewCouponAllocationCommandSingle object.
         /// </summary>
         public NewCouponAllocationCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<NewCouponAllocationCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -25338,19 +25241,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Coupons
         /// Initialize a new RemoveCouponCommandSingle object.
         /// </summary>
         public RemoveCouponCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RemoveCouponCommandSingle object.
         /// </summary>
         public RemoveCouponCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RemoveCouponCommandSingle object.
         /// </summary>
         public RemoveCouponCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RemoveCouponCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -25383,19 +25286,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Coupons
         /// Initialize a new CartCouponsComponentSingle object.
         /// </summary>
         public CartCouponsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CartCouponsComponentSingle object.
         /// </summary>
         public CartCouponsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CartCouponsComponentSingle object.
         /// </summary>
         public CartCouponsComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CartCouponsComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -25952,19 +25855,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Availability
         /// Initialize a new UpdateItemAvailabilityCommandSingle object.
         /// </summary>
         public UpdateItemAvailabilityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new UpdateItemAvailabilityCommandSingle object.
         /// </summary>
         public UpdateItemAvailabilityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new UpdateItemAvailabilityCommandSingle object.
         /// </summary>
         public UpdateItemAvailabilityCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<UpdateItemAvailabilityCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -25997,19 +25900,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Availability
         /// Initialize a new ItemAvailabilityComponentSingle object.
         /// </summary>
         public ItemAvailabilityComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ItemAvailabilityComponentSingle object.
         /// </summary>
         public ItemAvailabilityComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ItemAvailabilityComponentSingle object.
         /// </summary>
         public ItemAvailabilityComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ItemAvailabilityComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -26977,19 +26880,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Carts
         /// Initialize a new AddCartLineCommandSingle object.
         /// </summary>
         public AddCartLineCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddCartLineCommandSingle object.
         /// </summary>
         public AddCartLineCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddCartLineCommandSingle object.
         /// </summary>
         public AddCartLineCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddCartLineCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -27022,19 +26925,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Carts
         /// Initialize a new AddEmailToCartCommandSingle object.
         /// </summary>
         public AddEmailToCartCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddEmailToCartCommandSingle object.
         /// </summary>
         public AddEmailToCartCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddEmailToCartCommandSingle object.
         /// </summary>
         public AddEmailToCartCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddEmailToCartCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -27067,19 +26970,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Carts
         /// Initialize a new GetCartCommandSingle object.
         /// </summary>
         public GetCartCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetCartCommandSingle object.
         /// </summary>
         public GetCartCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetCartCommandSingle object.
         /// </summary>
         public GetCartCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetCartCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -27112,19 +27015,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Carts
         /// Initialize a new MergeCartsCommandSingle object.
         /// </summary>
         public MergeCartsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new MergeCartsCommandSingle object.
         /// </summary>
         public MergeCartsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new MergeCartsCommandSingle object.
         /// </summary>
         public MergeCartsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<MergeCartsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -27157,19 +27060,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Carts
         /// Initialize a new RemoveCartLineCommandSingle object.
         /// </summary>
         public RemoveCartLineCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RemoveCartLineCommandSingle object.
         /// </summary>
         public RemoveCartLineCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RemoveCartLineCommandSingle object.
         /// </summary>
         public RemoveCartLineCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RemoveCartLineCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -27202,19 +27105,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Carts
         /// Initialize a new UpdateCartLineCommandSingle object.
         /// </summary>
         public UpdateCartLineCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new UpdateCartLineCommandSingle object.
         /// </summary>
         public UpdateCartLineCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new UpdateCartLineCommandSingle object.
         /// </summary>
         public UpdateCartLineCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<UpdateCartLineCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -27247,19 +27150,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Carts
         /// Initialize a new CartLineComponentSingle object.
         /// </summary>
         public CartLineComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CartLineComponentSingle object.
         /// </summary>
         public CartLineComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CartLineComponentSingle object.
         /// </summary>
         public CartLineComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CartLineComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for CartLineComponents in the schema.
@@ -27490,19 +27393,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Carts
         /// Initialize a new CartProductComponentSingle object.
         /// </summary>
         public CartProductComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CartProductComponentSingle object.
         /// </summary>
         public CartProductComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CartProductComponentSingle object.
         /// </summary>
         public CartProductComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CartProductComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -27842,19 +27745,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Carts
         /// Initialize a new TemporaryCartComponentSingle object.
         /// </summary>
         public TemporaryCartComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new TemporaryCartComponentSingle object.
         /// </summary>
         public TemporaryCartComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new TemporaryCartComponentSingle object.
         /// </summary>
         public TemporaryCartComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<TemporaryCartComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -29214,19 +29117,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Customers
         /// Initialize a new CreateCustomerAddressCommandSingle object.
         /// </summary>
         public CreateCustomerAddressCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CreateCustomerAddressCommandSingle object.
         /// </summary>
         public CreateCustomerAddressCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CreateCustomerAddressCommandSingle object.
         /// </summary>
         public CreateCustomerAddressCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CreateCustomerAddressCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -29259,19 +29162,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Customers
         /// Initialize a new CreateCustomerCommandSingle object.
         /// </summary>
         public CreateCustomerCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CreateCustomerCommandSingle object.
         /// </summary>
         public CreateCustomerCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CreateCustomerCommandSingle object.
         /// </summary>
         public CreateCustomerCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CreateCustomerCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -29304,19 +29207,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Customers
         /// Initialize a new DeleteCustomerAddressCommandSingle object.
         /// </summary>
         public DeleteCustomerAddressCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DeleteCustomerAddressCommandSingle object.
         /// </summary>
         public DeleteCustomerAddressCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DeleteCustomerAddressCommandSingle object.
         /// </summary>
         public DeleteCustomerAddressCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DeleteCustomerAddressCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -29349,19 +29252,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Customers
         /// Initialize a new DeleteCustomerCommandSingle object.
         /// </summary>
         public DeleteCustomerCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DeleteCustomerCommandSingle object.
         /// </summary>
         public DeleteCustomerCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DeleteCustomerCommandSingle object.
         /// </summary>
         public DeleteCustomerCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DeleteCustomerCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -29394,19 +29297,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Customers
         /// Initialize a new GetCustomerAddressCommandSingle object.
         /// </summary>
         public GetCustomerAddressCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetCustomerAddressCommandSingle object.
         /// </summary>
         public GetCustomerAddressCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetCustomerAddressCommandSingle object.
         /// </summary>
         public GetCustomerAddressCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetCustomerAddressCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -29439,19 +29342,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Customers
         /// Initialize a new GetCustomerCommandSingle object.
         /// </summary>
         public GetCustomerCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetCustomerCommandSingle object.
         /// </summary>
         public GetCustomerCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetCustomerCommandSingle object.
         /// </summary>
         public GetCustomerCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetCustomerCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -29484,19 +29387,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Customers
         /// Initialize a new UpdateCustomerAddressCommandSingle object.
         /// </summary>
         public UpdateCustomerAddressCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new UpdateCustomerAddressCommandSingle object.
         /// </summary>
         public UpdateCustomerAddressCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new UpdateCustomerAddressCommandSingle object.
         /// </summary>
         public UpdateCustomerAddressCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<UpdateCustomerAddressCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -29529,19 +29432,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Customers
         /// Initialize a new UpdateCustomerDetailsCommandSingle object.
         /// </summary>
         public UpdateCustomerDetailsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new UpdateCustomerDetailsCommandSingle object.
         /// </summary>
         public UpdateCustomerDetailsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new UpdateCustomerDetailsCommandSingle object.
         /// </summary>
         public UpdateCustomerDetailsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<UpdateCustomerDetailsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -29574,19 +29477,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Customers
         /// Initialize a new AddressComponentSingle object.
         /// </summary>
         public AddressComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddressComponentSingle object.
         /// </summary>
         public AddressComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddressComponentSingle object.
         /// </summary>
         public AddressComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddressComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -30214,19 +30117,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Entitlements
         /// Initialize a new DeleteEntitlementCommandSingle object.
         /// </summary>
         public DeleteEntitlementCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DeleteEntitlementCommandSingle object.
         /// </summary>
         public DeleteEntitlementCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DeleteEntitlementCommandSingle object.
         /// </summary>
         public DeleteEntitlementCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DeleteEntitlementCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -30259,19 +30162,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Entitlements
         /// Initialize a new DisableEntitlementsCommandSingle object.
         /// </summary>
         public DisableEntitlementsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DisableEntitlementsCommandSingle object.
         /// </summary>
         public DisableEntitlementsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DisableEntitlementsCommandSingle object.
         /// </summary>
         public DisableEntitlementsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DisableEntitlementsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -30304,19 +30207,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Entitlements
         /// Initialize a new ProvisionEntitlementsCommandSingle object.
         /// </summary>
         public ProvisionEntitlementsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ProvisionEntitlementsCommandSingle object.
         /// </summary>
         public ProvisionEntitlementsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ProvisionEntitlementsCommandSingle object.
         /// </summary>
         public ProvisionEntitlementsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ProvisionEntitlementsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -30349,19 +30252,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Entitlements
         /// Initialize a new DeletedEntitlementComponentSingle object.
         /// </summary>
         public DeletedEntitlementComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DeletedEntitlementComponentSingle object.
         /// </summary>
         public DeletedEntitlementComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DeletedEntitlementComponentSingle object.
         /// </summary>
         public DeletedEntitlementComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DeletedEntitlementComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -30415,19 +30318,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Entitlements
         /// Initialize a new EntitlementsComponentSingle object.
         /// </summary>
         public EntitlementsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new EntitlementsComponentSingle object.
         /// </summary>
         public EntitlementsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new EntitlementsComponentSingle object.
         /// </summary>
         public EntitlementsComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EntitlementsComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -31266,19 +31169,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Fulfillment
         /// Initialize a new GetFulfillmentMethodsCommandSingle object.
         /// </summary>
         public GetFulfillmentMethodsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetFulfillmentMethodsCommandSingle object.
         /// </summary>
         public GetFulfillmentMethodsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetFulfillmentMethodsCommandSingle object.
         /// </summary>
         public GetFulfillmentMethodsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetFulfillmentMethodsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -31311,19 +31214,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Fulfillment
         /// Initialize a new GetFulfillmentOptionsCommandSingle object.
         /// </summary>
         public GetFulfillmentOptionsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetFulfillmentOptionsCommandSingle object.
         /// </summary>
         public GetFulfillmentOptionsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetFulfillmentOptionsCommandSingle object.
         /// </summary>
         public GetFulfillmentOptionsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetFulfillmentOptionsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -31356,19 +31259,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Fulfillment
         /// Initialize a new SetCartFulfillmentCommandSingle object.
         /// </summary>
         public SetCartFulfillmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new SetCartFulfillmentCommandSingle object.
         /// </summary>
         public SetCartFulfillmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new SetCartFulfillmentCommandSingle object.
         /// </summary>
         public SetCartFulfillmentCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SetCartFulfillmentCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -31401,19 +31304,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Fulfillment
         /// Initialize a new SetCartLinesFulfillmentCommandSingle object.
         /// </summary>
         public SetCartLinesFulfillmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new SetCartLinesFulfillmentCommandSingle object.
         /// </summary>
         public SetCartLinesFulfillmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new SetCartLinesFulfillmentCommandSingle object.
         /// </summary>
         public SetCartLinesFulfillmentCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SetCartLinesFulfillmentCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -31446,19 +31349,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Fulfillment
         /// Initialize a new FulfillmentComponentSingle object.
         /// </summary>
         public FulfillmentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new FulfillmentComponentSingle object.
         /// </summary>
         public FulfillmentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new FulfillmentComponentSingle object.
         /// </summary>
         public FulfillmentComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<FulfillmentComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -31578,19 +31481,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Fulfillment
         /// Initialize a new ElectronicFulfillmentComponentSingle object.
         /// </summary>
         public ElectronicFulfillmentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ElectronicFulfillmentComponentSingle object.
         /// </summary>
         public ElectronicFulfillmentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ElectronicFulfillmentComponentSingle object.
         /// </summary>
         public ElectronicFulfillmentComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ElectronicFulfillmentComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -31688,19 +31591,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Fulfillment
         /// Initialize a new PhysicalFulfillmentComponentSingle object.
         /// </summary>
         public PhysicalFulfillmentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new PhysicalFulfillmentComponentSingle object.
         /// </summary>
         public PhysicalFulfillmentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new PhysicalFulfillmentComponentSingle object.
         /// </summary>
         public PhysicalFulfillmentComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PhysicalFulfillmentComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -31798,19 +31701,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Fulfillment
         /// Initialize a new SplitFulfillmentComponentSingle object.
         /// </summary>
         public SplitFulfillmentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new SplitFulfillmentComponentSingle object.
         /// </summary>
         public SplitFulfillmentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new SplitFulfillmentComponentSingle object.
         /// </summary>
         public SplitFulfillmentComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SplitFulfillmentComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -31864,19 +31767,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Fulfillment
         /// Initialize a new ShippingCostComponentSingle object.
         /// </summary>
         public ShippingCostComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ShippingCostComponentSingle object.
         /// </summary>
         public ShippingCostComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ShippingCostComponentSingle object.
         /// </summary>
         public ShippingCostComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ShippingCostComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ShippingMethod in the schema.
@@ -31995,19 +31898,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Fulfillment
         /// Initialize a new FulfillmentMethodSingle object.
         /// </summary>
         public FulfillmentMethodSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new FulfillmentMethodSingle object.
         /// </summary>
         public FulfillmentMethodSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new FulfillmentMethodSingle object.
         /// </summary>
         public FulfillmentMethodSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<FulfillmentMethod> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for Components in the schema.
@@ -32905,19 +32808,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.GiftCards
         /// Initialize a new CreateGiftCardCommandSingle object.
         /// </summary>
         public CreateGiftCardCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CreateGiftCardCommandSingle object.
         /// </summary>
         public CreateGiftCardCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CreateGiftCardCommandSingle object.
         /// </summary>
         public CreateGiftCardCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CreateGiftCardCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -32950,19 +32853,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.GiftCards
         /// Initialize a new CreditGiftCardCommandSingle object.
         /// </summary>
         public CreditGiftCardCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CreditGiftCardCommandSingle object.
         /// </summary>
         public CreditGiftCardCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CreditGiftCardCommandSingle object.
         /// </summary>
         public CreditGiftCardCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CreditGiftCardCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -32995,19 +32898,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.GiftCards
         /// Initialize a new DebitGiftCardCommandSingle object.
         /// </summary>
         public DebitGiftCardCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DebitGiftCardCommandSingle object.
         /// </summary>
         public DebitGiftCardCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DebitGiftCardCommandSingle object.
         /// </summary>
         public DebitGiftCardCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DebitGiftCardCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -33040,19 +32943,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.GiftCards
         /// Initialize a new GetGiftCardByCodeCommandSingle object.
         /// </summary>
         public GetGiftCardByCodeCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetGiftCardByCodeCommandSingle object.
         /// </summary>
         public GetGiftCardByCodeCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetGiftCardByCodeCommandSingle object.
         /// </summary>
         public GetGiftCardByCodeCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetGiftCardByCodeCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -33085,19 +32988,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.GiftCards
         /// Initialize a new GiftCardComponentSingle object.
         /// </summary>
         public GiftCardComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GiftCardComponentSingle object.
         /// </summary>
         public GiftCardComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GiftCardComponentSingle object.
         /// </summary>
         public GiftCardComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GiftCardComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -33217,19 +33120,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.GiftCards
         /// Initialize a new GiftCardPaymentComponentSingle object.
         /// </summary>
         public GiftCardPaymentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GiftCardPaymentComponentSingle object.
         /// </summary>
         public GiftCardPaymentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GiftCardPaymentComponentSingle object.
         /// </summary>
         public GiftCardPaymentComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GiftCardPaymentComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -33933,19 +33836,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Journaling
         /// Initialize a new EvidenceComponentSingle object.
         /// </summary>
         public EvidenceComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new EvidenceComponentSingle object.
         /// </summary>
         public EvidenceComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new EvidenceComponentSingle object.
         /// </summary>
         public EvidenceComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EvidenceComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -34231,19 +34134,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.ManagedLists
         /// Initialize a new AddRelatedManagedListCommandSingle object.
         /// </summary>
         public AddRelatedManagedListCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddRelatedManagedListCommandSingle object.
         /// </summary>
         public AddRelatedManagedListCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddRelatedManagedListCommandSingle object.
         /// </summary>
         public AddRelatedManagedListCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddRelatedManagedListCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -34276,19 +34179,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.ManagedLists
         /// Initialize a new CreateManagedListCommandSingle object.
         /// </summary>
         public CreateManagedListCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CreateManagedListCommandSingle object.
         /// </summary>
         public CreateManagedListCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CreateManagedListCommandSingle object.
         /// </summary>
         public CreateManagedListCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CreateManagedListCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -34321,19 +34224,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.ManagedLists
         /// Initialize a new GetManagedListCommandSingle object.
         /// </summary>
         public GetManagedListCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetManagedListCommandSingle object.
         /// </summary>
         public GetManagedListCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetManagedListCommandSingle object.
         /// </summary>
         public GetManagedListCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetManagedListCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -34366,19 +34269,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.ManagedLists
         /// Initialize a new LogListMetadataCommandSingle object.
         /// </summary>
         public LogListMetadataCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new LogListMetadataCommandSingle object.
         /// </summary>
         public LogListMetadataCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new LogListMetadataCommandSingle object.
         /// </summary>
         public LogListMetadataCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<LogListMetadataCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -34411,19 +34314,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.ManagedLists
         /// Initialize a new ListMembershipsComponentSingle object.
         /// </summary>
         public ListMembershipsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ListMembershipsComponentSingle object.
         /// </summary>
         public ListMembershipsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ListMembershipsComponentSingle object.
         /// </summary>
         public ListMembershipsComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ListMembershipsComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -34499,19 +34402,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.ManagedLists
         /// Initialize a new TransientListMembershipsComponentSingle object.
         /// </summary>
         public TransientListMembershipsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new TransientListMembershipsComponentSingle object.
         /// </summary>
         public TransientListMembershipsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new TransientListMembershipsComponentSingle object.
         /// </summary>
         public TransientListMembershipsComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<TransientListMembershipsComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -34565,19 +34468,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.ManagedLists
         /// Initialize a new ManagedListElementComponentSingle object.
         /// </summary>
         public ManagedListElementComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ManagedListElementComponentSingle object.
         /// </summary>
         public ManagedListElementComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ManagedListElementComponentSingle object.
         /// </summary>
         public ManagedListElementComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ManagedListElementComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -34631,19 +34534,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.ManagedLists
         /// Initialize a new SplashItemComponentSingle object.
         /// </summary>
         public SplashItemComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new SplashItemComponentSingle object.
         /// </summary>
         public SplashItemComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new SplashItemComponentSingle object.
         /// </summary>
         public SplashItemComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SplashItemComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -36552,19 +36455,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Orders
         /// Initialize a new CancelOnHoldOrderCommandSingle object.
         /// </summary>
         public CancelOnHoldOrderCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CancelOnHoldOrderCommandSingle object.
         /// </summary>
         public CancelOnHoldOrderCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CancelOnHoldOrderCommandSingle object.
         /// </summary>
         public CancelOnHoldOrderCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CancelOnHoldOrderCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -36597,19 +36500,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Orders
         /// Initialize a new CancelOrderCommandSingle object.
         /// </summary>
         public CancelOrderCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CancelOrderCommandSingle object.
         /// </summary>
         public CancelOrderCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CancelOrderCommandSingle object.
         /// </summary>
         public CancelOrderCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CancelOrderCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -36642,19 +36545,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Orders
         /// Initialize a new CreateOrderCommandSingle object.
         /// </summary>
         public CreateOrderCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CreateOrderCommandSingle object.
         /// </summary>
         public CreateOrderCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CreateOrderCommandSingle object.
         /// </summary>
         public CreateOrderCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CreateOrderCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -36687,19 +36590,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Orders
         /// Initialize a new GetOnHoldOrderCartCommandSingle object.
         /// </summary>
         public GetOnHoldOrderCartCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetOnHoldOrderCartCommandSingle object.
         /// </summary>
         public GetOnHoldOrderCartCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetOnHoldOrderCartCommandSingle object.
         /// </summary>
         public GetOnHoldOrderCartCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetOnHoldOrderCartCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -36732,19 +36635,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Orders
         /// Initialize a new GetOrderCommandSingle object.
         /// </summary>
         public GetOrderCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetOrderCommandSingle object.
         /// </summary>
         public GetOrderCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetOrderCommandSingle object.
         /// </summary>
         public GetOrderCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetOrderCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -36777,19 +36680,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Orders
         /// Initialize a new GetOrderSalesActivityCommandSingle object.
         /// </summary>
         public GetOrderSalesActivityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetOrderSalesActivityCommandSingle object.
         /// </summary>
         public GetOrderSalesActivityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetOrderSalesActivityCommandSingle object.
         /// </summary>
         public GetOrderSalesActivityCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetOrderSalesActivityCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -36822,19 +36725,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Orders
         /// Initialize a new HoldOrderCommandSingle object.
         /// </summary>
         public HoldOrderCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new HoldOrderCommandSingle object.
         /// </summary>
         public HoldOrderCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new HoldOrderCommandSingle object.
         /// </summary>
         public HoldOrderCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<HoldOrderCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -36867,19 +36770,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Orders
         /// Initialize a new ReleaseOnHoldOrderCommandSingle object.
         /// </summary>
         public ReleaseOnHoldOrderCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ReleaseOnHoldOrderCommandSingle object.
         /// </summary>
         public ReleaseOnHoldOrderCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ReleaseOnHoldOrderCommandSingle object.
         /// </summary>
         public ReleaseOnHoldOrderCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ReleaseOnHoldOrderCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -36912,19 +36815,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Orders
         /// Initialize a new SetOrderStatusCommandSingle object.
         /// </summary>
         public SetOrderStatusCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new SetOrderStatusCommandSingle object.
         /// </summary>
         public SetOrderStatusCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new SetOrderStatusCommandSingle object.
         /// </summary>
         public SetOrderStatusCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SetOrderStatusCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -36957,19 +36860,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Orders
         /// Initialize a new UndoOnHoldOrderCommandSingle object.
         /// </summary>
         public UndoOnHoldOrderCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new UndoOnHoldOrderCommandSingle object.
         /// </summary>
         public UndoOnHoldOrderCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new UndoOnHoldOrderCommandSingle object.
         /// </summary>
         public UndoOnHoldOrderCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<UndoOnHoldOrderCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -37002,19 +36905,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Orders
         /// Initialize a new OnHoldOrderComponentSingle object.
         /// </summary>
         public OnHoldOrderComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new OnHoldOrderComponentSingle object.
         /// </summary>
         public OnHoldOrderComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new OnHoldOrderComponentSingle object.
         /// </summary>
         public OnHoldOrderComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<OnHoldOrderComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -37090,19 +36993,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Orders
         /// Initialize a new OrderComponentSingle object.
         /// </summary>
         public OrderComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new OrderComponentSingle object.
         /// </summary>
         public OrderComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new OrderComponentSingle object.
         /// </summary>
         public OrderComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<OrderComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for Orders in the schema.
@@ -37199,19 +37102,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Orders
         /// Initialize a new OrderSingle object.
         /// </summary>
         public OrderSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new OrderSingle object.
         /// </summary>
         public OrderSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new OrderSingle object.
         /// </summary>
         public OrderSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<Order> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for Lines in the schema.
@@ -38506,19 +38409,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Payments
         /// Initialize a new AddPaymentsCommandSingle object.
         /// </summary>
         public AddPaymentsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddPaymentsCommandSingle object.
         /// </summary>
         public AddPaymentsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddPaymentsCommandSingle object.
         /// </summary>
         public AddPaymentsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddPaymentsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -38551,19 +38454,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Payments
         /// Initialize a new GetClientTokenCommandSingle object.
         /// </summary>
         public GetClientTokenCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetClientTokenCommandSingle object.
         /// </summary>
         public GetClientTokenCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetClientTokenCommandSingle object.
         /// </summary>
         public GetClientTokenCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetClientTokenCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -38596,19 +38499,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Payments
         /// Initialize a new GetPaymentMethodsCommandSingle object.
         /// </summary>
         public GetPaymentMethodsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetPaymentMethodsCommandSingle object.
         /// </summary>
         public GetPaymentMethodsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetPaymentMethodsCommandSingle object.
         /// </summary>
         public GetPaymentMethodsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetPaymentMethodsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -38641,19 +38544,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Payments
         /// Initialize a new GetPaymentOptionsCommandSingle object.
         /// </summary>
         public GetPaymentOptionsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetPaymentOptionsCommandSingle object.
         /// </summary>
         public GetPaymentOptionsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetPaymentOptionsCommandSingle object.
         /// </summary>
         public GetPaymentOptionsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetPaymentOptionsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -38686,19 +38589,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Payments
         /// Initialize a new RefundPaymentsCommandSingle object.
         /// </summary>
         public RefundPaymentsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RefundPaymentsCommandSingle object.
         /// </summary>
         public RefundPaymentsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RefundPaymentsCommandSingle object.
         /// </summary>
         public RefundPaymentsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RefundPaymentsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -38731,19 +38634,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Payments
         /// Initialize a new RemovePaymentsCommandSingle object.
         /// </summary>
         public RemovePaymentsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RemovePaymentsCommandSingle object.
         /// </summary>
         public RemovePaymentsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RemovePaymentsCommandSingle object.
         /// </summary>
         public RemovePaymentsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RemovePaymentsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -38776,19 +38679,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Payments
         /// Initialize a new AuthorizationComponentSingle object.
         /// </summary>
         public AuthorizationComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AuthorizationComponentSingle object.
         /// </summary>
         public AuthorizationComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AuthorizationComponentSingle object.
         /// </summary>
         public AuthorizationComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AuthorizationComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -39064,19 +38967,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Payments
         /// Initialize a new PaymentComponentSingle object.
         /// </summary>
         public PaymentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new PaymentComponentSingle object.
         /// </summary>
         public PaymentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new PaymentComponentSingle object.
         /// </summary>
         public PaymentComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PaymentComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -39174,19 +39077,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Payments
         /// Initialize a new FederatedPaymentComponentSingle object.
         /// </summary>
         public FederatedPaymentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new FederatedPaymentComponentSingle object.
         /// </summary>
         public FederatedPaymentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new FederatedPaymentComponentSingle object.
         /// </summary>
         public FederatedPaymentComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<FederatedPaymentComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -39442,19 +39345,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Payments
         /// Initialize a new TransactionInformationComponentSingle object.
         /// </summary>
         public TransactionInformationComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new TransactionInformationComponentSingle object.
         /// </summary>
         public TransactionInformationComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new TransactionInformationComponentSingle object.
         /// </summary>
         public TransactionInformationComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<TransactionInformationComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -40084,12 +39987,12 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// <param name="minimumPrice">Initial value of MinimumPrice.</param>
         /// <param name="minimumPricingQuantity">Initial value of MinimumPricingQuantity.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static GlobalPricingPolicy CreateGlobalPricingPolicy(bool shouldRoundPriceCalc, 
-                    int roundDigits, 
-                    bool midPointRoundUp, 
-                    int maxPriceCardNameLength, 
-                    int maxPriceBookNameLength, 
-                    decimal minimumPrice, 
+        public static GlobalPricingPolicy CreateGlobalPricingPolicy(bool shouldRoundPriceCalc,
+                    int roundDigits,
+                    bool midPointRoundUp,
+                    int maxPriceCardNameLength,
+                    int maxPriceBookNameLength,
+                    decimal minimumPrice,
                     decimal minimumPricingQuantity)
         {
             GlobalPricingPolicy globalPricingPolicy = new GlobalPricingPolicy();
@@ -41919,19 +41822,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new AddPriceBookCommandSingle object.
         /// </summary>
         public AddPriceBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddPriceBookCommandSingle object.
         /// </summary>
         public AddPriceBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddPriceBookCommandSingle object.
         /// </summary>
         public AddPriceBookCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddPriceBookCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -41964,19 +41867,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new AssociateCatalogToBookCommandSingle object.
         /// </summary>
         public AssociateCatalogToBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AssociateCatalogToBookCommandSingle object.
         /// </summary>
         public AssociateCatalogToBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AssociateCatalogToBookCommandSingle object.
         /// </summary>
         public AssociateCatalogToBookCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AssociateCatalogToBookCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42009,19 +41912,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new DisassociateCatalogFromBookCommandSingle object.
         /// </summary>
         public DisassociateCatalogFromBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DisassociateCatalogFromBookCommandSingle object.
         /// </summary>
         public DisassociateCatalogFromBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DisassociateCatalogFromBookCommandSingle object.
         /// </summary>
         public DisassociateCatalogFromBookCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DisassociateCatalogFromBookCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42054,19 +41957,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new GetPricingCommandSingle object.
         /// </summary>
         public GetPricingCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetPricingCommandSingle object.
         /// </summary>
         public GetPricingCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetPricingCommandSingle object.
         /// </summary>
         public GetPricingCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetPricingCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42099,19 +42002,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new ListPriceBooksCommandSingle object.
         /// </summary>
         public ListPriceBooksCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ListPriceBooksCommandSingle object.
         /// </summary>
         public ListPriceBooksCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ListPriceBooksCommandSingle object.
         /// </summary>
         public ListPriceBooksCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ListPriceBooksCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42144,19 +42047,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new PricingCommerceCommandSingle object.
         /// </summary>
         public PricingCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new PricingCommerceCommandSingle object.
         /// </summary>
         public PricingCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new PricingCommerceCommandSingle object.
         /// </summary>
         public PricingCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PricingCommerceCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42189,19 +42092,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new AddPriceCardCommandSingle object.
         /// </summary>
         public AddPriceCardCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddPriceCardCommandSingle object.
         /// </summary>
         public AddPriceCardCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddPriceCardCommandSingle object.
         /// </summary>
         public AddPriceCardCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddPriceCardCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42234,19 +42137,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new AddPriceSnapshotCommandSingle object.
         /// </summary>
         public AddPriceSnapshotCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddPriceSnapshotCommandSingle object.
         /// </summary>
         public AddPriceSnapshotCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddPriceSnapshotCommandSingle object.
         /// </summary>
         public AddPriceSnapshotCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddPriceSnapshotCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42279,19 +42182,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new AddPriceSnapshotTagCommandSingle object.
         /// </summary>
         public AddPriceSnapshotTagCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddPriceSnapshotTagCommandSingle object.
         /// </summary>
         public AddPriceSnapshotTagCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddPriceSnapshotTagCommandSingle object.
         /// </summary>
         public AddPriceSnapshotTagCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddPriceSnapshotTagCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42324,19 +42227,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new AddPriceTierCommandSingle object.
         /// </summary>
         public AddPriceTierCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddPriceTierCommandSingle object.
         /// </summary>
         public AddPriceTierCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddPriceTierCommandSingle object.
         /// </summary>
         public AddPriceTierCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddPriceTierCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42369,19 +42272,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new DeletePriceBookCommandSingle object.
         /// </summary>
         public DeletePriceBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DeletePriceBookCommandSingle object.
         /// </summary>
         public DeletePriceBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DeletePriceBookCommandSingle object.
         /// </summary>
         public DeletePriceBookCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DeletePriceBookCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42414,19 +42317,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new DeletePriceCardCommandSingle object.
         /// </summary>
         public DeletePriceCardCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DeletePriceCardCommandSingle object.
         /// </summary>
         public DeletePriceCardCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DeletePriceCardCommandSingle object.
         /// </summary>
         public DeletePriceCardCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DeletePriceCardCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42459,19 +42362,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new DuplicatePriceCardCommandSingle object.
         /// </summary>
         public DuplicatePriceCardCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DuplicatePriceCardCommandSingle object.
         /// </summary>
         public DuplicatePriceCardCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DuplicatePriceCardCommandSingle object.
         /// </summary>
         public DuplicatePriceCardCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DuplicatePriceCardCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42504,19 +42407,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new EditPriceBookCommandSingle object.
         /// </summary>
         public EditPriceBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new EditPriceBookCommandSingle object.
         /// </summary>
         public EditPriceBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new EditPriceBookCommandSingle object.
         /// </summary>
         public EditPriceBookCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EditPriceBookCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42549,19 +42452,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new EditPriceCardCommandSingle object.
         /// </summary>
         public EditPriceCardCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new EditPriceCardCommandSingle object.
         /// </summary>
         public EditPriceCardCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new EditPriceCardCommandSingle object.
         /// </summary>
         public EditPriceCardCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EditPriceCardCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42594,19 +42497,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new EditPriceSnapshotCommandSingle object.
         /// </summary>
         public EditPriceSnapshotCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new EditPriceSnapshotCommandSingle object.
         /// </summary>
         public EditPriceSnapshotCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new EditPriceSnapshotCommandSingle object.
         /// </summary>
         public EditPriceSnapshotCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EditPriceSnapshotCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42639,19 +42542,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new EditPriceTierCommandSingle object.
         /// </summary>
         public EditPriceTierCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new EditPriceTierCommandSingle object.
         /// </summary>
         public EditPriceTierCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new EditPriceTierCommandSingle object.
         /// </summary>
         public EditPriceTierCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EditPriceTierCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42684,19 +42587,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new GetBookAssociatedCatalogsCommandSingle object.
         /// </summary>
         public GetBookAssociatedCatalogsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetBookAssociatedCatalogsCommandSingle object.
         /// </summary>
         public GetBookAssociatedCatalogsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetBookAssociatedCatalogsCommandSingle object.
         /// </summary>
         public GetBookAssociatedCatalogsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetBookAssociatedCatalogsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42729,19 +42632,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new RemovePriceSnapshotCommandSingle object.
         /// </summary>
         public RemovePriceSnapshotCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RemovePriceSnapshotCommandSingle object.
         /// </summary>
         public RemovePriceSnapshotCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RemovePriceSnapshotCommandSingle object.
         /// </summary>
         public RemovePriceSnapshotCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RemovePriceSnapshotCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42774,19 +42677,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new RemovePriceSnapshotTagCommandSingle object.
         /// </summary>
         public RemovePriceSnapshotTagCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RemovePriceSnapshotTagCommandSingle object.
         /// </summary>
         public RemovePriceSnapshotTagCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RemovePriceSnapshotTagCommandSingle object.
         /// </summary>
         public RemovePriceSnapshotTagCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RemovePriceSnapshotTagCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42819,19 +42722,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new RemovePriceTierCommandSingle object.
         /// </summary>
         public RemovePriceTierCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RemovePriceTierCommandSingle object.
         /// </summary>
         public RemovePriceTierCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RemovePriceTierCommandSingle object.
         /// </summary>
         public RemovePriceTierCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RemovePriceTierCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -42864,19 +42767,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new SetPriceSnapshotsApprovalStatusCommandSingle object.
         /// </summary>
         public SetPriceSnapshotsApprovalStatusCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new SetPriceSnapshotsApprovalStatusCommandSingle object.
         /// </summary>
         public SetPriceSnapshotsApprovalStatusCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new SetPriceSnapshotsApprovalStatusCommandSingle object.
         /// </summary>
         public SetPriceSnapshotsApprovalStatusCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SetPriceSnapshotsApprovalStatusCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -43159,19 +43062,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         /// Initialize a new PriceSnapshotComponentSingle object.
         /// </summary>
         public PriceSnapshotComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new PriceSnapshotComponentSingle object.
         /// </summary>
         public PriceSnapshotComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new PriceSnapshotComponentSingle object.
         /// </summary>
         public PriceSnapshotComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PriceSnapshotComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for SnapshotComponents in the schema.
@@ -45742,19 +45645,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new AddPromotionBookCommandSingle object.
         /// </summary>
         public AddPromotionBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddPromotionBookCommandSingle object.
         /// </summary>
         public AddPromotionBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddPromotionBookCommandSingle object.
         /// </summary>
         public AddPromotionBookCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddPromotionBookCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -45787,19 +45690,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new AssociateCatalogToBookCommandSingle object.
         /// </summary>
         public AssociateCatalogToBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AssociateCatalogToBookCommandSingle object.
         /// </summary>
         public AssociateCatalogToBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AssociateCatalogToBookCommandSingle object.
         /// </summary>
         public AssociateCatalogToBookCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AssociateCatalogToBookCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -45832,19 +45735,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new DisassociateCatalogFromBookCommandSingle object.
         /// </summary>
         public DisassociateCatalogFromBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DisassociateCatalogFromBookCommandSingle object.
         /// </summary>
         public DisassociateCatalogFromBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DisassociateCatalogFromBookCommandSingle object.
         /// </summary>
         public DisassociateCatalogFromBookCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DisassociateCatalogFromBookCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -45877,19 +45780,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new PromotionsCommerceCommandSingle object.
         /// </summary>
         public PromotionsCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new PromotionsCommerceCommandSingle object.
         /// </summary>
         public PromotionsCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new PromotionsCommerceCommandSingle object.
         /// </summary>
         public PromotionsCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PromotionsCommerceCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -45922,19 +45825,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new AddBenefitCommandSingle object.
         /// </summary>
         public AddBenefitCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddBenefitCommandSingle object.
         /// </summary>
         public AddBenefitCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddBenefitCommandSingle object.
         /// </summary>
         public AddBenefitCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddBenefitCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -45967,19 +45870,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new AddPromotionCommandSingle object.
         /// </summary>
         public AddPromotionCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddPromotionCommandSingle object.
         /// </summary>
         public AddPromotionCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddPromotionCommandSingle object.
         /// </summary>
         public AddPromotionCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddPromotionCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46012,19 +45915,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new AddPromotionItemCommandSingle object.
         /// </summary>
         public AddPromotionItemCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddPromotionItemCommandSingle object.
         /// </summary>
         public AddPromotionItemCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddPromotionItemCommandSingle object.
         /// </summary>
         public AddPromotionItemCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddPromotionItemCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46057,19 +45960,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new AddQualificationCommandSingle object.
         /// </summary>
         public AddQualificationCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddQualificationCommandSingle object.
         /// </summary>
         public AddQualificationCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddQualificationCommandSingle object.
         /// </summary>
         public AddQualificationCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddQualificationCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46102,19 +46005,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new ApplyPromotionsBenefitsCommandSingle object.
         /// </summary>
         public ApplyPromotionsBenefitsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ApplyPromotionsBenefitsCommandSingle object.
         /// </summary>
         public ApplyPromotionsBenefitsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ApplyPromotionsBenefitsCommandSingle object.
         /// </summary>
         public ApplyPromotionsBenefitsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ApplyPromotionsBenefitsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46147,19 +46050,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new DeleteBenefitCommandSingle object.
         /// </summary>
         public DeleteBenefitCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DeleteBenefitCommandSingle object.
         /// </summary>
         public DeleteBenefitCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DeleteBenefitCommandSingle object.
         /// </summary>
         public DeleteBenefitCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DeleteBenefitCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46192,19 +46095,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new DeletePromotionCommandSingle object.
         /// </summary>
         public DeletePromotionCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DeletePromotionCommandSingle object.
         /// </summary>
         public DeletePromotionCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DeletePromotionCommandSingle object.
         /// </summary>
         public DeletePromotionCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DeletePromotionCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46237,19 +46140,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new DeleteQualificationCommandSingle object.
         /// </summary>
         public DeleteQualificationCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DeleteQualificationCommandSingle object.
         /// </summary>
         public DeleteQualificationCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DeleteQualificationCommandSingle object.
         /// </summary>
         public DeleteQualificationCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DeleteQualificationCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46282,19 +46185,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new DisablePromotionCommandSingle object.
         /// </summary>
         public DisablePromotionCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DisablePromotionCommandSingle object.
         /// </summary>
         public DisablePromotionCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DisablePromotionCommandSingle object.
         /// </summary>
         public DisablePromotionCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DisablePromotionCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46327,19 +46230,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new DuplicatePromotionCommandSingle object.
         /// </summary>
         public DuplicatePromotionCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DuplicatePromotionCommandSingle object.
         /// </summary>
         public DuplicatePromotionCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DuplicatePromotionCommandSingle object.
         /// </summary>
         public DuplicatePromotionCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DuplicatePromotionCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46372,19 +46275,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new EditBenefitCommandSingle object.
         /// </summary>
         public EditBenefitCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new EditBenefitCommandSingle object.
         /// </summary>
         public EditBenefitCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new EditBenefitCommandSingle object.
         /// </summary>
         public EditBenefitCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EditBenefitCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46417,19 +46320,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new EditPromotionBookCommandSingle object.
         /// </summary>
         public EditPromotionBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new EditPromotionBookCommandSingle object.
         /// </summary>
         public EditPromotionBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new EditPromotionBookCommandSingle object.
         /// </summary>
         public EditPromotionBookCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EditPromotionBookCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46462,19 +46365,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new EditPromotionCommandSingle object.
         /// </summary>
         public EditPromotionCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new EditPromotionCommandSingle object.
         /// </summary>
         public EditPromotionCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new EditPromotionCommandSingle object.
         /// </summary>
         public EditPromotionCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EditPromotionCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46507,19 +46410,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new EditQualificationCommandSingle object.
         /// </summary>
         public EditQualificationCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new EditQualificationCommandSingle object.
         /// </summary>
         public EditQualificationCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new EditQualificationCommandSingle object.
         /// </summary>
         public EditQualificationCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EditQualificationCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46552,19 +46455,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new EvaluatePromotionsQualificationsCommandSingle object.
         /// </summary>
         public EvaluatePromotionsQualificationsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new EvaluatePromotionsQualificationsCommandSingle object.
         /// </summary>
         public EvaluatePromotionsQualificationsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new EvaluatePromotionsQualificationsCommandSingle object.
         /// </summary>
         public EvaluatePromotionsQualificationsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EvaluatePromotionsQualificationsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46597,19 +46500,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new GetBookAssociatedCatalogsCommandSingle object.
         /// </summary>
         public GetBookAssociatedCatalogsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetBookAssociatedCatalogsCommandSingle object.
         /// </summary>
         public GetBookAssociatedCatalogsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetBookAssociatedCatalogsCommandSingle object.
         /// </summary>
         public GetBookAssociatedCatalogsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetBookAssociatedCatalogsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46642,19 +46545,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new RemovePromotionItemCommandSingle object.
         /// </summary>
         public RemovePromotionItemCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RemovePromotionItemCommandSingle object.
         /// </summary>
         public RemovePromotionItemCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RemovePromotionItemCommandSingle object.
         /// </summary>
         public RemovePromotionItemCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RemovePromotionItemCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -46687,19 +46590,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new PromotionItemsComponentSingle object.
         /// </summary>
         public PromotionItemsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new PromotionItemsComponentSingle object.
         /// </summary>
         public PromotionItemsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new PromotionItemsComponentSingle object.
         /// </summary>
         public PromotionItemsComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PromotionItemsComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -46775,19 +46678,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         /// Initialize a new PromotionRulesComponentSingle object.
         /// </summary>
         public PromotionRulesComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new PromotionRulesComponentSingle object.
         /// </summary>
         public PromotionRulesComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new PromotionRulesComponentSingle object.
         /// </summary>
         public PromotionRulesComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PromotionRulesComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -48132,19 +48035,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Rules
         /// Initialize a new BuildRuleSetCommandSingle object.
         /// </summary>
         public BuildRuleSetCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new BuildRuleSetCommandSingle object.
         /// </summary>
         public BuildRuleSetCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new BuildRuleSetCommandSingle object.
         /// </summary>
         public BuildRuleSetCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<BuildRuleSetCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -48177,19 +48080,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Rules
         /// Initialize a new GetActionsCommandSingle object.
         /// </summary>
         public GetActionsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetActionsCommandSingle object.
         /// </summary>
         public GetActionsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetActionsCommandSingle object.
         /// </summary>
         public GetActionsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetActionsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -48222,19 +48125,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Rules
         /// Initialize a new GetConditionsCommandSingle object.
         /// </summary>
         public GetConditionsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetConditionsCommandSingle object.
         /// </summary>
         public GetConditionsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetConditionsCommandSingle object.
         /// </summary>
         public GetConditionsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetConditionsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -48267,19 +48170,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Rules
         /// Initialize a new GetOperatorsCommandSingle object.
         /// </summary>
         public GetOperatorsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetOperatorsCommandSingle object.
         /// </summary>
         public GetOperatorsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetOperatorsCommandSingle object.
         /// </summary>
         public GetOperatorsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetOperatorsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -48312,19 +48215,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Rules
         /// Initialize a new RunRuleSetCommandSingle object.
         /// </summary>
         public RunRuleSetCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RunRuleSetCommandSingle object.
         /// </summary>
         public RunRuleSetCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RunRuleSetCommandSingle object.
         /// </summary>
         public RunRuleSetCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RunRuleSetCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -48723,19 +48626,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.SQL
         /// Initialize a new SQLCommerceCommandSingle object.
         /// </summary>
         public SQLCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new SQLCommerceCommandSingle object.
         /// </summary>
         public SQLCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new SQLCommerceCommandSingle object.
         /// </summary>
         public SQLCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SQLCommerceCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -48768,19 +48671,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.SQL
         /// Initialize a new AddEntityToListsCommandSingle object.
         /// </summary>
         public AddEntityToListsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new AddEntityToListsCommandSingle object.
         /// </summary>
         public AddEntityToListsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new AddEntityToListsCommandSingle object.
         /// </summary>
         public AddEntityToListsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddEntityToListsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -48813,19 +48716,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.SQL
         /// Initialize a new CleanEnvironmentCommandSingle object.
         /// </summary>
         public CleanEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new CleanEnvironmentCommandSingle object.
         /// </summary>
         public CleanEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new CleanEnvironmentCommandSingle object.
         /// </summary>
         public CleanEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CleanEnvironmentCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -48858,19 +48761,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.SQL
         /// Initialize a new GetEntitiesInListCommandSingle object.
         /// </summary>
         public GetEntitiesInListCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetEntitiesInListCommandSingle object.
         /// </summary>
         public GetEntitiesInListCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetEntitiesInListCommandSingle object.
         /// </summary>
         public GetEntitiesInListCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetEntitiesInListCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -48903,19 +48806,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.SQL
         /// Initialize a new GetEntityCommandSingle object.
         /// </summary>
         public GetEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetEntityCommandSingle object.
         /// </summary>
         public GetEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetEntityCommandSingle object.
         /// </summary>
         public GetEntityCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetEntityCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -48948,19 +48851,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.SQL
         /// Initialize a new GetListCountCommandSingle object.
         /// </summary>
         public GetListCountCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetListCountCommandSingle object.
         /// </summary>
         public GetListCountCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetListCountCommandSingle object.
         /// </summary>
         public GetListCountCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetListCountCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -48993,19 +48896,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.SQL
         /// Initialize a new InsertEntityCommandSingle object.
         /// </summary>
         public InsertEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new InsertEntityCommandSingle object.
         /// </summary>
         public InsertEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new InsertEntityCommandSingle object.
         /// </summary>
         public InsertEntityCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<InsertEntityCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -49038,19 +48941,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.SQL
         /// Initialize a new RemoveEntitiesFromListCommandSingle object.
         /// </summary>
         public RemoveEntitiesFromListCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RemoveEntitiesFromListCommandSingle object.
         /// </summary>
         public RemoveEntitiesFromListCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RemoveEntitiesFromListCommandSingle object.
         /// </summary>
         public RemoveEntitiesFromListCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RemoveEntitiesFromListCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -49083,19 +48986,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.SQL
         /// Initialize a new RemoveEntityCommandSingle object.
         /// </summary>
         public RemoveEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new RemoveEntityCommandSingle object.
         /// </summary>
         public RemoveEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new RemoveEntityCommandSingle object.
         /// </summary>
         public RemoveEntityCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RemoveEntityCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -49128,19 +49031,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.SQL
         /// Initialize a new UpdateEntityCommandSingle object.
         /// </summary>
         public UpdateEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new UpdateEntityCommandSingle object.
         /// </summary>
         public UpdateEntityCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new UpdateEntityCommandSingle object.
         /// </summary>
         public UpdateEntityCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<UpdateEntityCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -49589,11 +49492,11 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Tax
         /// <param name="roundAtSubTotal">Initial value of RoundAtSubTotal.</param>
         /// <param name="taxExemptTagsEnabled">Initial value of TaxExemptTagsEnabled.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static GlobalTaxPolicy CreateGlobalTaxPolicy(decimal defaultCartTaxRate, 
-                    decimal defaultItemTaxRate, 
-                    bool taxCalculationEnabled, 
-                    bool priceIncudesTax, 
-                    bool roundAtSubTotal, 
+        public static GlobalTaxPolicy CreateGlobalTaxPolicy(decimal defaultCartTaxRate,
+                    decimal defaultItemTaxRate,
+                    bool taxCalculationEnabled,
+                    bool priceIncudesTax,
+                    bool roundAtSubTotal,
                     bool taxExemptTagsEnabled)
         {
             GlobalTaxPolicy globalTaxPolicy = new GlobalTaxPolicy();
@@ -50082,6 +49985,669 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Tax
         partial void OnIsShippingChanged();
     }
 }
+namespace CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine
+{
+    /// <summary>
+    /// There are no comments for FulfillmentFeeCachePolicy in the schema.
+    /// </summary>
+    public partial class FulfillmentFeeCachePolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
+    {
+        /// <summary>
+        /// Create a new FulfillmentFeeCachePolicy object.
+        /// </summary>
+        /// <param name="expiration">Initial value of Expiration.</param>
+        /// <param name="allowCaching">Initial value of AllowCaching.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static FulfillmentFeeCachePolicy CreateFulfillmentFeeCachePolicy(int expiration, bool allowCaching)
+        {
+            FulfillmentFeeCachePolicy fulfillmentFeeCachePolicy = new FulfillmentFeeCachePolicy();
+            fulfillmentFeeCachePolicy.Expiration = expiration;
+            fulfillmentFeeCachePolicy.AllowCaching = allowCaching;
+            return fulfillmentFeeCachePolicy;
+        }
+        /// <summary>
+        /// There are no comments for Property CacheName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string CacheName
+        {
+            get
+            {
+                return this._CacheName;
+            }
+            set
+            {
+                this.OnCacheNameChanging(value);
+                this._CacheName = value;
+                this.OnCacheNameChanged();
+                this.OnPropertyChanged("CacheName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _CacheName;
+        partial void OnCacheNameChanging(string value);
+        partial void OnCacheNameChanged();
+        /// <summary>
+        /// There are no comments for Property Expiration in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public int Expiration
+        {
+            get
+            {
+                return this._Expiration;
+            }
+            set
+            {
+                this.OnExpirationChanging(value);
+                this._Expiration = value;
+                this.OnExpirationChanged();
+                this.OnPropertyChanged("Expiration");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private int _Expiration;
+        partial void OnExpirationChanging(int value);
+        partial void OnExpirationChanged();
+        /// <summary>
+        /// There are no comments for Property AllowCaching in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public bool AllowCaching
+        {
+            get
+            {
+                return this._AllowCaching;
+            }
+            set
+            {
+                this.OnAllowCachingChanging(value);
+                this._AllowCaching = value;
+                this.OnAllowCachingChanged();
+                this.OnPropertyChanged("AllowCaching");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private bool _AllowCaching;
+        partial void OnAllowCachingChanging(bool value);
+        partial void OnAllowCachingChanged();
+    }
+    /// <summary>
+    /// There are no comments for GlobalPolicy in the schema.
+    /// </summary>
+    public partial class GlobalPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
+    {
+        /// <summary>
+        /// There are no comments for Property DefaultFulfillmentFeeBookName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string DefaultFulfillmentFeeBookName
+        {
+            get
+            {
+                return this._DefaultFulfillmentFeeBookName;
+            }
+            set
+            {
+                this.OnDefaultFulfillmentFeeBookNameChanging(value);
+                this._DefaultFulfillmentFeeBookName = value;
+                this.OnDefaultFulfillmentFeeBookNameChanged();
+                this.OnPropertyChanged("DefaultFulfillmentFeeBookName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _DefaultFulfillmentFeeBookName;
+        partial void OnDefaultFulfillmentFeeBookNameChanging(string value);
+        partial void OnDefaultFulfillmentFeeBookNameChanged();
+    }
+    /// <summary>
+    /// There are no comments for FulfillmentCommerceCommandSingle in the schema.
+    /// </summary>
+    public partial class FulfillmentCommerceCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FulfillmentCommerceCommand>
+    {
+        /// <summary>
+        /// Initialize a new FulfillmentCommerceCommandSingle object.
+        /// </summary>
+        public FulfillmentCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) { }
+
+        /// <summary>
+        /// Initialize a new FulfillmentCommerceCommandSingle object.
+        /// </summary>
+        public FulfillmentCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) { }
+
+        /// <summary>
+        /// Initialize a new FulfillmentCommerceCommandSingle object.
+        /// </summary>
+        public FulfillmentCommerceCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<FulfillmentCommerceCommand> query)
+            : base(query) { }
+
+    }
+    /// <summary>
+    /// There are no comments for FulfillmentCommerceCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class FulfillmentCommerceCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new FulfillmentCommerceCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static FulfillmentCommerceCommand CreateFulfillmentCommerceCommand(string ID)
+        {
+            FulfillmentCommerceCommand fulfillmentCommerceCommand = new FulfillmentCommerceCommand();
+            fulfillmentCommerceCommand.Id = ID;
+            return fulfillmentCommerceCommand;
+        }
+    }
+    /// <summary>
+    /// There are no comments for GetFulfillmentFeeBookCommandSingle in the schema.
+    /// </summary>
+    public partial class GetFulfillmentFeeBookCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<GetFulfillmentFeeBookCommand>
+    {
+        /// <summary>
+        /// Initialize a new GetFulfillmentFeeBookCommandSingle object.
+        /// </summary>
+        public GetFulfillmentFeeBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) { }
+
+        /// <summary>
+        /// Initialize a new GetFulfillmentFeeBookCommandSingle object.
+        /// </summary>
+        public GetFulfillmentFeeBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) { }
+
+        /// <summary>
+        /// Initialize a new GetFulfillmentFeeBookCommandSingle object.
+        /// </summary>
+        public GetFulfillmentFeeBookCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetFulfillmentFeeBookCommand> query)
+            : base(query) { }
+
+    }
+    /// <summary>
+    /// There are no comments for GetFulfillmentFeeBookCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class GetFulfillmentFeeBookCommand : FulfillmentCommerceCommand
+    {
+        /// <summary>
+        /// Create a new GetFulfillmentFeeBookCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static GetFulfillmentFeeBookCommand CreateGetFulfillmentFeeBookCommand(string ID)
+        {
+            GetFulfillmentFeeBookCommand getFulfillmentFeeBookCommand = new GetFulfillmentFeeBookCommand();
+            getFulfillmentFeeBookCommand.Id = ID;
+            return getFulfillmentFeeBookCommand;
+        }
+    }
+    /// <summary>
+    /// There are no comments for SaveFulfillmentFeeBookCommandSingle in the schema.
+    /// </summary>
+    public partial class SaveFulfillmentFeeBookCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SaveFulfillmentFeeBookCommand>
+    {
+        /// <summary>
+        /// Initialize a new SaveFulfillmentFeeBookCommandSingle object.
+        /// </summary>
+        public SaveFulfillmentFeeBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) { }
+
+        /// <summary>
+        /// Initialize a new SaveFulfillmentFeeBookCommandSingle object.
+        /// </summary>
+        public SaveFulfillmentFeeBookCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) { }
+
+        /// <summary>
+        /// Initialize a new SaveFulfillmentFeeBookCommandSingle object.
+        /// </summary>
+        public SaveFulfillmentFeeBookCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SaveFulfillmentFeeBookCommand> query)
+            : base(query) { }
+
+    }
+    /// <summary>
+    /// There are no comments for SaveFulfillmentFeeBookCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class SaveFulfillmentFeeBookCommand : FulfillmentCommerceCommand
+    {
+        /// <summary>
+        /// Create a new SaveFulfillmentFeeBookCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static SaveFulfillmentFeeBookCommand CreateSaveFulfillmentFeeBookCommand(string ID)
+        {
+            SaveFulfillmentFeeBookCommand saveFulfillmentFeeBookCommand = new SaveFulfillmentFeeBookCommand();
+            saveFulfillmentFeeBookCommand.Id = ID;
+            return saveFulfillmentFeeBookCommand;
+        }
+    }
+    /// <summary>
+    /// There are no comments for FulfillmentFeeComponentSingle in the schema.
+    /// </summary>
+    public partial class FulfillmentFeeComponentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FulfillmentFeeComponent>
+    {
+        /// <summary>
+        /// Initialize a new FulfillmentFeeComponentSingle object.
+        /// </summary>
+        public FulfillmentFeeComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) { }
+
+        /// <summary>
+        /// Initialize a new FulfillmentFeeComponentSingle object.
+        /// </summary>
+        public FulfillmentFeeComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) { }
+
+        /// <summary>
+        /// Initialize a new FulfillmentFeeComponentSingle object.
+        /// </summary>
+        public FulfillmentFeeComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<FulfillmentFeeComponent> query)
+            : base(query) { }
+
+        /// <summary>
+        /// There are no comments for ChildComponents in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> ChildComponents
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ChildComponents == null))
+                {
+                    this._ChildComponents = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Core.Component>(GetPath("ChildComponents"));
+                }
+                return this._ChildComponents;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> _ChildComponents;
+    }
+    /// <summary>
+    /// There are no comments for FulfillmentFeeComponent in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class FulfillmentFeeComponent : global::CommerceOps.Sitecore.Commerce.Core.Component
+    {
+        /// <summary>
+        /// Create a new FulfillmentFeeComponent object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static FulfillmentFeeComponent CreateFulfillmentFeeComponent(string ID)
+        {
+            FulfillmentFeeComponent fulfillmentFeeComponent = new FulfillmentFeeComponent();
+            fulfillmentFeeComponent.Id = ID;
+            return fulfillmentFeeComponent;
+        }
+        /// <summary>
+        /// There are no comments for Property FulfillmentTypeName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string FulfillmentTypeName
+        {
+            get
+            {
+                return this._FulfillmentTypeName;
+            }
+            set
+            {
+                this.OnFulfillmentTypeNameChanging(value);
+                this._FulfillmentTypeName = value;
+                this.OnFulfillmentTypeNameChanged();
+                this.OnPropertyChanged("FulfillmentTypeName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _FulfillmentTypeName;
+        partial void OnFulfillmentTypeNameChanging(string value);
+        partial void OnFulfillmentTypeNameChanged();
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle CastToFulfillmentCommerceCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand> query = source.CastTo<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand>();
+            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommandSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand to its derived type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle CastToGetFulfillmentFeeBookCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand> query = source.CastTo<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand>();
+            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle CastToGetFulfillmentFeeBookCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand> query = source.CastTo<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommand>();
+            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.GetFulfillmentFeeBookCommandSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand to its derived type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle CastToSaveFulfillmentFeeBookCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand> query = source.CastTo<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand>();
+            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle CastToSaveFulfillmentFeeBookCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand> query = source.CastTo<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommand>();
+            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.SaveFulfillmentFeeBookCommandSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponent as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponent> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponent as global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponent> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Component to its derived type global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponent
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle CastToFulfillmentFeeComponent(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Component> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponent> query = source.CastTo<global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponent>();
+            return new global::CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentFeeComponentSingle(source.Context, query.GetPath(null));
+        }
+    }
+}
+namespace CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Policies
+{
+    /// <summary>
+    /// There are no comments for KnownEntitlementsTags in the schema.
+    /// </summary>
+    public partial class KnownEntitlementsTags : global::CommerceOps.Sitecore.Commerce.Core.Policy
+    {
+        /// <summary>
+        /// There are no comments for Property WarrantyTags in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<string> WarrantyTags
+        {
+            get
+            {
+                return this._WarrantyTags;
+            }
+            set
+            {
+                this.OnWarrantyTagsChanging(value);
+                this._WarrantyTags = value;
+                this.OnWarrantyTagsChanged();
+                this.OnPropertyChanged("WarrantyTags");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<string> _WarrantyTags = new global::System.Collections.ObjectModel.ObservableCollection<string>();
+        partial void OnWarrantyTagsChanging(global::System.Collections.ObjectModel.ObservableCollection<string> value);
+        partial void OnWarrantyTagsChanged();
+        /// <summary>
+        /// There are no comments for Property DigitalProductTags in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<string> DigitalProductTags
+        {
+            get
+            {
+                return this._DigitalProductTags;
+            }
+            set
+            {
+                this.OnDigitalProductTagsChanging(value);
+                this._DigitalProductTags = value;
+                this.OnDigitalProductTagsChanged();
+                this.OnPropertyChanged("DigitalProductTags");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<string> _DigitalProductTags = new global::System.Collections.ObjectModel.ObservableCollection<string>();
+        partial void OnDigitalProductTagsChanging(global::System.Collections.ObjectModel.ObservableCollection<string> value);
+        partial void OnDigitalProductTagsChanged();
+        /// <summary>
+        /// There are no comments for Property InstallationTags in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<string> InstallationTags
+        {
+            get
+            {
+                return this._InstallationTags;
+            }
+            set
+            {
+                this.OnInstallationTagsChanging(value);
+                this._InstallationTags = value;
+                this.OnInstallationTagsChanged();
+                this.OnPropertyChanged("InstallationTags");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<string> _InstallationTags = new global::System.Collections.ObjectModel.ObservableCollection<string>();
+        partial void OnInstallationTagsChanging(global::System.Collections.ObjectModel.ObservableCollection<string> value);
+        partial void OnInstallationTagsChanged();
+    }
+}
+namespace CommerceOps.Sitecore.Feature.Commerce.Payments.Engine.Policies
+{
+    /// <summary>
+    /// There are no comments for BraintreeClientPolicy in the schema.
+    /// </summary>
+    public partial class BraintreeClientPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
+    {
+        /// <summary>
+        /// There are no comments for Property Environment in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string Environment
+        {
+            get
+            {
+                return this._Environment;
+            }
+            set
+            {
+                this.OnEnvironmentChanging(value);
+                this._Environment = value;
+                this.OnEnvironmentChanged();
+                this.OnPropertyChanged("Environment");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Environment;
+        partial void OnEnvironmentChanging(string value);
+        partial void OnEnvironmentChanged();
+        /// <summary>
+        /// There are no comments for Property MerchantId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string MerchantId
+        {
+            get
+            {
+                return this._MerchantId;
+            }
+            set
+            {
+                this.OnMerchantIdChanging(value);
+                this._MerchantId = value;
+                this.OnMerchantIdChanged();
+                this.OnPropertyChanged("MerchantId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _MerchantId;
+        partial void OnMerchantIdChanging(string value);
+        partial void OnMerchantIdChanged();
+        /// <summary>
+        /// There are no comments for Property PublicKey in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string PublicKey
+        {
+            get
+            {
+                return this._PublicKey;
+            }
+            set
+            {
+                this.OnPublicKeyChanging(value);
+                this._PublicKey = value;
+                this.OnPublicKeyChanged();
+                this.OnPropertyChanged("PublicKey");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _PublicKey;
+        partial void OnPublicKeyChanging(string value);
+        partial void OnPublicKeyChanged();
+        /// <summary>
+        /// There are no comments for Property PrivateKey in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string PrivateKey
+        {
+            get
+            {
+                return this._PrivateKey;
+            }
+            set
+            {
+                this.OnPrivateKeyChanging(value);
+                this._PrivateKey = value;
+                this.OnPrivateKeyChanged();
+                this.OnPropertyChanged("PrivateKey");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _PrivateKey;
+        partial void OnPrivateKeyChanging(string value);
+        partial void OnPrivateKeyChanged();
+    }
+}
 namespace CommerceOps.Sitecore.Commerce.Plugin.Shops
 {
     /// <summary>
@@ -50161,19 +50727,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Shops
         /// Initialize a new GetShopCommandSingle object.
         /// </summary>
         public GetShopCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetShopCommandSingle object.
         /// </summary>
         public GetShopCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetShopCommandSingle object.
         /// </summary>
         public GetShopCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetShopCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -50206,19 +50772,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Shops
         /// Initialize a new GetShopsCommandSingle object.
         /// </summary>
         public GetShopsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetShopsCommandSingle object.
         /// </summary>
         public GetShopsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetShopsCommandSingle object.
         /// </summary>
         public GetShopsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetShopsCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -50251,19 +50817,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Shops
         /// Initialize a new OnlineShopComponentSingle object.
         /// </summary>
         public OnlineShopComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new OnlineShopComponentSingle object.
         /// </summary>
         public OnlineShopComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new OnlineShopComponentSingle object.
         /// </summary>
         public OnlineShopComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<OnlineShopComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -50339,19 +50905,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Shops
         /// Initialize a new ShopFinancialsComponentSingle object.
         /// </summary>
         public ShopFinancialsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ShopFinancialsComponentSingle object.
         /// </summary>
         public ShopFinancialsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ShopFinancialsComponentSingle object.
         /// </summary>
         public ShopFinancialsComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ShopFinancialsComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -50515,19 +51081,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Shops
         /// Initialize a new ShopFulfillmentOptionsComponentSingle object.
         /// </summary>
         public ShopFulfillmentOptionsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ShopFulfillmentOptionsComponentSingle object.
         /// </summary>
         public ShopFulfillmentOptionsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ShopFulfillmentOptionsComponentSingle object.
         /// </summary>
         public ShopFulfillmentOptionsComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ShopFulfillmentOptionsComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -50603,19 +51169,19 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Shops
         /// Initialize a new ShopPaymentOptionsComponentSingle object.
         /// </summary>
         public ShopPaymentOptionsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new ShopPaymentOptionsComponentSingle object.
         /// </summary>
         public ShopPaymentOptionsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new ShopPaymentOptionsComponentSingle object.
         /// </summary>
         public ShopPaymentOptionsComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ShopPaymentOptionsComponent> query)
-            : base(query) {}
+            : base(query) { }
 
         /// <summary>
         /// There are no comments for ChildComponents in the schema.
@@ -50881,6 +51447,178 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Shops
         }
     }
 }
+namespace CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks
+{
+    /// <summary>
+    /// There are no comments for GetInventoryItemCommandExtensionSingle in the schema.
+    /// </summary>
+    public partial class GetInventoryItemCommandExtensionSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<GetInventoryItemCommandExtension>
+    {
+        /// <summary>
+        /// Initialize a new GetInventoryItemCommandExtensionSingle object.
+        /// </summary>
+        public GetInventoryItemCommandExtensionSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) { }
+
+        /// <summary>
+        /// Initialize a new GetInventoryItemCommandExtensionSingle object.
+        /// </summary>
+        public GetInventoryItemCommandExtensionSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) { }
+
+        /// <summary>
+        /// Initialize a new GetInventoryItemCommandExtensionSingle object.
+        /// </summary>
+        public GetInventoryItemCommandExtensionSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetInventoryItemCommandExtension> query)
+            : base(query) { }
+
+    }
+    /// <summary>
+    /// There are no comments for GetInventoryItemCommandExtension in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class GetInventoryItemCommandExtension : global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryItemCommand
+    {
+        /// <summary>
+        /// Create a new GetInventoryItemCommandExtension object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static GetInventoryItemCommandExtension CreateGetInventoryItemCommandExtension(string ID)
+        {
+            GetInventoryItemCommandExtension getInventoryItemCommandExtension = new GetInventoryItemCommandExtension();
+            getInventoryItemCommandExtension.Id = ID;
+            return getInventoryItemCommandExtension;
+        }
+    }
+    /// <summary>
+    /// There are no comments for GetInventorySkuCommandExtensionSingle in the schema.
+    /// </summary>
+    public partial class GetInventorySkuCommandExtensionSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<GetInventorySkuCommandExtension>
+    {
+        /// <summary>
+        /// Initialize a new GetInventorySkuCommandExtensionSingle object.
+        /// </summary>
+        public GetInventorySkuCommandExtensionSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) { }
+
+        /// <summary>
+        /// Initialize a new GetInventorySkuCommandExtensionSingle object.
+        /// </summary>
+        public GetInventorySkuCommandExtensionSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) { }
+
+        /// <summary>
+        /// Initialize a new GetInventorySkuCommandExtensionSingle object.
+        /// </summary>
+        public GetInventorySkuCommandExtensionSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetInventorySkuCommandExtension> query)
+            : base(query) { }
+
+    }
+    /// <summary>
+    /// There are no comments for GetInventorySkuCommandExtension in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class GetInventorySkuCommandExtension : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new GetInventorySkuCommandExtension object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static GetInventorySkuCommandExtension CreateGetInventorySkuCommandExtension(string ID)
+        {
+            GetInventorySkuCommandExtension getInventorySkuCommandExtension = new GetInventorySkuCommandExtension();
+            getInventorySkuCommandExtension.Id = ID;
+            return getInventorySkuCommandExtension;
+        }
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtension as global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtensionSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtensionSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtension> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtensionSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtension as global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtensionSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtensionSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtension> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtensionSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryItemCommand to its derived type global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtension
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtensionSingle CastToGetInventoryItemCommandExtension(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryItemCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtension> query = source.CastTo<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtension>();
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtensionSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtension
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtensionSingle CastToGetInventoryItemCommandExtension(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtension> query = source.CastTo<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtension>();
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventoryItemCommandExtensionSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventorySkuCommandExtension as global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventorySkuCommandExtensionSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventorySkuCommandExtensionSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventorySkuCommandExtension> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventorySkuCommandExtensionSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventorySkuCommandExtension as global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventorySkuCommandExtensionSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventorySkuCommandExtensionSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventorySkuCommandExtension> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventorySkuCommandExtensionSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventorySkuCommandExtension
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventorySkuCommandExtensionSingle CastToGetInventorySkuCommandExtension(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventorySkuCommandExtension> query = source.CastTo<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventorySkuCommandExtension>();
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.GetInventorySkuCommandExtensionSingle(source.Context, query.GetPath(null));
+        }
+    }
+}
 namespace CommerceOps.Sitecore.Commerce.EntityViews.Commands
 {
     /// <summary>
@@ -50892,19 +51630,19 @@ namespace CommerceOps.Sitecore.Commerce.EntityViews.Commands
         /// Initialize a new DoActionCommandSingle object.
         /// </summary>
         public DoActionCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new DoActionCommandSingle object.
         /// </summary>
         public DoActionCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new DoActionCommandSingle object.
         /// </summary>
         public DoActionCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DoActionCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -50937,19 +51675,19 @@ namespace CommerceOps.Sitecore.Commerce.EntityViews.Commands
         /// Initialize a new GetEntityViewCommandSingle object.
         /// </summary>
         public GetEntityViewCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
+            : base(context, path) { }
 
         /// <summary>
         /// Initialize a new GetEntityViewCommandSingle object.
         /// </summary>
         public GetEntityViewCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
+            : base(context, path, isComposable) { }
 
         /// <summary>
         /// Initialize a new GetEntityViewCommandSingle object.
         /// </summary>
         public GetEntityViewCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetEntityViewCommand> query)
-            : base(query) {}
+            : base(query) { }
 
     }
     /// <summary>
@@ -51044,6 +51782,264 @@ namespace CommerceOps.Sitecore.Commerce.EntityViews.Commands
         }
     }
 }
+namespace CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands
+{
+    /// <summary>
+    /// There are no comments for SaveCartLineEmbellishmentsCommandSingle in the schema.
+    /// </summary>
+    public partial class SaveCartLineEmbellishmentsCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SaveCartLineEmbellishmentsCommand>
+    {
+        /// <summary>
+        /// Initialize a new SaveCartLineEmbellishmentsCommandSingle object.
+        /// </summary>
+        public SaveCartLineEmbellishmentsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) { }
+
+        /// <summary>
+        /// Initialize a new SaveCartLineEmbellishmentsCommandSingle object.
+        /// </summary>
+        public SaveCartLineEmbellishmentsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) { }
+
+        /// <summary>
+        /// Initialize a new SaveCartLineEmbellishmentsCommandSingle object.
+        /// </summary>
+        public SaveCartLineEmbellishmentsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SaveCartLineEmbellishmentsCommand> query)
+            : base(query) { }
+
+    }
+    /// <summary>
+    /// There are no comments for SaveCartLineEmbellishmentsCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class SaveCartLineEmbellishmentsCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new SaveCartLineEmbellishmentsCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static SaveCartLineEmbellishmentsCommand CreateSaveCartLineEmbellishmentsCommand(string ID)
+        {
+            SaveCartLineEmbellishmentsCommand saveCartLineEmbellishmentsCommand = new SaveCartLineEmbellishmentsCommand();
+            saveCartLineEmbellishmentsCommand.Id = ID;
+            return saveCartLineEmbellishmentsCommand;
+        }
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommand as global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommand as global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle CastToSaveCartLineEmbellishmentsCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommand> query = source.CastTo<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommand>();
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands.SaveCartLineEmbellishmentsCommandSingle(source.Context, query.GetPath(null));
+        }
+    }
+}
+namespace CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands
+{
+    /// <summary>
+    /// There are no comments for SaveCustomerSpendLimitEntitlementCommandSingle in the schema.
+    /// </summary>
+    public partial class SaveCustomerSpendLimitEntitlementCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SaveCustomerSpendLimitEntitlementCommand>
+    {
+        /// <summary>
+        /// Initialize a new SaveCustomerSpendLimitEntitlementCommandSingle object.
+        /// </summary>
+        public SaveCustomerSpendLimitEntitlementCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) { }
+
+        /// <summary>
+        /// Initialize a new SaveCustomerSpendLimitEntitlementCommandSingle object.
+        /// </summary>
+        public SaveCustomerSpendLimitEntitlementCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) { }
+
+        /// <summary>
+        /// Initialize a new SaveCustomerSpendLimitEntitlementCommandSingle object.
+        /// </summary>
+        public SaveCustomerSpendLimitEntitlementCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SaveCustomerSpendLimitEntitlementCommand> query)
+            : base(query) { }
+
+    }
+    /// <summary>
+    /// There are no comments for SaveCustomerSpendLimitEntitlementCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class SaveCustomerSpendLimitEntitlementCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new SaveCustomerSpendLimitEntitlementCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static SaveCustomerSpendLimitEntitlementCommand CreateSaveCustomerSpendLimitEntitlementCommand(string ID)
+        {
+            SaveCustomerSpendLimitEntitlementCommand saveCustomerSpendLimitEntitlementCommand = new SaveCustomerSpendLimitEntitlementCommand();
+            saveCustomerSpendLimitEntitlementCommand.Id = ID;
+            return saveCustomerSpendLimitEntitlementCommand;
+        }
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands.SaveCustomerSpendLimitEntitlementCommand as global::CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands.SaveCustomerSpendLimitEntitlementCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands.SaveCustomerSpendLimitEntitlementCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands.SaveCustomerSpendLimitEntitlementCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands.SaveCustomerSpendLimitEntitlementCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands.SaveCustomerSpendLimitEntitlementCommand as global::CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands.SaveCustomerSpendLimitEntitlementCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands.SaveCustomerSpendLimitEntitlementCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands.SaveCustomerSpendLimitEntitlementCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands.SaveCustomerSpendLimitEntitlementCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands.SaveCustomerSpendLimitEntitlementCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands.SaveCustomerSpendLimitEntitlementCommandSingle CastToSaveCustomerSpendLimitEntitlementCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands.SaveCustomerSpendLimitEntitlementCommand> query = source.CastTo<global::CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands.SaveCustomerSpendLimitEntitlementCommand>();
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands.SaveCustomerSpendLimitEntitlementCommandSingle(source.Context, query.GetPath(null));
+        }
+    }
+}
+namespace CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands
+{
+    /// <summary>
+    /// There are no comments for AddCartLineWithSubLinesCommandSingle in the schema.
+    /// </summary>
+    public partial class AddCartLineWithSubLinesCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AddCartLineWithSubLinesCommand>
+    {
+        /// <summary>
+        /// Initialize a new AddCartLineWithSubLinesCommandSingle object.
+        /// </summary>
+        public AddCartLineWithSubLinesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) { }
+
+        /// <summary>
+        /// Initialize a new AddCartLineWithSubLinesCommandSingle object.
+        /// </summary>
+        public AddCartLineWithSubLinesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) { }
+
+        /// <summary>
+        /// Initialize a new AddCartLineWithSubLinesCommandSingle object.
+        /// </summary>
+        public AddCartLineWithSubLinesCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddCartLineWithSubLinesCommand> query)
+            : base(query) { }
+
+    }
+    /// <summary>
+    /// There are no comments for AddCartLineWithSubLinesCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class AddCartLineWithSubLinesCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new AddCartLineWithSubLinesCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static AddCartLineWithSubLinesCommand CreateAddCartLineWithSubLinesCommand(string ID)
+        {
+            AddCartLineWithSubLinesCommand addCartLineWithSubLinesCommand = new AddCartLineWithSubLinesCommand();
+            addCartLineWithSubLinesCommand.Id = ID;
+            return addCartLineWithSubLinesCommand;
+        }
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands.AddCartLineWithSubLinesCommand as global::CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands.AddCartLineWithSubLinesCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands.AddCartLineWithSubLinesCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands.AddCartLineWithSubLinesCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands.AddCartLineWithSubLinesCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands.AddCartLineWithSubLinesCommand as global::CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands.AddCartLineWithSubLinesCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands.AddCartLineWithSubLinesCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands.AddCartLineWithSubLinesCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands.AddCartLineWithSubLinesCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands.AddCartLineWithSubLinesCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands.AddCartLineWithSubLinesCommandSingle CastToAddCartLineWithSubLinesCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands.AddCartLineWithSubLinesCommand> query = source.CastTo<global::CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands.AddCartLineWithSubLinesCommand>();
+            return new global::CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands.AddCartLineWithSubLinesCommandSingle(source.Context, query.GetPath(null));
+        }
+    }
+}
 namespace CommerceOps.Sitecore.Framework.Caching
 {
     /// <summary>
@@ -51116,6 +52112,225 @@ namespace CommerceOps.Sitecore.Framework.Caching
         }
     }
 }
+namespace CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components
+{
+    /// <summary>
+    /// There are no comments for EmbellishmentComponentSingle in the schema.
+    /// </summary>
+    public partial class EmbellishmentComponentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EmbellishmentComponent>
+    {
+        /// <summary>
+        /// Initialize a new EmbellishmentComponentSingle object.
+        /// </summary>
+        public EmbellishmentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) { }
+
+        /// <summary>
+        /// Initialize a new EmbellishmentComponentSingle object.
+        /// </summary>
+        public EmbellishmentComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) { }
+
+        /// <summary>
+        /// Initialize a new EmbellishmentComponentSingle object.
+        /// </summary>
+        public EmbellishmentComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EmbellishmentComponent> query)
+            : base(query) { }
+
+        /// <summary>
+        /// There are no comments for ChildComponents in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> ChildComponents
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ChildComponents == null))
+                {
+                    this._ChildComponents = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Core.Component>(GetPath("ChildComponents"));
+                }
+                return this._ChildComponents;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> _ChildComponents;
+    }
+    /// <summary>
+    /// There are no comments for EmbellishmentComponent in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class EmbellishmentComponent : global::CommerceOps.Sitecore.Commerce.Core.Component
+    {
+        /// <summary>
+        /// Create a new EmbellishmentComponent object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        /// <param name="quantity">Initial value of Quantity.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static EmbellishmentComponent CreateEmbellishmentComponent(string ID, long quantity)
+        {
+            EmbellishmentComponent embellishmentComponent = new EmbellishmentComponent();
+            embellishmentComponent.Id = ID;
+            embellishmentComponent.Quantity = quantity;
+            return embellishmentComponent;
+        }
+        /// <summary>
+        /// There are no comments for Property ItemId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ItemId
+        {
+            get
+            {
+                return this._ItemId;
+            }
+            set
+            {
+                this.OnItemIdChanging(value);
+                this._ItemId = value;
+                this.OnItemIdChanged();
+                this.OnPropertyChanged("ItemId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ItemId;
+        partial void OnItemIdChanging(string value);
+        partial void OnItemIdChanged();
+        /// <summary>
+        /// There are no comments for Property ExternalId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ExternalId
+        {
+            get
+            {
+                return this._ExternalId;
+            }
+            set
+            {
+                this.OnExternalIdChanging(value);
+                this._ExternalId = value;
+                this.OnExternalIdChanged();
+                this.OnPropertyChanged("ExternalId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ExternalId;
+        partial void OnExternalIdChanging(string value);
+        partial void OnExternalIdChanged();
+        /// <summary>
+        /// There are no comments for Property Quantity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public long Quantity
+        {
+            get
+            {
+                return this._Quantity;
+            }
+            set
+            {
+                this.OnQuantityChanging(value);
+                this._Quantity = value;
+                this.OnQuantityChanged();
+                this.OnPropertyChanged("Quantity");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private long _Quantity;
+        partial void OnQuantityChanging(long value);
+        partial void OnQuantityChanged();
+        /// <summary>
+        /// There are no comments for Property Type in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string Type
+        {
+            get
+            {
+                return this._Type;
+            }
+            set
+            {
+                this.OnTypeChanging(value);
+                this._Type = value;
+                this.OnTypeChanged();
+                this.OnPropertyChanged("Type");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Type;
+        partial void OnTypeChanging(string value);
+        partial void OnTypeChanged();
+        /// <summary>
+        /// There are no comments for Property Value in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string Value
+        {
+            get
+            {
+                return this._Value;
+            }
+            set
+            {
+                this.OnValueChanging(value);
+                this._Value = value;
+                this.OnValueChanged();
+                this.OnPropertyChanged("Value");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Value;
+        partial void OnValueChanging(string value);
+        partial void OnValueChanged();
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponent as global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponent> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponent as global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponent> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Component to its derived type global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponent
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle CastToEmbellishmentComponent(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Component> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponent> query = source.CastTo<global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponent>();
+            return new global::CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components.EmbellishmentComponentSingle(source.Context, query.GetPath(null));
+        }
+    }
+}
 namespace CommerceOps.System.Transactions
 {
     /// <summary>
@@ -51138,7 +52353,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         /// Initialize a new Container object.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public Container(global::System.Uri serviceRoot) : 
+        public Container(global::System.Uri serviceRoot) :
                 base(serviceRoot, global::Microsoft.OData.Client.ODataProtocolVersion.V4)
         {
             this.ResolveName = new global::System.Func<global::System.Type, string>(this.ResolveNameFromType);
@@ -51156,7 +52371,47 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         protected global::System.Type ResolveTypeFromName(string typeName)
         {
-            global::System.Type resolvedType = this.DefaultResolveType(typeName, "Sitecore.Commerce.Plugin.Orders.DelayedAvailability", "CommerceOps.Sitecore.Commerce.Plugin.Orders.DelayedAvailability");
+            global::System.Type resolvedType = this.DefaultResolveType(typeName, "Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks", "CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Feature.Commerce.Embellishments.Engine.Components", "CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Feature.Commerce.Embellishments.Engine.Commands", "CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Feature.Commerce.Entitlements.Engine.Commands", "CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Feature.Commerce.Entitlements.Engine.Policies", "CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Policies");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Commerce.Plugin.Orders.DelayedAvailability", "CommerceOps.Sitecore.Commerce.Plugin.Orders.DelayedAvailability");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Feature.Commerce.Payments.Engine.Policies", "CommerceOps.Sitecore.Feature.Commerce.Payments.Engine.Policies");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Feature.Commerce.SubLines.Engine.Commands", "CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Demo.Retail.Feature.Fulfillment.Engine", "CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -51247,11 +52502,6 @@ namespace CommerceOps.Sitecore.Commerce.Engine
                 return resolvedType;
             }
             resolvedType = this.DefaultResolveType(typeName, "Sitecore.Commerce.Plugin.Payments", "CommerceOps.Sitecore.Commerce.Plugin.Payments");
-            if ((resolvedType != null))
-            {
-                return resolvedType;
-            }
-            resolvedType = this.DefaultResolveType(typeName, "Plugin.Sample.Payments.Braintree", "CommerceOps.Plugin.Sample.Payments.Braintree");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -51361,9 +52611,41 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         protected string ResolveNameFromType(global::System.Type clientType)
         {
+            if (clientType.Namespace.Equals("CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks", global::System.StringComparison.Ordinal))
+            {
+                return string.Concat("Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Components", global::System.StringComparison.Ordinal))
+            {
+                return string.Concat("Sitecore.Feature.Commerce.Embellishments.Engine.Components.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("CommerceOps.Sitecore.Feature.Commerce.Embellishments.Engine.Commands", global::System.StringComparison.Ordinal))
+            {
+                return string.Concat("Sitecore.Feature.Commerce.Embellishments.Engine.Commands.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Commands", global::System.StringComparison.Ordinal))
+            {
+                return string.Concat("Sitecore.Feature.Commerce.Entitlements.Engine.Commands.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("CommerceOps.Sitecore.Feature.Commerce.Entitlements.Engine.Policies", global::System.StringComparison.Ordinal))
+            {
+                return string.Concat("Sitecore.Feature.Commerce.Entitlements.Engine.Policies.", clientType.Name);
+            }
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Plugin.Orders.DelayedAvailability", global::System.StringComparison.Ordinal))
             {
                 return string.Concat("Sitecore.Commerce.Plugin.Orders.DelayedAvailability.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("CommerceOps.Sitecore.Feature.Commerce.Payments.Engine.Policies", global::System.StringComparison.Ordinal))
+            {
+                return string.Concat("Sitecore.Feature.Commerce.Payments.Engine.Policies.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("CommerceOps.Sitecore.Feature.Commerce.SubLines.Engine.Commands", global::System.StringComparison.Ordinal))
+            {
+                return string.Concat("Sitecore.Feature.Commerce.SubLines.Engine.Commands.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("CommerceOps.Sitecore.Demo.Retail.Feature.Fulfillment.Engine", global::System.StringComparison.Ordinal))
+            {
+                return string.Concat("Sitecore.Demo.Retail.Feature.Fulfillment.Engine.", clientType.Name);
             }
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.EntityViews.Commands", global::System.StringComparison.Ordinal))
             {
@@ -51436,10 +52718,6 @@ namespace CommerceOps.Sitecore.Commerce.Engine
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Plugin.Payments", global::System.StringComparison.Ordinal))
             {
                 return string.Concat("Sitecore.Commerce.Plugin.Payments.", clientType.Name);
-            }
-            if (clientType.Namespace.Equals("CommerceOps.Plugin.Sample.Payments.Braintree", global::System.StringComparison.Ordinal))
-            {
-                return string.Concat("Plugin.Sample.Payments.Braintree.", clientType.Name);
             }
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Plugin.Catalog", global::System.StringComparison.Ordinal))
             {
@@ -52042,14 +53320,6 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""Code"" Type=""Edm.String"" />
         <Property Name=""DisplayName"" Type=""Sitecore.Commerce.Core.Localized_1OfString"" />
       </EntityType>
-    </Schema>
-    <Schema Namespace=""Plugin.Sample.Payments.Braintree"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
-      <ComplexType Name=""BraintreeClientPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
-        <Property Name=""Environment"" Type=""Edm.String"" />
-        <Property Name=""MerchantId"" Type=""Edm.String"" />
-        <Property Name=""PublicKey"" Type=""Edm.String"" />
-        <Property Name=""PrivateKey"" Type=""Edm.String"" />
-      </ComplexType>
     </Schema>
     <Schema Namespace=""Sitecore.Commerce.Core.Caching"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <ComplexType Name=""EntityMemoryCachingPolicy"" BaseType=""Sitecore.Commerce.Core.CachePolicy"">
@@ -53590,6 +54860,37 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""IsShipping"" Type=""Edm.Boolean"" Nullable=""false"" />
       </ComplexType>
     </Schema>
+    <Schema Namespace=""Sitecore.Demo.Retail.Feature.Fulfillment.Engine"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""FulfillmentFeeCachePolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""CacheName"" Type=""Edm.String"" />
+        <Property Name=""Expiration"" Type=""Edm.Int32"" Nullable=""false"" />
+        <Property Name=""AllowCaching"" Type=""Edm.Boolean"" Nullable=""false"" />
+      </ComplexType>
+      <ComplexType Name=""GlobalPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""DefaultFulfillmentFeeBookName"" Type=""Edm.String"" />
+      </ComplexType>
+      <EntityType Name=""FulfillmentCommerceCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+      <EntityType Name=""GetFulfillmentFeeBookCommand"" BaseType=""Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand"" />
+      <EntityType Name=""SaveFulfillmentFeeBookCommand"" BaseType=""Sitecore.Demo.Retail.Feature.Fulfillment.Engine.FulfillmentCommerceCommand"" />
+      <EntityType Name=""FulfillmentFeeComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
+        <Property Name=""FulfillmentTypeName"" Type=""Edm.String"" />
+      </EntityType>
+    </Schema>
+    <Schema Namespace=""Sitecore.Feature.Commerce.Entitlements.Engine.Policies"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""KnownEntitlementsTags"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""WarrantyTags"" Type=""Collection(Edm.String)"" />
+        <Property Name=""DigitalProductTags"" Type=""Collection(Edm.String)"" />
+        <Property Name=""InstallationTags"" Type=""Collection(Edm.String)"" />
+      </ComplexType>
+    </Schema>
+    <Schema Namespace=""Sitecore.Feature.Commerce.Payments.Engine.Policies"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""BraintreeClientPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""Environment"" Type=""Edm.String"" />
+        <Property Name=""MerchantId"" Type=""Edm.String"" />
+        <Property Name=""PublicKey"" Type=""Edm.String"" />
+        <Property Name=""PrivateKey"" Type=""Edm.String"" />
+      </ComplexType>
+    </Schema>
     <Schema Namespace=""Sitecore.Commerce.Plugin.Shops"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <ComplexType Name=""ShopFulfillmentMethod"" BaseType=""Sitecore.Commerce.Core.Model"" />
       <ComplexType Name=""ShopFulfillmentOption"" BaseType=""Sitecore.Commerce.Core.Model"">
@@ -53618,14 +54919,36 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""Options"" Type=""Collection(Sitecore.Commerce.Plugin.Shops.ShopPaymentOption)"" />
       </EntityType>
     </Schema>
+    <Schema Namespace=""Sitecore.Feature.Commerce.Embellishments.Engine.Pipelines.Blocks"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <EntityType Name=""GetInventoryItemCommandExtension"" BaseType=""Sitecore.Commerce.Plugin.Inventory.GetInventoryItemCommand"" />
+      <EntityType Name=""GetInventorySkuCommandExtension"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+    </Schema>
     <Schema Namespace=""Sitecore.Commerce.EntityViews.Commands"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <EntityType Name=""DoActionCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""GetEntityViewCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+    </Schema>
+    <Schema Namespace=""Sitecore.Feature.Commerce.Embellishments.Engine.Commands"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <EntityType Name=""SaveCartLineEmbellishmentsCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+    </Schema>
+    <Schema Namespace=""Sitecore.Feature.Commerce.Entitlements.Engine.Commands"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <EntityType Name=""SaveCustomerSpendLimitEntitlementCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+    </Schema>
+    <Schema Namespace=""Sitecore.Feature.Commerce.SubLines.Engine.Commands"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <EntityType Name=""AddCartLineWithSubLinesCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
     </Schema>
     <Schema Namespace=""Sitecore.Framework.Caching"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <ComplexType Name=""ICacheStore"" Abstract=""true"" />
       <ComplexType Name=""ICache"" Abstract=""true"" />
       <ComplexType Name=""SitecoreCacheFactoryDelegate"" />
+    </Schema>
+    <Schema Namespace=""Sitecore.Feature.Commerce.Embellishments.Engine.Components"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <EntityType Name=""EmbellishmentComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
+        <Property Name=""ItemId"" Type=""Edm.String"" />
+        <Property Name=""ExternalId"" Type=""Edm.String"" />
+        <Property Name=""Quantity"" Type=""Edm.Int64"" Nullable=""false"" />
+        <Property Name=""Type"" Type=""Edm.String"" />
+        <Property Name=""Value"" Type=""Edm.String"" />
+      </EntityType>
     </Schema>
     <Schema Namespace=""System.Transactions"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <EnumType Name=""TransactionScopeAsyncFlowOption"">
@@ -53717,6 +55040,16 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Parameter Name=""environmentName"" Type=""Edm.String"" Unicode=""false"" />
         <ReturnType Type=""Edm.String"" Unicode=""false"" />
       </Action>
+      <Action Name=""SaveCartLineEmbellishment"">
+        <Parameter Name=""cartId"" Type=""Edm.String"" Unicode=""false"" />
+        <Parameter Name=""lineId"" Type=""Edm.String"" Unicode=""false"" />
+        <Parameter Name=""itemId"" Type=""Edm.String"" Unicode=""false"" />
+        <Parameter Name=""externalId"" Type=""Edm.String"" Unicode=""false"" />
+        <Parameter Name=""quantity"" Type=""Edm.Int64"" Nullable=""false"" />
+        <Parameter Name=""type"" Type=""Edm.String"" Unicode=""false"" />
+        <Parameter Name=""value"" Type=""Edm.String"" Unicode=""false"" />
+        <ReturnType Type=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+      </Action>
       <EntityContainer Name=""Container"">
         <EntitySet Name=""Environments"" EntityType=""Sitecore.Commerce.Core.CommerceEnvironment"" />
         <EntitySet Name=""Commands"" EntityType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
@@ -53739,6 +55072,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <FunctionImport Name=""GetPolicySet"" Function=""Sitecore.Commerce.Engine.GetPolicySet"" IncludeInServiceDocument=""true"" />
         <ActionImport Name=""ResetNodeContext"" Action=""Sitecore.Commerce.Engine.ResetNodeContext"" EntitySet=""Commands"" />
         <ActionImport Name=""GetRawEntity"" Action=""Sitecore.Commerce.Engine.GetRawEntity"" />
+        <ActionImport Name=""SaveCartLineEmbellishment"" Action=""Sitecore.Commerce.Engine.SaveCartLineEmbellishment"" EntitySet=""Commands"" />
       </EntityContainer>
     </Schema>
   </edmx:DataServices>
@@ -53838,7 +55172,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/CleanEnvironment", new global::Microsoft.OData.Client.BodyOperationParameter("environment", environment));
         }
-		public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> CleanEnvironment(string environment, string expands)
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> CleanEnvironment(string environment, string expands)
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/CleanEnvironment()?$expand=" + expands, new global::Microsoft.OData.Client.BodyOperationParameter("environment", environment));
         }
@@ -53858,7 +55192,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
                     new global::Microsoft.OData.Client.BodyOperationParameter("runChildren", runChildren),
                     new global::Microsoft.OData.Client.BodyOperationParameter("environmentName", environmentName));
         }
-		public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> RunMinion(string minionFullName, bool runChildren, string environmentName, string expands)
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> RunMinion(string minionFullName, bool runChildren, string environmentName, string expands)
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/RunMinion()?$expand=" + expands, new global::Microsoft.OData.Client.BodyOperationParameter("minionFullName", minionFullName),
                     new global::Microsoft.OData.Client.BodyOperationParameter("runChildren", runChildren),
@@ -53871,7 +55205,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/ImportEnvironment", new global::Microsoft.OData.Client.BodyOperationParameter("rawEnvironment", rawEnvironment));
         }
-		public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> ImportEnvironment(string rawEnvironment, string expands)
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> ImportEnvironment(string rawEnvironment, string expands)
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/ImportEnvironment()?$expand=" + expands, new global::Microsoft.OData.Client.BodyOperationParameter("rawEnvironment", rawEnvironment));
         }
@@ -53883,7 +55217,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/ClearCacheStore", new global::Microsoft.OData.Client.BodyOperationParameter("cacheStoreName", cacheStoreName),
                     new global::Microsoft.OData.Client.BodyOperationParameter("environmentName", environmentName));
         }
-		public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> ClearCacheStore(string cacheStoreName, string environmentName, string expands)
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> ClearCacheStore(string cacheStoreName, string environmentName, string expands)
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/ClearCacheStore()?$expand=" + expands, new global::Microsoft.OData.Client.BodyOperationParameter("cacheStoreName", cacheStoreName),
                     new global::Microsoft.OData.Client.BodyOperationParameter("environmentName", environmentName));
@@ -53897,7 +55231,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
                     new global::Microsoft.OData.Client.BodyOperationParameter("cacheName", cacheName),
                     new global::Microsoft.OData.Client.BodyOperationParameter("environmentName", environmentName));
         }
-		public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> ClearCacheStoreCache(string cacheStoreName, string cacheName, string environmentName, string expands)
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> ClearCacheStoreCache(string cacheStoreName, string cacheName, string environmentName, string expands)
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/ClearCacheStoreCache()?$expand=" + expands, new global::Microsoft.OData.Client.BodyOperationParameter("cacheStoreName", cacheStoreName),
                     new global::Microsoft.OData.Client.BodyOperationParameter("cacheName", cacheName),
@@ -53913,7 +55247,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
                     new global::Microsoft.OData.Client.BodyOperationParameter("policy", policy),
                     new global::Microsoft.OData.Client.BodyOperationParameter("environmentName", environmentName));
         }
-		public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> AddPolicy(string entityId, string policyType, global::CommerceOps.Sitecore.Commerce.Core.Policy policy, string environmentName, string expands)
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> AddPolicy(string entityId, string policyType, global::CommerceOps.Sitecore.Commerce.Core.Policy policy, string environmentName, string expands)
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/AddPolicy()?$expand=" + expands, new global::Microsoft.OData.Client.BodyOperationParameter("entityId", entityId),
                     new global::Microsoft.OData.Client.BodyOperationParameter("policyType", policyType),
@@ -53930,7 +55264,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
                     new global::Microsoft.OData.Client.BodyOperationParameter("policyId", policyId),
                     new global::Microsoft.OData.Client.BodyOperationParameter("environmentName", environmentName));
         }
-		public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> RemovePolicy(string entityId, string policyType, string policyId, string environmentName, string expands)
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> RemovePolicy(string entityId, string policyType, string policyId, string environmentName, string expands)
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/RemovePolicy()?$expand=" + expands, new global::Microsoft.OData.Client.BodyOperationParameter("entityId", entityId),
                     new global::Microsoft.OData.Client.BodyOperationParameter("policyType", policyType),
@@ -53944,7 +55278,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/ResetNodeContext", new global::Microsoft.OData.Client.BodyOperationParameter("environmentId", environmentId));
         }
-		public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> ResetNodeContext(string environmentId, string expands)
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> ResetNodeContext(string environmentId, string expands)
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/ResetNodeContext()?$expand=" + expands, new global::Microsoft.OData.Client.BodyOperationParameter("environmentId", environmentId));
         }
@@ -53956,10 +55290,33 @@ namespace CommerceOps.Sitecore.Commerce.Engine
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(this, this.BaseUri.OriginalString.Trim('/') + "/GetRawEntity", new global::Microsoft.OData.Client.BodyOperationParameter("entityId", entityId),
                     new global::Microsoft.OData.Client.BodyOperationParameter("environmentName", environmentName));
         }
-		public global::Microsoft.OData.Client.DataServiceActionQuerySingle<string> GetRawEntity(string entityId, string environmentName, string expands)
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<string> GetRawEntity(string entityId, string environmentName, string expands)
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(this, this.BaseUri.OriginalString.Trim('/') + "/GetRawEntity()?$expand=" + expands, new global::Microsoft.OData.Client.BodyOperationParameter("entityId", entityId),
                     new global::Microsoft.OData.Client.BodyOperationParameter("environmentName", environmentName));
+        }
+        /// <summary>
+        /// There are no comments for SaveCartLineEmbellishment in the schema.
+        /// </summary>
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> SaveCartLineEmbellishment(string cartId, string lineId, string itemId, string externalId, long quantity, string type, string value)
+        {
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/SaveCartLineEmbellishment", new global::Microsoft.OData.Client.BodyOperationParameter("cartId", cartId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("lineId", lineId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("itemId", itemId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("externalId", externalId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("quantity", quantity),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("type", type),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("value", value));
+        }
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> SaveCartLineEmbellishment(string cartId, string lineId, string itemId, string externalId, long quantity, string type, string value, string expands)
+        {
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/SaveCartLineEmbellishment()?$expand=" + expands, new global::Microsoft.OData.Client.BodyOperationParameter("cartId", cartId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("lineId", lineId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("itemId", itemId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("externalId", externalId),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("quantity", quantity),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("type", type),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("value", value));
         }
     }
 }

@@ -10,6 +10,17 @@
 // and limitations under the License.
 // -------------------------------------------------------------------------------------------
 
+Number.prototype.formatMoney = function (c, d, t) {
+  var n = this,
+      c = isNaN(c = Math.abs(c)) ? 2 : c,
+      d = d == undefined ? "." : d,
+      t = t == undefined ? "," : t,
+      s = n < 0 ? "-" : "",
+      i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))),
+      j = (j = i.length) > 3 ? j % 3 : 0;
+  return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+};
+
 $(document).ready(function () {
     $(".product-image-container .thumbnails .thumbnail").on('click', function (e) {
         e.preventDefault();
@@ -56,6 +67,21 @@ function AddVariantCombination(size, productColor, id, listPrice, adjustedPrice,
     window.variantCombinationsArray[size + '_' + productColor] = new VariantInfoModel(id, size, productColor, listPrice, adjustedPrice, isOnSale, savingsMessage);
 }
 
+function AddVariantKitCombination(name, size, productColor, id, listPrice, adjustedPrice, isOnSale, savingsMessage) {
+  if (!window.kitCombinationsArray) {
+    window.kitCombinationsArray = new Array();
+  }
+
+  if (window.kitCombinationsArray[name] == null)
+  {
+    window.kitCombinationsArray[name] = new Array();
+  }
+      
+    var kit = window.kitCombinationsArray[name];
+    kit[size + '_' + productColor] = new VariantInfoModel(id, size, productColor, listPrice, adjustedPrice, isOnSale, savingsMessage);
+    window.kitCombinationsArray[name] = kit;
+}
+
 function VariantSelectionChanged() {
     var size = '';
     var color = '';
@@ -64,7 +90,7 @@ function VariantSelectionChanged() {
         size = $('#variantSize').val();
     }
 
-    if ($('#variantColor').length) {
+    if ($('#variantColor').length || $('#variantColor').length == 1) {
         color = $('#variantColor').val();
     }
 
@@ -82,8 +108,60 @@ function VariantSelectionChanged() {
         if (stockInfoVM) {
             stockInfoVM.switchInfo();
         }
-        switchProductPriceInfo(variantInfo.priceBefore, variantInfo.priceNow, variantInfo.isOnSale, variantInfo.savingsMessage);
+        switchProductPriceInfo(variantInfo.priceBefore.toLocaleString(), variantInfo.priceNow.toLocaleString(), variantInfo.isOnSale, variantInfo.savingsMessage);
     }
+}
+
+function VariantKitSelectionChanged() {
+
+  var size = '';
+  var color = '';
+  
+
+  if ($('#variantSize').length) {
+    size = $('#variantSize').val();
+  }
+
+  if ($('#variantColor').length || $('#variantColor').length == 1) {
+    color = $('#variantColor').val();
+  }
+
+  ClearGlobalMessages();
+  $('#AddToCartButton').removeAttr('disabled');
+  var variantInfo = GetVariantIdByCombination(size, color);
+  if (variantInfo == -1) {
+    var data = [];
+    data.Success = false;
+    data.Errors = [$("#InvalidVariant").text()];
+    ShowGlobalMessages(data);
+    $('#AddToCartButton').attr('disabled', 'disabled');
+  } else {
+    $('#VariantId').val(variantInfo.variantId);
+    if (stockInfoVM) {
+      //stockInfoVM.switchInfo();
+    }
+    //switchProductPriceInfo(variantInfo.priceBefore.toLocaleString(), variantInfo.priceNow.toLocaleString(), variantInfo.isOnSale, variantInfo.savingsMessage);
+  }
+
+  var kitCount = $('#KitCount').val();
+  var qty = $('#Quantity').val();
+  var priceNow = Number(variantInfo.priceNow.replace(/[^0-9\.-]+/g, ""));
+
+  for (i=0; i < kitCount; i++)
+  {
+    var kitSelect = '[' + i + '].Variant_Color';
+    var kitQuantity = '[' + i + '].Quantity';
+    var kitVariantId = '[' + i + '].VariantId';
+    var kit = window.kitCombinationsArray[kitSelect];
+    var quantity = $('input[name="' + kitQuantity + '"]').val();
+    //alert($('select[name="' + kitSelect + '"]').val());
+    var selectedVariantKit = kit["_" + $('select[name="' + kitSelect + '"]').val()];
+    var currency = selectedVariantKit.priceNow;
+    var number = Number(currency.replace(/[^0-9\.-]+/g, ""));
+    priceNow += (number * quantity) * qty;
+    $('input[name="' + kitVariantId + '"]').val(selectedVariantKit.variantId);
+    switchProductPriceInfo(priceNow.formatMoney(2, '.', ','), priceNow.formatMoney(2, '.', ','), 0, "");
+  }
 }
 
 function GetVariantIdByCombination(size, productColor) {
